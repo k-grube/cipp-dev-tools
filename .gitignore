@@ -4,6 +4,7 @@ cipp/
 graphify-out/
 # personal docker tweaks
 docker-compose.override.yml
+.claude/settings.local.json
 __pycache__/
 .venv/
 .superpowers/
