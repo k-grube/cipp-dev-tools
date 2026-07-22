@@ -5,8 +5,13 @@ graphify-out/
 # personal docker tweaks
 docker-compose.override.yml
 .claude/settings.local.json
+# personal skills, keep the shared workflow one
+.claude/skills/*
+!.claude/skills/cipp-dev-workflow/
 __pycache__/
 .venv/
 .superpowers/
 docs
 .idea/
+# CIPPAPIModule clone
+CIPPAPIModule/
