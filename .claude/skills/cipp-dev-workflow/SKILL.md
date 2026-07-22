@@ -5,7 +5,7 @@ description: Use when working a CIPP GitHub issue, branching, syncing the fork, 
 
 # CIPP Contribution Workflow
 
-How contributions flow from the k-grube fork of the CIPP monorepo to CyberDrain upstream, from picking up a GitHub issue to landing the fix. Frontend and backend live in one repo now (`cipp\frontend\`, `cipp\backend\`), one branch and one PR covers both.
+How contributions flow from your fork of the CIPP monorepo to CyberDrain upstream, from picking up a GitHub issue to landing the fix. Frontend and backend live in one repo now (`cipp\frontend\`, `cipp\backend\`), one branch and one PR covers both.
 
 ## Repo layout
 
@@ -13,7 +13,7 @@ How contributions flow from the k-grube fork of the CIPP monorepo to CyberDrain 
 
 | Remote | Points to | Purpose |
 |---|---|---|
-| `origin` | `k-grube/CIPP` | personal fork, branches push here |
+| `origin` | your fork of CyberDrain/CIPP (user or org, whatever setup cloned) | branches push here |
 | `upstream` | `CyberDrain/CIPP` | the real project, PRs land here |
 
 **PRs go to `upstream/dev`, never `main`** (`main` is release-only). This overrides any generic "PR to main" instinct.
