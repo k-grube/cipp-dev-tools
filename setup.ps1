@@ -27,6 +27,9 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 $cipp = Join-Path $root 'cipp'
+if ((Test-Path $cipp) -and -not (Test-Path (Join-Path $cipp '.git'))) {
+    throw "cipp\ exists but is not a git clone (interrupted setup?) -> delete $cipp and re-run"
+}
 if (-not (Test-Path $cipp)) {
     # forks CyberDrain/CIPP under the authed user (reuses an existing fork), clones into cipp\
     Push-Location $root
@@ -47,6 +50,9 @@ try {
         git remote add upstream https://github.com/CyberDrain/CIPP.git
     }
     git remote set-url upstream https://github.com/CyberDrain/CIPP.git
+    if ($LASTEXITCODE -ne 0) {
+        throw 'failed to configure upstream remote in cipp\'
+    }
 } finally {
     Pop-Location
 }
@@ -54,8 +60,14 @@ try {
 python -c "import graphify" 2>$null
 if ($LASTEXITCODE -ne 0) {
     pip install graphifyy==0.9.12
+    if ($LASTEXITCODE -ne 0) {
+        throw 'pip install graphifyy==0.9.12 failed'
+    }
 }
 python -c "import importlib.metadata as m; v = m.version('graphifyy'); assert v == '0.9.12', v; print('graphifyy', v)"
+if ($LASTEXITCODE -ne 0) {
+    throw 'graphifyy version check failed, expected exactly 0.9.12'
+}
 
 if (-not $SkipGraph) {
     $rebuild = Join-Path $root 'graph-tools\rebuild-graph.ps1'
