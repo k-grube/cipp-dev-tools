@@ -5,6 +5,7 @@ graphify-out/
 # personal docker tweaks
 docker-compose.override.yml
 __pycache__/
+.venv/
 .superpowers/
 docs
 .idea/

@@ -11,9 +11,11 @@ cd cipp-dev-tools
 .\dev.ps1       # launches the local dev stack -> http://localhost:5196
 ```
 
-first `setup.ps1` run builds the code graph cold (a few minutes); pass `-SkipGraph` to defer it.
+macos: `./setup.sh` then `./dev.sh` (same flow; graphify goes into `.venv`, tabs open in Terminal.app).
 
-prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, Windows Terminal, node + yarn, python 3.
+first setup run builds the code graph cold (a few minutes); pass `-SkipGraph` / `--skip-graph` to defer it.
+
+prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, node + yarn, python 3. windows also needs Windows Terminal; macos installs pwsh via `brew install --cask powershell`.
 
 ## what you get
 
@@ -26,10 +28,10 @@ prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, Windows Termi
 
 | command | what |
 |---|---|
-| `dev.ps1` | launch the dev environment |
-| `graph-tools\update-graph.ps1` | refresh the graph after code changes (~10s) |
+| `dev.ps1` / `dev.sh` | launch the dev environment |
+| `graph-tools\update-graph.ps1` / `.sh` | refresh the graph after code changes (~10s) |
 | `graph-tools\update-graph.ps1 --cluster` | + re-cluster and regenerate GRAPH_REPORT.md |
-| `graph-tools\rebuild-graph.ps1` | full graph rebuild |
+| `graph-tools\rebuild-graph.ps1` / `.sh` | full graph rebuild |
 
 personal docker tweaks: drop a `docker-compose.override.yml` at the repo root (gitignored), `dev.ps1` picks it up.
 
