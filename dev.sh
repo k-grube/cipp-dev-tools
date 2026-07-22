@@ -20,8 +20,12 @@ if [ -f "$override" ]; then
     compose_files="$compose_files -f '$override'"
 fi
 
-# mirrors upstream launcher: stop stray node processes, precreate azurite volume
-pkill -x node 2>/dev/null || true
+# free the frontend dev port (upstream launcher kills all node, too broad)
+pids="$(lsof -ti tcp:3000 -sTCP:LISTEN 2>/dev/null || true)"
+if [ -n "$pids" ]; then
+    echo "killing listener(s) on :3000 (pid $pids)"
+    kill $pids
+fi
 docker volume create cipp-ng_azurite-data >/dev/null
 
 tab() { # title, dir, command (command must not contain double quotes)
