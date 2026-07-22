@@ -1,0 +1,8 @@
+# the monorepo clone lives inside this workspace, never tracked here
+cipp/
+# graph outputs
+graphify-out/
+# personal docker tweaks
+docker-compose.override.yml
+__pycache__/
+.superpowers/
