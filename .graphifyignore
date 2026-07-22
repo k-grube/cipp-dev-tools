@@ -1,0 +1,17 @@
+# cipp/ is gitignored (not tracked here) but is the corpus root, un-ignore it
+!cipp
+# workspace tooling, not corpus
+/graph-tools
+/graphify-out
+/docs
+/.superpowers
+# monorepo non-code
+/cipp/build
+/cipp/frontend/public
+/cipp/github_assets
+# vendored third-party modules
+/cipp/backend/Modules/MicrosoftTeams
+/cipp/backend/Modules/AzBobbyTables
+/cipp/backend/Modules/PassPushPosh
+/cipp/backend/Modules/HuduAPI
+/cipp/backend/Modules/DNSHealth
