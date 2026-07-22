@@ -4,6 +4,8 @@ one-clone bootstrap for [CIPP](https://github.com/CyberDrain/CIPP) monorepo loca
 
 ## quick start
 
+### Windows
+
 ```powershell
 git clone https://github.com/k-grube/cipp-dev-tools
 cd cipp-dev-tools
@@ -11,7 +13,14 @@ cd cipp-dev-tools
 .\dev.ps1       # launches the local dev stack -> http://localhost:5196
 ```
 
-macos: `./setup.sh` then `./dev.sh` (same flow; graphify goes into `.venv`, tabs open in Terminal.app).
+### MacOS
+
+```shell
+git clone https://github.com/k-grube/cipp-dev-tools
+cd cipp-dev-tools
+./setup.sh      # forks + clones CyberDrain/CIPP into cipp\, installs pinned graphify, builds the graph
+./dev.sh        # launches the local dev stack -> http://localhost:5196
+```
 
 first setup run builds the code graph cold (a few minutes); pass `-SkipGraph` / `--skip-graph` to defer it.
 
