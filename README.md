@@ -20,7 +20,7 @@ prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, node + yarn, 
 ## what you get
 
 - `cipp\` - monorepo clone, origin = your fork of CyberDrain/CIPP, upstream = CyberDrain (PR-ready)
-- local dev stack via upstream's own `build\` tooling (azurite, CRAFT api container, module watcher, frontend dev server)
+- local dev stack via upstream's own `build\` tooling (azurite, [Craft](https://github.com/CyberDrain/Craft) api container, module watcher, frontend dev server)
 - `graphify-out\graph.json` - directed knowledge graph of frontend + backend incl. `http_calls` edges mapping `/api/X` calls to `Invoke-X` functions
 - `CLAUDE.md` so Claude Code sessions know all of the above
 
@@ -29,11 +29,12 @@ prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, node + yarn, 
 | command | what |
 |---|---|
 | `dev.ps1` / `dev.sh` | launch the dev environment |
+| `stop.ps1` / `stop.sh` | stop the dev stack (compose down, watcher, frontend; azurite data kept) |
 | `graph-tools\update-graph.ps1` / `.sh` | refresh the graph after code changes (~10s) |
 | `graph-tools\update-graph.ps1 --cluster` | + re-cluster and regenerate GRAPH_REPORT.md |
 | `graph-tools\rebuild-graph.ps1` / `.sh` | full graph rebuild |
 
-personal docker tweaks: drop a `docker-compose.override.yml` at the repo root (gitignored), `dev.ps1` picks it up.
+personal docker tweaks: drop a `docker-compose.override.yml` at the repo root (gitignored), `dev.ps1` / `dev.sh` pick it up.
 
 ## notes
 

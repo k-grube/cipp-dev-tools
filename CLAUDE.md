@@ -4,10 +4,11 @@ bootstrap workspace for CIPP monorepo dev. `cipp\` is the monorepo clone (origin
 
 ## dev environment
 
-- `dev.ps1` launches the full local stack (azurite + CRAFT api container + module watcher + yarn frontend), everything at http://localhost:5196
-- personal tweaks: drop a gitignored `docker-compose.override.yml` at this root, dev.ps1 chains it (upstream's own launcher would ignore it, explicit -f disables auto-merge)
+- `dev.ps1` launches the full local stack (azurite + Craft api container + module watcher + yarn frontend), everything at http://localhost:5196
+- `stop.ps1` stops the stack (compose down with the same -f chain, module watcher, frontend on :3000; azurite volume kept)
+- personal tweaks: drop a gitignored `docker-compose.override.yml` at this root, dev.ps1 / dev.sh chain it (upstream's own launcher would ignore it, explicit -f disables auto-merge)
 - `setup.ps1` is idempotent, re-run to repair prereqs/remotes
-- macos equivalents: `setup.sh` / `dev.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
+- macos equivalents: `setup.sh` / `dev.sh` / `stop.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
 
 ## knowledge graph
 
