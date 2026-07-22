@@ -1,4 +1,4 @@
-#Requires -Version 7
+#Requires -Version 7.2
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $cipp = Join-Path $root 'cipp'
@@ -18,7 +18,7 @@ if (-not (Test-Path $override)) {
 # override mode: upstream invokes compose with explicit -f, which disables automatic
 # docker-compose.override.yml merging, so chain the files ourselves for the docker tab
 # and reuse upstream's module-watcher + frontend tabs verbatim
-Write-Warning 'override mode: bypassing upstream launcher for the docker tab (drift risk if upstream changes its compose flow)'
+Write-Warning 'override mode: bypassing upstream launcher for the docker tab (drift risk if upstream changes its compose flow); also stops all running node processes (mirrors upstream launcher)'
 Get-Command wt -ErrorAction Stop | Out-Null
 Get-Process node -ErrorAction SilentlyContinue | Stop-Process -ErrorAction SilentlyContinue
 $frontendPath = Join-Path $cipp 'frontend'

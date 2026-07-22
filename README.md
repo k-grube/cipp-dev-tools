@@ -11,7 +11,9 @@ cd cipp-dev-tools
 .\dev.ps1       # launches the local dev stack -> http://localhost:5196
 ```
 
-prereqs: git, gh (authed), Docker Desktop, Windows Terminal, node + yarn, python 3.
+first `setup.ps1` run builds the code graph cold (a few minutes); pass `-SkipGraph` to defer it.
+
+prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, Windows Terminal, node + yarn, python 3.
 
 ## what you get
 

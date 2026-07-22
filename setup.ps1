@@ -1,4 +1,4 @@
-#Requires -Version 7
+#Requires -Version 7.2
 param([switch]$SkipGraph)
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
@@ -16,6 +16,11 @@ Assert-Tool wt 'Windows Terminal (upstream dev launcher requires it)'
 Assert-Tool node 'https://nodejs.org'
 Assert-Tool yarn 'npm install -g yarn'
 Assert-Tool python 'https://python.org'
+
+python --version *> $null
+if ($LASTEXITCODE -ne 0) {
+    throw 'python on PATH is not a working interpreter (windows store stub?) -> install from https://python.org and disable the app execution alias'
+}
 
 gh auth status *> $null
 if ($LASTEXITCODE -ne 0) {
@@ -53,15 +58,20 @@ try {
     if ($LASTEXITCODE -ne 0) {
         throw 'failed to configure upstream remote in cipp\'
     }
+
+    $originUrl = git remote get-url origin
+    if ($originUrl -match 'github\.com[:/]CyberDrain/CIPP') {
+        Write-Warning "origin points at upstream ($originUrl), not a fork -> PRs from this clone won't work; fork CyberDrain/CIPP and update origin"
+    }
 } finally {
     Pop-Location
 }
 
 python -c "import graphify" 2>$null
 if ($LASTEXITCODE -ne 0) {
-    pip install graphifyy==0.9.12
+    python -m pip install graphifyy==0.9.12
     if ($LASTEXITCODE -ne 0) {
-        throw 'pip install graphifyy==0.9.12 failed'
+        throw 'python -m pip install graphifyy==0.9.12 failed'
     }
 }
 python -c "import importlib.metadata as m; v = m.version('graphifyy'); assert v == '0.9.12', v; print('graphifyy', v)"
@@ -73,6 +83,9 @@ if (-not $SkipGraph) {
     $rebuild = Join-Path $root 'graph-tools\rebuild-graph.ps1'
     if (Test-Path $rebuild) {
         & $rebuild
+        if ($LASTEXITCODE -ne 0) {
+            throw 'graph build failed -> fix the error above, then re-run setup.ps1 or run graph-tools\rebuild-graph.ps1 directly'
+        }
     } else {
         Write-Host 'graph-tools not present yet, skipping graph build'
     }
