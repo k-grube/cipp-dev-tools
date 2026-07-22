@@ -22,6 +22,13 @@ if ($LASTEXITCODE -ne 0) {
     throw 'python on PATH is not a working interpreter (windows store stub?) -> install from https://python.org and disable the app execution alias'
 }
 
+# graphifyy needs python >=3.10
+python -c "import sys; sys.exit(0 if sys.version_info >= (3, 10) else 1)"
+if ($LASTEXITCODE -ne 0) {
+    $pyVer = python -c "import platform; print(platform.python_version())"
+    throw "python is $pyVer, graphifyy needs >=3.10 -> upgrade from https://python.org"
+}
+
 gh auth status *> $null
 if ($LASTEXITCODE -ne 0) {
     throw 'gh not authenticated -> gh auth login'

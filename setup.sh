@@ -42,9 +42,22 @@ fi
     esac
 )
 
+# graphifyy needs python >=3.10
+py_ok() {
+    "$1" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 10) else 1)' 2>/dev/null
+}
+
 # graphify lives in .venv (brew python blocks global pip installs, PEP 668)
 venv_py="$root/.venv/bin/python"
+if [ -x "$venv_py" ] && ! py_ok "$venv_py"; then
+    echo ".venv was built with python $("$venv_py" -c 'import platform; print(platform.python_version())'), graphifyy needs >=3.10 -> delete $root/.venv and re-run" >&2
+    exit 1
+fi
 if [ ! -x "$venv_py" ]; then
+    if ! py_ok python3; then
+        echo "python3 is $(python3 -c 'import platform; print(platform.python_version())'), graphifyy needs >=3.10 -> brew install python, then re-run (python3 must resolve to >=3.10)" >&2
+        exit 1
+    fi
     python3 -m venv "$root/.venv"
 fi
 if ! "$venv_py" -c 'import graphify' 2>/dev/null; then
