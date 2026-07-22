@@ -43,12 +43,59 @@ if ((Test-Path $cipp) -and -not (Test-Path (Join-Path $cipp '.git'))) {
     throw "cipp\ exists but is not a git clone (interrupted setup?) -> delete $cipp and re-run"
 }
 if (-not (Test-Path $cipp)) {
-    # forks CyberDrain/CIPP under the authed user (reuses an existing fork), clones into cipp\
+    $login = gh api user -q .login
+    if ($LASTEXITCODE -ne 0 -or -not $login) {
+        throw 'could not determine the logged-in github user (gh api user failed)'
+    }
+    # does <login>/CIPP already exist, and is it a fork of upstream?
+    $parent = gh api "repos/$login/CIPP" -q '.parent.full_name // ""' 2>$null
+    $defaultOk = $true
+    if ($LASTEXITCODE -eq 0 -and $parent -eq 'CyberDrain/CIPP') {
+        $prompt = "found your existing fork $login/CIPP. enter = clone it, n = abort, or owner/repo to use a different fork"
+    } elseif ($LASTEXITCODE -eq 0) {
+        $prompt = "$login/CIPP exists on github but is not a fork of CyberDrain/CIPP. n = abort, or owner/repo of a fork to use instead"
+        $defaultOk = $false
+    } else {
+        $prompt = "will fork CyberDrain/CIPP to $login/CIPP and clone into cipp\. enter = ok, n = abort, or owner/repo to fork/clone elsewhere (e.g. my-org/CIPP)"
+    }
+    $answer = (Read-Host $prompt).Trim() -replace '\\', '/'
     Push-Location $root
     try {
-        gh repo fork CyberDrain/CIPP --clone -- cipp
-        if ($LASTEXITCODE -ne 0) {
-            throw 'gh repo fork --clone failed'
+        if ($answer -match '/') {
+            if ($answer -notmatch '^[\w.-]+/[\w.-]+$') {
+                throw "unrecognized fork name '$answer' (expected owner/repo)"
+            }
+            $forkParent = gh api "repos/$answer" -q '.parent.full_name // ""' 2>$null
+            if ($LASTEXITCODE -eq 0) {
+                if ($forkParent -ne 'CyberDrain/CIPP') {
+                    Write-Warning "$answer is not marked as a fork of CyberDrain/CIPP on github, PRs from it may not work"
+                }
+                git clone "https://github.com/$answer.git" cipp
+                if ($LASTEXITCODE -ne 0) {
+                    throw "git clone of $answer failed"
+                }
+            } else {
+                $owner, $repo = $answer -split '/'
+                if ($repo -ne 'CIPP') {
+                    throw "$answer not found on github (gh can only create the fork named CIPP) -> create it first or use <owner>/CIPP"
+                }
+                gh repo fork CyberDrain/CIPP --org $owner --clone -- cipp
+                if ($LASTEXITCODE -ne 0) {
+                    throw "gh repo fork --org $owner failed"
+                }
+            }
+        } elseif ($answer -match '^[nN]') {
+            throw 'stopped before forking -> re-run setup.ps1 when ready'
+        } elseif ($answer -eq '' -or $answer -match '^[yY]([eE][sS])?$') {
+            if (-not $defaultOk) {
+                throw "$login/CIPP is not a fork of CyberDrain/CIPP -> re-run and enter an owner/repo fork to use instead"
+            }
+            gh repo fork CyberDrain/CIPP --clone -- cipp
+            if ($LASTEXITCODE -ne 0) {
+                throw 'gh repo fork --clone failed'
+            }
+        } else {
+            throw "unrecognized answer '$answer' (expected enter, n, or owner/repo)"
         }
     } finally {
         Pop-Location

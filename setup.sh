@@ -23,8 +23,53 @@ if [ -d "$cipp" ] && [ ! -d "$cipp/.git" ]; then
     exit 1
 fi
 if [ ! -d "$cipp" ]; then
-    # forks CyberDrain/CIPP under the authed user (reuses an existing fork), clones into cipp/
-    (cd "$root" && gh repo fork CyberDrain/CIPP --clone -- cipp)
+    login="$(gh api user -q .login)" || { echo 'could not determine the logged-in github user (gh api user failed)' >&2; exit 1; }
+    # does <login>/CIPP already exist, and is it a fork of upstream?
+    default_ok=1
+    if parent="$(gh api "repos/$login/CIPP" -q '.parent.full_name // ""' 2>/dev/null)"; then
+        if [ "$parent" = "CyberDrain/CIPP" ]; then
+            prompt="found your existing fork $login/CIPP. enter = clone it, n = abort, or owner/repo to use a different fork: "
+        else
+            prompt="$login/CIPP exists on github but is not a fork of CyberDrain/CIPP. n = abort, or owner/repo of a fork to use instead: "
+            default_ok=0
+        fi
+    else
+        prompt="will fork CyberDrain/CIPP to $login/CIPP and clone into cipp/. enter = ok, n = abort, or owner/repo to fork/clone elsewhere (e.g. my-org/CIPP): "
+    fi
+    printf '%s' "$prompt"
+    read -r answer || answer=''
+    answer="${answer//\\//}"
+    case "$answer" in
+        */*)
+            case "$answer" in
+                */*/*|*' '*)
+                    echo "unrecognized fork name '$answer' (expected owner/repo)" >&2; exit 1 ;;
+            esac
+            if fork_parent="$(gh api "repos/$answer" -q '.parent.full_name // ""' 2>/dev/null)"; then
+                if [ "$fork_parent" != "CyberDrain/CIPP" ]; then
+                    echo "warning: $answer is not marked as a fork of CyberDrain/CIPP on github, PRs from it may not work" >&2
+                fi
+                (cd "$root" && git clone "https://github.com/$answer.git" cipp)
+            else
+                owner="${answer%%/*}"
+                repo="$(printf '%s' "${answer#*/}" | tr '[:upper:]' '[:lower:]')"
+                if [ "$repo" != "cipp" ]; then
+                    echo "$answer not found on github (gh can only create the fork named CIPP) -> create it first or use <owner>/CIPP" >&2
+                    exit 1
+                fi
+                (cd "$root" && gh repo fork CyberDrain/CIPP --org "$owner" --clone -- cipp)
+            fi ;;
+        [Nn]*)
+            echo 'stopped before forking -> re-run setup.sh when ready' >&2; exit 1 ;;
+        ''|[Yy]|[Yy][Ee][Ss])
+            if [ "$default_ok" != 1 ]; then
+                echo "$login/CIPP is not a fork of CyberDrain/CIPP -> re-run and enter an owner/repo fork to use instead" >&2
+                exit 1
+            fi
+            (cd "$root" && gh repo fork CyberDrain/CIPP --clone -- cipp) ;;
+        *)
+            echo "unrecognized answer '$answer' (expected enter, n, or owner/repo)" >&2; exit 1 ;;
+    esac
 fi
 
 # idempotent remote repair: origin = fork (left as gh set it), upstream = CyberDrain
