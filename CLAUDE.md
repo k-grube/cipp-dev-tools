@@ -22,5 +22,5 @@ bootstrap workspace for CIPP monorepo dev. `cipp\` is the monorepo clone (origin
 - detect scope: `.graphifyignore` at this root (committed, root-anchored, graphify's fnmatch `*` crosses `/`). new vendored modules under `cipp\backend\Modules\` need an entry
 - the `!cipp` line in `.graphifyignore` is load-bearing (workspace .gitignore excludes cipp/ and detect merges gitignores), never remove it
 - route edges carry synthetic `source_file` `graph-tools/route-links` (real path in `source_location`), never retag with real paths (build_merge replace-on-re-extract would wipe those files' AST nodes)
-- graphifyy is pinned ==0.9.12, `docs\graphify-internals.md` lists the internals the toolkit depends on, re-verify before any bump
+- graphifyy is pinned ==0.9.12, `spec\graphify-internals.md` lists the internals the toolkit depends on, re-verify before any bump
 - contributions: branch on your fork of CyberDrain/CIPP, PR to CyberDrain/CIPP `dev` (never `main`, release-only). commit in `cipp\` only when the user asks, suggest message and stop
