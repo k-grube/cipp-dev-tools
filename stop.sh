@@ -28,4 +28,9 @@ if [ -n "$pids" ]; then
     echo "stopped frontend dev server (pid $pids)"
 fi
 
+# esbuild service daemons can outlive the dev server, sweep this workspace's only
+if pkill -f "$root/cipp/frontend/node_modules/.*/esbuild" 2>/dev/null; then
+    echo 'stopped orphaned esbuild'
+fi
+
 echo 'dev stack stopped'

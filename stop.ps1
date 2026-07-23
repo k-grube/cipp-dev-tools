@@ -57,4 +57,14 @@ if ($frontendPids) {
     Write-Host "stopped frontend dev server (pid $($frontendPids -join ', '))"
 }
 
+# esbuild service daemons outlive a hard kill of the dev server, sweep this workspace's only
+$esbuild = Get-Process esbuild -ErrorAction SilentlyContinue |
+    Where-Object { $_.Path -like (Join-Path $root 'cipp\frontend\node_modules\*') }
+foreach ($e in $esbuild) {
+    Stop-Process -Id $e.Id -Force -ErrorAction SilentlyContinue
+}
+if ($esbuild) {
+    Write-Host "stopped orphaned esbuild (pid $($esbuild.Id -join ', '))"
+}
+
 Write-Host 'dev stack stopped'
