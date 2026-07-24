@@ -22,7 +22,13 @@ How contributions flow from your fork of the CIPP monorepo to CyberDrain upstrea
 
 ## Before grepping: the knowledge graph
 
-`graphify-out\graph.json` (workspace root) maps the whole monorepo, incl. `http_calls` edges linking frontend `/api/X` calls to backend `Invoke-X` functions. Query it first. After code changes run `graph-tools\update-graph.ps1` (~10s) so the graph stays current.
+`graphify-out\graph.json` (workspace root) maps the monorepo + craft runtime: `http_calls` edges (frontend `/api/X` -> backend `Invoke-X`, frontend -> craft auth/setup routes), `bridge_calls` edges (backend -> craft C# bridges), `external_api` nodes (microsoft endpoints), plus semantic doc/concept nodes. Query it with `python graph-tools\query.py` (`find` / `node` / `path` / `trace <ApiEndpointName>`, macos `.venv/bin/python`), don't hand-roll graph.json scripts; `trace` prints the frontend -> backend -> craft -> microsoft chain.
+
+Keeping it current (graph.json + sidecars + `cache\semantic\` are committed in this repo, commit the refreshed files after any of these):
+
+- code changes (yours or upstream sync): `graph-tools\update-graph.ps1` (~10s, no LLM)
+- doc changes: run a `/graphify . --update` session (only changed docs re-extract, content-hash cache), then `graph-tools\rebuild-graph.ps1` to merge
+- shrink-guard refusal, `.graphifyignore` change, or doc deletions: `graph-tools\rebuild-graph.ps1`
 
 ## The workflow
 

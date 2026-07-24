@@ -1,5 +1,6 @@
-# cipp/ is gitignored (not tracked here) but is the corpus root, un-ignore it
+# cipp/ and craft/ are gitignored (not tracked here) but are the corpus roots, un-ignore them
 !cipp
+!craft
 # workspace tooling, not corpus
 /graph-tools
 /graphify-out
@@ -9,6 +10,9 @@
 /cipp/build
 /cipp/frontend/public
 /cipp/github_assets
+# craft non-code (benchmarks, container build files)
+/craft/perf-harness
+/craft/build
 # vendored third-party modules
 /cipp/backend/Modules/MicrosoftTeams
 /cipp/backend/Modules/AzBobbyTables

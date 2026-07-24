@@ -78,7 +78,12 @@ def inject(directed=True):
     # build_merge doesn't persist, reuse stored community attrs, re-clustering is opt-in elsewhere
     communities = communities_from_graph(G)
     labels = name_communities(G, communities)
-    to_json(G, communities, str(OUT / 'graph.json'), force=False, community_labels=labels)
+    # force=True behind a 10% bound: build_merge fuzzy dedup can shrink the graph by a
+    # few nodes, the #479 guard would then silently refuse and drop every route edge
+    if G.number_of_nodes() < len(graph['nodes']) * 0.9:
+        raise SystemExit(f'ERROR: route pass would shrink {len(graph["nodes"])} -> {G.number_of_nodes()} nodes, refusing')
+    if not to_json(G, communities, str(OUT / 'graph.json'), force=True, community_labels=labels):
+        raise SystemExit('ERROR: route pass write refused')
     print(f'route pass: {len(fragment["edges"])} edges, {len(orphans)} orphans, '
           f'graph now {G.number_of_nodes()} nodes / {G.number_of_edges()} edges')
 

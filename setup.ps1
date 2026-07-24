@@ -38,88 +38,96 @@ if ($LASTEXITCODE -ne 0) {
     throw 'docker desktop not running'
 }
 
-$cipp = Join-Path $root 'cipp'
-if ((Test-Path $cipp) -and -not (Test-Path (Join-Path $cipp '.git'))) {
-    throw "cipp\ exists but is not a git clone (interrupted setup?) -> delete $cipp and re-run"
-}
-if (-not (Test-Path $cipp)) {
-    $login = gh api user -q .login
-    if ($LASTEXITCODE -ne 0 -or -not $login) {
-        throw 'could not determine the logged-in github user (gh api user failed)'
+# fork-prompt + clone + remote repair, shared by cipp and craft
+function Initialize-ForkClone {
+    param([string]$Upstream, [string]$Dest)
+    $repoName = ($Upstream -split '/')[1]
+    $destPath = Join-Path $root $Dest
+    if ((Test-Path $destPath) -and -not (Test-Path (Join-Path $destPath '.git'))) {
+        throw "$Dest\ exists but is not a git clone (interrupted setup?) -> delete $destPath and re-run"
     }
-    # does <login>/CIPP already exist, and is it a fork of upstream?
-    $parent = gh api "repos/$login/CIPP" -q '.parent.full_name // ""' 2>$null
-    $defaultOk = $true
-    if ($LASTEXITCODE -eq 0 -and $parent -eq 'CyberDrain/CIPP') {
-        $prompt = "found your existing fork $login/CIPP. enter = clone it, n = abort, or owner/repo to use a different fork"
-    } elseif ($LASTEXITCODE -eq 0) {
-        $prompt = "$login/CIPP exists on github but is not a fork of CyberDrain/CIPP. n = abort, or owner/repo of a fork to use instead"
-        $defaultOk = $false
-    } else {
-        $prompt = "will fork CyberDrain/CIPP to $login/CIPP and clone into cipp\. enter = ok, n = abort, or owner/repo to fork/clone elsewhere (e.g. my-org/CIPP)"
-    }
-    $answer = (Read-Host $prompt).Trim() -replace '\\', '/'
-    Push-Location $root
-    try {
-        if ($answer -match '/') {
-            if ($answer -notmatch '^[\w.-]+/[\w.-]+$') {
-                throw "unrecognized fork name '$answer' (expected owner/repo)"
-            }
-            $forkParent = gh api "repos/$answer" -q '.parent.full_name // ""' 2>$null
-            if ($LASTEXITCODE -eq 0) {
-                if ($forkParent -ne 'CyberDrain/CIPP') {
-                    Write-Warning "$answer is not marked as a fork of CyberDrain/CIPP on github, PRs from it may not work"
+    if (-not (Test-Path $destPath)) {
+        $login = gh api user -q .login
+        if ($LASTEXITCODE -ne 0 -or -not $login) {
+            throw 'could not determine the logged-in github user (gh api user failed)'
+        }
+        # does <login>/<repo> already exist, and is it a fork of upstream?
+        $parent = gh api "repos/$login/$repoName" -q '.parent.full_name // ""' 2>$null
+        $defaultOk = $true
+        if ($LASTEXITCODE -eq 0 -and $parent -eq $Upstream) {
+            $prompt = "found your existing fork $login/$repoName. enter = clone it, n = abort, or owner/repo to use a different fork"
+        } elseif ($LASTEXITCODE -eq 0) {
+            $prompt = "$login/$repoName exists on github but is not a fork of $Upstream. n = abort, or owner/repo of a fork to use instead"
+            $defaultOk = $false
+        } else {
+            $prompt = "will fork $Upstream to $login/$repoName and clone into $Dest\. enter = ok, n = abort, or owner/repo to fork/clone elsewhere (e.g. my-org/$repoName)"
+        }
+        $answer = (Read-Host $prompt).Trim() -replace '\\', '/'
+        Push-Location $root
+        try {
+            if ($answer -match '/') {
+                if ($answer -notmatch '^[\w.-]+/[\w.-]+$') {
+                    throw "unrecognized fork name '$answer' (expected owner/repo)"
                 }
-                git clone "https://github.com/$answer.git" cipp
+                $forkParent = gh api "repos/$answer" -q '.parent.full_name // ""' 2>$null
+                if ($LASTEXITCODE -eq 0) {
+                    if ($forkParent -ne $Upstream) {
+                        Write-Warning "$answer is not marked as a fork of $Upstream on github, PRs from it may not work"
+                    }
+                    git clone "https://github.com/$answer.git" $Dest
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "git clone of $answer failed"
+                    }
+                } else {
+                    $owner, $repo = $answer -split '/'
+                    if ($repo -ne $repoName) {
+                        throw "$answer not found on github (gh can only create the fork named $repoName) -> create it first or use <owner>/$repoName"
+                    }
+                    gh repo fork $Upstream --org $owner --clone -- $Dest
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "gh repo fork --org $owner failed"
+                    }
+                }
+            } elseif ($answer -match '^[nN]') {
+                throw 'stopped before forking -> re-run setup.ps1 when ready'
+            } elseif ($answer -eq '' -or $answer -match '^[yY]([eE][sS])?$') {
+                if (-not $defaultOk) {
+                    throw "$login/$repoName is not a fork of $Upstream -> re-run and enter an owner/repo fork to use instead"
+                }
+                gh repo fork $Upstream --clone -- $Dest
                 if ($LASTEXITCODE -ne 0) {
-                    throw "git clone of $answer failed"
+                    throw 'gh repo fork --clone failed'
                 }
             } else {
-                $owner, $repo = $answer -split '/'
-                if ($repo -ne 'CIPP') {
-                    throw "$answer not found on github (gh can only create the fork named CIPP) -> create it first or use <owner>/CIPP"
-                }
-                gh repo fork CyberDrain/CIPP --org $owner --clone -- cipp
-                if ($LASTEXITCODE -ne 0) {
-                    throw "gh repo fork --org $owner failed"
-                }
+                throw "unrecognized answer '$answer' (expected enter, n, or owner/repo)"
             }
-        } elseif ($answer -match '^[nN]') {
-            throw 'stopped before forking -> re-run setup.ps1 when ready'
-        } elseif ($answer -eq '' -or $answer -match '^[yY]([eE][sS])?$') {
-            if (-not $defaultOk) {
-                throw "$login/CIPP is not a fork of CyberDrain/CIPP -> re-run and enter an owner/repo fork to use instead"
-            }
-            gh repo fork CyberDrain/CIPP --clone -- cipp
-            if ($LASTEXITCODE -ne 0) {
-                throw 'gh repo fork --clone failed'
-            }
-        } else {
-            throw "unrecognized answer '$answer' (expected enter, n, or owner/repo)"
+        } finally {
+            Pop-Location
+        }
+    }
+
+    # idempotent remote repair: origin = fork (left as gh set it), upstream stays canonical
+    Push-Location $destPath
+    try {
+        if ((git remote) -notcontains 'upstream') {
+            git remote add upstream "https://github.com/$Upstream.git"
+        }
+        git remote set-url upstream "https://github.com/$Upstream.git"
+        if ($LASTEXITCODE -ne 0) {
+            throw "failed to configure upstream remote in $Dest\"
+        }
+
+        $originUrl = git remote get-url origin
+        if ($originUrl -match "github\.com[:/]$Upstream") {
+            Write-Warning "origin points at upstream ($originUrl), not a fork -> PRs from this clone won't work; fork $Upstream and update origin"
         }
     } finally {
         Pop-Location
     }
 }
 
-# idempotent remote repair: origin = fork (left as gh set it), upstream = CyberDrain
-Push-Location $cipp
-try {
-    if ((git remote) -notcontains 'upstream') {
-        git remote add upstream https://github.com/CyberDrain/CIPP.git
-    }
-    git remote set-url upstream https://github.com/CyberDrain/CIPP.git
-    if ($LASTEXITCODE -ne 0) {
-        throw 'failed to configure upstream remote in cipp\'
-    }
-
-    $originUrl = git remote get-url origin
-    if ($originUrl -match 'github\.com[:/]CyberDrain/CIPP') {
-        Write-Warning "origin points at upstream ($originUrl), not a fork -> PRs from this clone won't work; fork CyberDrain/CIPP and update origin"
-    }
-} finally {
-    Pop-Location
-}
+Initialize-ForkClone 'CyberDrain/CIPP' 'cipp'
+Initialize-ForkClone 'CyberDrain/Craft' 'craft'
 
 python -c "import graphify" 2>$null
 if ($LASTEXITCODE -ne 0) {

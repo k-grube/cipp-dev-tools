@@ -7,4 +7,5 @@ py="$root/.venv/bin/python"
 cd "$root"
 "$py" graph-tools/rebuild.py
 "$py" graph-tools/routelink.py
+"$py" graph-tools/craftlink.py
 "$py" -m graphify export html
