@@ -1,7 +1,19 @@
 # clone upstream
 cipp/
-# graph outputs
-graphify-out/
+craft/
+# graph outputs: commit graph.json + sidecars + semantic cache (the LLM spend),
+# regenerable stuff stays out (ast cache ~3min rebuild, html, .bak, stat caches)
+graphify-out/*
+!graphify-out/graph.json
+!graphify-out/GRAPH_REPORT.md
+!graphify-out/route-orphans.json
+!graphify-out/craft-orphans.json
+!graphify-out/manifest.json
+!graphify-out/.graphify_labels.json
+!graphify-out/.graphify_analysis.json
+!graphify-out/cache/
+graphify-out/cache/*
+!graphify-out/cache/semantic/
 # personal docker tweaks
 docker-compose.override.yml
 .claude/settings.local.json
