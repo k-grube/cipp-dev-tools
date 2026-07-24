@@ -540,6 +540,11 @@
     "missing": "backend node"
   },
   {
+    "file": "cipp/frontend/src/pages/teams-share/permissions-report/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "cipp/frontend/src/pages/teams-share/sharepoint/index.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1165,6 +1170,11 @@
     "missing": "backend node"
   },
   {
+    "file": "cipp/frontend/src/components/CippComponents/CippCheckUserAccessDialog.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "cipp/frontend/src/components/CippComponents/CippCustomVariables.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1240,6 +1250,11 @@
     "missing": "backend node"
   },
   {
+    "file": "cipp/frontend/src/components/CippComponents/CippLibraryPermissionsDialog.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "cipp/frontend/src/components/CippComponents/CippLicenseDetailsDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1251,6 +1266,11 @@
   },
   {
     "file": "cipp/frontend/src/components/CippComponents/CippMailboxRestoreDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "cipp/frontend/src/components/CippComponents/CippMultiQueueTracker.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
