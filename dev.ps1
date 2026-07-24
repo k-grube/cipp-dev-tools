@@ -9,6 +9,19 @@ $launcher = Join-Path $cipp 'build\tools\Start-Cipp-Dev-Windows-docker.ps1'
 if (-not (Test-Path $launcher)) {
     throw "upstream launcher not found at $launcher (monorepo layout changed?)"
 }
+# docker engine check before any tab launches, otherwise the stack half-starts
+docker info 2>$null | Out-Null
+if ($LASTEXITCODE -ne 0) {
+    Write-Host 'docker desktop not running, start it (waiting, ctrl+c to abort)...' -ForegroundColor Yellow
+    while ($true) {
+        Start-Sleep -Seconds 3
+        docker info 2>$null | Out-Null
+        if ($LASTEXITCODE -eq 0) {
+            break
+        }
+    }
+}
+
 $override = Join-Path $root 'docker-compose.override.yml'
 if (-not (Test-Path $override)) {
     & $launcher @args

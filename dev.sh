@@ -10,7 +10,12 @@ cipp="$root/cipp"
 launcher_ref="$cipp/build/tools/Start-Cipp-Dev-Windows-docker.ps1"
 [ -f "$launcher_ref" ] || { echo "upstream launcher not found at $launcher_ref (monorepo layout changed?)" >&2; exit 1; }
 command -v pwsh >/dev/null 2>&1 || { echo 'missing pwsh -> brew install --cask powershell' >&2; exit 1; }
-docker info >/dev/null 2>&1 || { echo 'docker desktop not running' >&2; exit 1; }
+if ! docker info >/dev/null 2>&1; then
+    echo 'docker desktop not running, start it (waiting, ctrl+c to abort)...'
+    until docker info >/dev/null 2>&1; do
+        sleep 3
+    done
+fi
 
 build="$cipp/build"
 frontend="$cipp/frontend"
