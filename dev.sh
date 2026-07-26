@@ -30,6 +30,28 @@ pids="$(lsof -ti tcp:3000 -sTCP:LISTEN 2>/dev/null || true)"
 if [ -n "$pids" ]; then
     echo "killing listener(s) on :3000 (pid $pids)"
     kill $pids
+    for _ in 1 2 3 4 5 6 7 8 9 10; do
+        lsof -ti tcp:3000 -sTCP:LISTEN >/dev/null 2>&1 || break
+        sleep 0.2
+    done
+fi
+
+# fail fast on blocked ports, name the holder (container name when docker owns it)
+# 3000 = frontend, 5196 = craft api, 10000-10002 = azurite
+blocked=''
+for port in 3000 5196 10000 10001 10002; do
+    holders="$(lsof -nP -iTCP:"$port" -sTCP:LISTEN 2>/dev/null | awk 'NR>1 {print $1" (pid "$2")"}' | sort -u | paste -sd, - || true)"
+    [ -n "$holders" ] || continue
+    # --filter publish resolves collapsed ranges like 10000-10002->
+    containers="$(docker ps --filter "publish=$port" --format '{{.Names}}' 2>/dev/null | sort -u | paste -sd, - || true)"
+    if [ -n "$containers" ]; then
+        holders="$holders, container $containers -> stop.sh"
+    fi
+    blocked="${blocked}  ${port}: ${holders}\n"
+done
+if [ -n "$blocked" ]; then
+    printf 'port(s) in use:\n%b' "$blocked" >&2
+    exit 1
 fi
 docker volume create cipp-ng_azurite-data >/dev/null
 

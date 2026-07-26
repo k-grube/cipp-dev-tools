@@ -22,6 +22,40 @@ if ($LASTEXITCODE -ne 0) {
     }
 }
 
+# free the frontend dev port (upstream launcher kills all node, too broad)
+$fePids = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty OwningProcess -Unique
+if ($fePids) {
+    Stop-Process -Id $fePids -ErrorAction SilentlyContinue
+    Wait-Process -Id $fePids -ErrorAction SilentlyContinue -Timeout 5
+}
+
+# fail fast on blocked ports, name the holder (container name when docker owns it)
+# 3000 = frontend, 5196 = craft api, 10000-10002 = azurite
+$blocked = foreach ($port in 3000, 5196, 10000, 10001, 10002) {
+    $conns = @(Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue)
+    if (-not $conns) {
+        continue
+    }
+    $owners = foreach ($ownerPid in ($conns.OwningProcess | Select-Object -Unique)) {
+        $proc = Get-Process -Id $ownerPid -ErrorAction SilentlyContinue
+        if ($proc) {
+            '{0} (pid {1})' -f $proc.ProcessName, $ownerPid
+        } else {
+            "pid $ownerPid"
+        }
+    }
+    # --filter publish resolves collapsed ranges like 10000-10002->
+    $containers = @(docker ps --filter "publish=$port" --format '{{.Names}}' 2>$null)
+    if ($containers) {
+        $owners = @($owners) + "container $($containers -join ', ') -> stop.ps1"
+    }
+    "  ${port}: $($owners -join ', ')"
+}
+if ($blocked) {
+    throw "port(s) in use:`n$($blocked -join "`n")"
+}
+
 $override = Join-Path $root 'docker-compose.override.yml'
 if (-not (Test-Path $override)) {
     & $launcher @args
@@ -33,10 +67,6 @@ if (-not (Test-Path $override)) {
 # and reuse upstream's module-watcher + frontend tabs verbatim
 Write-Warning 'override mode: bypassing upstream launcher for the docker tab (drift risk if upstream changes its compose flow); frees port 3000 for the frontend dev server'
 Get-Command wt -ErrorAction Stop | Out-Null
-# free the frontend dev port (upstream launcher kills all node, too broad)
-Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty OwningProcess -Unique |
-    ForEach-Object { Stop-Process -Id $_ -ErrorAction SilentlyContinue }
 $frontendPath = Join-Path $cipp 'frontend'
 $dockerPath = Join-Path $cipp 'build'
 $frontendCommand = 'try { yarn install --network-timeout 500000; yarn run dev } catch { Write-Error $_.Exception.Message } finally { Read-Host "Press Enter to exit" }'
