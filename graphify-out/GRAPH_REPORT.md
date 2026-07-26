@@ -1,155 +1,160 @@
 # Graph Report - C:\github\cipp-dev-tools  (2026-07-24)
 
 ## Corpus Check
-- Large corpus: 4307 files · ~3,218,090 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 4329 files · ~3,240,518 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 9534 nodes · 22884 edges · 1169 communities (482 shown, 687 thin omitted)
-- Extraction: 64% EXTRACTED · 36% INFERRED · 0% AMBIGUOUS · INFERRED: 8281 edges (avg confidence: 0.8)
+- 9614 nodes · 23137 edges · 1040 communities (494 shown, 546 thin omitted)
+- Extraction: 64% EXTRACTED · 36% INFERRED · 0% AMBIGUOUS · INFERRED: 8324 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
 - index.js cluster
 - ApiCall.jsx cluster
-- use-settings.js cluster
 - ApiGetCall() cluster
 - Add-CippTestResult() cluster
-- Get-CIPPTestData() cluster
-- CippDataTable.js cluster
 - useDialog() cluster
-- New-ExoRequest() cluster
-- Add-CIPPDbItem() cluster
-- Add-CIPPAzDataTableEntity() cluster
-- Get-CIPPTable() cluster
-- CippWizardStepButtons.jsx cluster
-- usePermissions() cluster
-- ConvertTo-CIPPODataFilterValue() cluster
+- Get-CIPPTestData() cluster
 - Get-CippException() cluster
-- New-GraphPOSTRequest() cluster
 - Get-CIPPAzDataTableEntity() cluster
+- CippDataTable.js cluster
+- ApiPostCall() cluster
+- getCippFormatting() cluster
+- Add-CIPPAzDataTableEntity() cluster
+- New-ExoRequest() cluster
+- Get-CIPPTable() cluster
+- Add-CIPPDbItem() cluster
+- Write-LogMessage() cluster
+- Write-AlertTrace() cluster
 - PowerShellWorkerPool cluster
 - OrchestratorService cluster
-- Write-LogMessage() cluster
-- SetupService cluster
+- OnboardingWizardPage.jsx cluster
 - New-GraphGetRequest() cluster
-- Get-Tenants() cluster
+- SetupService cluster
+- Get-NormalizedError() cluster
 - CacheService cluster
 - PowerShellRunnerService cluster
 - Test-CIPPStandardLicense() cluster
-- Get-NormalizedError() cluster
-- Start-CIPPOrchestrator() cluster
+- customers-search.js cluster
+- Invoke-ExecExtensionMapping() cluster
+- New-GraphBulkRequest() cluster
 - FileLoggerProvider cluster
-- coverage.js cluster
-- CippCAPolicyBuilder.jsx cluster
-- JobManager cluster
-- Write-AlertTrace() cluster
-- Add-CIPPBPAField() cluster
 - Get-CippDbRole() cluster
 - Write-StandardsAlert() cluster
-- CippStandardAccordion.jsx cluster
-- scrollbar.js cluster
-- Get-CIPPTextReplacement() cluster
-- Get-SharePointAdminLink() cluster
 - Set-CIPPStandardsCompareField() cluster
+- coverage.js cluster
+- JobManager cluster
+- Add-CIPPBPAField() cluster
+- CippCAPolicyBuilder.jsx cluster
 - cipp-deploy.json cluster
-- customers-search.js cluster
+- New-ExoBulkRequest() cluster
+- Set-SherwebSubscription() cluster
 - Sponsor Quick Start cluster
-- CippJSONView.jsx cluster
 - cloudAppSecurityType cluster
 - WorkerMetricsBridge cluster
-- CippCodeBlock.jsx cluster
+- Set-CIPPDlpCompliancePolicy() cluster
 - RealtimeService cluster
 - cipp-migration.json cluster
 - Craft Configuration Guide cluster
 - OrchestratorTableStore cluster
-- New-GraphBulkRequest() cluster
 - excludeLocations cluster
 - AzureTableStore cluster
 - CIPP Docs Table of Contents cluster
-- usePopover() cluster
-- Test-CIPPAccess() cluster
 - dependencies cluster
+- Get-Tenants() cluster
 - HttpDiagnosticListener cluster
 - SchedulerService cluster
+- Send-CIPPAlert() cluster
+- Add-CIPPScheduledTask() cluster
 - cipp-deploy-azure-button.json cluster
+- ApiGetCallWithPagination() cluster
+- CippSharePointTemplateBuilder.jsx cluster
+- usePopover() cluster
 - properties cluster
 - StatsHistoryService cluster
-- Push-ExecOnboardTenantQueue() cluster
+- Start-ContainerUpdateCheck() cluster
+- invoices-table.js cluster
 - properties cluster
-- Get-CippKeyVaultName() cluster
+- Get-CIPPDbItem() cluster
 - Get-CIPPSPOTenant() cluster
-- Invoke-ExecExtensionMapping() cluster
+- New-GraphPOSTRequest() cluster
 - Test-E8AsrRule() cluster
-- CippSharePointTemplateBuilder.jsx cluster
 - enum cluster
-- Set-CIPPDlpCompliancePolicy() cluster
 - property-list-item.js cluster
+- Push-ExecOnboardTenantQueue() cluster
+- Test-CIPPAuditLogRules() cluster
 - New-CIPPAzStorageRequest() cluster
-- Invoke-CippWebhookProcessing() cluster
+- Set-CIPPAuthenticationPolicy() cluster
+- CippStandardAccordion.jsx cluster
 - BackgroundTaskLimiter cluster
 - CraftSettings cluster
+- CIPPRestClient cluster
+- PermissionsReportButton.jsx cluster
 - properties cluster
-- New-ExoBulkRequest() cluster
-- Get-CIPPAzFunctionAppSubId() cluster
+- Update-CIPPDynamicTenantGroups() cluster
 - New-TeamsRequestV2() cluster
-- Set-CIPPAuthenticationPolicy() cluster
-- flagEnum cluster
+- Set-CIPPSignInState() cluster
+- New-CIPPDbRequest() cluster
+- Test-CIPPAccess() cluster
+- Start-CIPPOrchestrator() cluster
+- index.js cluster
 - members cluster
 - enumLabels cluster
+- flagEnum cluster
 - AuthService cluster
-- Get-CIPPTenantAlignment() cluster
-- Push-AuditLogSearchCreationV2() cluster
-- Add-CIPPScheduledTask() cluster
-- Remove-CIPPDbItem() cluster
+- Set-CIPPMailboxPermission() cluster
+- New-CippQueueEntry() cluster
+- Get-CippKeyVaultName() cluster
 - package.json cluster
-- invoice-quick-actions.js cluster
 - CippSankey.jsx cluster
+- scrollbar.js cluster
 - type cluster
 - includeServicePrincipals cluster
 - mode cluster
 - Feature Request Include cluster
+- Get-CIPPQueueData() cluster
 - TestDataCache cluster
 - CA Policies cluster
 - Craft.Services cluster
-- Invoke-CIPPRestMethod() cluster
-- Get-CIPPStandards() cluster
+- Invoke-GitHubApiRequest() cluster
 - Function Offloading cluster
 - Defender Deployment cluster
-- top-nav.js cluster
+- invoice-quick-actions.js cluster
 - side-nav.js cluster
-- CIPPRestClient cluster
-- Get-CIPPSchemaExtensions() cluster
+- Invoke-CIPPRestMethod() cluster
+- Test-CIPPRerun() cluster
+- Get-CIPPStandards() cluster
 - Write-AlertMessage() cluster
-- Expand-CIPPTenantGroups() cluster
-- CippImageCard.jsx cluster
-- ScriptRepository cluster
-- New-CIPPDbRequest() cluster
+- Invoke-CIPPStandardIntuneTemplate() cluster
 - Start-UpdateTokensTimer() cluster
-- Recommended GDAP Roles cluster
-- CippEnterpriseAppPermissions.jsx cluster
+- Get-CIPPFeatureFlag() cluster
+- Invoke-HuduExtensionSync() cluster
+- CippImageCard.jsx cluster
+- flagEnumLabels cluster
+- ScriptRepository cluster
+- Push-ExecScheduledCommand() cluster
 - _app.js cluster
 - colors.js cluster
-- Send-CIPPAlert() cluster
-- New-CIPPUserTask() cluster
-- New-CIPPGroup() cluster
-- Invoke-HuduExtensionSync() cluster
+- Get-CIPPSchemaExtensions() cluster
+- Get-CIPPLicenseOverview() cluster
+- Get-SharePointAdminLink() cluster
+- Expand-CIPPTenantGroups() cluster
+- New GDAP Invite cluster
 - Standards & Drift Overview cluster
 - ReleaseNotesDialog.js cluster
-- transferMethods cluster
 - apply-filters.js cluster
-- New GDAP Invite cluster
+- Resolve-CIPPSharePointPermissionScope() cluster
+- CippEnterpriseAppPermissions.jsx cluster
 - settings-context.js cluster
-- excludeUsers cluster
+- transferMethods cluster
 - index.js cluster
-- CIPP Contribution Workflow cluster
+- Get-GraphRequestList() cluster
 - Push-DBCacheOneDriveRootPermissionsBatch.ps1 cluster
 - Test-CIPPGDAPGroupMappings() cluster
-- Invoke-ExecApiClient() cluster
-- Invoke-AddDefenderDeployment() cluster
-- Get-GraphToken() cluster
+- Set-CippKeyVaultSecret() cluster
+- Set-CIPPDBCacheMailboxes() cluster
+- Set-CIPPDefenderAVPolicy() cluster
 - Invoke-CIPPStandardDisableResourceMailbox() cluster
-- Invoke-GitHubApiRequest() cluster
-- Set-SherwebSubscription() cluster
 - Intune Policy Templates cluster
 - Custom Tests cluster
 - Application Templates cluster
@@ -158,7 +163,7 @@
 - format-alert-item.js cluster
 - toasts.js cluster
 - id cluster
-- CIPPTokenCache cluster
+- CIPPRestClient.cs cluster
 - Global Variables cluster
 - Apple ADE Profiles cluster
 - Enterprise Applications cluster
@@ -166,81 +171,77 @@
 - devDependencies cluster
 - CippAppRegistrationPermissions.jsx cluster
 - util-columnsFromAPI.js cluster
-- product-variant-dialog.js cluster
 - orders-dnd.js cluster
 - properties cluster
 - customer-notes.js cluster
 - worker-health.js cluster
 - ContainerHealthMonitor cluster
-- Get-GraphRequestList() cluster
+- New-CIPPIntuneAppDeployment() cluster
 - Start-CIPPDBTestsRun() cluster
-- Test-CIPPAuditLogRules() cluster
+- New-CippCustomScriptExecution() cluster
+- Invoke-ExecApiClient() cluster
 - New-CIPPCAPolicy() cluster
-- Register-CIPPExtensionScheduledTasks() cluster
-- New-CIPPGraphSubscription() cluster
-- Get-NinjaOneToken() cluster
+- Get-CIPPDomainAnalyser() cluster
+- New-CIPPBackupTask() cluster
+- Get-GraphToken() cluster
+- Remove-CIPPDbItem() cluster
+- Set-CIPPAssignedApplication() cluster
 - Invoke-CIPPStandardSafeLinksTemplatePolicy.ps1 cluster
+- CIPPTokenCache cluster
 - Users Page cluster
 - Assignment Filter Templates cluster
 - Group Templates cluster
-- AppRegistrationActions.jsx cluster
 - enumLabels cluster
 - insiderRiskLevels cluster
-- Send-CIPPScheduledTaskAlert() cluster
-- Push-ExecScheduledCommand() cluster
-- Get-AuthorisedRequest() cluster
+- getM365Licenses() cluster
 - Get-CippMcpToolList() cluster
-- New-CIPPTemplateRun() cluster
-- .SendAsync() cluster
 - Recommended First Steps cluster
 - CIPP Standards cluster
 - CIPP-API & MCP cluster
 - Notifications Settings cluster
+- Permissions Page cluster
 - CIPPDB Cache cluster
 - Rooms cluster
 - Connection Filter cluster
 - Safe Links Policies cluster
 - View App Registration cluster
-- getM365Licenses() cluster
+- clear-azurite-reporting.py cluster
 - CIPP Sponsorware Policy cluster
-- CIPP Monorepo Structure cluster
-- Get-CIPPLicenseOverview() cluster
-- Get-CIPPDomainAnalyser() cluster
-- Set-CIPPSensitivityLabel() cluster
-- Get-TenantGroups() cluster
-- Start-ContainerUpdateCheck() cluster
-- New-CIPPBackupTask() cluster
+- Push-AuditLogSearchCreationV2() cluster
+- Invoke-ExecSSOSetup() cluster
+- Register-CIPPExtensionScheduledTasks() cluster
+- Search-CIPPDbData() cluster
 - Enable-CippConsoleLogging.ps1 cluster
+- New-CIPPGraphSubscription() cluster
 - New-HaloPSATicket() cluster
-- Get-ExtensionAPIKey() cluster
-- CIPPRestClient.cs cluster
+- Invoke-NinjaOneOrgMapping() cluster
+- Recommended GDAP Roles cluster
 - Shadow AI Discovery cluster
 - Contacts cluster
-- CippTenantGroupRuleBuilder.jsx cluster
+- CippFolderNavigation.jsx cluster
 - tutorial-context.js cluster
 - operator cluster
 - get-cipp-license-translation.js cluster
 - LicenseBackfillManager cluster
-- Test-CippApiClientRoleGrant() cluster
+- CIPP Monorepo Structure cluster
+- Get-CIPPTextReplacement() cluster
+- Invoke-CIPPSharePointTemplateDeploy() cluster
 - Compare-CIPPIntuneObject() cluster
+- New-CIPPTemplateRun() cluster
 - CippJson cluster
 - Exchange Connectors cluster
 - Sensitive Information Types cluster
 - CippMessageDeliveryInfo.jsx cluster
+- get-cipp-tenant-group-options.js cluster
 - enumLabels cluster
-- Test-CIPPRerun() cluster
+- customScriptTemplate.js cluster
 - New-CIPPIntuneReportExportJob() cluster
 - New-CippAuditLogSearch() cluster
-- Invoke-CippPartnerWebhookProcessing() cluster
-- Update-CIPPDynamicTenantGroups() cluster
-- Get-CippApiClient() cluster
-- Set-CIPPDBCacheMailboxes() cluster
-- Get-CIPPTimerFunctions() cluster
+- Test-CIPPAccessUserRole() cluster
+- Invoke-ExecSetSiteProperties() cluster
 - New-TeamsRequest() cluster
 - Invoke-AddIntuneReusableSettingTemplate() cluster
-- Search-CIPPDbData() cluster
 - Set-CIPPQuarantinePolicy() cluster
-- Get-ExtensionMapping() cluster
 - NinjaOneHelper.ps1 cluster
 - Phishing Protection via Branding CSS Standard cluster
 - ActiveSync Devices cluster
@@ -251,6 +252,11 @@
 - conditionalAccessDevices cluster
 - BackupValidator cluster
 - Push-ListConditionalAccessPoliciesAllTenants() cluster
+- Push-DBCacheSharePointPermissionsBatch() cluster
+- New-CippCoreRequest() cluster
+- Invoke-AddChocoApp() cluster
+- Invoke-ExecUpdateDriftDeviation() cluster
+- Invoke-ExecContainerManagement() cluster
 - Invoke-ListConditionalAccessPolicies() cluster
 - CIPPTestDataCache.cs cluster
 - Mailboxes cluster
@@ -262,87 +268,127 @@
 - container-logs.js cluster
 - order-payment-dialog.js cluster
 - organization-invite-dialog.js cluster
+- product-variant-dialog.js cluster
 - create-options.js cluster
+- Test-CIPPAccessTenant() cluster
+- Set-CIPPGDAPInviteGroups() cluster
 - Push-ExecSharePointTemplateDeploy() cluster
+- Get-CIPPMFAState() cluster
+- Get-CIPPAlertNewMFADevice() cluster
 - Add-CIPPGroupMember() cluster
-- Test-CIPPAccessUserRole() cluster
-- New-GraphDeltaQuery() cluster
+- Start-AuditLogSearchCreationV2() cluster
 - Get-CIPPBitLockerKey() cluster
 - Get-CippCustomScriptAllowedCommand() cluster
 - Invoke-ListSharePointExternalUsers() cluster
 - get-DefenderCVEs() cluster
-- New-CIPPIntuneTemplate() cluster
+- Invoke-ListDetectedApps() cluster
 - New-passwordString() cluster
 - Invoke-CIPPStandardAssignmentFilterTemplate() cluster
+- New-CIPPSharepointSite() cluster
+- Remove-CippKeyVaultSecret() cluster
+- Invoke-ExecRemoveSPOExternalUser() cluster
 - Set-CIPPNamedLocation() cluster
-- Set-CIPPCalendarPermission() cluster
 - Set-CIPPForwarding() cluster
+- Set-CIPPMailboxArchive() cluster
 - Set-CIPPOutOfOffice() cluster
+- Set-CIPPRetentionCompliancePolicy() cluster
+- Set-CIPPUserLicense() cluster
 - Invoke-ListGroups() cluster
 - Initialize-CIPPExcludedLicenses() cluster
+- Get-BreachInfo() cluster
 - New-SafeLinksPolicyFromTemplate() cluster
 - Hudu Integration cluster
 - Tenant Allow/Block Lists cluster
 - Malware Filters Report cluster
 - Audit Logs cluster
 - Add Standards Template cluster
-- CippFolderNavigation.jsx cluster
 - order-details-dialog.js cluster
 - product-details-dialog.js cluster
 - get-cipp-unique-licenses.js cluster
 - validate-json.mjs cluster
 - Craft.csproj cluster
-- Graphify 0.9.12 Pinned Internals cluster
 - Add-CIPPSharingRows() cluster
-- Get-CIPPMSPAppInstallCommand() cluster
 - Invoke-ListDeletedSites() cluster
 - New-CIPPAzServiceSAS() cluster
+- Resolve-CIPPCADependencies() cluster
 - Set-CIPPStandardsCompareField.ps1 cluster
 - Invoke-ExecNewSafeLinksPolicy() cluster
-- Tenants Settings cluster
 - Intune Scripts cluster
 - JIT Admin Templates cluster
 - SharePoint Sites Page cluster
 - .prettierrc.json cluster
+- CippStandardsDialog.jsx cluster
 - CippDropzone.jsx cluster
 - CippStandardDialog.jsx cluster
 - list-3.js cluster
 - customer-dialog.js cluster
 - invoice-payment-history.js cluster
 - setup.sh script cluster
-- flap-proxy.mjs cluster
 - Feature Request Issue Template cluster
 - Push-ExecCIPPDBCache() cluster
+- Push-UpdateTenants() cluster
+- Get-CIPPAlertLicenseAssignmentErrors() cluster
+- Get-CIPPTenantCapabilities() cluster
 - Assert-CippVersion() cluster
 - Clear-CIPPQueueData() cluster
-- Test-DeltaQueryConditions() cluster
+- Enable-CIPPMDEConnector() cluster
 - Start-ApplicationOrchestrator() cluster
-- Get-CIPPDrift() cluster
-- Get-CIPPGeoIPLocation() cluster
+- Start-DomainOrchestrator() cluster
+- Invoke-NinjaOneExtensionScheduler() cluster
+- Start-TenantDynamicGroupOrchestrator() cluster
+- Start-UpdatePermissionsOrchestrator() cluster
+- Invoke-CippGraphWebhookRenewal() cluster
+- Get-CIPPAssignmentFilterReport() cluster
+- Get-CIPPIntuneReusableSettingsReport() cluster
 - Get-CIPPLapsPassword() cluster
-- Get-CIPPMFAState() cluster
+- Get-CIPPMailboxesReport() cluster
+- Get-CIPPMDEOnboardingReport() cluster
+- Get-CIPPOutOfOffice() cluster
 - Get-CIPPPerUserMFA() cluster
-- Get-CIPPSPOSite() cluster
+- Get-CIPPSharedMailboxAccountEnabledReport() cluster
+- Invoke-ListSPOVersionCleanup() cluster
+- Invoke-AddSensitiveInfoTypeTemplate() cluster
+- Get-CIPPTeamsActivityReport() cluster
+- Get-CIPPTeamsReport() cluster
 - New-DeviceLogin() cluster
+- New-CIPPOneDriveShortCut() cluster
+- New-CippStandardsDriftClone() cluster
+- New-CIPPTAP() cluster
+- Remove-CIPPAutopilotProfile() cluster
+- Remove-CIPPTrustedBlockedSender() cluster
+- Remove-CIPPUser() cluster
+- Remove-CIPPUserMFA() cluster
+- Request-CIPPSPOPersonalSite() cluster
 - Invoke-ExecRestoreDeletedSite() cluster
+- Update-CippSamPermissions() cluster
 - Invoke-ExecCAServiceExclusion() cluster
+- Set-CIPPCloudManaged() cluster
 - Set-CIPPContactPermission() cluster
-- Set-CIPPDefenderAVPolicy() cluster
-- Set-CIPPFeatureFlag() cluster
+- Set-CIPPDefaultAPEnrollment() cluster
+- Set-CIPPDeviceState() cluster
+- Set-CIPPGDAPAutoExtend() cluster
+- Set-CIPPGroupGAL() cluster
+- Set-CIPPHideFromGAL() cluster
 - Set-CippMailboxLocale() cluster
+- Set-CIPPMailboxType() cluster
 - Set-CippMaxEmailSize() cluster
-- Set-CIPPRetentionCompliancePolicy() cluster
+- Set-CIPPMessageCopy() cluster
+- Set-CIPPMobileDevice() cluster
+- Set-CIPPPerUserMFA() cluster
+- Set-CIPPRegistrationCampaign() cluster
+- Set-CIPPSensitiveInfoType() cluster
+- Set-CIPPSharePointPerms() cluster
 - ConvertTo-CippStandardObject() cluster
 - Invoke-ExecSPOVersionCleanup() cluster
 - Test-CIPPDynamicGroupFilter.ps1 cluster
-- Test-CIPPAccessTenant() cluster
 - Test-CIPPAutopilotProfileName() cluster
 - Invoke-ExecOffboardUser() cluster
 - Find-CIPPFuzzyPolicyMatch() cluster
-- Invoke-ListUserMailboxDetails() cluster
+- Push-ExecGenerateReportBuilderReport() cluster
 - Repair-CippStandardsTemplate() cluster
 - Set-CIPPDBCacheSiteActivity() cluster
-- Get-HIBPRequest() cluster
+- Get-ExtensionCacheData() cluster
+- Get-HIBPAuth() cluster
 - Invoke-ExecManageRetentionTags() cluster
 - Invoke-AddEditTransportRule() cluster
 - Invoke-ExecStandardConvert() cluster
@@ -356,28 +402,27 @@
 - Email Tools cluster
 - Template Library cluster
 - quill-editor.js cluster
+- time-settings.js cluster
 - account-password.js cluster
 - product-create-dialog.js cluster
 - apply-sort.js cluster
 - docs.js cluster
 - HttpResponseContext.cs cluster
 - Build Dev Container Workflow cluster
-- Get-CIPPAlertNewShadowAITool() cluster
 - Test-IpInRange() cluster
 - Get-CIPPReusableSettingsFromPolicy.ps1 cluster
 - Send-CIPPScheduledTaskAlert.ps1 cluster
-- Remove-ODataProperties() cluster
 - Invoke-ListContainerLogs() cluster
 - Invoke-ListContacts() cluster
 - Invoke-ExecAssignApp() cluster
 - Invoke-EditIntuneScript() cluster
 - Invoke-ExecAssignPolicy() cluster
-- Invoke-ExecSendPush() cluster
 - Invoke-ListUserDevices() cluster
 - Invoke-EditSafeLinksPolicy() cluster
+- Invoke-ListSharePointPermissions() cluster
 - Invoke-ListSharePointSharing() cluster
 - Invoke-ListSiteMembers() cluster
-- Invoke-ExecManageAppCredentials() cluster
+- Invoke-ListSitePermissions() cluster
 - Invoke-CIPPStandardReusableSettingsTemplate() cluster
 - Function App Contributor Role Assignment cluster
 - Autopilot & Intune (Sip & CIPP) cluster
@@ -392,8 +437,6 @@
 - Domain Analyser Updates & Data Refreshing cluster
 - skip-export-build-traces.mjs cluster
 - CippListitemCard.jsx cluster
-- CippCsvExportButton.jsx cluster
-- TenantMetricsGrid.jsx cluster
 - calendar-toolbar.js cluster
 - stats-1.js cluster
 - stats-2.js cluster
@@ -402,512 +445,335 @@
 - product-Insights-reviews.js cluster
 - products-stats.js cluster
 - dev.sh script cluster
-- apexcharts cluster
 - axios cluster
 - Cached Data Report cluster
 - Incomplete Page Placeholder cluster
 - CIPP Frontend Alert Registrar (CIPP-Alert-Agent) cluster
 - CodeQL Analyser Workflow (legacy owner) cluster
 - Build Release Container Workflow cluster
-- Push-GetApplicationQueue() cluster
-- Push-GetDomainAnalyserResults() cluster
-- Push-GetTenantDomains() cluster
-- Push-CIPPAccessTenantTest() cluster
-- Push-CIPPDBCacheApplyBatch() cluster
-- Push-CIPPDBCacheData() cluster
-- Push-ExecGDAPInviteQueue() cluster
-- Push-ExecOffboardingMailboxPermissions() cluster
-- Push-GetTenants() cluster
-- Push-OrchestratorBatchItems() cluster
-- Push-CIPPStandardsApplyBatch() cluster
-- Push-GetStandards() cluster
-- Push-UpdateDynamicTenantGroup() cluster
-- Push-CIPPTestsApplyBatch() cluster
-- Get-CIPPAlertAppleTerms() cluster
-- Get-CIPPAlertAppSecretExpiry() cluster
-- Get-CIPPAlertDefenderAlerts() cluster
-- Get-CIPPAlertDefenderIncidents() cluster
-- Get-CIPPAlertDefenderMalware() cluster
-- Get-CIPPAlertDepTokenExpiry() cluster
-- Get-CIPPAlertEntraConnectSyncStatus() cluster
-- Get-CIPPAlertGlobalAdminAllowList() cluster
-- Get-CIPPAlertGlobalAdminNoAltEmail() cluster
-- Get-CIPPAlertLongLivedAppCredentials() cluster
-- Get-CIPPAlertMFAAdmins() cluster
-- Get-CIPPAlertNewRole() cluster
-- Get-CIPPAlertSecDefaultsDisabled() cluster
-- Get-CIPPAlertSecDefaultsUpsell() cluster
-- Get-CIPPAlertSharepointQuota() cluster
-- Get-CIPPAlertVulnerabilities() cluster
-- Add-CIPPWinGetApp() cluster
-- Get-CippLastAuditLogSearch() cluster
-- ConvertTo-CIPPSensitivityLabelParams() cluster
-- Start-AuditLogProcessingOrchestrator() cluster
-- Start-CIPPGraphSubscriptionRenewalTimer() cluster
-- Start-TableCleanup() cluster
-- Get-CIPPURLName() cluster
-- Get-CIPPSitSinglePackXml() cluster
-- Get-SlackAlertBlocks() cluster
-- Get-TenantIdFromSubscriptionId() cluster
-- Convert-SKUname() cluster
-- New-CIPPRestore() cluster
-- New-CIPPSAMCertificate() cluster
-- New-CIPPStandardizedWebhookSchema() cluster
-- New-CIPPTAP() cluster
-- Remove-CIPPUser() cluster
-- Set-CIPPDefaultAPEnrollment() cluster
-- Set-CIPPMailboxAccess() cluster
-- Set-CippScheduledTaskContext() cluster
-- Set-CIPPSherwebLicense() cluster
-- Merge-CippStandards() cluster
-- Update-CIPPSAMCertificateEnvCache() cluster
+- Push-DomainAnalyserDomain() cluster
+- Get-CIPPAlertTenantAccess() cluster
+- Get-CIPPAlertTERRL() cluster
+- Update-CIPPSAMRedirectUri() cluster
+- New-CIPPGraphRetry() cluster
+- Remove-CIPPCalendarInvites() cluster
+- Set-CIPPDefaultAPDeploymentProfile() cluster
+- Set-CIPPProfilePhoto() cluster
 - Get-CIPPAuditLogContent() cluster
+- Set-CIPPDBCacheAdminConsentRequestPolicy() cluster
+- Set-CIPPDBCacheAuthenticationFlowsPolicy() cluster
+- Set-CIPPDBCacheAuthorizationPolicy() cluster
 - Set-CIPPDBCacheB2BManagementPolicy() cluster
 - Set-CIPPDBCacheCASMailboxes() cluster
-- Set-CIPPDBCacheCopilotUserCountSummary() cluster
+- Set-CIPPDBCacheConditionalAccessPolicies() cluster
+- Set-CIPPDBCacheCopilotUserCountTrend() cluster
+- Set-CIPPDBCacheCredentialUserRegistrationDetails() cluster
+- Set-CIPPDBCacheDevices() cluster
 - Set-CIPPDBCacheDlpCompliancePolicies() cluster
 - Set-CIPPDBCacheExoAcceptedDomains() cluster
 - Set-CIPPDBCacheExoAdminAuditLogConfig() cluster
 - Set-CIPPDBCacheExoAntiPhishPolicies() cluster
-- Set-CIPPDBCacheExoAtpPolicyForO365() cluster
-- Set-CIPPDBCacheExoDkimSigningConfig() cluster
 - Set-CIPPDBCacheExoHostedContentFilterPolicy() cluster
+- Set-CIPPDBCacheExoHostedOutboundSpamFilterPolicy() cluster
 - Set-CIPPDBCacheExoInboundConnector() cluster
-- Set-CIPPDBCacheExoMalwareFilterPolicies() cluster
 - Set-CIPPDBCacheExoOrganizationConfig() cluster
+- Set-CIPPDBCacheExoQuarantinePolicy() cluster
 - Set-CIPPDBCacheExoRemoteDomain() cluster
 - Set-CIPPDBCacheExoSafeAttachmentPolicies() cluster
-- Set-CIPPDBCacheExoTransportConfig() cluster
+- Set-CIPPDBCacheExoSafeLinksPolicies() cluster
+- Set-CIPPDBCacheExoSharingPolicy() cluster
+- Set-CIPPDBCacheExoTenantAllowBlockList() cluster
+- Set-CIPPDBCacheExoTransportRules() cluster
+- Set-CIPPDBCacheGuests() cluster
 - Set-CIPPDBCacheHVEAccounts() cluster
-- Set-CIPPDBCacheOwaMailboxPolicy() cluster
-- Set-CIPPDBCacheReportSubmissionPolicy() cluster
 - Set-CIPPDBCacheRiskDetections() cluster
-- Get-AssignedMap() cluster
-- Get-AssignedNameMap() cluster
-- Get-HuduFormattedBlock() cluster
-- Get-HuduFormattedField() cluster
-- Get-HuduLinkBlock() cluster
-- Add-HuduAssetLayoutField() cluster
-- Invoke-NinjaOneVulnCsvUpload() cluster
-- Get-SherwebOrderStatus() cluster
-- Invoke-ExecCPVRefresh() cluster
-- Invoke-ExecListBackup() cluster
-- Invoke-ExecServicePrincipals() cluster
-- Invoke-GetVersion() cluster
-- Invoke-ListAdminPortalLicenses() cluster
-- Invoke-ListApiTest() cluster
-- Invoke-ListDirectoryObjects() cluster
-- Invoke-ListExtensionCacheData() cluster
-- Invoke-ListGraphBulkRequest() cluster
-- Invoke-ExecExtensionClearHIBPKey() cluster
-- Invoke-ExecAddTrustedIP() cluster
-- Invoke-ExecPermissionRepair() cluster
-- Invoke-ExecRemoveTenant() cluster
-- Invoke-ListWorkerHealth() cluster
-- Invoke-ExecConvertMailbox() cluster
-- Invoke-ExecCopyForSent() cluster
-- Invoke-ExecEditCalendarPermissions() cluster
-- Invoke-ExecEnableArchive() cluster
-- Invoke-ExecEnableAutoExpandingArchive() cluster
-- Invoke-ExecGroupsDelete() cluster
-- Invoke-ExecGroupsDeliveryManagement() cluster
-- Invoke-ExecGroupsHideFromGAL() cluster
-- Invoke-ExecHideFromGAL() cluster
-- Invoke-ExecMailboxMobileDevices() cluster
-- Invoke-ListOoO() cluster
-- Invoke-ListAntiPhishingFilters() cluster
-- Invoke-ListMalwareFilters() cluster
-- Invoke-ListSafeAttachmentsFilters() cluster
-- Invoke-ListConnectionFilterTemplates() cluster
-- Invoke-ListSpamFilterTemplates() cluster
-- Invoke-ListTenantAllowBlockListTemplates() cluster
-- Invoke-ListApplicationQueue() cluster
-- Invoke-ListAppTemplates() cluster
-- Invoke-AddEnrollment() cluster
-- Invoke-RemoveAutopilotConfig() cluster
-- Invoke-AddIntuneReusableSetting() cluster
-- Invoke-EditAssignmentFilter() cluster
+- Set-CIPPDBCacheRoleEligibilitySchedules() cluster
+- Set-CIPPDBCacheServicePrincipalRiskDetections() cluster
+- Set-CIPPDBCacheTeamsActivity() cluster
+- Invoke-DeployContactTemplates() cluster
+- Invoke-RemoveContact() cluster
+- Invoke-ExecRemoveRestrictedUser() cluster
+- Invoke-ExecScheduleMailboxVacation() cluster
+- Invoke-ExecSetMailboxQuota() cluster
+- Invoke-ExecSetRetentionHold() cluster
+- Invoke-ListCalendarPermissions() cluster
+- Invoke-ListContactPermissions() cluster
+- Invoke-ListRoomLists() cluster
+- Invoke-AddSpamFilter() cluster
+- Invoke-EditAntiPhishingFilter() cluster
+- Invoke-EditSpamFilter() cluster
+- Invoke-RemoveSpamfilter() cluster
+- Invoke-ListMessageTrace() cluster
+- Invoke-AddExConnector() cluster
+- Invoke-EditTransportRule() cluster
+- Invoke-ExecSyncVPP() cluster
+- Invoke-AddAPDevice() cluster
+- Invoke-ExecAssignAPDevice() cluster
+- Invoke-ExecSetAPDeviceGroupTag() cluster
+- Invoke-RemoveAPDevice() cluster
+- Invoke-ExecDevicePasscodeAction() cluster
 - Invoke-ExecRemoveEnrollmentProfile() cluster
 - Invoke-ExecSyncDEP() cluster
-- Invoke-ListAndroidEnrollmentProfiles() cluster
-- Invoke-ListAssignmentFilterTemplates() cluster
-- Invoke-ListIntuneReusableSettings() cluster
-- Invoke-ListIntuneReusableSettingTemplates() cluster
-- Invoke-ExecDeviceDelete() cluster
-- Invoke-AddGroupTeam() cluster
-- Invoke-ListGroupSenderAuthentication() cluster
-- Invoke-ListGroupTemplates() cluster
-- Invoke-AddGuest() cluster
-- Invoke-ExecClrImmId() cluster
-- Invoke-ExecCreateTAP() cluster
-- Invoke-ExecDisableUser() cluster
-- Invoke-ExecDismissRiskyUser() cluster
-- Invoke-ExecOneDriveProvision() cluster
-- Invoke-ExecOneDriveShortCut() cluster
-- Invoke-ExecPerUserMFA() cluster
+- Invoke-RemoveIntuneReusableSetting() cluster
+- Invoke-RemoveIntuneScript() cluster
+- Invoke-ExecPasswordNeverExpires() cluster
 - Invoke-ExecRemoveAdminRole() cluster
-- Invoke-ExecResetMFA() cluster
-- Invoke-ExecResetPass() cluster
-- Invoke-ExecRestoreDeleted() cluster
-- Invoke-ExecRevokeSessions() cluster
-- Invoke-ListDeletedItems() cluster
-- Invoke-ListNewUserDefaults() cluster
-- Invoke-ListUserCounts() cluster
-- Invoke-ListUserGroups() cluster
-- Invoke-ListUserPhoto() cluster
-- Invoke-RemoveDeletedObject() cluster
-- Invoke-RemoveTrustedBlockedSender() cluster
-- Invoke-RemoveUser() cluster
-- Invoke-ExecSetCloudManaged() cluster
-- Invoke-ExecBreachSearch() cluster
-- Invoke-ExecLicenseSearch() cluster
-- Invoke-ListAllTenantDeviceCompliance() cluster
-- Invoke-ListCSPLicenses() cluster
-- Invoke-ListExternalTenantInfo() cluster
-- Invoke-ListFunctionParameters() cluster
-- Invoke-ListIPWhitelist() cluster
-- Invoke-ListOrg() cluster
-- Invoke-ListPartnerRelationships() cluster
-- Invoke-ListResellerRelationshipLink() cluster
-- Invoke-ListDlpCompliancePolicyTemplates() cluster
+- Invoke-ExecReprocessUserLicenses() cluster
+- Invoke-ListAppStatus() cluster
+- Invoke-EditDlpCompliancePolicy() cluster
 - Invoke-RemoveDlpCompliancePolicy() cluster
-- Invoke-AddRetentionCompliancePolicy() cluster
-- Invoke-ListRetentionCompliancePolicyTemplates() cluster
-- Invoke-AddSensitivityLabel() cluster
-- Invoke-ListSensitivityLabelTemplates() cluster
-- Invoke-AddSensitiveInfoType() cluster
-- Invoke-ListSensitiveInfoTypeTemplates() cluster
-- Invoke-ListMDEOnboarding() cluster
+- Invoke-RemoveRetentionCompliancePolicy() cluster
+- Invoke-RemoveSensitivityLabel() cluster
+- Invoke-EditSensitiveInfoType() cluster
+- Invoke-ExecSetMdoAlert() cluster
+- Invoke-ExecSetSecurityAlert() cluster
+- Invoke-ExecSetSecurityIncident() cluster
 - Invoke-ExecDeleteSafeLinksPolicy() cluster
-- Invoke-AddSite() cluster
-- Invoke-AddSiteBulk() cluster
-- Invoke-ListSharepointSettings() cluster
-- Invoke-ListWebhookAlert() cluster
-- Invoke-ExecAppApproval() cluster
-- Invoke-ExecAddSPN() cluster
-- Invoke-ExecRegistrationCampaign() cluster
-- Invoke-ExecUpdateSecureScore() cluster
-- Invoke-SetAuthMethod() cluster
+- Invoke-ListSafeLinksPolicy() cluster
+- Invoke-ExecDomainAction() cluster
+- Invoke-AddTenant() cluster
 - Invoke-ExecCaCheck() cluster
-- Invoke-ListConditionalAccessPolicyChanges() cluster
-- Invoke-ExecAutoExtendGDAP() cluster
-- Invoke-ExecDeleteGDAPRelationship() cluster
-- Invoke-ExecGDAPInviteApproved() cluster
-- Invoke-ExecBPA() cluster
-- Invoke-ExecDomainAnalyser() cluster
-- Invoke-ExecDriftClone() cluster
-- Invoke-ListCopilotUsage() cluster
-- Invoke-ListDomainAnalyser() cluster
-- Invoke-CIPPStandardAuditLog() cluster
+- Invoke-ExecGDAPRemoveGArole() cluster
+- Invoke-CIPPStandardAddDKIM() cluster
 - Invoke-CIPPStandardAutopatchGroup() cluster
-- Invoke-CIPPStandardDisableBasicAuth() cluster
-- Invoke-CIPPStandardDisableEWS() cluster
-- Invoke-CIPPStandardEnableLitigationHold() cluster
-- Invoke-CIPPStandardEnableMailTips() cluster
-- Invoke-CIPPStandardExcludedfileExt() cluster
-- Invoke-CIPPStandardintuneDeviceReg() cluster
-- Invoke-CIPPStandardLegacyMFA() cluster
-- Invoke-CIPPStandardLegacyMFACleanup() cluster
-- Invoke-CIPPStandardModernAuth() cluster
-- Invoke-CIPPStandardPhishingSimulations() cluster
-- Invoke-CIPPStandardPWnumberMatchingRequiredState() cluster
+- Invoke-CIPPStandardDevicePrepProfile() cluster
+- Invoke-CIPPStandardDisableReshare() cluster
+- Invoke-CIPPStandardEnableMailboxAuditing() cluster
+- Invoke-CIPPStandardExchangeConnectorTemplate() cluster
+- Invoke-CIPPStandardIntuneComplianceSettings() cluster
 - Invoke-CIPPStandardSafeAttachmentPolicy() cluster
-- Invoke-CIPPStandardsharingCapability() cluster
-- Invoke-CIPPStandardSpoofWarn() cluster
-- Invoke-CIPPStandardSSPR() cluster
 - Invoke-CIPPStandardTenantDefaultTimezone() cluster
-- Invoke-CIPPStandardUndoSSPR() cluster
 - Invoke-CippTestCIS_1_1_2() cluster
+- Invoke-CippTestCIS_1_1_3() cluster
 - Invoke-CippTestCIS_1_2_1() cluster
-- Invoke-CippTestCIS_1_2_2() cluster
+- Invoke-CippTestCIS_1_3_1() cluster
 - Invoke-CippTestCIS_1_3_2() cluster
+- Invoke-CippTestCIS_1_3_4() cluster
 - Invoke-CippTestCIS_1_3_5() cluster
 - Invoke-CippTestCIS_1_3_6() cluster
 - Invoke-CippTestCIS_1_3_7() cluster
-- Invoke-CippTestCIS_1_3_9() cluster
 - Invoke-CippTestCIS_2_1_1() cluster
+- Invoke-CippTestCIS_2_1_14() cluster
 - Invoke-CippTestCIS_2_1_15() cluster
 - Invoke-CippTestCIS_2_1_2() cluster
 - Invoke-CippTestCIS_2_1_4() cluster
 - Invoke-CippTestCIS_2_1_5() cluster
 - Invoke-CippTestCIS_2_1_6() cluster
-- Invoke-CippTestCIS_2_1_7() cluster
 - Invoke-CippTestCIS_2_1_9() cluster
-- Invoke-CippTestCIS_2_4_2() cluster
-- Invoke-CippTestCIS_3_1_1() cluster
-- Invoke-CippTestCIS_3_2_1() cluster
 - Invoke-CippTestCIS_3_2_2() cluster
-- Invoke-CippTestCIS_3_3_1() cluster
 - Invoke-CippTestCIS_4_1() cluster
+- Invoke-CippTestCIS_4_2() cluster
 - Invoke-CippTestCIS_5_1_2_1() cluster
-- Invoke-CippTestCIS_5_1_2_3() cluster
-- Invoke-CippTestCIS_5_1_3_4() cluster
+- Invoke-CippTestCIS_5_1_2_2() cluster
+- Invoke-CippTestCIS_5_1_3_1() cluster
 - Invoke-CippTestCIS_5_1_4_1() cluster
 - Invoke-CippTestCIS_5_1_4_2() cluster
-- Invoke-CippTestCIS_5_1_4_3() cluster
-- Invoke-CippTestCIS_5_1_4_4() cluster
 - Invoke-CippTestCIS_5_1_4_5() cluster
 - Invoke-CippTestCIS_5_1_4_6() cluster
 - Invoke-CippTestCIS_5_1_5_1() cluster
+- Invoke-CippTestCIS_5_1_5_2() cluster
+- Invoke-CippTestCIS_5_1_5_3() cluster
 - Invoke-CippTestCIS_5_1_5_4() cluster
 - Invoke-CippTestCIS_5_1_5_5() cluster
 - Invoke-CippTestCIS_5_1_5_6() cluster
 - Invoke-CippTestCIS_5_1_6_1() cluster
-- Invoke-CippTestCIS_5_1_6_3() cluster
-- Invoke-CippTestCIS_5_1_8_1() cluster
 - Invoke-CippTestCIS_5_2_2_10() cluster
-- Invoke-CippTestCIS_5_2_2_12() cluster
+- Invoke-CippTestCIS_5_2_2_11() cluster
 - Invoke-CippTestCIS_5_2_2_13() cluster
-- Invoke-CippTestCIS_5_2_2_15() cluster
 - Invoke-CippTestCIS_5_2_2_16() cluster
 - Invoke-CippTestCIS_5_2_2_17() cluster
-- Invoke-CippTestCIS_5_2_2_3() cluster
-- Invoke-CippTestCIS_5_2_2_6() cluster
-- Invoke-CippTestCIS_5_2_2_7() cluster
-- Invoke-CippTestCIS_5_2_2_8() cluster
-- Invoke-CippTestCIS_5_2_3_1() cluster
+- Invoke-CippTestCIS_5_2_2_9() cluster
 - Invoke-CippTestCIS_5_2_3_10() cluster
-- Invoke-CippTestCIS_5_2_3_3() cluster
+- Invoke-CippTestCIS_5_2_3_2() cluster
 - Invoke-CippTestCIS_5_2_3_5() cluster
-- Invoke-CippTestCIS_5_2_3_6() cluster
-- Invoke-CippTestCIS_5_2_3_7() cluster
 - Invoke-CippTestCIS_5_3_1() cluster
+- Invoke-CippTestCIS_5_3_4() cluster
+- Invoke-CippTestCIS_5_3_5() cluster
 - Invoke-CippTestCIS_6_1_1() cluster
 - Invoke-CippTestCIS_6_1_2() cluster
 - Invoke-CippTestCIS_6_1_3() cluster
 - Invoke-CippTestCIS_6_2_1() cluster
-- Invoke-CippTestCIS_6_2_2() cluster
-- Invoke-CippTestCIS_6_2_3() cluster
 - Invoke-CippTestCIS_6_3_2() cluster
 - Invoke-CippTestCIS_6_5_1() cluster
-- Invoke-CippTestCIS_6_5_2() cluster
-- Invoke-CippTestCIS_6_5_3() cluster
-- Invoke-CippTestCIS_6_5_4() cluster
-- Invoke-CippTestCIS_6_5_5() cluster
-- Invoke-CippTestCIS_7_2_1() cluster
 - Invoke-CippTestCIS_7_2_10() cluster
 - Invoke-CippTestCIS_7_2_11() cluster
-- Invoke-CippTestCIS_7_2_2() cluster
 - Invoke-CippTestCIS_7_2_3() cluster
 - Invoke-CippTestCIS_7_2_4() cluster
 - Invoke-CippTestCIS_7_2_5() cluster
-- Invoke-CippTestCIS_7_2_6() cluster
-- Invoke-CippTestCIS_7_2_9() cluster
 - Invoke-CippTestCIS_7_3_1() cluster
 - Invoke-CippTestCIS_8_1_1() cluster
-- Invoke-CippTestCIS_8_1_2() cluster
 - Invoke-CippTestCIS_8_2_1() cluster
 - Invoke-CippTestCIS_8_2_2() cluster
 - Invoke-CippTestCIS_8_2_3() cluster
 - Invoke-CippTestCIS_8_2_4() cluster
 - Invoke-CippTestCIS_8_4_1() cluster
-- Invoke-CippTestCIS_8_5_2() cluster
-- Invoke-CippTestCIS_8_5_3() cluster
-- Invoke-CippTestCIS_8_5_4() cluster
+- Invoke-CippTestCIS_8_5_1() cluster
 - Invoke-CippTestCIS_8_5_5() cluster
 - Invoke-CippTestCIS_8_5_6() cluster
-- Invoke-CippTestCIS_8_5_7() cluster
 - Invoke-CippTestCIS_8_5_8() cluster
 - Invoke-CippTestCIS_8_5_9() cluster
-- Invoke-CippTestCIS_8_6_1() cluster
 - Invoke-CippTestCISAMSEXO101() cluster
 - Invoke-CippTestCISAMSEXO102() cluster
 - Invoke-CippTestCISAMSEXO103() cluster
 - Invoke-CippTestCISAMSEXO11() cluster
 - Invoke-CippTestCISAMSEXO111() cluster
 - Invoke-CippTestCISAMSEXO112() cluster
-- Invoke-CippTestCISAMSEXO121() cluster
-- Invoke-CippTestCISAMSEXO122() cluster
-- Invoke-CippTestCISAMSEXO142() cluster
+- Invoke-CippTestCISAMSEXO113() cluster
+- Invoke-CippTestCISAMSEXO131() cluster
+- Invoke-CippTestCISAMSEXO141() cluster
 - Invoke-CippTestCISAMSEXO143() cluster
-- Invoke-CippTestCISAMSEXO151() cluster
-- Invoke-CippTestCISAMSEXO153() cluster
 - Invoke-CippTestCISAMSEXO171() cluster
-- Invoke-CippTestCISAMSEXO173() cluster
-- Invoke-CippTestCISAMSEXO31() cluster
+- Invoke-CippTestCISAMSEXO51() cluster
 - Invoke-CippTestCISAMSEXO62() cluster
 - Invoke-CippTestCISAMSEXO71() cluster
-- Invoke-CippTestCopilotReady002() cluster
-- Invoke-CippTestCopilotReady005() cluster
+- Invoke-CippTestCISAMSEXO95() cluster
+- Invoke-CippTestCopilotReady004() cluster
 - Invoke-CippTestCopilotReady006() cluster
 - Invoke-CippTestCopilotReady007() cluster
 - Invoke-CippTestCopilotReady008() cluster
 - Invoke-CippTestCopilotReady009() cluster
-- Invoke-CippTestCopilotReady012() cluster
-- Invoke-CippTestCopilotReady013() cluster
-- Invoke-CippTestCopilotReady014() cluster
+- Invoke-CippTestCopilotReady010() cluster
 - Invoke-CippTestCopilotReady015() cluster
+- Invoke-CippTestCopilotReady016() cluster
+- Invoke-CippTestE8_AppCtrl_01() cluster
 - Invoke-CippTestE8_PatchApp_02() cluster
 - Invoke-CippTestE8_PatchOS_01() cluster
 - Invoke-CippTestE8_PatchOS_02() cluster
-- Invoke-CippTestE8_PatchOS_03() cluster
 - Invoke-CippTestE8_PatchOS_04() cluster
 - Invoke-CippTestE8_PatchOS_06() cluster
-- Invoke-CippTestE8_Admin_04() cluster
 - Invoke-CippTestE8_Admin_07() cluster
 - Invoke-CippTestE8_Admin_08() cluster
-- Invoke-CippTestE8_Admin_11() cluster
 - Invoke-CippTestE8_Admin_12() cluster
 - Invoke-CippTestE8_Backup_01() cluster
 - Invoke-CippTestE8_MFA_02() cluster
 - Invoke-CippTestE8_MFA_03() cluster
-- Invoke-CippTestE8_MFA_04() cluster
-- Invoke-CippTestE8_MFA_09() cluster
-- Invoke-CippTestE8_MFA_10() cluster
-- Invoke-CippTestEIDSCAAF01() cluster
+- Invoke-CippTestE8_MFA_08() cluster
 - Invoke-CippTestEIDSCAAF02() cluster
-- Invoke-CippTestEIDSCAAF03() cluster
 - Invoke-CippTestEIDSCAAF04() cluster
 - Invoke-CippTestEIDSCAAF06() cluster
-- Invoke-CippTestEIDSCAAG01() cluster
 - Invoke-CippTestEIDSCAAG02() cluster
+- Invoke-CippTestEIDSCAAM01() cluster
 - Invoke-CippTestEIDSCAAM02() cluster
 - Invoke-CippTestEIDSCAAM03() cluster
 - Invoke-CippTestEIDSCAAM06() cluster
-- Invoke-CippTestEIDSCAAP04() cluster
-- Invoke-CippTestEIDSCAAP05() cluster
-- Invoke-CippTestEIDSCAAP06() cluster
-- Invoke-CippTestEIDSCAAP09() cluster
+- Invoke-CippTestEIDSCAAM07() cluster
+- Invoke-CippTestEIDSCAAM09() cluster
+- Invoke-CippTestEIDSCAAM10() cluster
+- Invoke-CippTestEIDSCAAP07() cluster
 - Invoke-CippTestEIDSCAAP10() cluster
 - Invoke-CippTestEIDSCAAP14() cluster
 - Invoke-CippTestEIDSCAAS04() cluster
+- Invoke-CippTestEIDSCAAT01() cluster
 - Invoke-CippTestEIDSCAAT02() cluster
-- Invoke-CippTestEIDSCAAV01() cluster
-- Invoke-CippTestEIDSCACR01() cluster
+- Invoke-CippTestEIDSCACP01() cluster
+- Invoke-CippTestEIDSCACP04() cluster
 - Invoke-CippTestEIDSCACR02() cluster
 - Invoke-CippTestEIDSCACR04() cluster
 - Invoke-CippTestEIDSCAPR02() cluster
-- Invoke-CippTestEIDSCAPR05() cluster
-- Invoke-CippTestEIDSCAST08() cluster
+- Invoke-CippTestEIDSCAPR03() cluster
+- Invoke-CippTestEIDSCAST09() cluster
 - Invoke-CippTestGenericTest001() cluster
+- Invoke-CippTestGenericTest002() cluster
 - Invoke-CippTestGenericTest003() cluster
 - Invoke-CippTestGenericTest004() cluster
 - Invoke-CippTestGenericTest005() cluster
 - Invoke-CippTestGenericTest006() cluster
 - Invoke-CippTestGenericTest007() cluster
+- Invoke-CippTestGenericTest008() cluster
+- Invoke-CippTestGenericTest009() cluster
+- Invoke-CippTestORCA100() cluster
+- Invoke-CippTestORCA101() cluster
 - Invoke-CippTestORCA102() cluster
+- Invoke-CippTestORCA103() cluster
+- Invoke-CippTestORCA104() cluster
 - Invoke-CippTestORCA105() cluster
+- Invoke-CippTestORCA106() cluster
+- Invoke-CippTestORCA108() cluster
 - Invoke-CippTestORCA109() cluster
 - Invoke-CippTestORCA110() cluster
-- Invoke-CippTestORCA111() cluster
+- Invoke-CippTestORCA112() cluster
 - Invoke-CippTestORCA113() cluster
 - Invoke-CippTestORCA114() cluster
 - Invoke-CippTestORCA116() cluster
 - Invoke-CippTestORCA118_1() cluster
 - Invoke-CippTestORCA118_2() cluster
-- Invoke-CippTestORCA118_4() cluster
-- Invoke-CippTestORCA119() cluster
-- Invoke-CippTestORCA120_phish() cluster
-- Invoke-CippTestORCA120_spam() cluster
-- Invoke-CippTestORCA121() cluster
-- Invoke-CippTestORCA123() cluster
-- Invoke-CippTestORCA139() cluster
+- Invoke-CippTestORCA118_3() cluster
+- Invoke-CippTestORCA120_malware() cluster
 - Invoke-CippTestORCA142() cluster
-- Invoke-CippTestORCA143() cluster
+- Invoke-CippTestORCA156() cluster
 - Invoke-CippTestORCA158() cluster
-- Invoke-CippTestORCA179() cluster
-- Invoke-CippTestORCA180() cluster
-- Invoke-CippTestORCA189() cluster
 - Invoke-CippTestORCA189_2() cluster
 - Invoke-CippTestORCA205() cluster
 - Invoke-CippTestORCA220() cluster
-- Invoke-CippTestORCA221() cluster
+- Invoke-CippTestORCA223() cluster
 - Invoke-CippTestORCA225() cluster
 - Invoke-CippTestORCA227() cluster
+- Invoke-CippTestORCA228() cluster
 - Invoke-CippTestORCA229() cluster
 - Invoke-CippTestORCA230() cluster
 - Invoke-CippTestORCA231() cluster
-- Invoke-CippTestORCA232() cluster
-- Invoke-CippTestORCA233_1() cluster
-- Invoke-CippTestORCA234() cluster
-- Invoke-CippTestORCA236() cluster
 - Invoke-CippTestORCA237() cluster
 - Invoke-CippTestORCA238() cluster
-- Invoke-CippTestORCA240() cluster
+- Invoke-CippTestORCA239() cluster
 - Invoke-CippTestORCA241() cluster
 - Invoke-CippTestORCA243() cluster
-- Invoke-CippTestORCA244() cluster
 - Invoke-CippTestSMB1001_1_10() cluster
 - Invoke-CippTestSMB1001_1_12() cluster
+- Invoke-CippTestSMB1001_1_2() cluster
 - Invoke-CippTestSMB1001_1_3() cluster
 - Invoke-CippTestSMB1001_1_4() cluster
-- Invoke-CippTestSMB1001_2_2() cluster
 - Invoke-CippTestSMB1001_2_1() cluster
-- Invoke-CippTestSMB1001_2_12() cluster
-- Invoke-CippTestSMB1001_2_3() cluster
-- Invoke-CippTestSMB1001_2_5() cluster
 - Invoke-CippTestSMB1001_2_5_L4() cluster
 - Invoke-CippTestSMB1001_2_6() cluster
 - Invoke-CippTestSMB1001_2_8() cluster
 - Invoke-CippTestSMB1001_2_9() cluster
-- Invoke-CippTestZTNA24540() cluster
 - Invoke-CippTestZTNA24541() cluster
-- Invoke-CippTestZTNA24545() cluster
-- Invoke-CippTestZTNA24549() cluster
+- Invoke-CippTestZTNA24542() cluster
 - Invoke-CippTestZTNA24550() cluster
 - Invoke-CippTestZTNA24553() cluster
-- Invoke-CippTestZTNA24564() cluster
+- Invoke-CippTestZTNA24560() cluster
 - Invoke-CippTestZTNA24568() cluster
 - Invoke-CippTestZTNA24569() cluster
-- Invoke-CippTestZTNA24574() cluster
 - Invoke-CippTestZTNA24784() cluster
 - Invoke-CippTestZTNA24839() cluster
 - Invoke-CippTestZTNA24840() cluster
-- Invoke-CippTestZTNA24870() cluster
+- Invoke-CippTestZTNA21772() cluster
 - Invoke-CippTestZTNA21773() cluster
+- Invoke-CippTestZTNA21774() cluster
+- Invoke-CippTestZTNA21775() cluster
 - Invoke-CippTestZTNA21776() cluster
-- Invoke-CippTestZTNA21780() cluster
+- Invoke-CippTestZTNA21777() cluster
 - Invoke-CippTestZTNA21784() cluster
-- Invoke-CippTestZTNA21787() cluster
+- Invoke-CippTestZTNA21786() cluster
 - Invoke-CippTestZTNA21790() cluster
-- Invoke-CippTestZTNA21792() cluster
+- Invoke-CippTestZTNA21791() cluster
 - Invoke-CippTestZTNA21793() cluster
-- Invoke-CippTestZTNA21796() cluster
 - Invoke-CippTestZTNA21799() cluster
-- Invoke-CippTestZTNA21801() cluster
 - Invoke-CippTestZTNA21802() cluster
-- Invoke-CippTestZTNA21806() cluster
-- Invoke-CippTestZTNA21807() cluster
-- Invoke-CippTestZTNA21808() cluster
+- Invoke-CippTestZTNA21803() cluster
 - Invoke-CippTestZTNA21810() cluster
 - Invoke-CippTestZTNA21811() cluster
-- Invoke-CippTestZTNA21817() cluster
 - Invoke-CippTestZTNA21819() cluster
-- Invoke-CippTestZTNA21822() cluster
-- Invoke-CippTestZTNA21823() cluster
 - Invoke-CippTestZTNA21824() cluster
-- Invoke-CippTestZTNA21828() cluster
-- Invoke-CippTestZTNA21837() cluster
-- Invoke-CippTestZTNA21838() cluster
+- Invoke-CippTestZTNA21829() cluster
 - Invoke-CippTestZTNA21839() cluster
 - Invoke-CippTestZTNA21840() cluster
+- Invoke-CippTestZTNA21841() cluster
 - Invoke-CippTestZTNA21842() cluster
-- Invoke-CippTestZTNA21844() cluster
-- Invoke-CippTestZTNA21845() cluster
-- Invoke-CippTestZTNA21846() cluster
-- Invoke-CippTestZTNA21847() cluster
 - Invoke-CippTestZTNA21848() cluster
-- Invoke-CippTestZTNA21849() cluster
+- Invoke-CippTestZTNA21850() cluster
 - Invoke-CippTestZTNA21858() cluster
 - Invoke-CippTestZTNA21861() cluster
-- Invoke-CippTestZTNA21862() cluster
-- Invoke-CippTestZTNA21863() cluster
+- Invoke-CippTestZTNA21866() cluster
 - Invoke-CippTestZTNA21868() cluster
+- Invoke-CippTestZTNA21869() cluster
 - Invoke-CippTestZTNA21872() cluster
 - Invoke-CippTestZTNA21874() cluster
-- Invoke-CippTestZTNA21877() cluster
-- Invoke-CippTestZTNA21886() cluster
-- Invoke-CippTestZTNA21889() cluster
-- Invoke-CippTestZTNA21892() cluster
-- Invoke-CippTestZTNA21941() cluster
-- Invoke-CippTestZTNA21954() cluster
-- Invoke-CippTestZTNA21955() cluster
+- Invoke-CippTestZTNA21876() cluster
+- Invoke-CippTestZTNA21896() cluster
+- Invoke-CippTestZTNA21964() cluster
 - Invoke-CippTestZTNA21992() cluster
-- Invoke-CippTestZTNA22124() cluster
-- Invoke-CippTestZTNA22128() cluster
-- Invoke-CippTestZTNA22659() cluster
-- Invoke-CippTestZTNA24824() cluster
-- Invoke-CippTestZTNA24827() cluster
+- Invoke-CippTestZTNA24572() cluster
 - Configuring CIPP cluster
 - Community Repositories cluster
 - Get-Recipient cluster
@@ -932,6 +798,7 @@
 - diff cluster
 - eml-parse-js cluster
 - @emotion/cache cluster
+- @emotion/react cluster
 - @emotion/server cluster
 - @emotion/styled cluster
 - formik cluster
@@ -991,13 +858,16 @@
 - yup cluster
 - calendar-container.js cluster
 - Conventional Commits Instructions cluster
-- Invoke-ExecBackendProcess() cluster
+- cipp-dev-tools README cluster
+- CIPP OpenAPI v2 Snapshot cluster
 - stop.sh script cluster
 - Intune Actions Table cluster
+- Conventional Commits Instructions cluster
 - Dependabot Config cluster
 - GitHub Sponsors Funding (kelvintegelaar) cluster
 - Bug Report Issue Template cluster
 - Issue Template Config cluster
+- Pull App Fork Sync Config cluster
 - Check for Version Update Workflow cluster
 - Add Comment Workflow cluster
 - Label Issues Workflow cluster
@@ -1025,50 +895,50 @@
 - Tenant Reports cluster
 - Tools cluster
 - useSelector cluster
+- CLAUDE.md (AGENTS.md include) cluster
 
 ## God Nodes (most connected - your core abstractions)
-1. `Write-LogMessage()` - 1236 edges
-2. `Get-CippException()` - 1059 edges
+1. `Write-LogMessage()` - 1245 edges
+2. `Get-CippException()` - 1067 edges
 3. `Add-CippTestResult()` - 499 edges
 4. `Get-CIPPTestData()` - 449 edges
-5. `ApiGetCall()` - 435 edges
+5. `ApiGetCall()` - 443 edges
 6. `Get-CIPPAzDataTableEntity()` - 410 edges
-7. `useSettings()` - 402 edges
-8. `New-GraphGetRequest()` - 391 edges
-9. `Layout()` - 342 edges
+7. `useSettings()` - 408 edges
+8. `New-GraphGetRequest()` - 399 edges
+9. `Layout()` - 343 edges
 10. `Get-CIPPTable()` - 265 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Pull App Fork Sync Config` --semantically_similar_to--> `Fork Drift Check`  [INFERRED] [semantically similar]
-  cipp/.github/pull.yml → .claude/skills/cipp-dev-workflow/SKILL.md
 - `Craft Cron Scheduler` --semantically_similar_to--> `Scheduler Add Task Wizard`  [INFERRED] [semantically similar]
   craft/docs/configuration.md → cipp/docs/user-documentation/tools/scheduler/job.md
 - `Invoke-ExecBackendProcess()` --calls--> `Get-CippException()`  [INFERRED]
   craft/Runtime/HTTP/Exec/Invoke-ExecBackendProcess.ps1 → cipp/backend/Modules/CIPPCore/Public/GraphHelper/Get-CippException.ps1
-- `Invoke-ExecBackendProcess()` --calls--> `Write-LogMessage()`  [INFERRED]
-  craft/Runtime/HTTP/Exec/Invoke-ExecBackendProcess.ps1 → cipp/backend/Modules/CIPPCore/Public/GraphHelper/Write-LogMessage.ps1
-- `CIPP Contribution Workflow` --conceptually_related_to--> `Conventional Commits Instructions`  [INFERRED]
-  .claude/skills/cipp-dev-workflow/SKILL.md → cipp/.github/copilot-instructions.md
+- `Edit Contact` --semantically_similar_to--> `Mailboxes`  [INFERRED] [semantically similar]
+  cipp/docs/user-documentation/email/administration/contacts/edit.md → cipp/docs/user-documentation/email/administration/mailboxes.md
+- `Get-CIPPAuditLogContent()` --calls--> `New-GraphPOSTRequest()`  [INFERRED]
+  cipp/backend/Modules/CIPPCore/Public/Webhooks/Get-CIPPAuditLogContent.ps1 → cipp/backend/Modules/CIPPCore/Public/GraphHelper/New-GraphPOSTRequest.ps1
+- `Test-PolicyExists()` --calls--> `New-ExoRequest()`  [INFERRED]
+  cipp/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Security/Safe-Links-Policy/Invoke-AddSafeLinksPolicyFromTemplate.ps1 → cipp/backend/Modules/CIPPCore/Public/GraphHelper/New-ExoRequest.ps1
 
 ## Import Cycles
 - 2-file cycle: `cipp/frontend/src/hooks/use-permissions.js -> cipp/frontend/src/utils/permissions.js -> cipp/frontend/src/hooks/use-permissions.js`
 - 3-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
+- 4-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippApiResults.jsx -> cipp/frontend/src/components/CippComponents/CippTableDialog.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
+- 4-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
 - 4-file cycle: `cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/utils/get-cipp-formatting.js -> cipp/frontend/src/components/CippTable/CippDataTableButton.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx`
 - 4-file cycle: `cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/util-columnsFromAPI.js -> cipp/frontend/src/utils/get-cipp-formatting.js -> cipp/frontend/src/components/CippTable/CippDataTableButton.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js`
-- 4-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
 - 4-file cycle: `cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippTable/CippGraphExplorerFilter.js -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx`
-- 4-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippApiResults.jsx -> cipp/frontend/src/components/CippComponents/CippTableDialog.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
+- 5-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippApiResults.jsx -> cipp/frontend/src/components/CippComponents/CippTableDialog.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
+- 5-file cycle: `cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippComponents/CippAutocomplete.jsx -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx`
+- 5-file cycle: `cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx`
 - 5-file cycle: `cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/utils/get-cipp-formatting.js -> cipp/frontend/src/components/CippTable/CippDataTableButton.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx`
 - 5-file cycle: `cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/csvExportButton.js -> cipp/frontend/src/utils/get-cipp-formatting.js -> cipp/frontend/src/components/CippTable/CippDataTableButton.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js`
 - 5-file cycle: `cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/pdfExportButton.js -> cipp/frontend/src/utils/get-cipp-formatting.js -> cipp/frontend/src/components/CippTable/CippDataTableButton.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js`
-- 5-file cycle: `cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippComponents/CippAutocomplete.jsx -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx`
-- 5-file cycle: `cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippComponents/CippOffCanvas.jsx -> cipp/frontend/src/components/CippCards/CippPropertyListCard.jsx`
 - 5-file cycle: `cipp/frontend/src/components/CippComponents/CippFormComponent.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippTable/CippGraphExplorerFilter.js -> cipp/frontend/src/components/CippFormPages/CippSchedulerForm.jsx -> cipp/frontend/src/components/CippComponents/CippFormComponent.jsx`
-- 5-file cycle: `cipp/frontend/src/components/CippComponents/CippApiDialog.jsx -> cipp/frontend/src/components/CippComponents/CippApiResults.jsx -> cipp/frontend/src/components/CippComponents/CippTableDialog.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippComponents/CippApiDialog.jsx`
 - 5-file cycle: `cipp/frontend/src/components/CippComponents/CippApiResults.jsx -> cipp/frontend/src/components/CippComponents/CippTableDialog.jsx -> cipp/frontend/src/components/CippTable/CippDataTable.js -> cipp/frontend/src/components/CippTable/CIPPTableToptoolbar.js -> cipp/frontend/src/components/CippTable/CippGraphExplorerFilter.js -> cipp/frontend/src/components/CippComponents/CippApiResults.jsx`
 
 ## Hyperedges (group relationships)
-- **cipp-dev-tools Workspace Documentation Set** — agents_cipp_dev_tools_workspace, readme_cipp_dev_tools_readme, claude_claude_md_include, _claude_skills_cipp_dev_workflow_skill_cipp_contribution_workflow [INFERRED 0.85]
 - **GitHub Issue Intake and Triage Lifecycle** — cipp__github_issue_template_bug_bug_report_template, cipp__github_issue_template_feature_feature_request_template, cipp__github_issue_template_config_issue_template_config, cipp__github_workflows_close_stale_issues_close_stale_issues, cipp__github_workflows_assign_issue_volunteer_issue_volunteer_assignment [INFERRED 0.85]
 - **GitHub Issue Triage Automation** — cipp__github_workflows_comment_on_issues_add_comment, cipp__github_workflows_label_issues_label_issues, cipp__github_workflows_label_sponsor_requests_sponsor_labels, cipp__github_workflows_auto_comments_handle_comment_commands [INFERRED 0.85]
 - **CI Security Scanning Suite** — cipp__github_workflows_codeql_analyser_codeql, cipp__github_workflows_codeql_codeql, cipp__github_workflows_dependency_review_dependency_review, cipp__github_workflows_dependency_scan_dependency_vulnerability_scan, cipp__github_workflows_zap_scan_dast_owasp_zap_scan, cipp__github_workflows_backend_psscriptanalyzer_backend_psscriptanalyzer [INFERRED 0.85]
@@ -1134,315 +1004,315 @@
 - **Craft Container CI/CD Pipeline** — craft__github_workflows_dev_container_build_dev_container, craft__github_workflows_regression_regression_gate, craft__github_workflows_release_container_build_release_container [EXTRACTED 1.00]
 - **Craft Runtime Configuration Surface** — craft_docs_configuration_roles, craft_docs_configuration_worker_pool, craft_docs_configuration_scheduler, craft_docs_configuration_background_concurrency_limiter, craft_docs_configuration_orchestrator, craft_docs_configuration_response_cache, craft_docs_configuration_realtime_sse [EXTRACTED 1.00]
 
-## Communities (1169 total, 687 thin omitted)
+## Communities (1040 total, 546 thin omitted)
 
 ### Community 0 - "index.js cluster"
 Cohesion: 0.02
-Nodes (78): CippAnonymizedReportAlert(), DEFAULT_FIELDS, isReportAnonymized(), useReportAnonymized(), CippDateRangeFilter(), CippDeployContactTemplateDrawer(), CippExchangeActions(), assignmentDirectionOptions (+70 more)
+Nodes (97): CippAddConnectorDrawer(), CippCADeployDrawer(), CippDateRangeFilter(), CippDeployCompliancePolicyDrawer(), extractLabelColor(), MODE_CONFIG, CippDeployContactTemplateDrawer(), CippEditSitePropertiesForm() (+89 more)
 
 ### Community 1 - "ApiCall.jsx cluster"
 Cohesion: 0.03
-Nodes (115): ApiPostCall(), escapeRegExp(), matchesWildcardPattern(), wildcardToRegExp(), CippButtonCard(), CippPageCard(), BPASyncDialog(), BreachSearchDialog() (+107 more)
+Nodes (87): escapeRegExp(), matchesWildcardPattern(), wildcardToRegExp(), CippInfoCard(), CippAddEditTenantGroups(), CippAddTenantAllowBlockListDrawer(), defaultValues, capitalize() (+79 more)
 
-### Community 2 - "use-settings.js cluster"
-Cohesion: 0.03
-Nodes (92): ApiGetCallWithPagination(), CippInfoCard(), CippAddEditTenantGroups(), CippFormComponent(), CippRichTextField, convertBracketsToDots(), countryCodeOptions, languageCodeOptions (+84 more)
-
-### Community 3 - "ApiGetCall() cluster"
+### Community 2 - "ApiGetCall() cluster"
 Cohesion: 0.02
-Nodes (135): ApiGetCall(), BECRemediationReportButton(), AppApprovalTemplateForm(), AssessmentCard(), CippAutoComplete, MemoTextField, CIPPDeviceCodeButton(), CippDevOptions() (+127 more)
+Nodes (181): dompurify, ApiGetCall(), ACTIVE_SNOOZE_STATUSES, AlertsOverviewCard(), describeSnooze(), rowSx, AssessmentCard(), CippAddDomainDrawer() (+173 more)
 
-### Community 4 - "Add-CippTestResult() cluster"
+### Community 3 - "Add-CippTestResult() cluster"
 Cohesion: 0.01
-Nodes (76): Add-CippTestResult(), Invoke-CippTestCIS_1_3_8(), Invoke-CippTestCIS_2_1_11(), Invoke-CippTestCIS_2_1_12(), Invoke-CippTestCIS_2_1_13(), Invoke-CippTestCIS_2_1_8(), Invoke-CippTestCIS_2_2_1(), Invoke-CippTestCIS_2_4_1() (+68 more)
+Nodes (85): Add-CippTestResult(), Invoke-CippTestCIS_1_3_8(), Invoke-CippTestCIS_1_3_9(), Invoke-CippTestCIS_2_1_11(), Invoke-CippTestCIS_2_1_12(), Invoke-CippTestCIS_2_1_13(), Invoke-CippTestCIS_2_2_1(), Invoke-CippTestCIS_2_4_1() (+77 more)
+
+### Community 4 - "useDialog() cluster"
+Cohesion: 0.03
+Nodes (105): ActionsMenu(), CippButtonCard(), CippChartCard(), useChartOptions(), CippInfoBar(), CippRemediationCard(), CippAddTenantGroupDrawer(), CippApiDialog() (+97 more)
 
 ### Community 5 - "Get-CIPPTestData() cluster"
 Cohesion: 0.01
-Nodes (75): Get-CippSandboxData(), Get-CIPPTestData(), Get-CippTestDataFieldManifest(), Invoke-CippTestCIS_1_1_3(), Invoke-CippTestCIS_1_3_1(), Invoke-CippTestCIS_1_3_3(), Invoke-CippTestCIS_1_3_4(), Invoke-CippTestCIS_2_1_14() (+67 more)
+Nodes (79): Get-CippSandboxData(), Get-CIPPTestData(), Get-CippTestDataFieldManifest(), Invoke-CippTestCIS_2_1_3(), Invoke-CippTestCIS_2_4_2(), Invoke-CippTestCIS_3_1_1(), Invoke-CippTestCIS_5_1_2_3(), Invoke-CippTestCIS_5_1_4_4() (+71 more)
 
-### Community 6 - "CippDataTable.js cluster"
-Cohesion: 0.05
-Nodes (74): CippBannerListCard(), CippDomainCards(), DomainResultCard(), CippPropertyListCard(), CippAliasDialog(), CippAuditLogDetails(), CippCopyToClipBoard(), CippCustomVariables() (+66 more)
+### Community 6 - "Get-CippException() cluster"
+Cohesion: 0.01
+Nodes (77): Get-CippException(), Invoke-CippTestCIS_1_2_2(), Invoke-CippTestCIS_1_3_3(), Invoke-CippTestCIS_2_1_7(), Invoke-CippTestCIS_3_3_1(), Invoke-CippTestCIS_5_1_3_4(), Invoke-CippTestCIS_5_1_4_3(), Invoke-CippTestCIS_5_1_8_1() (+69 more)
 
-### Community 7 - "useDialog() cluster"
-Cohesion: 0.03
-Nodes (90): ActionsMenu(), CippChartCard(), useChartOptions(), CippInfoBar(), CippRemediationCard(), CippUniversalSearch, ResultsRow(), ACTIVE_SNOOZE_STATUSES (+82 more)
-
-### Community 8 - "New-ExoRequest() cluster"
+### Community 7 - "Get-CIPPAzDataTableEntity() cluster"
 Cohesion: 0.02
-Nodes (63): Get-CIPPAlertQuarantineReleaseRequests(), Get-CIPPAlertRestrictedUsers(), Get-CIPPAlertSoftDeletedMailboxes(), Get-CIPPAlertTERRL(), New-ExoRequest(), Remove-CIPPMobileDevice(), Remove-CIPPTrustedBlockedSender(), Set-CIPPAlwaysShowFrom() (+55 more)
+Nodes (76): Push-GetApplicationQueue(), Push-GetTenantDomains(), Push-OrchestratorBatchItems(), ConvertTo-CIPPODataFilterValue(), Start-BackupRetentionCleanup(), Start-DurableCleanup(), Get-CIPPAzDataTableEntity(), Invoke-ExecCloneTemplate() (+68 more)
 
-### Community 9 - "Add-CIPPDbItem() cluster"
-Cohesion: 0.02
-Nodes (62): Push-StoreOneDriveRootPermissions(), Push-StoreMailboxRules(), Push-StoreSharePointSharingLinks(), Add-CIPPDbItem(), Set-CIPPDBCacheAdminConsentRequestPolicy(), Set-CIPPDBCacheAppRoleAssignments(), Set-CIPPDBCacheApps(), Set-CIPPDBCacheAuthenticationFlowsPolicy() (+54 more)
-
-### Community 10 - "Add-CIPPAzDataTableEntity() cluster"
-Cohesion: 0.02
-Nodes (57): Push-DomainAnalyserDomain(), Push-ListBasicAuthAllTenants(), Push-AuditLogProcessingBatch(), Add-CIPPAzDataTableEntity(), New-CIPPAsyncDeployment(), Set-CippQueueTask(), Start-UserSyncTimer(), Get-CIPPReusableSettingsFromPolicy() (+49 more)
-
-### Community 11 - "Get-CIPPTable() cluster"
-Cohesion: 0.02
-Nodes (50): Push-TableCleanupTask(), Push-ExecAlertsListAllTenants(), Push-ExecIncidentsListAllTenants(), Push-ExecMdoAlertsListAllTenants(), Push-GetPendingWebhooks(), Push-ListMailQuarantineAllTenants(), Push-ListMFAUsersQueue(), Push-ListTenantAllowBlockListAllTenants() (+42 more)
-
-### Community 12 - "CippWizardStepButtons.jsx cluster"
-Cohesion: 0.06
-Nodes (52): CippAddTenantForm(), CippAddTenantTypeSelection(), CippAlertsStep(), CippBaselinesStep(), CippDeploymentStep(), CIPPDeploymentUpdateTokens(), CippDirectTenantDeploy(), CippGDAPTenantSetup() (+44 more)
-
-### Community 13 - "usePermissions() cluster"
+### Community 8 - "CippDataTable.js cluster"
 Cohesion: 0.04
-Nodes (62): CertificateCredentialRemovalForm(), CippApiLogsDrawer(), CippCADeployDrawer(), CippDeployCompliancePolicyDrawer(), extractLabelColor(), MODE_CONFIG, CippEditSitePropertiesForm(), DOMAIN_MODE_OPTIONS (+54 more)
+Nodes (85): BECRemediationReportButton(), CippBannerListCard(), ADD_CLIENT_SECRET_FIELDS, AUDIENCES_REQUIRING_V2_TOKENS, editInEntraAction, entraLinkActions(), getAppRegistrationDetailHeaderActions(), getAppRegistrationEditActions() (+77 more)
 
-### Community 14 - "ConvertTo-CIPPODataFilterValue() cluster"
+### Community 9 - "ApiPostCall() cluster"
 Cohesion: 0.02
-Nodes (42): ConvertTo-CIPPODataFilterValue(), Get-TenantProperties(), Invoke-ExecCloneTemplate(), Invoke-ExecSetPackageTag(), Invoke-ListScheduledItemDetails(), Invoke-EditContactTemplates(), Invoke-ListContactTemplates(), Invoke-RemoveContactTemplates() (+34 more)
+Nodes (97): react, ApiPostCall(), CippPageCard(), AppApprovalTemplateForm(), BPASyncDialog(), BreachSearchDialog(), CippAddContactDrawer(), CippAddEquipmentDrawer() (+89 more)
 
-### Community 15 - "Get-CippException() cluster"
+### Community 10 - "getCippFormatting() cluster"
+Cohesion: 0.05
+Nodes (66): CippDomainCards(), DomainResultCard(), CippPropertyListCard(), CippUniversalSearch, ResultsRow(), CippAuditLogDetails(), CippCsvExportButton(), flattenObject() (+58 more)
+
+### Community 11 - "Add-CIPPAzDataTableEntity() cluster"
 Cohesion: 0.02
-Nodes (41): Push-CIPPTestsList(), Get-CippException(), Set-CIPPSignature(), Invoke-RemoveApp(), Invoke-ExecAssignmentFilter(), Invoke-RemovePolicy(), Invoke-ExecSetUserPhoto(), Invoke-AddTeam() (+33 more)
+Nodes (57): Push-ExecAlertsListAllTenants(), Push-ExecIncidentsListAllTenants(), Push-ExecMdoAlertsListAllTenants(), Add-CIPPAzDataTableEntity(), New-CIPPAsyncDeployment(), Set-CIPPAccessRole(), Start-UserSyncTimer(), Get-CIPPReusableSettingsFromPolicy() (+49 more)
 
-### Community 16 - "New-GraphPOSTRequest() cluster"
+### Community 12 - "New-ExoRequest() cluster"
+Cohesion: 0.02
+Nodes (53): Get-CIPPAlertQuarantineReleaseRequests(), Get-CIPPAlertSoftDeletedMailboxes(), New-ExoRequest(), Remove-CIPPMobileDevice(), Set-CIPPAlwaysShowFrom(), Set-CIPPDBCacheExoDkimSigningConfig(), Set-CIPPDBCacheExoMalwareFilterPolicies(), Set-CIPPDBCacheExoPresetSecurityPolicy() (+45 more)
+
+### Community 13 - "Get-CIPPTable() cluster"
+Cohesion: 0.02
+Nodes (51): Push-TableCleanupTask(), Push-GetPendingWebhooks(), Push-ListBasicAuthAllTenants(), Push-ListMailQuarantineAllTenants(), Push-ListTenantAllowBlockListAllTenants(), Push-ListTransportRulesAllTenants(), Get-CippLastAuditLogSearch(), Initialize-CIPPTimezone() (+43 more)
+
+### Community 14 - "Add-CIPPDbItem() cluster"
+Cohesion: 0.02
+Nodes (48): Push-StoreMailboxPermissions(), Push-StoreMailboxRules(), Push-StoreSharePointSharingLinks(), Add-CIPPDbItem(), Set-CIPPDBCacheAppRoleAssignments(), Set-CIPPDBCacheApps(), Set-CIPPDBCacheAuthenticationMethodsPolicy(), Set-CIPPDBCacheCopilotReadinessActivity() (+40 more)
+
+### Community 15 - "Write-LogMessage() cluster"
+Cohesion: 0.02
+Nodes (46): Push-GetDomainAnalyserResults(), Push-CIPPDBCacheData(), Write-LogMessage(), New-CIPPRestore(), Set-CIPPSignature(), Set-CIPPDBCacheExoAtpPolicyForO365(), Set-CIPPDBCacheExoTransportConfig(), Invoke-NinjaOneVulnCsvUpload() (+38 more)
+
+### Community 16 - "Write-AlertTrace() cluster"
 Cohesion: 0.03
-Nodes (40): Update-CIPPSAMRedirectUri(), Get-CippUserAgent(), New-CIPPGraphRetry(), New-GraphPOSTRequest(), New-CIPPOneDriveShortCut(), Remove-CIPPAutopilotProfile(), Resolve-CIPPCADependencies(), Set-CIPPCloudManaged() (+32 more)
+Nodes (41): Get-CIPPAlertApnCertExpiry(), Get-CIPPAlertAppCertificateExpiry(), Get-CIPPAlertAppleTerms(), Get-CIPPAlertAppSecretExpiry(), Get-CIPPAlertDefenderAlerts(), Get-CIPPAlertDefenderIncidents(), Get-CIPPAlertDefenderMalware(), Get-CIPPAlertDefenderStatus() (+33 more)
 
-### Community 17 - "Get-CIPPAzDataTableEntity() cluster"
-Cohesion: 0.03
-Nodes (39): Set-CIPPAccessRole(), Start-BackupRetentionCleanup(), Start-BillingTimer(), Start-DurableCleanup(), Get-CIPPAzDataTableEntity(), Set-CIPPGraphSubscription(), Push-ExecGenerateReportBuilderReport(), Push-AuditLogProcessingBatchV2() (+31 more)
-
-### Community 18 - "PowerShellWorkerPool cluster"
+### Community 17 - "PowerShellWorkerPool cluster"
 Cohesion: 0.05
 Nodes (34): BindingFlags, BlockingCollection, ExportedModuleState, PowerShellWorker, bool, HashSet, ILogger, int (+26 more)
 
-### Community 19 - "OrchestratorService cluster"
+### Community 18 - "OrchestratorService cluster"
 Cohesion: 0.06
 Nodes (30): CancellationTokenSource, cancelledCount, OrchestratorBridge, OrchestratorRun, OrchestratorService, OrchestratorTaskItem, PendingOrchestration, PendingPlannerRun (+22 more)
 
-### Community 20 - "Write-LogMessage() cluster"
+### Community 19 - "OnboardingWizardPage.jsx cluster"
+Cohesion: 0.06
+Nodes (47): CippAddTenantForm(), CippAddTenantTypeSelection(), CippAlertsStep(), CippBaselinesStep(), CippDeploymentStep(), CippDirectTenantDeploy(), CippIndirectResellerLink(), CippNotificationsStep() (+39 more)
+
+### Community 20 - "New-GraphGetRequest() cluster"
 Cohesion: 0.03
-Nodes (38): Push-StoreMailboxPermissions(), Get-CIPPOutOfOffice(), Write-LogMessage(), Remove-CIPPCalendarInvites(), Set-CIPPMailboxType(), Set-CIPPMobileDevice(), Set-CIPPDBCacheAuthenticationMethodsPolicy(), Set-CIPPDBCacheCredentialUserRegistrationDetails() (+30 more)
+Nodes (38): New-GraphGetRequest(), Set-CIPPDBCacheBitlockerKeys(), Invoke-ExecServicePrincipals(), Invoke-ListAdminPortalLicenses(), Find-TransitiveGroupPath(), Invoke-ExecGDAPTrace(), Invoke-ListMailboxMobileDevices(), Invoke-ListSharedMailboxStatistics() (+30 more)
 
 ### Community 21 - "SetupService cluster"
 Cohesion: 0.07
 Nodes (27): Action, AllowedUsersStatus, AppRegistrationResult, AppLifecycleBridge, bool, ILogger, string, Task (+19 more)
 
-### Community 22 - "New-GraphGetRequest() cluster"
+### Community 22 - "Get-NormalizedError() cluster"
 Cohesion: 0.03
-Nodes (33): New-GraphGetRequest(), Invoke-CIPPOffboardingJob(), Set-CIPPGDAPAutoExtend(), Set-CIPPRegistrationCampaign(), Find-TransitiveGroupPath(), Invoke-ExecGDAPTrace(), Invoke-ListMailboxMobileDevices(), Invoke-ListSharedMailboxAccountEnabled() (+25 more)
+Nodes (32): Get-NormalizedError(), Invoke-CIPPCATemplateBatch(), Set-CABatchCompareStatus(), Set-CippStandardInfoContext(), Invoke-CIPPStandardColleagueImpersonationAlert(), Invoke-CIPPStandardDefenderAVPolicy(), Invoke-CIPPStandardDisableAppCreation(), Invoke-CIPPStandardDisableEntraPortal() (+24 more)
 
-### Community 23 - "Get-Tenants() cluster"
-Cohesion: 0.05
-Nodes (32): Get-CIPPAssignmentFilterReport(), Get-CIPPCalendarPermissionReport(), Get-CIPPCVEReport(), Get-CIPPDbItem(), Get-CIPPGroupsReport(), Get-CIPPIntuneApplicationReport(), Get-CIPPIntuneAppProtectionPolicyReport(), Get-CIPPIntuneCompliancePolicyReport() (+24 more)
-
-### Community 24 - "CacheService cluster"
+### Community 23 - "CacheService cluster"
 Cohesion: 0.05
 Nodes (25): CacheProfiler, bool, ILogger, long, CacheBridge, CachedResponse, CacheEntry, CacheService (+17 more)
 
-### Community 25 - "PowerShellRunnerService cluster"
+### Community 24 - "PowerShellRunnerService cluster"
 Cohesion: 0.07
 Nodes (25): DispatchProfiler, DispatchTiming, bool, ILogger, long, PowerShellRunnerService, ScriptResult, Collection (+17 more)
 
-### Community 26 - "Test-CIPPStandardLicense() cluster"
+### Community 25 - "Test-CIPPStandardLicense() cluster"
 Cohesion: 0.03
-Nodes (31): Test-CIPPStandardLicense(), Invoke-CIPPStandardAntiPhishPolicy(), Invoke-CIPPStandardAntiSpamSafeList(), Invoke-CIPPStandardAutoArchive(), Invoke-CIPPStandardAutoExpandArchive(), Invoke-CIPPStandardAutopilotProfile(), Invoke-CIPPStandardAutopilotStatusPage(), Invoke-CIPPStandardBranding() (+23 more)
+Nodes (31): Test-CIPPStandardLicense(), Invoke-CIPPStandardAntiSpamSafeList(), Invoke-CIPPStandardAuditLog(), Invoke-CIPPStandardAutoArchive(), Invoke-CIPPStandardAutoExpandArchive(), Invoke-CIPPStandardAutopilotProfile(), Invoke-CIPPStandardBranding(), Invoke-CIPPStandardDelegateSentItems() (+23 more)
 
-### Community 27 - "Get-NormalizedError() cluster"
+### Community 26 - "customers-search.js cluster"
+Cohesion: 0.08
+Nodes (40): BulkActionsMenu(), CippUniversalSearchV2, CippBreadcrumbNav(), loadTabOptions(), FilterDialog(), FilterDialogItem(), QueryField(), QueryFieldRoot (+32 more)
+
+### Community 27 - "Invoke-ExecExtensionMapping() cluster"
 Cohesion: 0.04
-Nodes (30): Get-NormalizedError(), Invoke-CIPPCATemplateBatch(), Set-CABatchCompareStatus(), Set-CippStandardInfoContext(), Invoke-CIPPStandardColleagueImpersonationAlert(), Invoke-CIPPStandardDisableBasicAuthSMTP(), Invoke-CIPPStandardDisableExchangeOnlinePowerShell(), Invoke-CIPPStandardDisableGuestDirectory() (+22 more)
+Nodes (29): Set-CIPPResetPassword(), Get-ExtensionAPIKey(), Get-ExtensionMapping(), Set-ExtensionFieldMapping(), Get-HaloMapping(), Get-HaloTicketOutcome(), Get-HaloTicketType(), Get-HaloToken() (+21 more)
 
-### Community 28 - "Start-CIPPOrchestrator() cluster"
-Cohesion: 0.06
-Nodes (27): Push-UpdateTenants(), Get-CIPPQueueData(), New-CippQueueEntry(), Start-AuditLogOrchestrator(), Start-CIPPDBCacheOrchestrator(), Start-CIPPOrchestrator(), Start-DomainOrchestrator(), Start-IntuneReportExportOrchestrator() (+19 more)
+### Community 28 - "New-GraphBulkRequest() cluster"
+Cohesion: 0.04
+Nodes (28): Push-BECRun(), Get-CIPPAlertAdminPassword(), Get-CIPPAlertHuntressRogueApps(), New-GraphBulkRequest(), Remove-CIPPUserTeamsPhoneDIDs(), Set-CIPPDBCacheIntuneApplications(), Set-CIPPDBCacheIntuneAppProtectionPolicies(), Set-CIPPDBCacheIntuneCompliancePolicies() (+20 more)
 
 ### Community 29 - "FileLoggerProvider cluster"
 Cohesion: 0.06
 Nodes (22): FileLoggerProvider, LogItem, RotatingFileLogger, bool, Channel, Exception, Func, HashSet (+14 more)
 
-### Community 30 - "coverage.js cluster"
+### Community 30 - "Get-CippDbRole() cluster"
+Cohesion: 0.04
+Nodes (26): Get-CippDbRole(), Get-CippDbRoleMembers(), Invoke-CippTestCIS_1_1_1(), Invoke-CippTestCIS_1_1_4(), Invoke-CippTestCIS_5_2_2_1(), Invoke-CippTestCIS_5_2_2_4(), Invoke-CippTestCIS_5_2_2_5(), Invoke-CippTestE8_Admin_01() (+18 more)
+
+### Community 31 - "Write-StandardsAlert() cluster"
+Cohesion: 0.04
+Nodes (26): Write-StandardsAlert(), Invoke-CIPPStandardAnonReportDisable(), Invoke-CIPPStandardAtpPolicyForO365(), Invoke-CIPPStandardAuthMethodsPolicyMigration(), Invoke-CIPPStandardAuthMethodsSettings(), Invoke-CIPPStandardAutoArchiveMailbox(), Invoke-CIPPStandardBookings(), Invoke-CIPPStandardCollaborationDomainRestriction() (+18 more)
+
+### Community 32 - "Set-CIPPStandardsCompareField() cluster"
+Cohesion: 0.04
+Nodes (26): Set-CIPPStandardsCompareField(), Invoke-CIPPStandardAdminSSPR(), Invoke-CIPPStandardAutoAddProxy(), Invoke-CIPPStandardBitLockerKeysForOwnedDevice(), Invoke-CIPPStandardDefenderCompliancePolicy(), Invoke-CIPPStandardDisableM365GroupUsers(), Invoke-CIPPStandardDisableViva(), Invoke-CIPPStandardDlpViaDcsEnabled() (+18 more)
+
+### Community 33 - "coverage.js cluster"
 Cohesion: 0.08
 Nodes (39): ApexChart, Chart, CippCoverageHeatmap(), bucketLabel(), Page(), simpleColumns, InvoicesStats(), useChartOptions() (+31 more)
 
-### Community 31 - "CippCAPolicyBuilder.jsx cluster"
-Cohesion: 0.05
-Nodes (46): ApplicationsSection(), CippCAPolicyBuilder(), ConditionsSection(), countryOptions, enumToOptions(), extractCAPolicyJSON(), GrantControlsSection(), namedLocationToForm() (+38 more)
-
-### Community 32 - "JobManager cluster"
+### Community 34 - "JobManager cluster"
 Cohesion: 0.05
 Nodes (28): ConcurrentQueue, JobDetail, JobManager, JobRecord, JobRunSummary, JobSummary, QueuedJob, ConcurrentDictionary (+20 more)
 
-### Community 33 - "Write-AlertTrace() cluster"
+### Community 35 - "Add-CIPPBPAField() cluster"
 Cohesion: 0.04
-Nodes (25): Get-CIPPAlertApnCertExpiry(), Get-CIPPAlertAppCertificateExpiry(), Get-CIPPAlertDefenderStatus(), Get-CIPPAlertDeviceCompliance(), Get-CIPPAlertEntraLicenseUtilization(), Get-CIPPAlertGroupMembershipChange(), Get-CIPPAlertInactiveGuestUsers(), Get-CIPPAlertInactiveLicensedUsers() (+17 more)
+Nodes (25): Add-CIPPBPAField(), Invoke-CIPPStandardActivityBasedTimeout(), Invoke-CIPPStandardAntiPhishPolicy(), Invoke-CIPPStandardAppManagementPolicy(), Invoke-CIPPStandardAutopilotStatusPage(), Invoke-CIPPStandardcalDefault(), Invoke-CIPPStandardCloudMessageRecall(), Invoke-CIPPStandardCopilotSettings() (+17 more)
 
-### Community 34 - "Add-CIPPBPAField() cluster"
-Cohesion: 0.04
-Nodes (25): Add-CIPPBPAField(), Invoke-CIPPStandardAdminSSPR(), Invoke-CIPPStandardAuthMethodsSettings(), Invoke-CIPPStandardAutoAddProxy(), Invoke-CIPPStandardBitLockerKeysForOwnedDevice(), Invoke-CIPPStandardCopilotLimitedMode(), Invoke-CIPPStandardCopilotSettings(), Invoke-CIPPStandardDeletedUserRentention() (+17 more)
-
-### Community 35 - "Get-CippDbRole() cluster"
-Cohesion: 0.04
-Nodes (25): Get-CippDbRole(), Get-CippDbRoleMembers(), Invoke-CippTestCIS_1_1_1(), Invoke-CippTestCIS_1_1_4(), Invoke-CippTestCIS_5_2_2_1(), Invoke-CippTestCIS_5_2_2_4(), Invoke-CippTestCIS_5_2_2_5(), Invoke-CippTestE8_Admin_01() (+17 more)
-
-### Community 36 - "Write-StandardsAlert() cluster"
-Cohesion: 0.04
-Nodes (25): Write-StandardsAlert(), Invoke-CIPPStandardAddDKIM(), Invoke-CIPPStandardAppManagementPolicy(), Invoke-CIPPStandardAtpPolicyForO365(), Invoke-CIPPStandardAuthMethodsPolicyMigration(), Invoke-CIPPStandardBookings(), Invoke-CIPPStandardDefaultPlatformRestrictions(), Invoke-CIPPStandardDefenderAVPolicy() (+17 more)
-
-### Community 37 - "CippStandardAccordion.jsx cluster"
-Cohesion: 0.08
-Nodes (39): CippStandardsDialog(), getActionIcon(), getCategoryIcon(), getImpactColor(), CippAddedComponent, CippStandardAccordion(), getAvailableActions(), CippTestDetailOffCanvas() (+31 more)
-
-### Community 38 - "scrollbar.js cluster"
-Cohesion: 0.07
-Nodes (23): Pagination(), PaginationRoot, ResourceError(), ResourceErrorRoot, ResourceUnavailable(), ResourceUnavailableRoot, Scrollbar, statusMap (+15 more)
-
-### Community 39 - "Get-CIPPTextReplacement() cluster"
+### Community 36 - "CippCAPolicyBuilder.jsx cluster"
 Cohesion: 0.05
-Nodes (25): Push-UploadApplication(), Push-CIPPTest(), Add-CIPPPackagedApplication(), Add-CIPPW32ScriptApplication(), Add-CIPPWin32LobAppContent(), Compare-CIPPIntuneAssignments(), Get-CIPPIntunePolicy(), Get-CIPPIntunePolicyAssignments() (+17 more)
+Nodes (45): ApplicationsSection(), CippCAPolicyBuilder(), ConditionsSection(), countryOptions, enumToOptions(), GrantControlsSection(), namedLocationToForm(), namedLocationToGraph() (+37 more)
 
-### Community 40 - "Get-SharePointAdminLink() cluster"
-Cohesion: 0.05
-Nodes (24): Set-CIPPAsyncDeploymentStep(), Get-CIPPSiteVersionCleanupStatus(), Get-SharePointAdminLink(), Invoke-CIPPSharePointTemplateDeploy(), Update-DeployStep(), New-CIPPSharePointLibrary(), New-CIPPSharepointSite(), New-CIPPTeam() (+16 more)
-
-### Community 41 - "Set-CIPPStandardsCompareField() cluster"
-Cohesion: 0.04
-Nodes (24): Set-CIPPStandardsCompareField(), Invoke-CIPPStandardActivityBasedTimeout(), Invoke-CIPPStandardAnonReportDisable(), Invoke-CIPPStandardAutoArchiveMailbox(), Invoke-CIPPStandardCollaborationDomainRestriction(), Invoke-CIPPStandardCustomBannedPasswordList(), Invoke-CIPPStandardDefenderCompliancePolicy(), Invoke-CIPPStandardDeployCheckChromeExtension() (+16 more)
-
-### Community 42 - "cipp-deploy.json cluster"
+### Community 37 - "cipp-deploy.json cluster"
 Cohesion: 0.05
 Nodes (45): defaultValue, metadata, type, defaultValue, metadata, type, defaultValue, metadata (+37 more)
 
-### Community 43 - "customers-search.js cluster"
-Cohesion: 0.11
-Nodes (36): BulkActionsMenu(), FilterDialog(), FilterDialogItem(), QueryField(), QueryFieldRoot, emptyFilter, useFilters(), validateFilter() (+28 more)
+### Community 38 - "New-ExoBulkRequest() cluster"
+Cohesion: 0.05
+Nodes (23): Push-GetCalendarPermissionsBatch(), Push-GetMailboxPermissionsBatch(), Push-GetMailboxRulesBatch(), Push-ListMailboxRulesQueue(), New-ExoBulkRequest(), New-CIPPGroup(), Remove-CIPPGroup(), Remove-CIPPGroups() (+15 more)
 
-### Community 44 - "Sponsor Quick Start cluster"
+### Community 39 - "Set-SherwebSubscription() cluster"
+Cohesion: 0.06
+Nodes (22): Get-CIPPAccessRole(), Get-CippAllowedPermissions(), Get-CippApiClient(), Get-CippHttpPermissions(), Get-CIPPRolePermissions(), New-Denial(), Test-CippApiClientRoleGrant(), Set-CIPPSherwebLicense() (+14 more)
+
+### Community 40 - "Sponsor Quick Start cluster"
 Cohesion: 0.06
 Nodes (43): Configuring Automatic API Updates, GitHub Continuous Deployment for Function App, azure-static-web-apps Workflow File, GitHub Fork Sync, Permissions Check and Repair, Updating Versions, Admin Bypasses Custom Roles, Built-in Role Ceiling (Highest Wins) (+35 more)
 
-### Community 45 - "CippJSONView.jsx cluster"
-Cohesion: 0.09
-Nodes (29): CippIntunePolicyDetails(), CippTemplateFieldRenderer(), CippJsonView(), cleanObject(), renderTextWithLinks(), useAdminTemplateDefinitions(), extractGuidsFromString(), extractObjectIdFromPartnerUPN() (+21 more)
-
-### Community 46 - "cloudAppSecurityType cluster"
+### Community 41 - "cloudAppSecurityType cluster"
 Cohesion: 0.05
 Nodes (43): description, properties, title, type, description, properties, title, type (+35 more)
 
-### Community 47 - "WorkerMetricsBridge cluster"
+### Community 42 - "WorkerMetricsBridge cluster"
 Cohesion: 0.08
 Nodes (23): GenerationDetail, JobMetrics, LimiterMetrics, MemoryBreakdown, MemoryMetrics, PoolMetrics, WorkerDetail, WorkerMetricsBridge (+15 more)
 
-### Community 48 - "CippCodeBlock.jsx cluster"
-Cohesion: 0.07
-Nodes (28): dompurify, react, GroupHeader, GroupItems, CippCalendarPermissionsDialog(), CippCodeBlock(), CippPrismHighlighter, CodeContainer (+20 more)
+### Community 43 - "Set-CIPPDlpCompliancePolicy() cluster"
+Cohesion: 0.06
+Nodes (23): Compare-CIPPDlpCompliancePolicy(), ConvertTo-CIPPComparableString(), ConvertTo-CIPPDlpComparable(), Compare-CIPPSensitiveInfoType(), ConvertTo-CIPPSitComparable(), ConvertTo-CIPPComplianceSetParams(), ConvertTo-CIPPExoHashtable(), Convert-Entry() (+15 more)
 
-### Community 49 - "RealtimeService cluster"
+### Community 44 - "RealtimeService cluster"
 Cohesion: 0.07
 Nodes (22): ChannelReader, Conn, Connection, RealtimeBridge, Connection, Entry, RealtimeService, bool (+14 more)
 
-### Community 50 - "cipp-migration.json cluster"
+### Community 45 - "cipp-migration.json cluster"
 Cohesion: 0.06
 Nodes (38): defaultValue, metadata, type, contentVersion, metadata, type, metadata, type (+30 more)
 
-### Community 51 - "Craft Configuration Guide cluster"
+### Community 46 - "Craft Configuration Guide cluster"
 Cohesion: 0.07
 Nodes (39): Scheduler Add Task Wizard, Scheduled Task vs Triggered Task, View Scheduled Task Details, Application Approval, CIPPBadRepIP Alert, Geo IP Check, IP Database, IP Whitelist (+31 more)
 
-### Community 52 - "OrchestratorTableStore cluster"
+### Community 47 - "OrchestratorTableStore cluster"
 Cohesion: 0.11
 Nodes (17): ICraftTableStore, CancellationToken, IAsyncEnumerable, IReadOnlyList, Task, OrchestratorTableStore, bool, Dictionary (+9 more)
 
-### Community 53 - "New-GraphBulkRequest() cluster"
-Cohesion: 0.05
-Nodes (19): Push-BECRun(), Get-CIPPAlertAdminPassword(), Get-CIPPAlertHuntressRogueApps(), Get-CIPPAlertTenantAccess(), New-GraphBulkRequest(), Remove-CIPPUserTeamsPhoneDIDs(), Set-CIPPPerUserMFA(), Invoke-ExecExchangeRoleRepair() (+11 more)
-
-### Community 54 - "excludeLocations cluster"
+### Community 48 - "excludeLocations cluster"
 Cohesion: 0.06
 Nodes (37): description, properties, title, type, conditionalAccessLocations, description, graphLookup, items (+29 more)
 
-### Community 55 - "AzureTableStore cluster"
+### Community 49 - "AzureTableStore cluster"
 Cohesion: 0.12
 Nodes (18): AzureTableStore, CancellationToken, ConcurrentDictionary, HashSet, IAsyncEnumerable, int, IReadOnlyList, List (+10 more)
 
-### Community 56 - "CIPP Docs Table of Contents cluster"
+### Community 50 - "CIPP Docs Table of Contents cluster"
 Cohesion: 0.08
 Nodes (36): CIPP-API Azure Function App Deploy Workflow, CIPP Azure Static Web Apps CI/CD Workflow, CIPP OAS Generator (external OpenAPI docs site), API Endpoint Documentation, CIPPAPIModule (community PowerShell module), CIPP API OAuth Client Credentials Authentication, CIPP API Setup & Authentication, Storylane Showcases (+28 more)
 
-### Community 57 - "usePopover() cluster"
-Cohesion: 0.12
-Nodes (17): useReleaseNotes(), usePopover(), AccountPopover(), getContent(), NotificationsPopover(), OrganizationPopover(), NOTE: Ensure an organization is found, otherwise some components will fail., paths (+9 more)
-
-### Community 58 - "Test-CIPPAccess() cluster"
-Cohesion: 0.07
-Nodes (18): Get-CIPPRoleIPRanges(), Test-CIPPAccess(), Get-CIPPTestResultsTenants(), Set-CIPPAssignedApplication(), Invoke-ListExtensionSync(), Invoke-ListScheduledItems(), Invoke-AddChocoApp(), Invoke-AddMSPApp() (+10 more)
-
-### Community 59 - "dependencies cluster"
+### Community 51 - "dependencies cluster"
 Cohesion: 0.06
-Nodes (35): dependencies, driver.js, @emotion/react, export-to-csv, gray-matter, leaflet, @mui/icons-material, @mui/lab (+27 more)
+Nodes (35): apexcharts, dependencies, apexcharts, driver.js, export-to-csv, gray-matter, leaflet, @mui/icons-material (+27 more)
 
-### Community 60 - "HttpDiagnosticListener cluster"
+### Community 52 - "Get-Tenants() cluster"
+Cohesion: 0.07
+Nodes (18): Push-GetTenants(), Get-CIPPCVEReport(), Get-CIPPMailboxRulesReport(), Get-CIPPMFAStateReport(), Get-CIPPOneDriveUsageReport(), Get-CIPPSharePointSiteUsageReport(), Get-CIPPTeamsVoiceReport(), Get-Tenants() (+10 more)
+
+### Community 53 - "HttpDiagnosticListener cluster"
 Cohesion: 0.09
 Nodes (17): HttpDiagnosticListener, ConcurrentDictionary, Exception, HashSet, IDisposable, ILogger, int, Regex (+9 more)
 
-### Community 61 - "SchedulerService cluster"
+### Community 54 - "SchedulerService cluster"
 Cohesion: 0.09
 Nodes (19): BackgroundService, SchedulerBridge, SchedulerService, SchedulerTask, CancellationToken, Dictionary, ILogger, IReadOnlyList (+11 more)
 
-### Community 62 - "cipp-deploy-azure-button.json cluster"
+### Community 55 - "Send-CIPPAlert() cluster"
+Cohesion: 0.06
+Nodes (17): Push-SchedulerCIPPNotifications(), Push-CippDriftManagement(), Push-CIPPTestCollection(), Push-PublicWebhookProcess(), Get-CIPPDrift(), Get-SlackAlertBlocks(), Invoke-CIPPTestCollection(), New-CIPPAlertTemplate() (+9 more)
+
+### Community 56 - "Add-CIPPScheduledTask() cluster"
+Cohesion: 0.07
+Nodes (17): Add-CIPPAlias(), Add-CIPPScheduledTask(), Clear-CIPPImmutableId(), Add-CippQueueMessage(), New-CIPPUser(), New-CIPPUserTask(), Remove-CIPPLicense(), Set-CIPPCopyGroupMembers() (+9 more)
+
+### Community 57 - "cipp-deploy-azure-button.json cluster"
 Cohesion: 0.06
 Nodes (33): defaultValue, metadata, type, defaultValue, metadata, type, contentVersion, name (+25 more)
 
-### Community 63 - "properties cluster"
+### Community 58 - "ApiGetCallWithPagination() cluster"
+Cohesion: 0.08
+Nodes (21): ApiGetCallWithPagination(), CippCodeBlock(), CippPrismHighlighter, CodeContainer, Editor, CippForefrontHeaderDialog(), forefrontHeaderMapping, parseForefrontHeader() (+13 more)
+
+### Community 59 - "CippSharePointTemplateBuilder.jsx cluster"
+Cohesion: 0.09
+Nodes (24): CippSharePointPermissionEditor(), SHAREPOINT_PERMISSION_LEVELS, CippSharePointTemplateBuilder(), CippSharePointTemplateBuilderSkeleton(), CippSharePointTemplateQuickStats(), CippSharePointTemplateQuickStatsSkeleton(), CREATE_AS_OPTIONS, CreateAsDialog() (+16 more)
+
+### Community 60 - "usePopover() cluster"
+Cohesion: 0.12
+Nodes (17): useReleaseNotes(), usePopover(), AccountPopover(), getContent(), NotificationsPopover(), OrganizationPopover(), NOTE: Ensure an organization is found, otherwise some components will fail., paths (+9 more)
+
+### Community 61 - "properties cluster"
 Cohesion: 0.08
 Nodes (33): properties, hidden, high, low, medium, none, applications, authenticationFlows (+25 more)
 
-### Community 64 - "StatsHistoryService cluster"
+### Community 62 - "StatsHistoryService cluster"
 Cohesion: 0.10
 Nodes (18): StatsHistoryBridge, DateTime, JsonSerializerOptions, List, StatsDataPoint, StatsHistoryService, StatsHistorySettings, bool (+10 more)
 
-### Community 65 - "Push-ExecOnboardTenantQueue() cluster"
+### Community 63 - "Start-ContainerUpdateCheck() cluster"
 Cohesion: 0.09
-Nodes (16): Push-ExecAddMultiTenantApp(), Push-ExecAppApprovalTemplate(), Push-ExecApplicationCopy(), Push-ExecOnboardTenantQueue(), Push-UpdatePermissionsQueue(), Add-CIPPApplicationPermission(), Add-CIPPDelegatedPermission(), Get-CIPPAppApprovalPermissions() (+8 more)
+Nodes (19): Get-CippApiAuth(), Get-CIPPManagedIdentityResourceId(), ConvertFrom-RawJson(), Start-ContainerUpdateCheck(), Request-CIPPRestart(), Get-ApplicationInsightsQuery(), Get-CIPPAzFunctionAppSetting(), Get-CIPPAzFunctionAppSubId() (+11 more)
 
-### Community 66 - "properties cluster"
+### Community 64 - "invoices-table.js cluster"
+Cohesion: 0.11
+Nodes (21): Pagination(), PaginationRoot, ResourceError(), ResourceErrorRoot, ResourceUnavailable(), ResourceUnavailableRoot, columns, CustomersTable() (+13 more)
+
+### Community 65 - "properties cluster"
 Cohesion: 0.06
 Nodes (31): description, properties, title, type, conditionalAccessUsers, description, graphLookup, items (+23 more)
 
-### Community 67 - "Get-CippKeyVaultName() cluster"
-Cohesion: 0.11
-Nodes (15): Initialize-CIPPAuth(), Remove-CIPPMigrationAppSetting(), Set-CIPPSSOEasyAuth(), Set-CIPPSSOStoredCredentials(), Update-CIPPSSORedirectUri(), Get-CIPPAuthentication(), Get-CippKeyVaultName(), Set-CippKeyVaultSecret() (+7 more)
+### Community 66 - "Get-CIPPDbItem() cluster"
+Cohesion: 0.07
+Nodes (15): Push-CIPPTestsList(), Get-CIPPCalendarPermissionReport(), Get-CIPPDbItem(), Get-CIPPGroupsReport(), Get-CIPPIntuneApplicationReport(), Get-CIPPIntuneAppProtectionPolicyReport(), Get-CIPPIntuneCompliancePolicyReport(), Get-CIPPIntunePolicyReport() (+7 more)
 
-### Community 68 - "Get-CIPPSPOTenant() cluster"
+### Community 67 - "Get-CIPPSPOTenant() cluster"
 Cohesion: 0.09
 Nodes (15): Get-CIPPSPOTenant(), Set-CIPPSPOTenant(), Invoke-CIPPStandardDefaultSharingLink(), Invoke-CIPPStandardDisableAddShortcutsToOneDrive(), Invoke-CIPPStandardSPAzureB2B(), Invoke-CIPPStandardSPDirectSharing(), Invoke-CIPPStandardSPDisableCustomScripts(), Invoke-CIPPStandardSPDisableLegacyWorkflows() (+7 more)
 
-### Community 69 - "Invoke-ExecExtensionMapping() cluster"
+### Community 68 - "New-GraphPOSTRequest() cluster"
 Cohesion: 0.07
-Nodes (15): Set-ExtensionFieldMapping(), Get-HaloMapping(), Get-HaloTicketOutcome(), Get-HaloTicketType(), Get-HaloToken(), Set-HaloMapping(), Set-HuduMapping(), Set-NinjaOneFieldMapping() (+7 more)
+Nodes (15): Get-CippUserAgent(), New-GraphPOSTRequest(), Invoke-ListDirectoryObjects(), Invoke-ExecRenameAPDevice(), Invoke-ExecSyncAPDevices(), Invoke-AddIntuneReusableSetting(), Invoke-EditIntunePolicy(), Invoke-EditPolicy() (+7 more)
 
-### Community 70 - "Test-E8AsrRule() cluster"
+### Community 69 - "Test-E8AsrRule() cluster"
 Cohesion: 0.07
 Nodes (15): Test-E8AsrRule(), Invoke-CippTestE8_AppHard_06(), Invoke-CippTestE8_AppHard_07(), Invoke-CippTestE8_AppHard_08(), Invoke-CippTestE8_AppHard_09(), Invoke-CippTestE8_AppHard_10(), Invoke-CippTestE8_AppHard_11(), Invoke-CippTestE8_AppHard_12() (+7 more)
 
-### Community 71 - "CippSharePointTemplateBuilder.jsx cluster"
-Cohesion: 0.10
-Nodes (20): CippSharePointPermissionEditor(), SHAREPOINT_PERMISSION_LEVELS, CippSharePointTemplateBuilder(), CippSharePointTemplateBuilderSkeleton(), CippSharePointTemplateQuickStats(), CippSharePointTemplateQuickStatsSkeleton(), getSiteTemplateSaveIssues(), newLibrary() (+12 more)
-
-### Community 72 - "enum cluster"
+### Community 70 - "enum cluster"
 Cohesion: 0.07
 Nodes (30): constraints, mutuallyExclusive, passwordChangeRequires, riskRemediationExcludes, enum, android, approvedApplication, block (+22 more)
 
-### Community 73 - "Set-CIPPDlpCompliancePolicy() cluster"
-Cohesion: 0.09
-Nodes (17): Compare-CIPPDlpCompliancePolicy(), ConvertTo-CIPPComparableString(), ConvertTo-CIPPDlpComparable(), Compare-CIPPSensitiveInfoType(), ConvertTo-CIPPSitComparable(), ConvertTo-CIPPComplianceSetParams(), Convert-Entry(), ConvertTo-CIPPSensitiveInformationType() (+9 more)
-
-### Community 74 - "property-list-item.js cluster"
+### Community 71 - "property-list-item.js cluster"
 Cohesion: 0.15
 Nodes (9): CippExchangeInfoCard(), CippUserInfoCard(), LinearProgressWithLabel(), PropertyListItem(), PropertyList(), useLicenseBackfill(), OrderDetails(), statusMap (+1 more)
 
-### Community 75 - "New-CIPPAzStorageRequest() cluster"
+### Community 72 - "Push-ExecOnboardTenantQueue() cluster"
+Cohesion: 0.10
+Nodes (14): Push-ExecAddMultiTenantApp(), Push-ExecAppApprovalTemplate(), Push-ExecApplicationCopy(), Push-ExecOnboardTenantQueue(), Push-UpdatePermissionsQueue(), Add-CIPPApplicationPermission(), Add-CIPPDelegatedPermission(), Get-CIPPAppApprovalPermissions() (+6 more)
+
+### Community 73 - "Test-CIPPAuditLogRules() cluster"
+Cohesion: 0.08
+Nodes (15): Push-AuditLogTenantDownload(), Push-AuditLogTenantProcess(), Get-CippAuditLogSearches(), Get-CippAuditLogSearchResults(), New-CIPPAuditLogSearchResultsCache(), Test-DeltaQueryConditions(), Get-CIPPGeoIPLocationBatch(), Invoke-GeoRetry() (+7 more)
+
+### Community 74 - "New-CIPPAzStorageRequest() cluster"
 Cohesion: 0.11
 Nodes (20): Clear-CippDurables(), Clear-CIPPAzStorageQueue(), Build-ContainerUri(), Get-BlobBaseInfo(), Get-CIPPAzStorageContainer(), Parse-ConnString(), Build-QueueUri(), Get-CIPPAzStorageQueue() (+12 more)
 
-### Community 76 - "Invoke-CippWebhookProcessing() cluster"
-Cohesion: 0.08
-Nodes (14): Remove-CIPPUserMFA(), Revoke-CIPPSessions(), Set-CIPPMailboxRule(), Set-CIPPOneDriveSharing(), Set-CIPPResetPassword(), Set-CIPPSignInState(), Update-CIPPDbItem(), Invoke-CippWebhookProcessing() (+6 more)
+### Community 75 - "Set-CIPPAuthenticationPolicy() cluster"
+Cohesion: 0.07
+Nodes (14): Set-CIPPAuthenticationPolicy(), Invoke-SetAuthMethod(), Invoke-CIPPStandardallowOAuthTokens(), Invoke-CIPPStandardallowOTPTokens(), Invoke-CIPPStandardAuthenticationMethods(), Invoke-CIPPStandardDisableEmail(), Invoke-CIPPStandardDisableQRCodePin(), Invoke-CIPPStandardDisableSMS() (+6 more)
+
+### Community 76 - "CippStandardAccordion.jsx cluster"
+Cohesion: 0.13
+Nodes (20): CippAddedComponent, CippStandardAccordion(), getAvailableActions(), Azure(), Defender(), Exchange(), Intune(), Microsoft() (+12 more)
 
 ### Community 77 - "BackgroundTaskLimiter cluster"
 Cohesion: 0.11
@@ -1452,1003 +1322,1051 @@ Nodes (16): BackgroundTaskLimiter, bool, CancellationToken, DateTime, Func, ILog
 Cohesion: 0.14
 Nodes (26): AuthSettings, CacheSettings, ContainerHealthSettings, CraftSettings, FileLoggingSettings, FrontendSettings, GlobalJsonPreload, HealthSettings (+18 more)
 
-### Community 79 - "properties cluster"
+### Community 79 - "CIPPRestClient cluster"
+Cohesion: 0.15
+Nodes (8): CIPPRestClient, CancellationToken, HttpClient, SemaphoreSlim, Task, Client, HttpContent, Pool
+
+### Community 80 - "PermissionsReportButton.jsx cluster"
+Cohesion: 0.18
+Nodes (23): assessExposure(), CLAIM_LABELS, nz(), PermissionsReportButton(), PermissionsReportDocument(), plural(), AlertBox(), BulletList() (+15 more)
+
+### Community 81 - "properties cluster"
 Cohesion: 0.07
 Nodes (27): description, title, description, properties, title, type, conditionalAccessApplications, urn:user:registerdevice (+19 more)
 
-### Community 80 - "New-ExoBulkRequest() cluster"
+### Community 82 - "Update-CIPPDynamicTenantGroups() cluster"
 Cohesion: 0.08
-Nodes (14): Push-GetCalendarPermissionsBatch(), Push-GetMailboxPermissionsBatch(), Push-GetMailboxRulesBatch(), Push-ListMailboxRulesQueue(), New-ExoBulkRequest(), Remove-CIPPGroups(), Sync-CippExtensionData(), Invoke-ListmailboxPermissions() (+6 more)
+Nodes (13): Push-CIPPStandardsList(), Push-UpdateDynamicTenantGroup(), Get-CIPPAlertLowTenantAlignment(), Get-CIPPTenantAlignment(), Get-TenantProperties(), Get-CIPPTenantVariables(), Get-TenantGroups(), Update-CIPPDynamicTenantGroups() (+5 more)
 
-### Community 81 - "Get-CIPPAzFunctionAppSubId() cluster"
-Cohesion: 0.10
-Nodes (16): Get-CippApiAuth(), Get-CIPPManagedIdentityResourceId(), Get-ApplicationInsightsQuery(), Get-CIPPAzFunctionAppSetting(), Get-CIPPAzFunctionAppSubId(), Get-CIPPFunctionAppResourceGroup(), Invoke-ExecAppInsightsQuery(), Get-AppServiceSiteInfo() (+8 more)
-
-### Community 82 - "New-TeamsRequestV2() cluster"
+### Community 83 - "New-TeamsRequestV2() cluster"
 Cohesion: 0.08
 Nodes (13): New-TeamsRequestV2(), Invoke-CIPPStandardTeamsChatProtection(), Invoke-CIPPStandardTeamsEmailIntegration(), Invoke-CIPPStandardTeamsEnrollUser(), Invoke-CIPPStandardTeamsExternalAccessPolicy(), Invoke-CIPPStandardTeamsExternalChatWithAnyone(), Invoke-CIPPStandardTeamsExternalFileSharing(), Invoke-CIPPStandardTeamsFederationConfiguration() (+5 more)
 
-### Community 83 - "Set-CIPPAuthenticationPolicy() cluster"
+### Community 84 - "Set-CIPPSignInState() cluster"
 Cohesion: 0.08
-Nodes (13): Set-CIPPAuthenticationPolicy(), Invoke-CIPPStandardallowOAuthTokens(), Invoke-CIPPStandardallowOTPTokens(), Invoke-CIPPStandardAuthenticationMethods(), Invoke-CIPPStandardDisableEmail(), Invoke-CIPPStandardDisableQRCodePin(), Invoke-CIPPStandardDisableSMS(), Invoke-CIPPStandardDisableVoice() (+5 more)
+Nodes (13): Revoke-CIPPSessions(), Set-CIPPMailboxRule(), Set-CIPPOneDriveSharing(), Set-CIPPSignInState(), Update-CIPPDbItem(), Invoke-AddSharedMailbox(), Invoke-ExecSetMailboxRule(), Invoke-AddEquipmentMailbox() (+5 more)
 
-### Community 84 - "flagEnum cluster"
+### Community 85 - "New-CIPPDbRequest() cluster"
 Cohesion: 0.08
-Nodes (25): description, properties, title, type, conditionalAccessGuestsOrExternalUsers, b2bCollaborationGuest, b2bCollaborationMember, b2bDirectConnectUser (+17 more)
+Nodes (13): Push-DomainAnalyserTenant(), Push-StoreOneDriveRootPermissions(), Push-StoreSharePointPermissions(), Get-CIPPOAuthAppsReport(), Get-CIPPTestResults(), New-CIPPDbRequest(), Invoke-ListDBCache(), Invoke-ListTests() (+5 more)
 
-### Community 85 - "members cluster"
+### Community 86 - "Test-CIPPAccess() cluster"
+Cohesion: 0.08
+Nodes (13): Get-CIPPRoleIPRanges(), Test-CIPPAccess(), Get-CIPPTestResultsTenants(), Remove-CIPPCache(), Invoke-ListExtensionSync(), Invoke-ListScheduledItems(), Invoke-ListLogs(), Invoke-ListTestResultsTenants() (+5 more)
+
+### Community 87 - "Start-CIPPOrchestrator() cluster"
+Cohesion: 0.08
+Nodes (12): Push-CIPPDBCacheApplyBatch(), Push-CIPPStandardsApplyBatch(), Push-CIPPTestsApplyBatch(), Start-AuditLogProcessingOrchestrator(), Start-CIPPOrchestrator(), Start-WebhookOrchestrator(), Start-TableCleanup(), Invoke-CIPPOffboardingJob() (+4 more)
+
+### Community 88 - "index.js cluster"
+Cohesion: 0.17
+Nodes (15): CippAnonymizedReportAlert(), DEFAULT_FIELDS, isReportAnonymized(), useReportAnonymized(), CippExchangeActions(), CippSharedMailboxDrawer(), Page(), Page() (+7 more)
+
+### Community 89 - "members cluster"
 Cohesion: 0.09
 Nodes (23): description, properties, title, type, conditionalAccessExternalTenants, #microsoft.graph.conditionalAccessAllExternalTenants, #microsoft.graph.conditionalAccessEnumeratedExternalTenants, description (+15 more)
 
-### Community 86 - "enumLabels cluster"
+### Community 90 - "enumLabels cluster"
 Cohesion: 0.11
 Nodes (23): description, properties, title, type, conditionalAccessPlatforms, android, iOS, linux (+15 more)
 
-### Community 87 - "AuthService cluster"
+### Community 91 - "flagEnum cluster"
+Cohesion: 0.09
+Nodes (23): description, graphLookup, items, specialValues, title, type, flagEnum, description (+15 more)
+
+### Community 92 - "AuthService cluster"
 Cohesion: 0.13
 Nodes (13): AllowedUser, AllowedUser, AuthBridge, AuthService, CancellationToken, ConcurrentDictionary, DateTime, ILogger (+5 more)
 
-### Community 88 - "Get-CIPPTenantAlignment() cluster"
+### Community 93 - "Set-CIPPMailboxPermission() cluster"
+Cohesion: 0.10
+Nodes (11): Push-ExecOffboardingMailboxPermissions(), Remove-CIPPMailboxPermissions(), Set-CIPPCalendarPermission(), Set-CIPPMailboxAccess(), Set-CIPPMailboxPermission(), Set-CIPPMailboxVacation(), Sync-CIPPMailboxPermissionCache(), Invoke-ExecEditCalendarPermissions() (+3 more)
+
+### Community 94 - "New-CippQueueEntry() cluster"
 Cohesion: 0.09
-Nodes (11): Push-CIPPStandardsList(), Get-CIPPAlertLowTenantAlignment(), Start-DriftStandardsOrchestrator(), Start-StandardsOrchestrator(), Get-CIPPTenantAlignment(), New-CIPPStandardsRun(), Set-CIPPDBCacheConditionalAccessPolicies(), Invoke-ExecStandardsRun() (+3 more)
+Nodes (11): Push-AuditLogProcessingBatch(), New-CippQueueEntry(), Start-AuditLogOrchestrator(), Start-CIPPDBCacheOrchestrator(), Start-IntuneReportExportOrchestrator(), Start-SchedulerOrchestrator(), Push-AuditLogProcessingBatchV2(), Invoke-ExecCIPPDBCache() (+3 more)
 
-### Community 89 - "Push-AuditLogSearchCreationV2() cluster"
-Cohesion: 0.10
-Nodes (11): Push-AuditLogTenantDownload(), Get-CippAuditLogNextAttempt(), Get-CippAuditLogPlannedWindows(), Get-CippAuditLogReconciliationWindows(), Get-CippAuditLogSearches(), Get-CippAuditLogSearchResults(), New-CIPPAuditLogSearchResultsCache(), New-CippAuditLogSearchV2() (+3 more)
+### Community 95 - "Get-CippKeyVaultName() cluster"
+Cohesion: 0.15
+Nodes (11): Initialize-CIPPAuth(), Set-CIPPSSOEasyAuth(), Update-CIPPSSORedirectUri(), Get-CIPPAuthentication(), Get-CippKeyVaultName(), Get-CippKeyVaultSecret(), Test-CIPPAccessPermissions(), Get-GradientToken() (+3 more)
 
-### Community 90 - "Add-CIPPScheduledTask() cluster"
-Cohesion: 0.10
-Nodes (11): Add-CIPPScheduledTask(), Clear-CIPPImmutableId(), Remove-CIPPLicense(), Set-CIPPCopyGroupMembers(), Set-CIPPUser(), Invoke-ExecSetCIPPAutoBackup(), Invoke-AddScheduledItem(), Invoke-ExecScheduleForwardingVacation() (+3 more)
-
-### Community 91 - "Remove-CIPPDbItem() cluster"
-Cohesion: 0.10
-Nodes (11): Remove-CIPPDbItem(), Remove-CIPPMailboxPermissions(), Remove-CIPPMailboxRule(), Set-CIPPMailboxPermission(), Sync-CIPPMailboxPermissionCache(), Invoke-ExecEditMailboxPermissions(), Invoke-ExecHVEUser(), Invoke-ExecModifyMBPerms() (+3 more)
-
-### Community 92 - "package.json cluster"
+### Community 96 - "package.json cluster"
 Cohesion: 0.09
 Nodes (21): author, bugs, url, engines, node, homepage, license, name (+13 more)
 
-### Community 93 - "invoice-quick-actions.js cluster"
-Cohesion: 0.17
-Nodes (12): ActionList(), ActionListItem(), ConfirmationDialog(), iconMap, CustomerDetails(), InvoicePdfDocument(), useStyles(), InvoiceQuickActions() (+4 more)
-
-### Community 94 - "CippSankey.jsx cluster"
+### Community 97 - "CippSankey.jsx cluster"
 Cohesion: 0.13
 Nodes (4): AuthMethodCard(), CippSankey(), LicenseCard(), MFACard()
 
-### Community 95 - "type cluster"
+### Community 98 - "scrollbar.js cluster"
+Cohesion: 0.13
+Nodes (3): Scrollbar, statusMap, ProductVariants()
+
+### Community 99 - "type cluster"
 Cohesion: 0.10
 Nodes (22): description, items, title, type, description, properties, title, type (+14 more)
 
-### Community 96 - "includeServicePrincipals cluster"
+### Community 100 - "includeServicePrincipals cluster"
 Cohesion: 0.09
 Nodes (22): description, properties, title, type, conditionalAccessClientApplications, description, items, title (+14 more)
 
-### Community 97 - "mode cluster"
+### Community 101 - "mode cluster"
 Cohesion: 0.09
 Nodes (22): description, properties, required, title, type, conditionalAccessFilter, exclude, include (+14 more)
 
-### Community 98 - "Feature Request Include cluster"
+### Community 102 - "Feature Request Include cluster"
 Cohesion: 0.13
 Nodes (21): Feature Request Include, Breadcrumb Navigation, Get Help, Global Page Icon, Keyboard Shortcuts, Bookmarks, Display Mode, Search (+13 more)
 
-### Community 99 - "TestDataCache cluster"
+### Community 103 - "Get-CIPPQueueData() cluster"
+Cohesion: 0.10
+Nodes (11): Get-CIPPQueueData(), Invoke-ExecDurableFunctions(), Invoke-ListMailQuarantine(), Invoke-ListTransportRules(), Invoke-ListCippQueue(), Invoke-ListCippQueues(), Invoke-ListTenantAllowBlockList(), Invoke-ExecAlertsList() (+3 more)
+
+### Community 104 - "TestDataCache cluster"
 Cohesion: 0.15
 Nodes (9): TestDataCache, ConcurrentDictionary, Dictionary, int, LinkedList, long, object, PSObject (+1 more)
 
-### Community 100 - "CA Policies cluster"
+### Community 105 - "CA Policies cluster"
 Cohesion: 0.12
 Nodes (21): CIPP Logs, Add Named Location, Named Locations, namedLocation Graph Resource, Edit CA Policy, CA Policies, CA Template Creation, conditionalAccessPolicy Graph Resource (+13 more)
 
-### Community 101 - "Craft.Services cluster"
+### Community 106 - "Craft.Services cluster"
 Cohesion: 0.11
 Nodes (9): AsyncLocal, Invocation, OperationContext, Scope, IDisposable, SetupPages, string, Craft.Services (+1 more)
 
-### Community 102 - "Invoke-CIPPRestMethod() cluster"
-Cohesion: 0.12
-Nodes (10): Get-CIPPAzIdentityToken(), Get-CippKeyVaultSecret(), Get-CIPPPartnerAzSubscriptions(), Invoke-CIPPRestMethod(), Push-CIPPBackupReplication(), Remove-CippKeyVaultSecret(), Set-CIPPSAMCertificate(), Remove-ExtensionAPIKey() (+2 more)
+### Community 107 - "Invoke-GitHubApiRequest() cluster"
+Cohesion: 0.14
+Nodes (10): Get-GitHubBranch(), Get-GitHubFileContents(), Get-GitHubFileTree(), Invoke-GitHubApiRequest(), New-GitHubRepo(), Push-GitHubContent(), Search-GitHub(), Invoke-ExecCommunityRepo() (+2 more)
 
-### Community 103 - "Get-CIPPStandards() cluster"
-Cohesion: 0.11
-Nodes (10): Start-BPAOrchestrator(), Start-CIPPStatsTimer(), Get-CIPPFeatureFlag(), Get-CIPPStatsDriftStandardsCount(), Get-CIPPStatsMobileEnrollment(), Get-CIPPStatsUniqueStandardsApplied(), Get-CIPPStandards(), Invoke-ListFeatureFlags() (+2 more)
-
-### Community 104 - "Function Offloading cluster"
+### Community 108 - "Function Offloading cluster"
 Cohesion: 0.11
 Nodes (20): CIPP-SAM Application, Durable Functions Queue Reset, Error Codes, GDAP, AzureWebJobsStorage, Repairing Missing Function App Settings, WEBSITE_RUN_FROM_PACKAGE, CIPP Setup Wizard (+12 more)
 
-### Community 105 - "Defender Deployment cluster"
+### Community 109 - "Defender Deployment cluster"
 Cohesion: 0.12
 Nodes (20): Intune Template List, CVE Management, Microsoft Defender for Endpoint API, ExecAddCippCveException, ExecRemoveCippCveException, Attack Surface Reduction Rules, Defender Defaults Policy, Defender Deployment (+12 more)
 
-### Community 106 - "top-nav.js cluster"
-Cohesion: 0.13
-Nodes (9): CippUniversalSearchV2, CippBitlockerKeySearch(), getVolumeTypeLabel(), CippBreadcrumbNav(), loadTabOptions(), CippLicenseDetailsDrawer(), CippTenantSelector, nativeMenuItems (+1 more)
+### Community 110 - "invoice-quick-actions.js cluster"
+Cohesion: 0.19
+Nodes (11): ActionList(), ActionListItem(), ConfirmationDialog(), iconMap, CustomerDetails(), InvoicePdfDocument(), useStyles(), InvoiceQuickActions() (+3 more)
 
-### Community 107 - "side-nav.js cluster"
+### Community 111 - "side-nav.js cluster"
 Cohesion: 0.20
 Nodes (14): activeSponsors, CippSponsor(), selectRandomSponsor(), getBookmarksFromSettings(), normalizeBookmarks(), sanitizeBookmark(), useUserBookmarks(), SideNavBookmarks() (+6 more)
 
-### Community 108 - "CIPPRestClient cluster"
-Cohesion: 0.21
-Nodes (6): CIPPRestClient, HttpClient, SemaphoreSlim, Client, Host, Pool
+### Community 112 - "Invoke-CIPPRestMethod() cluster"
+Cohesion: 0.12
+Nodes (10): Get-CIPPPartnerAzSubscriptions(), Get-TenantIdFromSubscriptionId(), Get-AuthorisedRequest(), Get-ClassicAPIToken(), New-ClassicAPIGetRequest(), New-TeamsAPIGetRequest(), Invoke-CIPPRestMethod(), Push-CIPPBackupReplication() (+2 more)
 
-### Community 109 - "Get-CIPPSchemaExtensions() cluster"
+### Community 113 - "Test-CIPPRerun() cluster"
+Cohesion: 0.11
+Nodes (9): Push-BPACollectData(), Start-BPAOrchestrator(), Start-DriftStandardsOrchestrator(), Start-StandardsOrchestrator(), Start-LogRetentionCleanup(), New-CIPPStandardsRun(), Test-CIPPRerun(), Invoke-ExecBPA() (+1 more)
+
+### Community 114 - "Get-CIPPStandards() cluster"
+Cohesion: 0.12
+Nodes (9): Push-GetStandards(), Start-CIPPStatsTimer(), Get-CIPPStatsDriftStandardsCount(), Get-CIPPStatsMobileEnrollment(), Get-CIPPStatsUniqueStandardsApplied(), Get-CIPPStandards(), Merge-CippStandards(), Invoke-ListStandards() (+1 more)
+
+### Community 115 - "Write-AlertMessage() cluster"
+Cohesion: 0.11
+Nodes (9): Get-CippAlertBreachAlert(), Get-CIPPAlertCheckExtension(), Get-CIPPAlertInactiveSharePointSites(), Get-CIPPAlertInactiveTeamsSites(), Get-CIPPAlertUserReportedPhishing(), Write-AlertMessage(), New-BreachTenantSearch(), Invoke-ExecBreachSearch() (+1 more)
+
+### Community 116 - "Invoke-CIPPStandardIntuneTemplate() cluster"
 Cohesion: 0.13
-Nodes (9): Push-ExecJITAdminListAllTenants(), Get-CIPPSchemaExtensions(), New-CIPPUser(), Set-CIPPUserJITAdmin(), Set-CIPPUserJITAdminProperties(), Set-CIPPUserSchemaProperties(), New-PwPushLink(), Invoke-AddUserBulk() (+1 more)
+Nodes (9): Compare-CIPPIntuneAssignments(), Get-CIPPIntunePolicy(), Get-CIPPIntunePolicyAssignments(), Repair-CIPPIntuneTemplateNesting(), Set-CIPPAssignedPolicy(), Set-CIPPIntunePolicy(), Sync-CIPPReusablePolicySettings(), Invoke-AddPolicy() (+1 more)
 
-### Community 110 - "Write-AlertMessage() cluster"
+### Community 117 - "Start-UpdateTokensTimer() cluster"
+Cohesion: 0.14
+Nodes (10): Start-UpdateTokensTimer(), Get-CIPPSAMCertificate(), Test-PolicyRestrictions(), Update-AppManagementPolicy(), New-CIPPSAMCertificate(), Update-CIPPSAMCertificate(), Invoke-ExecSAMCertificate(), Invoke-ExecCreateSAMApp() (+2 more)
+
+### Community 118 - "Get-CIPPFeatureFlag() cluster"
+Cohesion: 0.12
+Nodes (9): Get-CIPPFeatureFlag(), Get-CippOffloadSuffix(), Get-CIPPTimerFunctions(), Set-CIPPOffloadFunctionTriggers(), Set-CIPPFeatureFlag(), Test-CippOffloadFunctionApp(), Invoke-ExecFeatureFlag(), Invoke-ListFeatureFlags() (+1 more)
+
+### Community 119 - "Invoke-HuduExtensionSync() cluster"
 Cohesion: 0.11
-Nodes (9): Get-CippAlertBreachAlert(), Get-CIPPAlertCheckExtension(), Get-CIPPAlertInactiveSharePointSites(), Get-CIPPAlertInactiveTeamsSites(), Get-CIPPAlertUserReportedPhishing(), Write-AlertMessage(), Get-BreachInfo(), New-BreachTenantSearch() (+1 more)
+Nodes (9): Get-AssignedMap(), Get-AssignedNameMap(), Get-HuduFormattedBlock(), Get-HuduFormattedField(), Get-HuduLinkBlock(), Add-HuduAssetLayoutField(), Get-CippExtensionReportingData(), Invoke-HuduExtensionSync() (+1 more)
 
-### Community 111 - "Expand-CIPPTenantGroups() cluster"
-Cohesion: 0.11
-Nodes (9): Start-AuditLogIngestion(), Start-AuditLogIngestionV2(), Start-AuditLogPlannerV2(), Start-AuditLogSearchCreation(), Start-AuditLogSearchCreationV2(), Start-UserTasksOrchestrator(), Expand-CIPPTenantGroups(), Invoke-AddScriptedAlert() (+1 more)
-
-### Community 112 - "CippImageCard.jsx cluster"
+### Community 120 - "CippImageCard.jsx cluster"
 Cohesion: 0.19
 Nodes (8): CippImageCard(), hasAuthenticatedSession(), PrivateRoute(), Error500(), MinimalErrorFallback(), ApiOfflinePage(), Page(), Page()
 
-### Community 113 - "ScriptRepository cluster"
+### Community 121 - "flagEnumLabels cluster"
+Cohesion: 0.11
+Nodes (18): description, properties, title, type, conditionalAccessGuestsOrExternalUsers, b2bCollaborationGuest, b2bCollaborationMember, b2bDirectConnectUser (+10 more)
+
+### Community 122 - "ScriptRepository cluster"
 Cohesion: 0.17
 Nodes (10): FunctionCategory, FunctionEntry, ScriptRepository, Dictionary, HashSet, ILogger, Regex, ScriptBlock (+2 more)
 
-### Community 114 - "New-CIPPDbRequest() cluster"
+### Community 123 - "Push-ExecScheduledCommand() cluster"
 Cohesion: 0.12
-Nodes (9): Push-DomainAnalyserTenant(), Get-CIPPOAuthAppsReport(), Get-CIPPTestResults(), New-CIPPDbRequest(), Invoke-ListDBCache(), Invoke-ListTests(), Invoke-ListSiteActivity(), Get-AiMatch() (+1 more)
+Nodes (9): Push-CIPPOffboardingComplete(), Push-ExecScheduledCommand(), Get-DeltaQueryUrl(), Get-AlertContentHash(), Remove-SnoozedAlerts(), Send-CIPPScheduledTaskAlert(), Set-CippScheduledTaskContext(), Invoke-ExecSnoozeAlert() (+1 more)
 
-### Community 115 - "Start-UpdateTokensTimer() cluster"
-Cohesion: 0.15
-Nodes (9): Add-CIPPSSOAppSecret(), New-CIPPSSOApp(), Start-UpdateTokensTimer(), Get-CIPPSAMCertificate(), Test-PolicyRestrictions(), Update-AppManagementPolicy(), Update-CIPPSAMCertificate(), Invoke-ExecSAMCertificate() (+1 more)
-
-### Community 116 - "Recommended GDAP Roles cluster"
-Cohesion: 0.15
-Nodes (17): CIPP Service Account CA Policy, Conditional Access Configuration, Client Service Provider CA Exclusion, Direct Tenant Mode, GDAP Role Template, Tenant Onboarding, Manage Your Own Tenant, CIPP Tenant Modes (+9 more)
-
-### Community 117 - "CippEnterpriseAppPermissions.jsx cluster"
-Cohesion: 0.21
-Nodes (14): apiLabelsMatch(), CippEnterpriseAppPermissions(), lookupApplicationRisk(), lookupDelegatedRiskByScopeName(), normalizeApiLabel(), parseBulkSpBody(), PermissionLine(), ResourceAccordion() (+6 more)
-
-### Community 118 - "_app.js cluster"
+### Community 124 - "_app.js cluster"
 Cohesion: 0.17
 Nodes (10): CippSpeedDial(), RTL(), styleCache(), App(), clientSideEmotionCache, queryClient, ReactQueryDevtoolsProduction, CustomDocument (+2 more)
 
-### Community 119 - "colors.js cluster"
+### Community 125 - "colors.js cluster"
 Cohesion: 0.26
 Nodes (11): blue, error, indigo, info, neutral, orange, purple, success (+3 more)
 
-### Community 120 - "Send-CIPPAlert() cluster"
+### Community 126 - "Get-CIPPSchemaExtensions() cluster"
 Cohesion: 0.14
-Nodes (8): Push-SchedulerCIPPNotifications(), Push-CippDriftManagement(), Push-CIPPTestCollection(), Invoke-CIPPTestCollection(), New-CIPPAlertTemplate(), Send-CIPPAlert(), Send-CIPPCustomTestAlert(), Invoke-ExecAddAlert()
+Nodes (8): Push-ExecJITAdminListAllTenants(), Get-CIPPAlertMFAAdmins(), Get-CIPPSchemaExtensions(), Set-CIPPUserJITAdmin(), Set-CIPPUserJITAdminProperties(), Set-CIPPUserSchemaProperties(), Invoke-ExecJITAdmin(), Invoke-ListJITAdmin()
 
-### Community 121 - "New-CIPPUserTask() cluster"
-Cohesion: 0.13
-Nodes (8): Add-CIPPAlias(), New-CIPPUserTask(), Set-CIPPManager(), Set-CIPPSponsor(), Set-CIPPUserLicense(), Invoke-AddUser(), Invoke-ExecBulkLicense(), Invoke-PatchUser()
-
-### Community 122 - "New-CIPPGroup() cluster"
+### Community 127 - "Get-CIPPLicenseOverview() cluster"
 Cohesion: 0.12
-Nodes (8): New-CIPPGroup(), Remove-CIPPGroup(), Set-CIPPCAExclusion(), Set-CIPPGroupAuthentication(), Set-CIPPGroupLicense(), Invoke-AddGroup(), Invoke-EditGroup(), Invoke-ExecCAExclusion()
+Nodes (8): Push-ListLicensesQueue(), Get-CIPPAlertExpiringLicenses(), Get-CIPPAlertOverusedLicenses(), Get-CIPPAlertUnusedLicenses(), Get-CIPPLicenseOverview(), Set-CIPPDBCacheLicenseOverview(), Invoke-ListLicenses(), Invoke-ListLicensesReport()
 
-### Community 123 - "Invoke-HuduExtensionSync() cluster"
-Cohesion: 0.14
-Nodes (8): Get-CippExtensionReportingData(), Invoke-HuduExtensionSync(), Invoke-NinjaOneOrgMapping(), Invoke-NinjaOneOrgMappingTenant(), Invoke-NinjaOneSync(), Invoke-NinjaOneTenantSync(), Push-NinjaOneQueue(), Invoke-ExecExtensionNinjaOneQueue()
+### Community 128 - "Get-SharePointAdminLink() cluster"
+Cohesion: 0.12
+Nodes (8): Get-CIPPAlertSharepointQuota(), Get-SharePointAdminLink(), Invoke-DeleteSharepointSite(), Invoke-ExecRestoreRecycleBinItems(), Invoke-ListSharepointAdminUrl(), Invoke-ListSharepointQuota(), Invoke-ListSiteRecycleBin(), Invoke-ListSiteRoleDefinitions()
 
-### Community 124 - "Standards & Drift Overview cluster"
+### Community 129 - "Expand-CIPPTenantGroups() cluster"
+Cohesion: 0.12
+Nodes (8): Start-AuditLogIngestion(), Start-AuditLogSearchCreation(), Start-UserTasksOrchestrator(), Expand-CIPPTenantGroups(), Get-CIPPSchedulerBlockedCommands(), Invoke-ListCustomDataMappings(), Invoke-ListUsers(), Invoke-ListAlertsQueue()
+
+### Community 130 - "New GDAP Invite cluster"
+Cohesion: 0.15
+Nodes (16): GDAP Invite Wizard, CIPP-SAM Application, New GDAP Invite, GDAP Invites, Tenant Offboarding, Tenant Onboarding, delegatedAdminRelationship Graph Resource, GDAP Relationships (+8 more)
+
+### Community 131 - "Standards & Drift Overview cluster"
 Cohesion: 0.19
 Nodes (16): Configuration Backup, Restore Wizard, Drift Deviation, Manage Drift, Tenant History Timeline, Policies and Settings Deployed, Alignment Score, Combined Alignment Score (+8 more)
 
-### Community 125 - "ReleaseNotesDialog.js cluster"
+### Community 132 - "ReleaseNotesDialog.js cluster"
 Cohesion: 0.15
 Nodes (7): deleteCookie(), MarkdownErrorBoundary, ReleaseNotesDialog, secureFlag(), setCookie(), ReleaseNotesContext, ReleaseNotesProvider()
 
-### Community 126 - "transferMethods cluster"
-Cohesion: 0.12
-Nodes (16): description, properties, title, type, conditionalAccessAuthenticationFlows, authenticationTransfer, deviceCodeFlow, transferMethods (+8 more)
-
-### Community 127 - "apply-filters.js cluster"
+### Community 133 - "apply-filters.js cluster"
 Cohesion: 0.23
 Nodes (15): applyFilters(), checkFilter(), contains(), endsWith(), equals(), greaterThan(), isAfter(), isBefore() (+7 more)
 
-### Community 128 - "New GDAP Invite cluster"
-Cohesion: 0.16
-Nodes (15): GDAP Invite Wizard, CIPP-SAM Application, New GDAP Invite, GDAP Invites, Tenant Onboarding, delegatedAdminRelationship Graph Resource, GDAP Relationships, GDAP Relationship Summary (+7 more)
+### Community 134 - "Resolve-CIPPSharePointPermissionScope() cluster"
+Cohesion: 0.15
+Nodes (8): Get-CIPPSharePointErrorMessage(), Resolve-CIPPSharePointPermissionScope(), Set-CIPPSharePointObjectPermission(), Invoke-ExecRemoveLibraryPermission(), Invoke-ExecSetLibraryInheritance(), Invoke-ExecSetLibraryPermission(), Get-PrincipalMatch(), Invoke-ListSiteUserAccess()
 
-### Community 129 - "settings-context.js cluster"
+### Community 135 - "CippEnterpriseAppPermissions.jsx cluster"
+Cohesion: 0.24
+Nodes (13): apiLabelsMatch(), CippEnterpriseAppPermissions(), lookupApplicationRisk(), lookupDelegatedRiskByScopeName(), normalizeApiLabel(), parseBulkSpBody(), PermissionLine(), ResourceAccordion() (+5 more)
+
+### Community 136 - "settings-context.js cluster"
 Cohesion: 0.20
 Nodes (9): deleteSettings(), initialSettings, initialState, MemoryStorage, restoreSettings(), SettingsContext, SettingsProvider(), storeSettings() (+1 more)
 
-### Community 130 - "excludeUsers cluster"
+### Community 137 - "transferMethods cluster"
 Cohesion: 0.13
-Nodes (15): description, graphLookup, items, specialValues, title, type, description, graphLookup (+7 more)
+Nodes (15): description, properties, title, type, conditionalAccessAuthenticationFlows, authenticationTransfer, deviceCodeFlow, transferMethods (+7 more)
 
-### Community 131 - "index.js cluster"
+### Community 138 - "index.js cluster"
 Cohesion: 0.24
 Nodes (8): createComponents(), muiTheme, createOptions(), createTypography(), createComponents(), createOptions(), createPalette(), createShadows()
 
-### Community 132 - "CIPP Contribution Workflow cluster"
-Cohesion: 0.18
-Nodes (14): CIPP Contribution Workflow, Fork Drift Check, Pester Test Requirement, Squash, Push, PR Flow, cipp-dev-tools Workspace, Local Dev Stack (dev.ps1), graphifyy 0.9.12 Pin, Graphify Scope Rules (+6 more)
+### Community 139 - "Get-GraphRequestList() cluster"
+Cohesion: 0.14
+Nodes (7): Push-ListGraphRequestQueue(), New-GraphDeltaQuery(), Push-GraphDeltaQuery(), Get-GraphRequestList(), Get-StringHash(), Invoke-ListGraphRequest(), Invoke-ListPartnerRelationships()
 
-### Community 133 - "Push-DBCacheOneDriveRootPermissionsBatch.ps1 cluster"
+### Community 140 - "Push-DBCacheOneDriveRootPermissionsBatch.ps1 cluster"
 Cohesion: 0.32
 Nodes (13): Get-CIPPGraphIdentityLabel(), Get-CIPPHasNonStandardAccess(), Get-CIPPOneDriveSiteRow(), Get-CIPPSpoPrincipalType(), Get-CIPPSpoUserUpn(), New-CIPPGraphIdentityGrant(), New-CIPPSkippedSiteRow(), New-CIPPSpoRoleAssignmentGrant() (+5 more)
 
-### Community 134 - "Test-CIPPGDAPGroupMappings() cluster"
+### Community 141 - "Test-CIPPGDAPGroupMappings() cluster"
 Cohesion: 0.15
 Nodes (7): Add-CIPPGDAPRoleTemplate(), Test-CIPPGDAPGroupMappings(), Test-CIPPGDAPRelationships(), Invoke-ExecAddGDAPRole(), Invoke-ExecGDAPAccessAssignment(), Invoke-ExecGDAPRepairRoleMappings(), Invoke-ExecGDAPRoleTemplate()
 
-### Community 135 - "Invoke-ExecApiClient() cluster"
+### Community 142 - "Set-CippKeyVaultSecret() cluster"
 Cohesion: 0.16
-Nodes (7): New-CIPPAPIConfig(), Repair-CippApiIdentifierUri(), Set-CippApiAuth(), Set-CIPPMCPClientApp(), Set-CIPPOffloadFunctionTriggers(), Update-CIPPAzFunctionAppSetting(), Invoke-ExecApiClient()
+Nodes (7): Get-CIPPAzIdentityToken(), Set-CippKeyVaultSecret(), Set-CIPPNotificationConfig(), Set-CIPPSAMCertificate(), Update-CIPPSAMCertificateEnvCache(), Set-ExtensionAPIKey(), Invoke-ExecCombinedSetup()
 
-### Community 136 - "Invoke-AddDefenderDeployment() cluster"
-Cohesion: 0.16
-Nodes (7): Enable-CIPPMDEConnector(), Set-CIPPDefenderASRPolicy(), Set-CIPPDefenderCompliancePolicy(), Set-CIPPDefenderEDRPolicy(), Set-CIPPDefenderExclusionPolicy(), Invoke-AddDefenderDeployment(), Invoke-AddDefenderTemplate()
+### Community 143 - "Set-CIPPDBCacheMailboxes() cluster"
+Cohesion: 0.14
+Nodes (7): Update-CippQueueEntry(), Get-ExoOnlineStringBytes(), Set-CIPPDBCacheMailboxes(), Set-CIPPDBCacheOneDriveRootPermissions(), Set-CIPPDBCacheSharePointPermissions(), Set-CIPPDBCacheSharePointSharingLinks(), Invoke-ListUserMailboxDetails()
 
-### Community 137 - "Get-GraphToken() cluster"
-Cohesion: 0.18
-Nodes (7): Get-GraphToken(), Get-GraphTokenFromCert(), New-CIPPCertificateAssertion(), Read-JwtAccessDetails(), Test-CIPPAccessPermissions(), Invoke-ExecMaintenanceScripts(), Invoke-ExecMailTest()
+### Community 144 - "Set-CIPPDefenderAVPolicy() cluster"
+Cohesion: 0.20
+Nodes (8): Set-CIPPDefenderASRPolicy(), New-AVChoiceSetting(), New-AVIntegerSetting(), Set-CIPPDefenderAVPolicy(), Set-CIPPDefenderEDRPolicy(), Set-CIPPDefenderExclusionPolicy(), Invoke-AddDefenderDeployment(), Invoke-AddDefenderTemplate()
 
-### Community 138 - "Invoke-CIPPStandardDisableResourceMailbox() cluster"
+### Community 145 - "Invoke-CIPPStandardDisableResourceMailbox() cluster"
 Cohesion: 0.14
 Nodes (7): Set-CIPPDBCacheUsers(), Invoke-CIPPStandardDisableInactiveUsers(), Invoke-CIPPStandardDisableResourceMailbox(), Invoke-CIPPStandardDisableSharedMailbox(), Invoke-CIPPStandardPerUserMFA(), Invoke-CIPPStandardTeamsDisableResourceAccounts(), Invoke-CIPPStandardUserPreferredLanguage()
 
-### Community 139 - "Invoke-GitHubApiRequest() cluster"
-Cohesion: 0.19
-Nodes (7): Get-GitHubBranch(), Get-GitHubFileTree(), Invoke-GitHubApiRequest(), New-GitHubRepo(), Search-GitHub(), Invoke-ExecGitHubAction(), Invoke-ListGitHubReleaseNotes()
-
-### Community 140 - "Set-SherwebSubscription() cluster"
-Cohesion: 0.19
-Nodes (7): Get-SherwebCatalog(), Get-SherwebCurrentSubscription(), Invoke-SherwebMigration(), Invoke-SherwebScheduledLicenseRemoval(), Set-SherwebSubscription(), Invoke-ExecCSPLicense(), Invoke-ListCSPsku()
-
-### Community 141 - "Intune Policy Templates cluster"
+### Community 146 - "Intune Policy Templates cluster"
 Cohesion: 0.15
 Nodes (14): Intune Actions Shared Include, Apply Policy Wizard, View Device, Intune Devices, userExperienceAnalyticsDeviceScores (Graph resource), Compliance Policies, deviceCompliancePolicy (Graph resource), Configuration Policies (+6 more)
 
-### Community 142 - "Custom Tests cluster"
+### Community 147 - "Custom Tests cluster"
 Cohesion: 0.18
 Nodes (14): Dashboard, Community Repositories, GitHub Integration, Open Intune Baseline Repository, View Repository Templates, Add/Edit Custom Test, Replacement Variables, Custom Tests (+6 more)
 
-### Community 143 - "Application Templates cluster"
+### Community 148 - "Application Templates cluster"
 Cohesion: 0.22
 Nodes (14): Application Templates, Add Choco App, Chocolatey Package Manager, Prepared IntuneWin Package, Add Custom App (Win32), Add Office App, Add MSP App (RMM), Add Store App (WinGet) (+6 more)
 
-### Community 144 - "Add Alert cluster"
+### Community 149 - "Add Alert cluster"
 Cohesion: 0.16
 Nodes (14): Create New Template, SharePoint Permission Levels, SharePoint Provisioning Template, Deploy Template, SharePoint Templates Page, Add Alert, Audit Log Alert, Scripted CIPP Alert (+6 more)
 
-### Community 145 - "Best Practice Analyser (BPA) cluster"
+### Community 150 - "Best Practice Analyser (BPA) cluster"
 Cohesion: 0.19
 Nodes (14): Consented Applications Report, Graph oAuth2PermissionGrant Resource, Custom Test Report, Graph / Office Reports, Best Practice Templates, CIPP Best Practices v1.5 Table View, CIPP Best Practices v1.0 Tenant View, BPA Report JSON Template Schema (+6 more)
 
-### Community 146 - "format-alert-item.js cluster"
+### Community 151 - "format-alert-item.js cluster"
 Cohesion: 0.36
 Nodes (12): CippAlertSnoozeDialog(), SNOOZE_OPTIONS, describeAlertItem(), formatFieldName(), formatValue(), getAlertItemFields(), humanizeCmdlet(), isIdKey() (+4 more)
 
-### Community 147 - "toasts.js cluster"
+### Community 152 - "toasts.js cluster"
 Cohesion: 0.20
 Nodes (8): CalendarEventDialog(), useInitialValues(), validationSchema, store, useDispatch(), rootReducer, initialState, toastsSlice
 
-### Community 148 - "id cluster"
+### Community 153 - "id cluster"
 Cohesion: 0.14
 Nodes (14): description, properties, title, type, authenticationStrengthPolicy, description, graphLookup, title (+6 more)
 
-### Community 149 - "CIPPTokenCache cluster"
-Cohesion: 0.15
-Nodes (4): CIPPTokenCache, TokenCacheLookupResult, ConcurrentDictionary, long
+### Community 154 - "CIPPRestClient.cs cluster"
+Cohesion: 0.21
+Nodes (9): CIPPHttpRequestException, CIPPHttpResponse, CIPPResponseHeaders, HttpResult, TokenCacheEntry, Dictionary, IEnumerable, HttpRequestException (+1 more)
 
-### Community 150 - "Global Variables cluster"
+### Community 155 - "Global Variables cluster"
 Cohesion: 0.18
 Nodes (13): CIPP Settings, CIPP Tutorials, Secure Score, Secure Score Table View, Global Variables, Template Variable Substitution, Dynamic Group Membership Evaluation, Edit Tenant Group (+5 more)
 
-### Community 151 - "Apple ADE Profiles cluster"
+### Community 156 - "Apple ADE Profiles cluster"
 Cohesion: 0.15
 Nodes (13): Add Autopilot Device, Add Status Page, Android Enterprise Enrollment Profiles, Graph androidDeviceOwnerEnrollmentProfile Resource, Apple ADE Profiles, depOnboardingSetting (Graph resource), Sync DEP, Enrollment Profiles (+5 more)
 
-### Community 152 - "Enterprise Applications cluster"
+### Community 157 - "Enterprise Applications cluster"
 Cohesion: 0.22
 Nodes (13): Enterprise Applications, Permission Risk Rating, View Enterprise Application, Add Permission Set, Edit Permission Set, Permission Sets, Add App Approval Template, Application Manifest Single-Tenant Restriction (+5 more)
 
-### Community 153 - "pdfExportButton.js cluster"
+### Community 158 - "pdfExportButton.js cluster"
 Cohesion: 0.26
 Nodes (10): jspdf, csvConfig, CSVExportButton(), exportRowsToCsv(), flattenObject(), exportRowsToPdf(), flattenObject(), PDFExportButton() (+2 more)
 
-### Community 154 - "devDependencies cluster"
+### Community 159 - "devDependencies cluster"
 Cohesion: 0.15
 Nodes (13): devDependencies, eslint, eslint-config-next, eslint-config-prettier, prettier, @svgr/webpack, typescript, eslint (+5 more)
 
-### Community 155 - "CippAppRegistrationPermissions.jsx cluster"
+### Community 160 - "CippAppRegistrationPermissions.jsx cluster"
 Cohesion: 0.24
 Nodes (11): apiLabelsMatch(), buildResourcesByType(), CippAppRegistrationPermissions(), lookupPermissionRisk(), normalizeApiLabel(), ResourcePermissionsAccordion(), RISK_ORDER, riskAccentColor() (+3 more)
 
-### Community 156 - "util-columnsFromAPI.js cluster"
+### Community 161 - "util-columnsFromAPI.js cluster"
 Cohesion: 0.28
 Nodes (11): ABSOLUTE_DATE_NAMES, getAtPath(), isDateTimeColumn(), measureColumnSize(), mergeKeys(), resolveSimpleColumnVariables(), resolveVariables(), TIME_AGO_NAMES (+3 more)
 
-### Community 157 - "product-variant-dialog.js cluster"
-Cohesion: 0.23
-Nodes (8): FileDropzone(), ImagesDialog(), ImagesUploader(), currencyOptions, getInitialValues(), ProductVariantDialog(), validationSchema, createResourceId()
-
-### Community 158 - "orders-dnd.js cluster"
+### Community 162 - "orders-dnd.js cluster"
 Cohesion: 0.23
 Nodes (10): ResourceLoading(), ResourceLoadingRoot, createColumns(), OrdersDndDraggable(), OrdersDndDroppable(), getResourcesState(), move(), OrdersDnd() (+2 more)
 
-### Community 159 - "properties cluster"
+### Community 163 - "properties cluster"
 Cohesion: 0.15
 Nodes (13): description, properties, title, type, conditionalAccessSessionControls, description, title, type (+5 more)
 
-### Community 160 - "customer-notes.js cluster"
+### Community 164 - "customer-notes.js cluster"
 Cohesion: 0.23
 Nodes (8): useMockedUser(), AccountDetails(), companySizeOptions, initialValues, validationSchema, CustomerNoteAdd(), CustomerNoteCard(), CustomerNotes()
 
-### Community 161 - "worker-health.js cluster"
+### Community 165 - "worker-health.js cluster"
 Cohesion: 0.22
 Nodes (9): CompactStatsRow(), formatChartTime(), formatDuration(), formatUptime(), Page(), STARTUP_PHASES, StartupTimingBar(), TIME_RANGES (+1 more)
 
-### Community 162 - "ContainerHealthMonitor cluster"
+### Community 166 - "ContainerHealthMonitor cluster"
 Cohesion: 0.19
 Nodes (8): ContainerHealthMonitor, RestartTracker, DateTimeOffset, ILogger, int, string, TimeSpan, RestartTracker
 
-### Community 163 - "Get-GraphRequestList() cluster"
-Cohesion: 0.17
-Nodes (6): Push-ListGraphRequestQueue(), Get-GraphBulkResultByID(), Get-GraphRequestList(), Invoke-ListGraphRequest(), Invoke-ListDetectedApps(), Invoke-ListDeviceDetails()
+### Community 167 - "New-CIPPIntuneAppDeployment() cluster"
+Cohesion: 0.18
+Nodes (6): Push-UploadApplication(), Add-CIPPPackagedApplication(), Add-CIPPW32ScriptApplication(), Add-CIPPWin32LobAppContent(), Add-CIPPWinGetApp(), New-CIPPIntuneAppDeployment()
 
-### Community 164 - "Start-CIPPDBTestsRun() cluster"
+### Community 168 - "Start-CIPPDBTestsRun() cluster"
 Cohesion: 0.17
 Nodes (6): Invoke-CIPPDBTestsRun(), Push-CIPPDBTestsRun(), Start-CIPPDBTestsRun(), Start-TestsOrchestrator(), Invoke-ExecCustomTestRun(), Invoke-ExecTestRun()
 
-### Community 165 - "Test-CIPPAuditLogRules() cluster"
-Cohesion: 0.20
-Nodes (7): Push-AuditLogTenantProcess(), Get-CIPPGeoIPLocationBatch(), Invoke-GeoRetry(), Push-AuditLogTenantProcessV2(), Add-CIPPGuidMappings(), Test-CIPPAuditLogRules(), Invoke-ListAuditLogTest()
+### Community 169 - "New-CippCustomScriptExecution() cluster"
+Cohesion: 0.17
+Nodes (6): Push-CIPPTest(), New-CippCustomScriptExecution(), Test-CustomScriptSecurity(), Invoke-AddCustomScript(), Invoke-ExecCustomScript(), Invoke-CippTestCustomScripts()
 
-### Community 166 - "New-CIPPCAPolicy() cluster"
+### Community 170 - "Invoke-ExecApiClient() cluster"
+Cohesion: 0.20
+Nodes (6): New-CIPPAPIConfig(), Repair-CippApiIdentifierUri(), Set-CippApiAuth(), Set-CIPPMCPClientApp(), Update-CIPPAzFunctionAppSetting(), Invoke-ExecApiClient()
+
+### Community 171 - "New-CIPPCAPolicy() cluster"
 Cohesion: 0.21
 Nodes (7): Test-IsGuid(), Convert-GroupNameToId(), Convert-UserNameToId(), New-CIPPCAPolicy(), New-CIPPTravelPolicy(), Invoke-ListIntunePolicy(), Invoke-AddCAPolicy()
 
-### Community 167 - "Register-CIPPExtensionScheduledTasks() cluster"
+### Community 172 - "Get-CIPPDomainAnalyser() cluster"
 Cohesion: 0.17
-Nodes (6): Get-CippCustomDataAttributes(), Add-CippQueueMessage(), Register-CIPPExtensionScheduledTasks(), Invoke-ExecExtensionsConfig(), Invoke-ExecExtensionSync(), Invoke-ExecCustomData()
+Nodes (6): Get-CIPPDomainAnalyser(), Invoke-ListDomainAnalyser(), Invoke-CippTestCIS_2_1_10(), Invoke-CippTestCIS_2_1_8(), Invoke-CippTestORCA235(), Invoke-CippTestSMB1001_2_12()
 
-### Community 168 - "New-CIPPGraphSubscription() cluster"
+### Community 173 - "New-CIPPBackupTask() cluster"
 Cohesion: 0.17
-Nodes (6): Invoke-CippGraphWebhookRenewal(), New-CIPPGraphSubscription(), Remove-CIPPGraphSubscription(), Invoke-ExecPartnerWebhook(), Invoke-ExecWebhookSubscriptions(), Invoke-RemoveWebhookAlert()
+Nodes (6): Get-CIPPOmaSettingDecryptedValue(), New-CIPPBackup(), New-CIPPBackupTask(), New-CIPPIntuneTemplate(), Invoke-ExecRunBackup(), Invoke-AddIntunePolicyClone()
 
-### Community 169 - "Get-NinjaOneToken() cluster"
+### Community 174 - "Get-GraphToken() cluster"
+Cohesion: 0.20
+Nodes (6): Get-GraphToken(), Get-GraphTokenFromCert(), New-CIPPCertificateAssertion(), Read-JwtAccessDetails(), Invoke-ExecMaintenanceScripts(), Invoke-ExecMailTest()
+
+### Community 175 - "Remove-CIPPDbItem() cluster"
 Cohesion: 0.17
-Nodes (6): Get-HIBPConnectionTest(), Get-NinjaOneFieldMapping(), Get-NinjaOneOrgMapping(), Get-NinjaOneToken(), Invoke-NinjaOneDocumentTemplate(), Invoke-ExecExtensionTest()
+Nodes (6): Remove-CIPPDbItem(), Remove-CIPPMailboxRule(), Invoke-ExecHVEUser(), Invoke-ExecRemoveMailboxRule(), Invoke-ExecBulkRemoveSharingLinks(), Invoke-ExecRemoveSharingLink()
 
-### Community 170 - "Invoke-CIPPStandardSafeLinksTemplatePolicy.ps1 cluster"
+### Community 176 - "Set-CIPPAssignedApplication() cluster"
+Cohesion: 0.17
+Nodes (6): Set-CIPPAssignedApplication(), Invoke-AddMSPApp(), Invoke-AddOfficeApp(), Invoke-AddStoreApp(), Invoke-AddWin32ScriptApp(), Invoke-ExecDeployAppTemplate()
+
+### Community 177 - "Invoke-CIPPStandardSafeLinksTemplatePolicy.ps1 cluster"
 Cohesion: 0.39
 Nodes (11): ConvertTo-SafeArray(), Get-ExistingSafeLinksObjects(), Get-NormalizedTemplateList(), Get-SafeLinksTemplateFromStorage(), Invoke-CIPPStandardSafeLinksTemplatePolicy(), Invoke-SafeLinksAlert(), Invoke-SafeLinksRemediation(), Invoke-SafeLinksReport() (+3 more)
 
-### Community 171 - "Users Page cluster"
+### Community 178 - "CIPPTokenCache cluster"
+Cohesion: 0.17
+Nodes (4): CIPPTokenCache, TokenCacheLookupResult, ConcurrentDictionary, long
+
+### Community 179 - "Users Page cluster"
 Cohesion: 0.26
 Nodes (12): Sherweb Automated Migrations, Sherweb Integration, Edit Properties Wizard, Add User Form, AutoTask LiveLink Query String, Create Temporary Access Pass, Users Page, Edit User Page (+4 more)
 
-### Community 172 - "Assignment Filter Templates cluster"
+### Community 180 - "Assignment Filter Templates cluster"
 Cohesion: 0.20
 Nodes (12): Add Assignment Filter Template, Intune Filter Syntax, Deploy Assignment Filter Template, Assignment Filter Templates, Add Assignment Filter, Assignment Filters, deviceAndAppManagementAssignmentFilters (Graph resource), deviceManagementConfigurationSettingDefinition (Graph resource) (+4 more)
 
-### Community 173 - "Group Templates cluster"
+### Community 181 - "Group Templates cluster"
 Cohesion: 0.26
 Nodes (12): Add Group Template, Dynamic Group Parameters Syntax, AddGroup Endpoint, Deploy Group Templates, Edit Group Template, Group Templates, Add Group, Edit Group Page (+4 more)
 
-### Community 174 - "AppRegistrationActions.jsx cluster"
-Cohesion: 0.27
-Nodes (11): ADD_CLIENT_SECRET_FIELDS, AUDIENCES_REQUIRING_V2_TOKENS, editInEntraAction, entraLinkActions(), getAppRegistrationDetailHeaderActions(), getAppRegistrationEditActions(), getAppRegistrationListActions(), getAppRegistrationPostAndDestructiveActions() (+3 more)
-
-### Community 175 - "enumLabels cluster"
+### Community 182 - "enumLabels cluster"
 Cohesion: 0.17
 Nodes (12): description, enumLabels, items, title, type, all, browser, easSupported (+4 more)
 
-### Community 176 - "insiderRiskLevels cluster"
+### Community 183 - "insiderRiskLevels cluster"
 Cohesion: 0.17
 Nodes (12): elevated, minor, moderate, description, enum, enumLabels, title, type (+4 more)
 
-### Community 177 - "Send-CIPPScheduledTaskAlert() cluster"
-Cohesion: 0.18
-Nodes (6): Push-CIPPOffboardingComplete(), Get-AlertContentHash(), Remove-SnoozedAlerts(), Send-CIPPScheduledTaskAlert(), Invoke-ExecSnoozeAlert(), Invoke-ListAlertResults()
+### Community 184 - "getM365Licenses() cluster"
+Cohesion: 0.26
+Nodes (8): Page(), buildCatalog(), getCatalog(), searchLocalLicenseCatalog(), licenseByGuidMap(), ensureM365Licenses(), getM365Licenses(), useM365Licenses()
 
-### Community 178 - "Push-ExecScheduledCommand() cluster"
-Cohesion: 0.18
-Nodes (6): Push-ExecScheduledCommand(), Get-DeltaQueryUrl(), New-CippCoreRequest(), Set-CippUserAgentContext(), Get-CIPPSchedulerBlockedCommands(), Measure-CippTask()
-
-### Community 179 - "Get-AuthorisedRequest() cluster"
-Cohesion: 0.20
-Nodes (6): Get-AuthorisedRequest(), Get-ClassicAPIToken(), New-ClassicAPIGetRequest(), New-TeamsAPIGetRequest(), Add-Timing(), Invoke-ExecGraphRequestProfile()
-
-### Community 180 - "Get-CippMcpToolList() cluster"
+### Community 185 - "Get-CippMcpToolList() cluster"
 Cohesion: 0.27
 Nodes (7): Get-CippMcpSpec(), Get-CippMcpDescription(), Get-CippMcpToolList(), Resolve-CippMcpNode(), Resolve-CippMcpRef(), Get-CippMcpToolResult(), Invoke-ExecMcp()
 
-### Community 181 - "New-CIPPTemplateRun() cluster"
-Cohesion: 0.22
-Nodes (6): Get-SanitizedFilename(), New-CIPPTemplateRun(), Import-CommunityTemplate(), Get-GitHubFileContents(), Push-GitHubContent(), Invoke-ExecCommunityRepo()
-
-### Community 182 - ".SendAsync() cluster"
-Cohesion: 0.25
-Nodes (5): HttpResult, CancellationToken, Dictionary, Task, HttpContent
-
-### Community 183 - "Recommended First Steps cluster"
+### Community 186 - "Recommended First Steps cluster"
 Cohesion: 0.18
 Nodes (11): CIPP Alert Types, Graph Explorer, Recommended First Steps, Report Builder, Tenant Selector, CIPP-SAM Application Registration, Executing the Setup Wizard, Configuring Automatic GitHub Updates (+3 more)
 
-### Community 184 - "CIPP Standards cluster"
+### Community 187 - "CIPP Standards cluster"
 Cohesion: 0.20
 Nodes (11): CIPP Standards, Standards Setup, Template Reapplication, Standards (Course Module), Security Framework Alignment, Your Route to a Secure Tenant, CIPP Standard Baselines, Dynamic Tenant Groups (+3 more)
 
-### Community 185 - "CIPP-API & MCP cluster"
+### Community 188 - "CIPP-API & MCP cluster"
 Cohesion: 0.24
 Nodes (11): CIPP-API & MCP, CIPP API Client, CIPP MCP, ExecMCP Endpoint, Integrations, Secure Application Model (SAM), Setup Wizard, Backend Settings (+3 more)
 
-### Community 186 - "Notifications Settings cluster"
+### Community 189 - "Notifications Settings cluster"
 Cohesion: 0.20
 Nodes (11): View Log Entry, Logbook, Notifications Settings, Standardized Alert Schema, Webhook Authentication, CippLogs Azure Table, Read-Only SAS Token, SIEM Integration (+3 more)
 
-### Community 187 - "CIPPDB Cache cluster"
+### Community 190 - "Permissions Page cluster"
+Cohesion: 0.22
+Nodes (11): SAM Setup Wizard, Automated Onboarding (Partner Webhooks), GDAP Check, Permissions Page, Permissions Check, Tenants Access Check, CPV API (Control Panel Vendor), Tenants Settings (+3 more)
+
+### Community 191 - "CIPPDB Cache cluster"
 Cohesion: 0.31
 Nodes (11): Excluded Licenses, Branding Settings, CIPPDB Cache, Copilot Adoption by Product Report, Copilot Usage Trend Report, Copilot User Activity Report, Copilot Reports Section, Legacy CIPP Dashboard (+3 more)
 
-### Community 188 - "Rooms cluster"
+### Community 192 - "Rooms cluster"
 Cohesion: 0.25
 Nodes (11): Get-Mailbox, Shared Mailbox with Enabled Account Report, Equipment Mailboxes, Exchange PowerShell Polling over Graph, Edit Room, Rooms, Resource Management, Edit Room List (+3 more)
 
-### Community 189 - "Connection Filter cluster"
+### Community 193 - "Connection Filter cluster"
 Cohesion: 0.22
 Nodes (11): Connection Filter Templates, Deploy Connection Filter, Connection Filter, Get-HostedConnectionFilterPolicy, Deploy Quarantine Policy, Global Quarantine Settings, Quarantine Policies, Get-HostedContentFilterPolicy (+3 more)
 
-### Community 190 - "Safe Links Policies cluster"
+### Community 194 - "Safe Links Policies cluster"
 Cohesion: 0.22
 Nodes (11): Safe Links Section, Add Safe Links Policy, Edit Safe Links Policy, Get-EOPProtectionPolicyRule, Get-SafeLinksPolicy, Get-SafeLinksRule, Safe Links Policies, Deploy Safe Links Template (+3 more)
 
-### Community 191 - "View App Registration cluster"
+### Community 195 - "View App Registration cluster"
 Cohesion: 0.22
 Nodes (11): External Users, Get-SPOExternalUser, Remove Guest Access, Graph sharingLink Resource Type, Sharing Link Classification, Sharing Report, App Permission Risk Levels, View App Registration (+3 more)
 
-### Community 192 - "getM365Licenses() cluster"
-Cohesion: 0.29
-Nodes (7): buildCatalog(), getCatalog(), searchLocalLicenseCatalog(), licenseByGuidMap(), ensureM365Licenses(), getM365Licenses(), useM365Licenses()
+### Community 196 - "clear-azurite-reporting.py cluster"
+Cohesion: 0.49
+Nodes (10): cmd_list(), db_size(), docker(), empty_collection(), load(), main(), pull_db(), push_db() (+2 more)
 
-### Community 193 - "CIPP Sponsorware Policy cluster"
+### Community 197 - "CIPP Sponsorware Policy cluster"
 Cohesion: 0.20
 Nodes (10): validate-json.mjs Validator Script, Handle Comment Commands Workflow, CIPP Sponsorware Policy, Conventional Commits Check Workflow, Sponsor Priority Labeler Workflow, PR Branch Check Workflow, Validate JSON Workflow, CIPP Contributing Guide (+2 more)
 
-### Community 194 - "CIPP Monorepo Structure cluster"
-Cohesion: 0.22
-Nodes (10): Backend PSScriptAnalyzer Workflow, Dependency Review Workflow, ISO 27001:2022 A.8.28/8.29 Evidence, Dependency Vulnerability Scan Workflow, Sync Legacy Backend Repository Workflow, Sync Legacy Frontend Repository Workflow, DAST OWASP ZAP Scan Workflow, CIPP (CyberDrain Improved Partner Portal) (+2 more)
-
-### Community 195 - "Get-CIPPLicenseOverview() cluster"
+### Community 198 - "Push-AuditLogSearchCreationV2() cluster"
 Cohesion: 0.20
-Nodes (5): Push-ListLicensesQueue(), Get-CIPPAlertExpiringLicenses(), Get-CIPPAlertOverusedLicenses(), Get-CIPPAlertUnusedLicenses(), Get-CIPPLicenseOverview()
+Nodes (5): Get-CippAuditLogNextAttempt(), Get-CippAuditLogPlannedWindows(), Get-CippAuditLogReconciliationWindows(), New-CippAuditLogSearchV2(), Push-AuditLogSearchCreationV2()
 
-### Community 196 - "Get-CIPPDomainAnalyser() cluster"
+### Community 199 - "Invoke-ExecSSOSetup() cluster"
 Cohesion: 0.20
-Nodes (5): Get-CIPPAlertLowDomainScore(), Get-CIPPAlertMXRecordChanged(), Get-CIPPDomainAnalyser(), Invoke-CippTestCIS_2_1_10(), Invoke-CippTestORCA235()
+Nodes (5): Add-CIPPSSOAppSecret(), New-CIPPSSOApp(), Remove-CIPPMigrationAppSetting(), Set-CIPPSSOStoredCredentials(), Invoke-ExecSSOSetup()
 
-### Community 197 - "Set-CIPPSensitivityLabel() cluster"
+### Community 200 - "Register-CIPPExtensionScheduledTasks() cluster"
 Cohesion: 0.20
-Nodes (5): ConvertTo-CIPPExoHashtable(), Get-CIPPSensitivityLabelField(), Set-CIPPSensitivityLabel(), Invoke-AddSensitivityLabelTemplate(), Invoke-EditSensitivityLabel()
+Nodes (5): Get-CippCustomDataAttributes(), Register-CIPPExtensionScheduledTasks(), Invoke-ExecExtensionsConfig(), Invoke-ExecExtensionSync(), Invoke-ExecCustomData()
 
-### Community 198 - "Get-TenantGroups() cluster"
+### Community 201 - "Search-CIPPDbData() cluster"
 Cohesion: 0.20
-Nodes (5): Start-TenantDynamicGroupOrchestrator(), Get-TenantGroups(), Invoke-ListTenantGroups(), Invoke-EditTenant(), Invoke-ListTenantDetails()
+Nodes (5): Search-CIPPBitlockerKeys(), Search-CIPPDbData(), Invoke-ExecBitlockerSearch(), Invoke-ExecLicenseSearch(), Invoke-ExecUniversalSearchV2()
 
-### Community 199 - "Start-ContainerUpdateCheck() cluster"
-Cohesion: 0.29
-Nodes (6): ConvertFrom-RawJson(), Start-ContainerUpdateCheck(), Request-CIPPRestart(), Sync-CippContainerUpdateState(), New-CIPPAzRestRequest(), Invoke-ExecContainerManagement()
-
-### Community 200 - "New-CIPPBackupTask() cluster"
-Cohesion: 0.20
-Nodes (5): New-CIPPBackup(), New-CIPPBackupTask(), New-CIPPCATemplate(), Invoke-ExecRunBackup(), Invoke-AddCATemplate()
-
-### Community 201 - "Enable-CippConsoleLogging.ps1 cluster"
+### Community 202 - "Enable-CippConsoleLogging.ps1 cluster"
 Cohesion: 0.31
 Nodes (7): global:Write-Debug(), global:Write-Error(), global:Write-Host(), global:Write-Information(), global:Write-Verbose(), global:Write-Warning(), Send-CippConsoleLog()
 
-### Community 202 - "New-HaloPSATicket() cluster"
+### Community 203 - "New-CIPPGraphSubscription() cluster"
+Cohesion: 0.20
+Nodes (5): New-CIPPGraphSubscription(), Remove-CIPPGraphSubscription(), Invoke-ExecPartnerWebhook(), Invoke-ExecWebhookSubscriptions(), Invoke-RemoveWebhookAlert()
+
+### Community 204 - "New-HaloPSATicket() cluster"
 Cohesion: 0.20
 Nodes (5): Get-StringHash(), New-GradientAlert(), Get-HaloUser(), New-HaloPSATicket(), New-CippExtAlert()
 
-### Community 203 - "Get-ExtensionAPIKey() cluster"
-Cohesion: 0.20
-Nodes (5): Get-ExtensionAPIKey(), Get-SherwebAuthentication(), Get-SherwebCustomerConfiguration(), Get-SherwebCustomers(), Get-SherwebMapping()
+### Community 205 - "Invoke-NinjaOneOrgMapping() cluster"
+Cohesion: 0.22
+Nodes (5): Invoke-NinjaOneOrgMapping(), Invoke-NinjaOneOrgMappingTenant(), Invoke-NinjaOneSync(), Push-NinjaOneQueue(), Invoke-ExecExtensionNinjaOneQueue()
 
-### Community 204 - "CIPPRestClient.cs cluster"
+### Community 206 - "Recommended GDAP Roles cluster"
 Cohesion: 0.24
-Nodes (7): CIPPHttpRequestException, CIPPHttpResponse, CIPPResponseHeaders, TokenCacheEntry, IEnumerable, HttpRequestException, HttpStatusCode
+Nodes (10): CIPP Service Account CA Policy, Conditional Access Configuration, Client Service Provider CA Exclusion, Direct Tenant Mode, GDAP Role Template, Tenant Onboarding, Manage Your Own Tenant, CIPP Tenant Modes (+2 more)
 
-### Community 205 - "Shadow AI Discovery cluster"
+### Community 207 - "Shadow AI Discovery cluster"
 Cohesion: 0.22
 Nodes (10): Agent 365 Packages, Agent365 Section, Copilot & AI Section, Copilot Settings, AI Tool Catalog, Company Sanctioned Override (ShadowAIConfig), Executive Shadow AI Report, Shadow AI Risk Categorization (+2 more)
 
-### Community 206 - "Contacts cluster"
+### Community 208 - "Contacts cluster"
 Cohesion: 0.20
 Nodes (10): Add Contact, Edit Contact, Contacts, Graph Contact Resource Type, Add Contact Template, Deploy Contact Templates, Edit Contact Template, Contact Templates (+2 more)
 
-### Community 207 - "CippTenantGroupRuleBuilder.jsx cluster"
-Cohesion: 0.44
-Nodes (8): CippTenantGroupRuleBuilder(), getTenantGroupDelegatedAccessOptions(), getTenantGroupLicenseOptions(), getTenantGroupOperatorOptions(), getTenantGroupPropertyOptions(), getTenantGroupServicePlanOptions(), getTenantGroupsQuery(), getTenantGroupValueOptions()
+### Community 209 - "CippFolderNavigation.jsx cluster"
+Cohesion: 0.22
+Nodes (8): CippFolderNavigation(), FileListItem, NavigationContainer, SlideView, StyledListItem, CippSitTemplateDetails(), decodeFileData(), parseSitConfig()
 
-### Community 208 - "tutorial-context.js cluster"
+### Community 210 - "tutorial-context.js cluster"
 Cohesion: 0.36
 Nodes (8): CippTutorialDialog(), getCompletedTutorials(), loadTutorials(), resetCompletedTutorials(), storeCompletedTutorial(), TutorialContext, TutorialProvider(), useTutorials()
 
-### Community 209 - "operator cluster"
+### Community 211 - "operator cluster"
 Cohesion: 0.20
 Nodes (10): AND, OR, description, enum, enumLabels, title, type, operator (+2 more)
 
-### Community 210 - "get-cipp-license-translation.js cluster"
+### Community 212 - "get-cipp-license-translation.js cluster"
 Cohesion: 0.40
 Nodes (6): addLicensesToCache(), getAllCachedLicenses(), getCache(), getCachedLicense(), getMissingFromCache(), saveCache()
 
-### Community 212 - "Test-CippApiClientRoleGrant() cluster"
-Cohesion: 0.31
-Nodes (5): Get-CippAllowedPermissions(), Get-CippHttpPermissions(), Get-CIPPRolePermissions(), New-Denial(), Test-CippApiClientRoleGrant()
+### Community 214 - "CIPP Monorepo Structure cluster"
+Cohesion: 0.22
+Nodes (9): Backend PSScriptAnalyzer Workflow, Dependency Review Workflow, ISO 27001:2022 A.8.28/8.29 Evidence, Dependency Vulnerability Scan Workflow, Sync Legacy Frontend Repository Workflow, DAST OWASP ZAP Scan Workflow, CIPP (CyberDrain Improved Partner Portal), Craft Runtime (+1 more)
 
-### Community 213 - "Compare-CIPPIntuneObject() cluster"
+### Community 215 - "Get-CIPPTextReplacement() cluster"
+Cohesion: 0.25
+Nodes (5): Get-CIPPAlertQuotaUsed(), ConvertTo-CIPPJsonEscapedString(), Get-CIPPTextReplacement(), New-CIPPDeviceAction(), Invoke-ExecDeviceAction()
+
+### Community 216 - "Invoke-CIPPSharePointTemplateDeploy() cluster"
+Cohesion: 0.25
+Nodes (5): Set-CIPPAsyncDeploymentStep(), Invoke-CIPPSharePointTemplateDeploy(), Update-DeployStep(), New-CIPPSharePointLibrary(), New-CIPPTeam()
+
+### Community 217 - "Compare-CIPPIntuneObject() cluster"
 Cohesion: 0.36
 Nodes (7): Compare-CIPPIntuneObject(), Compare-ObjectsRecursively(), Process-GroupSettingChildren(), ShouldCompareAsUnorderedSet(), ShouldSkipProperty(), Invoke-ExecCompareIntunePolicy(), Resolve-PolicySource()
 
-### Community 214 - "CippJson cluster"
+### Community 218 - "New-CIPPTemplateRun() cluster"
+Cohesion: 0.25
+Nodes (5): New-CIPPCATemplate(), Get-SanitizedFilename(), New-CIPPTemplateRun(), Import-CommunityTemplate(), Invoke-AddCATemplate()
+
+### Community 219 - "CippJson cluster"
 Cohesion: 0.31
 Nodes (5): CippJson, HashSet, JsonElement, CIPP, JsonDocumentOptions
 
-### Community 215 - "Exchange Connectors cluster"
+### Community 220 - "Exchange Connectors cluster"
 Cohesion: 0.28
 Nodes (9): Spamfilter Templates, Connector Templates, Exchange Connectors, Get-InboundConnector, Get-OutboundConnector, Get-TransportRule, Transport Rules, Transport Templates (+1 more)
 
-### Community 216 - "Sensitive Information Types cluster"
+### Community 221 - "Sensitive Information Types cluster"
 Cohesion: 0.28
 Nodes (9): Deploy Retention Policy Action, Get-RetentionCompliancePolicy, Purview Retention Policies, Retention Policy Templates, Get-DlpSensitiveInformationType, Sensitive Information Type (SIT), Sensitive Information Types, Sensitive Info Type Templates (+1 more)
 
-### Community 217 - "CippMessageDeliveryInfo.jsx cluster"
+### Community 222 - "CippMessageDeliveryInfo.jsx cluster"
 Cohesion: 0.42
 Nodes (8): authColor(), CippMessageDeliveryInfo(), formatDelay(), getHeaderValues(), getUnfoldedHeaderLines(), isValidDate(), parseHop(), RFC-5322
 
-### Community 218 - "enumLabels cluster"
+### Community 223 - "get-cipp-tenant-group-options.js cluster"
+Cohesion: 0.39
+Nodes (8): CippTenantGroupRuleBuilder(), getTenantGroupDelegatedAccessOptions(), getTenantGroupLicenseOptions(), getTenantGroupOperatorOptions(), getTenantGroupPropertyOptions(), getTenantGroupServicePlanOptions(), getTenantGroupsQuery(), getTenantGroupValueOptions()
+
+### Community 224 - "enumLabels cluster"
 Cohesion: 0.22
 Nodes (9): enumLabels, approvedApplication, block, compliantApplication, compliantDevice, domainJoinedDevice, mfa, passwordChange (+1 more)
 
-### Community 219 - "Test-CIPPRerun() cluster"
-Cohesion: 0.25
-Nodes (4): Push-BPACollectData(), Push-CIPPStandard(), Start-LogRetentionCleanup(), Test-CIPPRerun()
+### Community 225 - "customScriptTemplate.js cluster"
+Cohesion: 0.44
+Nodes (8): decodeEscapedTemplateString(), escapeMarkdownCell(), parsePathSegments(), parseQuotedFieldNames(), resolvePath(), resolveToken(), toEnumerable(), valueToString()
 
-### Community 220 - "New-CIPPIntuneReportExportJob() cluster"
+### Community 226 - "New-CIPPIntuneReportExportJob() cluster"
 Cohesion: 0.25
 Nodes (4): Push-IntuneReportExportSubmit(), New-CIPPIntuneReportExportJob(), Set-CIPPDBCacheDetectedApps(), Set-CIPPDBCacheIntuneAppInstallStatus()
 
-### Community 221 - "New-CippAuditLogSearch() cluster"
+### Community 227 - "New-CippAuditLogSearch() cluster"
 Cohesion: 0.29
 Nodes (4): Push-AuditLogSearchCreation(), Add-CippAuditLogCoverageManualEntry(), New-CippAuditLogSearch(), Invoke-ExecAuditLogSearch()
 
-### Community 222 - "Invoke-CippPartnerWebhookProcessing() cluster"
+### Community 228 - "Test-CIPPAccessUserRole() cluster"
 Cohesion: 0.25
-Nodes (4): Push-PublicWebhookProcess(), Invoke-CippGraphWebhookProcessing(), Invoke-CippPartnerWebhookProcessing(), Invoke-NinjaOneDeviceWebhook()
+Nodes (4): Test-CIPPAccessUserRole(), Get-CIPPBackup(), Invoke-ExecListBackup(), Invoke-ExecRestoreBackup()
 
-### Community 223 - "Update-CIPPDynamicTenantGroups() cluster"
+### Community 229 - "Invoke-ExecSetSiteProperties() cluster"
 Cohesion: 0.25
-Nodes (4): Get-CIPPAlertNewRiskyUsers(), Get-CIPPTenantCapabilities(), Update-CIPPDynamicTenantGroups(), Invoke-CippTestGenericTest010()
+Nodes (4): Get-CIPPSPOSite(), Set-CIPPSPOSite(), Invoke-ExecSetSiteProperties(), Invoke-ListSiteProperties()
 
-### Community 224 - "Get-CippApiClient() cluster"
-Cohesion: 0.25
-Nodes (4): Get-CIPPAccessRole(), Get-CippApiClient(), Remove-SherwebSubscription(), Invoke-ListDomainHealth()
-
-### Community 225 - "Set-CIPPDBCacheMailboxes() cluster"
-Cohesion: 0.25
-Nodes (4): Update-CippQueueEntry(), Set-CIPPDBCacheMailboxes(), Set-CIPPDBCacheOneDriveRootPermissions(), Set-CIPPDBCacheSharePointSharingLinks()
-
-### Community 226 - "Get-CIPPTimerFunctions() cluster"
-Cohesion: 0.29
-Nodes (4): Get-CippOffloadSuffix(), Get-CIPPTimerFunctions(), Test-CippOffloadFunctionApp(), Invoke-ExecOffloadFunctions()
-
-### Community 227 - "New-TeamsRequest() cluster"
+### Community 230 - "New-TeamsRequest() cluster"
 Cohesion: 0.25
 Nodes (4): New-TeamsRequest(), Invoke-ExecRemoveTeamsVoicePhoneNumberAssignment(), Invoke-ExecTeamsVoicePhoneNumberAssignment(), Invoke-ListTeamsLisLocation()
 
-### Community 228 - "Invoke-AddIntuneReusableSettingTemplate() cluster"
+### Community 231 - "Invoke-AddIntuneReusableSettingTemplate() cluster"
 Cohesion: 0.43
 Nodes (6): Normalize-Entries(), Normalize-Object(), Remove-CIPPReusableSettingMetadata(), Test-IsCollection(), Format-ReusableSettingCollections(), Invoke-AddIntuneReusableSettingTemplate()
 
-### Community 229 - "Search-CIPPDbData() cluster"
-Cohesion: 0.25
-Nodes (4): Search-CIPPBitlockerKeys(), Search-CIPPDbData(), Invoke-ExecBitlockerSearch(), Invoke-ExecUniversalSearchV2()
-
-### Community 230 - "Set-CIPPQuarantinePolicy() cluster"
+### Community 232 - "Set-CIPPQuarantinePolicy() cluster"
 Cohesion: 0.25
 Nodes (4): Set-CIPPQuarantinePolicy(), Convert-QuarantinePermissionsValue(), Invoke-AddQuarantinePolicy(), Invoke-EditQuarantinePolicy()
 
-### Community 231 - "Get-ExtensionMapping() cluster"
-Cohesion: 0.29
-Nodes (4): Get-ExtensionMapping(), Connect-HuduAPI(), Get-HuduFieldMapping(), Get-HuduMapping()
-
-### Community 232 - "NinjaOneHelper.ps1 cluster"
+### Community 233 - "NinjaOneHelper.ps1 cluster"
 Cohesion: 0.43
 Nodes (7): Get-NinjaInLineBarGraph(), Get-NinjaOneCard(), Get-NinjaOneCSSCol(), Get-NinjaOneInfoCard(), Get-NinjaOneLinks(), Get-NinjaOneTitle(), Get-NinjaOneWidgetCard()
 
-### Community 233 - "Phishing Protection via Branding CSS Standard cluster"
+### Community 234 - "Phishing Protection via Branding CSS Standard cluster"
 Cohesion: 0.32
 Nodes (8): Conditional Access (Sip & CIPP), Conditional Access Policies, Continuous Access Evaluation, Adversary in the Middle (AitM) Attack, Canary Token Pixel, Clarion (HuskyHacks), Phishing Protection via Branding CSS Standard, Potential Phishing Page Detected Alert FAQ
 
-### Community 234 - "ActiveSync Devices cluster"
+### Community 235 - "ActiveSync Devices cluster"
 Cohesion: 0.25
 Nodes (8): ActiveSync Devices, Get-MobileDevice, Remove-MobileDevice, Anti-Phishing Filters, Get-AntiPhishPolicy, Get-AntiPhishRule, Calendar Permissions, Email & Exchange Reports
 
-### Community 235 - "Incidents & Alerts Section cluster"
+### Community 236 - "Incidents & Alerts Section cluster"
 Cohesion: 0.29
 Nodes (8): Check Alerts, Check by CyberDrain, Alerts, Graph security alert Resource, Graph security incident Resource, Incidents, MDO Alerts, Incidents & Alerts Section
 
-### Community 236 - "CippGDAPTraceResults.jsx cluster"
+### Community 237 - "CippGDAPTraceResults.jsx cluster"
 Cohesion: 0.39
 Nodes (4): CippFlowDiagram(), CippGDAPTraceResults(), CippPathVisualization(), getCippRoleTranslation()
 
-### Community 237 - "mobile-nav.js cluster"
+### Community 238 - "mobile-nav.js cluster"
 Cohesion: 0.43
 Nodes (5): Logo(), MobileNavItem(), MobileNav(), reduceChildRoutes(), renderItems()
 
-### Community 238 - "conditionalAccessConditionSet cluster"
+### Community 239 - "conditionalAccessConditionSet cluster"
 Cohesion: 0.25
 Nodes (8): description, required, title, type, conditionalAccessConditionSet, applications, clientAppTypes, users
 
-### Community 239 - "conditionalAccessDevices cluster"
+### Community 240 - "conditionalAccessDevices cluster"
 Cohesion: 0.25
 Nodes (8): description, properties, title, type, conditionalAccessDevices, description, title, deviceFilter
 
-### Community 240 - "BackupValidator cluster"
+### Community 241 - "BackupValidator cluster"
 Cohesion: 0.36
 Nodes (5): BackupValidationError, BackupValidator, runBackupValidationTests(), testCases, testWithCorruptedSample()
 
-### Community 241 - "Push-ListConditionalAccessPoliciesAllTenants() cluster"
+### Community 242 - "Push-ListConditionalAccessPoliciesAllTenants() cluster"
 Cohesion: 0.52
 Nodes (6): Get-ApplicationNameFromId(), Get-GroupNameFromId(), Get-LocationNameFromId(), Get-RoleNameFromId(), Get-UserNameFromId(), Push-ListConditionalAccessPoliciesAllTenants()
 
-### Community 242 - "Invoke-ListConditionalAccessPolicies() cluster"
+### Community 243 - "Push-DBCacheSharePointPermissionsBatch() cluster"
+Cohesion: 0.52
+Nodes (6): ConvertTo-AssignmentRow(), Get-SPBroadClaim(), Get-SPPrincipalType(), New-SiteRow(), Push-DBCacheSharePointPermissionsBatch(), Test-SPGuestPrincipal()
+
+### Community 244 - "New-CippCoreRequest() cluster"
+Cohesion: 0.29
+Nodes (4): Push-CIPPStandard(), New-CippCoreRequest(), Set-CippUserAgentContext(), Measure-CippTask()
+
+### Community 245 - "Invoke-AddChocoApp() cluster"
+Cohesion: 0.33
+Nodes (4): ConvertTo-CIPPSafePwshArg(), Get-CIPPMSPAppInstallCommand(), Resolve-MSPValue(), Invoke-AddChocoApp()
+
+### Community 246 - "Invoke-ExecUpdateDriftDeviation() cluster"
+Cohesion: 0.33
+Nodes (4): Get-CIPPURLName(), Set-CIPPDriftDeviation(), Find-CIPPTagBundleEntry(), Invoke-ExecUpdateDriftDeviation()
+
+### Community 247 - "Invoke-ExecContainerManagement() cluster"
+Cohesion: 0.43
+Nodes (5): Sync-CippContainerUpdateState(), ConvertFrom-RawJson(), Get-ContainerSiteInfo(), Get-GHCRImageInfo(), Invoke-ExecContainerManagement()
+
+### Community 248 - "Invoke-ListConditionalAccessPolicies() cluster"
 Cohesion: 0.52
 Nodes (6): Get-ApplicationNameFromId(), Get-GroupNameFromId(), Get-LocationNameFromId(), Get-RoleNameFromId(), Get-UserNameFromId(), Invoke-ListConditionalAccessPolicies()
 
-### Community 243 - "CIPPTestDataCache.cs cluster"
+### Community 249 - "CIPPTestDataCache.cs cluster"
 Cohesion: 0.38
 Nodes (5): CacheDiagnostics, CacheEntry, TypeBucket, DateTime, List
 
-### Community 244 - "Mailboxes cluster"
+### Community 250 - "Mailboxes cluster"
 Cohesion: 0.29
 Nodes (7): Deleted Mailboxes, Mailbox Rules, Get-BillingPolicy, HVE Accounts, Get-Mailbox, Mailboxes, Restricted Users
 
-### Community 245 - "Retention Policies cluster"
+### Community 251 - "Retention Policies cluster"
 Cohesion: 0.29
 Nodes (7): Add/Edit Retention Policy, Get-RetentionPolicy, Retention Policies, Retention Policies & Tags, Get-RetentionPolicyTag, Retention Tags, Add/Edit Retention Tag
 
-### Community 246 - "Vacation Mode cluster"
+### Community 252 - "Vacation Mode cluster"
 Cohesion: 0.29
 Nodes (7): Conditional Access Test Page, Exchange Settings Page, Add Vacation Schedule Wizard, Vacation Mode, MFA Protection Criteria, MFA Report, Scheduler Task Details Page
 
-### Community 247 - "DLP Policy Templates Page cluster"
+### Community 253 - "DLP Policy Templates Page cluster"
 Cohesion: 0.33
 Nodes (7): DLP Policies Page, Data Loss Prevention Policy, DLP Policy Templates Page, Sensitivity Label, Sensitivity Labels Page, Sensitivity Label Templates Page, Community Repos
 
-### Community 248 - "List Teams cluster"
+### Community 254 - "List Teams cluster"
 Cohesion: 0.29
 Nodes (7): Business Voice, Add Team, Graph team Resource Type, List Teams, Teams Section, Graph Teams User Activity Report, Teams Activity
 
-### Community 249 - "ReportBuilderPDF.js cluster"
+### Community 255 - "ReportBuilderPDF.js cluster"
 Cohesion: 0.57
 Nodes (6): createStyles(), htmlToElements(), markdownToElements(), processInline(), ReportBuilderDocument(), stripTags()
 
-### Community 250 - "container-logs.js cluster"
+### Community 256 - "container-logs.js cluster"
 Cohesion: 0.38
 Nodes (6): ContainerLogsFilter(), getLevelColor(), getLevelLabel(), levelOptions, Page(), timeRangeOptions
 
-### Community 251 - "order-payment-dialog.js cluster"
+### Community 257 - "order-payment-dialog.js cluster"
 Cohesion: 0.33
 Nodes (6): courierOptions, getInitialValues(), OrderPaymentDialog(), paymentMethodOptions, paymentStatusOptions, validationSchema
 
-### Community 252 - "organization-invite-dialog.js cluster"
+### Community 258 - "organization-invite-dialog.js cluster"
 Cohesion: 0.38
 Nodes (5): initialValues, OrganizationInviteDialog(), roleOptions, validationSchema, wait()
 
-### Community 253 - "create-options.js cluster"
+### Community 259 - "product-variant-dialog.js cluster"
+Cohesion: 0.43
+Nodes (5): currencyOptions, getInitialValues(), ProductVariantDialog(), validationSchema, createResourceId()
+
+### Community 260 - "create-options.js cluster"
 Cohesion: 0.52
 Nodes (4): createComponents(), createOptions(), createPalette(), createShadows()
 
-### Community 254 - "Push-ExecSharePointTemplateDeploy() cluster"
+### Community 261 - "Test-CIPPAccessTenant() cluster"
+Cohesion: 0.33
+Nodes (3): Push-CIPPAccessTenantTest(), Test-CIPPAccessTenant(), Invoke-ExecAccessChecks()
+
+### Community 262 - "Set-CIPPGDAPInviteGroups() cluster"
+Cohesion: 0.33
+Nodes (3): Push-ExecGDAPInviteQueue(), Set-CIPPGDAPInviteGroups(), Invoke-ExecGDAPInviteApproved()
+
+### Community 263 - "Push-ExecSharePointTemplateDeploy() cluster"
 Cohesion: 0.33
 Nodes (3): Push-ExecSharePointTemplateDeploy(), Get-CIPPAsyncDeployment(), Set-CIPPAsyncDeploymentStatus()
 
-### Community 255 - "Add-CIPPGroupMember() cluster"
+### Community 264 - "Get-CIPPMFAState() cluster"
+Cohesion: 0.33
+Nodes (3): Push-ListMFAUsersQueue(), Get-CIPPMFAState(), Set-CIPPDBCacheMFAState()
+
+### Community 265 - "Get-CIPPAlertNewMFADevice() cluster"
+Cohesion: 0.33
+Nodes (3): Get-CIPPAlertNewMFADevice(), Get-CIPPGeoIPLocation(), Invoke-ExecGeoIPLookup()
+
+### Community 266 - "Add-CIPPGroupMember() cluster"
 Cohesion: 0.33
 Nodes (3): Add-CIPPGroupMember(), Remove-CIPPGroupMember(), Invoke-ExecSetSharePointMember()
 
-### Community 256 - "Test-CIPPAccessUserRole() cluster"
+### Community 267 - "Start-AuditLogSearchCreationV2() cluster"
 Cohesion: 0.33
-Nodes (3): Test-CIPPAccessUserRole(), Get-CIPPBackup(), Invoke-ExecRestoreBackup()
+Nodes (3): Start-AuditLogIngestionV2(), Start-AuditLogPlannerV2(), Start-AuditLogSearchCreationV2()
 
-### Community 257 - "New-GraphDeltaQuery() cluster"
-Cohesion: 0.33
-Nodes (3): New-GraphDeltaQuery(), Push-GraphDeltaQuery(), Get-StringHash()
-
-### Community 258 - "Get-CIPPBitLockerKey() cluster"
+### Community 268 - "Get-CIPPBitLockerKey() cluster"
 Cohesion: 0.33
 Nodes (3): Get-CIPPBitLockerKey(), Get-CIPPFileVaultKey(), Invoke-ExecGetRecoveryKey()
 
-### Community 259 - "Get-CippCustomScriptAllowedCommand() cluster"
+### Community 269 - "Get-CippCustomScriptAllowedCommand() cluster"
 Cohesion: 0.33
 Nodes (3): Get-CippCustomScriptAllowedCommand(), Invoke-CippSandboxScript(), New-CippSandboxInitialSessionState()
 
-### Community 260 - "Invoke-ListSharePointExternalUsers() cluster"
+### Community 270 - "Invoke-ListSharePointExternalUsers() cluster"
 Cohesion: 0.47
 Nodes (4): Get-CIPPSPOExternalUsers(), ConvertFrom-CsomDate(), Invoke-ListSharePointExternalUsers(), Resolve-GuestClassification()
 
-### Community 261 - "get-DefenderCVEs() cluster"
+### Community 271 - "get-DefenderCVEs() cluster"
 Cohesion: 0.33
 Nodes (3): get-DefenderCVEs(), Get-DefenderTvmRaw(), Set-CIPPDBCacheDefenderCVEs()
 
-### Community 262 - "New-CIPPIntuneTemplate() cluster"
+### Community 272 - "Invoke-ListDetectedApps() cluster"
 Cohesion: 0.33
-Nodes (3): Get-CIPPOmaSettingDecryptedValue(), New-CIPPIntuneTemplate(), Invoke-AddIntunePolicyClone()
+Nodes (3): Get-GraphBulkResultByID(), Invoke-ListDetectedApps(), Invoke-ListDeviceDetails()
 
-### Community 263 - "New-passwordString() cluster"
+### Community 273 - "New-passwordString() cluster"
 Cohesion: 0.60
 Nodes (5): ConvertTo-Bool(), ConvertTo-Int(), Get-CryptoRandomInt(), New-passwordString(), Test-Microsoft365Compliance()
 
-### Community 264 - "Invoke-CIPPStandardAssignmentFilterTemplate() cluster"
+### Community 274 - "Invoke-CIPPStandardAssignmentFilterTemplate() cluster"
 Cohesion: 0.33
 Nodes (3): New-CIPPAssignmentFilter(), Invoke-AddAssignmentFilter(), Invoke-CIPPStandardAssignmentFilterTemplate()
 
-### Community 265 - "Set-CIPPNamedLocation() cluster"
+### Community 275 - "New-CIPPSharepointSite() cluster"
+Cohesion: 0.33
+Nodes (3): New-CIPPSharepointSite(), Invoke-AddSite(), Invoke-AddSiteBulk()
+
+### Community 276 - "Remove-CippKeyVaultSecret() cluster"
+Cohesion: 0.33
+Nodes (3): Remove-CippKeyVaultSecret(), Remove-ExtensionAPIKey(), Invoke-ExecExtensionClearHIBPKey()
+
+### Community 277 - "Invoke-ExecRemoveSPOExternalUser() cluster"
+Cohesion: 0.33
+Nodes (3): Remove-CIPPSPOSiteUser(), Invoke-ExecRemoveSiteUser(), Invoke-ExecRemoveSPOExternalUser()
+
+### Community 278 - "Set-CIPPNamedLocation() cluster"
 Cohesion: 0.33
 Nodes (3): Remove-CIPPTravelPolicy(), Set-CIPPNamedLocation(), Invoke-ExecNamedLocation()
 
-### Community 266 - "Set-CIPPCalendarPermission() cluster"
-Cohesion: 0.33
-Nodes (3): Set-CIPPCalendarPermission(), Set-CIPPMailboxVacation(), Invoke-ExecModifyCalPerms()
-
-### Community 267 - "Set-CIPPForwarding() cluster"
+### Community 279 - "Set-CIPPForwarding() cluster"
 Cohesion: 0.33
 Nodes (3): Set-CIPPForwarding(), Set-CIPPVacationForwarding(), Invoke-ExecEmailForward()
 
-### Community 268 - "Set-CIPPOutOfOffice() cluster"
+### Community 280 - "Set-CIPPMailboxArchive() cluster"
+Cohesion: 0.33
+Nodes (3): Set-CIPPMailboxArchive(), Invoke-ExecEnableArchive(), Invoke-ExecEnableAutoExpandingArchive()
+
+### Community 281 - "Set-CIPPOutOfOffice() cluster"
 Cohesion: 0.33
 Nodes (3): Set-CIPPOutOfOffice(), Set-CIPPVacationOOO(), Invoke-ExecSetOoO()
 
-### Community 269 - "Invoke-ListGroups() cluster"
+### Community 282 - "Set-CIPPRetentionCompliancePolicy() cluster"
+Cohesion: 0.33
+Nodes (3): Set-CIPPRetentionCompliancePolicy(), Invoke-AddRetentionCompliancePolicy(), Invoke-CIPPStandardRetentionCompliancePolicyTemplate()
+
+### Community 283 - "Set-CIPPUserLicense() cluster"
+Cohesion: 0.33
+Nodes (3): Set-CIPPUserLicense(), Invoke-AddUserBulk(), Invoke-ExecBulkLicense()
+
+### Community 284 - "Invoke-ListGroups() cluster"
 Cohesion: 0.33
 Nodes (3): Convert-AzureAdObjectIdToSid(), Invoke-ListGroups(), Invoke-ListRoles()
 
-### Community 270 - "Initialize-CIPPExcludedLicenses() cluster"
+### Community 285 - "Initialize-CIPPExcludedLicenses() cluster"
 Cohesion: 0.33
 Nodes (3): Initialize-CIPPExcludedLicenses(), Invoke-ExecExcludeLicenses(), Invoke-ListExcludedLicenses()
 
-### Community 271 - "New-SafeLinksPolicyFromTemplate() cluster"
+### Community 286 - "Get-BreachInfo() cluster"
+Cohesion: 0.33
+Nodes (3): Get-BreachInfo(), Get-HIBPRequest(), Invoke-ListBreachesAccount()
+
+### Community 287 - "New-SafeLinksPolicyFromTemplate() cluster"
 Cohesion: 0.53
 Nodes (5): ConvertTo-SafeArray(), Invoke-AddSafeLinksPolicyFromTemplate(), New-SafeLinksPolicyFromTemplate(), Test-PolicyExists(), Test-RuleExists()
 
-### Community 272 - "Hudu Integration cluster"
+### Community 288 - "Hudu Integration cluster"
 Cohesion: 0.40
 Nodes (6): Cloudflare Integration, Hudu Integration, Integration Sync, NinjaOne CVE Sync, NinjaOne Integration, Password Pusher Integration
 
-### Community 273 - "Tenant Allow/Block Lists cluster"
+### Community 289 - "Tenant Allow/Block Lists cluster"
 Cohesion: 0.33
 Nodes (6): Export-QuarantineMessage, Quarantine, Tenant Allow/Block List Templates, Add Allow/Block List Entry, Get-TenantAllowBlockListItems, Tenant Allow/Block Lists
 
-### Community 274 - "Malware Filters Report cluster"
+### Community 290 - "Malware Filters Report cluster"
 Cohesion: 0.33
 Nodes (6): Get-MalwareFilterPolicy, Get-MalwareFilterRule, Malware Filters Report, Get-SafeAttachmentPolicy, Get-SafeAttachmentRule, Safe Attachment Filters Report
 
-### Community 275 - "Audit Logs cluster"
+### Community 291 - "Audit Logs cluster"
 Cohesion: 0.47
 Nodes (6): View Audit Log, Manual Searches, Alert Configuration (Alerts Wizard), Audit Logs, Audit Log Search V2 Pipeline, Log Searches
 
-### Community 276 - "Add Standards Template cluster"
+### Community 292 - "Add Standards Template cluster"
 Cohesion: 0.40
 Nodes (6): Add Standards Template, Drift Management Template, Fuzzy Match Distance, Standards Template, Compare Policies, Intune Tools
 
-### Community 277 - "CippFolderNavigation.jsx cluster"
-Cohesion: 0.33
-Nodes (5): CippFolderNavigation(), FileListItem, NavigationContainer, SlideView, StyledListItem
-
-### Community 278 - "order-details-dialog.js cluster"
+### Community 293 - "order-details-dialog.js cluster"
 Cohesion: 0.40
 Nodes (5): countryOptions, getInitialValues(), OrderDetailsDialog(), statusOptions, validationSchema
 
-### Community 279 - "product-details-dialog.js cluster"
+### Community 294 - "product-details-dialog.js cluster"
 Cohesion: 0.40
 Nodes (5): compositionOptions, getInitialValues(), ProductDetailsDialog(), tagOptions, validationSchema
 
-### Community 281 - "validate-json.mjs cluster"
+### Community 296 - "validate-json.mjs cluster"
 Cohesion: 0.33
 Nodes (4): argv, failures, report(), roots
 
-### Community 282 - "Craft.csproj cluster"
+### Community 297 - "Craft.csproj cluster"
 Cohesion: 0.33
 Nodes (5): net8.0, Azure.Data.Tables (12.9.1), Cronos (0.8.4), Microsoft.PowerShell.SDK (7.4.16), Microsoft.NET.Sdk.Web
 
-### Community 283 - "Graphify 0.9.12 Pinned Internals cluster"
-Cohesion: 0.33
-Nodes (6): build_merge Replace-on-Re-extract, Graphify 0.9.12 Pinned Internals, Graphify Ignore fnmatch Semantics, to_json Shrink Guard, CIPP OpenAPI v2 Snapshot, spec Directory
-
-### Community 284 - "Add-CIPPSharingRows() cluster"
+### Community 298 - "Add-CIPPSharingRows() cluster"
 Cohesion: 0.70
 Nodes (4): Add-CIPPSharingRows(), Get-CIPPIdentityLabel(), Push-DBCacheSharePointSiteSharingLinks(), Test-CIPPExternalIdentity()
 
-### Community 285 - "Get-CIPPMSPAppInstallCommand() cluster"
-Cohesion: 0.50
-Nodes (3): ConvertTo-CIPPSafePwshArg(), Get-CIPPMSPAppInstallCommand(), Resolve-MSPValue()
-
-### Community 286 - "Invoke-ListDeletedSites() cluster"
+### Community 299 - "Invoke-ListDeletedSites() cluster"
 Cohesion: 0.50
 Nodes (3): Get-CIPPSPODeletedSites(), ConvertFrom-CsomDate(), Invoke-ListDeletedSites()
 
-### Community 287 - "New-CIPPAzServiceSAS() cluster"
+### Community 300 - "New-CIPPAzServiceSAS() cluster"
 Cohesion: 0.70
 Nodes (4): _FormatSasTime(), _GetCanonicalizedResource(), New-CIPPAzServiceSAS(), _NewSharedKeySignature()
 
-### Community 288 - "Set-CIPPStandardsCompareField.ps1 cluster"
+### Community 301 - "Resolve-CIPPCADependencies() cluster"
+Cohesion: 0.50
+Nodes (3): Resolve-CIPPCADependencies(), Remove-ODataProperties(), Remove-PropertyIfPresent()
+
+### Community 302 - "Set-CIPPStandardsCompareField.ps1 cluster"
 Cohesion: 0.60
 Nodes (4): ConvertTo-CanonicalJsonString(), ConvertTo-NormalizedFieldValue(), ConvertTo-NormalizedJson(), ConvertTo-SortedObject()
 
-### Community 289 - "Invoke-ExecNewSafeLinksPolicy() cluster"
+### Community 303 - "Invoke-ExecNewSafeLinksPolicy() cluster"
 Cohesion: 0.70
 Nodes (4): Invoke-ExecNewSafeLinksPolicy(), Process-ArrayField(), Test-PolicyExists(), Test-RuleExists()
 
-### Community 290 - "Tenants Settings cluster"
-Cohesion: 0.40
-Nodes (5): Automated Onboarding (Partner Webhooks), Permissions Check, CPV API (Control Panel Vendor), Tenants Settings, Tenant Offboarding
-
-### Community 291 - "Intune Scripts cluster"
+### Community 304 - "Intune Scripts cluster"
 Cohesion: 0.40
 Nodes (5): deviceHealthScript (Graph resource), deviceManagementConfigurationPolicy (Graph resource), deviceManagementScript (Graph resource), deviceShellScript (Graph resource), Intune Scripts
 
-### Community 292 - "JIT Admin Templates cluster"
+### Community 305 - "JIT Admin Templates cluster"
 Cohesion: 0.50
 Nodes (5): Add JIT Admin, Temporary Access Pass (TAP), JIT Admin, Add JIT Admin Template, JIT Admin Templates
 
-### Community 293 - "SharePoint Sites Page cluster"
+### Community 306 - "SharePoint Sites Page cluster"
 Cohesion: 0.50
 Nodes (5): OneDrive Page, Add Site, Bulk Add Sites, Graph site Resource Type, SharePoint Sites Page
 
-### Community 294 - ".prettierrc.json cluster"
+### Community 307 - ".prettierrc.json cluster"
 Cohesion: 0.40
 Nodes (4): semi, singleQuote, tabWidth, trailingComma
 
-### Community 296 - "CippStandardDialog.jsx cluster"
+### Community 308 - "CippStandardsDialog.jsx cluster"
+Cohesion: 0.70
+Nodes (4): CippStandardsDialog(), getActionIcon(), getCategoryIcon(), getImpactColor()
+
+### Community 310 - "CippStandardDialog.jsx cluster"
 Cohesion: 0.40
 Nodes (3): CompactStandardList, StandardCard, VirtualizedStandardGrid
 
-### Community 298 - "customer-dialog.js cluster"
+### Community 312 - "customer-dialog.js cluster"
 Cohesion: 0.50
 Nodes (4): countryOptions, CustomerDialog(), getInitialValues(), validationSchema
 
-### Community 299 - "invoice-payment-history.js cluster"
+### Community 313 - "invoice-payment-history.js cluster"
 Cohesion: 0.50
 Nodes (4): getContent(), InvoicePaymentHistory(), logs, now
 
-### Community 300 - "setup.sh script cluster"
+### Community 314 - "setup.sh script cluster"
 Cohesion: 0.70
 Nodes (4): init_fork_clone(), need(), py_ok(), setup.sh script
 
-### Community 301 - "flap-proxy.mjs cluster"
-Cohesion: 0.40
-Nodes (4): denyBody, flapEvery, port, warmup
-
-### Community 302 - "Feature Request Issue Template cluster"
+### Community 315 - "Feature Request Issue Template cluster"
 Cohesion: 0.50
 Nodes (4): Feature Requests / Ideas Include, Feature Request Issue Template, Issue Volunteer Assignment Workflow, Close Stale Issues Workflow
 
-### Community 318 - "Set-CIPPDefenderAVPolicy() cluster"
-Cohesion: 0.83
-Nodes (3): New-AVChoiceSetting(), New-AVIntegerSetting(), Set-CIPPDefenderAVPolicy()
-
-### Community 325 - "Test-CIPPDynamicGroupFilter.ps1 cluster"
+### Community 371 - "Test-CIPPDynamicGroupFilter.ps1 cluster"
 Cohesion: 0.83
 Nodes (3): Protect-StringArray(), Protect-StringValue(), Test-CIPPDynamicGroupFilter()
 
-### Community 331 - "Repair-CippStandardsTemplate() cluster"
+### Community 376 - "Repair-CippStandardsTemplate() cluster"
 Cohesion: 0.83
 Nodes (3): Get-CippStandardFieldSchema(), Repair-CippStandardsTemplate(), Write-CippCleanJsonElement()
 
-### Community 332 - "Set-CIPPDBCacheSiteActivity() cluster"
+### Community 377 - "Set-CIPPDBCacheSiteActivity() cluster"
 Cohesion: 0.83
 Nodes (3): Get-SiteActivityBulkReportRows(), Set-CIPPDBCacheSiteActivity(), Test-SiteActivityCacheComplete()
 
-### Community 334 - "Invoke-ExecManageRetentionTags() cluster"
+### Community 380 - "Invoke-ExecManageRetentionTags() cluster"
 Cohesion: 0.83
 Nodes (3): Add-BulkCmdlet(), Invoke-ExecManageRetentionTags(), Test-RetentionTagParams()
 
-### Community 335 - "Invoke-AddEditTransportRule() cluster"
+### Community 381 - "Invoke-AddEditTransportRule() cluster"
 Cohesion: 0.83
 Nodes (3): Invoke-AddEditTransportRule(), Process-ArrayField(), Process-TextArrayField()
 
-### Community 336 - "Invoke-ExecStandardConvert() cluster"
+### Community 382 - "Invoke-ExecStandardConvert() cluster"
 Cohesion: 0.83
 Nodes (3): Convert-OldStandardToNewFormat(), Convert-SingleStandardItem(), Invoke-ExecStandardConvert()
 
-### Community 337 - "CIPPSharp.csproj cluster"
+### Community 383 - "CIPPSharp.csproj cluster"
 Cohesion: 0.50
 Nodes (3): net8.0, PowerShellStandard.Library (5.1.1), Microsoft.NET.Sdk
 
-### Community 340 - "Vulnerability Reporting Process cluster"
+### Community 386 - "Vulnerability Reporting Process cluster"
 Cohesion: 0.50
 Nodes (4): CIPP Security Policy, Vulnerability Reporting Process, Executive Summary Pentest Report, CIPP Security Reports
 
-### Community 341 - "Standards v Drift cluster"
+### Community 387 - "Standards v Drift cluster"
 Cohesion: 0.67
 Nodes (4): Classic Standards, Drift Management, Standards v Drift, Tenant Groups
 
-### Community 342 - "Directory Extensions cluster"
+### Community 388 - "Directory Extensions cluster"
 Cohesion: 0.50
 Nodes (4): Add Directory Extension, Directory Extensions, Add Mapping, Mappings
 
-### Community 343 - "Analytics Device Score Report cluster"
+### Community 389 - "Analytics Device Score Report cluster"
 Cohesion: 0.50
 Nodes (4): Analytics Device Score Report, userExperienceAnalyticsDeviceScores Graph Resource, userExperienceAnalyticsWorkFromAnywhereDevice Graph Resource, Work from Anywhere Report
 
-### Community 344 - "Tenant Breach Lookup cluster"
+### Community 390 - "Tenant Breach Lookup cluster"
 Cohesion: 0.67
 Nodes (4): Business Email Compromise Tool, Breach Lookup, Dark Web Tools, Tenant Breach Lookup
 
-### Community 345 - "Email Tools cluster"
+### Community 391 - "Email Tools cluster"
 Cohesion: 0.67
 Nodes (4): Mailbox Restores, Message Trace, Message Viewer, Email Tools
 
-### Community 346 - "Template Library cluster"
+### Community 392 - "Template Library cluster"
 Cohesion: 0.50
 Nodes (4): Conditional Access Framework Baseline, CyberDrain Baseline Repository, Open Intune Baseline, Template Library
 
-### Community 350 - "apply-sort.js cluster"
+### Community 397 - "apply-sort.js cluster"
 Cohesion: 0.83
 Nodes (3): applySort(), descendingComparator(), getComparator()
 
-### Community 351 - "docs.js cluster"
+### Community 398 - "docs.js cluster"
 Cohesion: 0.67
 Nodes (3): docsDir, getArticle(), getArticles()
 
-### Community 353 - "HttpResponseContext.cs cluster"
+### Community 400 - "HttpResponseContext.cs cluster"
 Cohesion: 0.50
 Nodes (3): Hashtable, HttpResponseContext, Microsoft.Azure.Functions.PowerShellWorker
 
-### Community 354 - "Build Dev Container Workflow cluster"
+### Community 401 - "Build Dev Container Workflow cluster"
 Cohesion: 1.00
 Nodes (3): Build Dev Container Workflow, Build Nightly Container Workflow, CIPP Dev/Nightly Dockerfile
 
-### Community 373 - "Function App Contributor Role Assignment cluster"
+### Community 418 - "Function App Contributor Role Assignment cluster"
 Cohesion: 1.00
 Nodes (3): Function App Contributor Role Assignment, PowerShell Role Assignment Script, Self-hosted API Setup
 
-### Community 374 - "Autopilot & Intune (Sip & CIPP) cluster"
+### Community 419 - "Autopilot & Intune (Sip & CIPP) cluster"
 Cohesion: 0.67
 Nodes (3): Autopilot & Intune (Sip & CIPP), Microsoft Autopilot, Temporary Access Pass
 
-### Community 375 - "Diagnostics cluster"
+### Community 420 - "Diagnostics cluster"
 Cohesion: 0.67
 Nodes (3): Azure Application Insights, Diagnostics, Kusto Query Language
 
-### Community 376 - "Add Role cluster"
+### Community 421 - "Add Role cluster"
 Cohesion: 0.67
 Nodes (3): Add Role, API Permission Categories, CIPP Roles
 
-### Community 377 - "SSO cluster"
+### Community 422 - "SSO cluster"
 Cohesion: 0.67
 Nodes (3): CIPP-SSO App Registration, EasyAuth, SSO
 
-### Community 378 - "Schema Extensions cluster"
+### Community 423 - "Schema Extensions cluster"
 Cohesion: 0.67
 Nodes (3): Edit Mapping, Add Schema Extension, Schema Extensions
 
-### Community 379 - "CIPP Backup cluster"
+### Community 424 - "CIPP Backup cluster"
 Cohesion: 0.67
 Nodes (3): Backup Replication, CIPP Backup, Application Settings
 
-### Community 380 - "Autopilot Devices cluster"
+### Community 425 - "Autopilot Devices cluster"
 Cohesion: 0.67
 Nodes (3): Add Autopilot Device, Autopilot Devices, windowsAutopilotDeviceIdentity (Graph resource)
 
-### Community 381 - "Compromise Remediation Page cluster"
+### Community 426 - "Compromise Remediation Page cluster"
 Cohesion: 1.00
 Nodes (3): Compromise Remediation Page, Indicators of Compromise Checks, Risk Detections Page
 
-### Community 382 - "Sherweb Licence Report cluster"
+### Community 427 - "Sherweb Licence Report cluster"
 Cohesion: 0.67
 Nodes (3): Add Subscription, Sherweb Licence Report, Licence Report
 
-### Community 383 - "Domain Analyser Updates & Data Refreshing cluster"
+### Community 428 - "Domain Analyser Updates & Data Refreshing cluster"
 Cohesion: 1.00
 Nodes (3): Domain Analyser Updates & Data Refreshing, Nightly Domain Analysis (00:00 UTC), Run Analysis Now
 
@@ -2461,9 +2379,9 @@ Nodes (3): Domain Analyser Updates & Data Refreshing, Nightly Domain Analysis (0
   craft/docs/craft-risk-assessment-code-evidence.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **1127 isolated node(s):** `argv`, `roots`, `failures`, `TokenCacheEntry`, `net8.0` (+1122 more)
+- **1132 isolated node(s):** `argv`, `roots`, `failures`, `TokenCacheEntry`, `net8.0` (+1127 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **687 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **546 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -2474,11 +2392,11 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `R5/R14 Native OIDC Subsystem Removal` and `Craft Auth Configuration`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `Get-GraphToken()` connect `Get-GraphToken() cluster` to `Get-CippKeyVaultName() cluster`, `Invoke-CIPPRestMethod() cluster`, `Add-CIPPAzDataTableEntity() cluster`, `Get-CIPPTable() cluster`, `Get-CIPPAzDataTableEntity() cluster`, `Start-UpdateTokensTimer() cluster`?**
+- **Why does `Get-GraphToken()` connect `Get-GraphToken() cluster` to `Get-CIPPAzDataTableEntity() cluster`, `Add-CIPPAzDataTableEntity() cluster`, `Get-CIPPTable() cluster`, `Invoke-CIPPRestMethod() cluster`, `Start-UpdateTokensTimer() cluster`, `Get-CippKeyVaultName() cluster`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `New-GraphGetRequest()` connect `New-GraphGetRequest() cluster` to `New-GraphPOSTRequest() cluster`, `Get-GraphToken() cluster`, `Get-AuthorisedRequest() cluster`, `Invoke-CIPPRestMethod() cluster`?**
+- **Why does `New-GraphGetRequest()` connect `New-GraphGetRequest() cluster` to `Invoke-CIPPRestMethod() cluster`, `New-GraphPOSTRequest() cluster`, `Get-GraphToken() cluster`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `Get-Tenants()` connect `Get-Tenants() cluster` to `Add-CIPPAzDataTableEntity() cluster`, `ConvertTo-CIPPODataFilterValue() cluster`, `Get-CippException() cluster`, `Get-CIPPAzDataTableEntity() cluster`, `Write-LogMessage() cluster`, `New-GraphGetRequest() cluster`?**
+- **Why does `Get-Tenants()` connect `Get-Tenants() cluster` to `Get-CippException() cluster`, `Get-CIPPAzDataTableEntity() cluster`, `Add-CIPPAzDataTableEntity() cluster`, `Write-LogMessage() cluster`, `New-GraphGetRequest() cluster`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `Write-LogMessage()` (e.g. with `Add-CIPPAzDataTableEntity()` and `Get-CIPPAzDataTableEntity()`) actually correct?**
   _`Write-LogMessage()` has 3 INFERRED edges - model-reasoned connections that need verification._
