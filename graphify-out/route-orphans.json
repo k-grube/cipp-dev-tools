@@ -1300,6 +1300,11 @@
     "missing": "backend node"
   },
   {
+    "file": "cipp/frontend/src/components/CippComponents/CippPolicyCompareDialog.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "cipp/frontend/src/components/CippComponents/CippPolicyDeployDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
