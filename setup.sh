@@ -77,6 +77,11 @@ init_fork_clone() { # upstream owner/repo, dest dir
         esac
     fi
 
+    # git refuses repos owned by another user (dubious ownership), breaks ide markers too
+    if git -C "$dest_path" rev-parse --git-dir 2>&1 | grep -q 'dubious ownership'; then
+        git config --global --add safe.directory "$dest_path"
+    fi
+
     # idempotent remote repair: origin = fork (left as gh set it), upstream stays canonical
     (
         cd "$dest_path"

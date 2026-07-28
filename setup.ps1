@@ -106,6 +106,11 @@ function Initialize-ForkClone {
         }
     }
 
+    # git refuses repos owned by another user (dubious ownership), breaks phpstorm markers too
+    if ((git -C $destPath rev-parse --git-dir 2>&1) -match 'dubious ownership') {
+        git config --global --add safe.directory ($destPath -replace '\\', '/')
+    }
+
     # idempotent remote repair: origin = fork (left as gh set it), upstream stays canonical
     Push-Location $destPath
     try {
