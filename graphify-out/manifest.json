@@ -18890,9 +18890,9 @@
     "semantic_hash": "ecc1b353f1237d65c8fe3c7f4ea18cda"
   },
   "dev.ps1": {
-    "mtime": 1784914232.6376064,
-    "ast_hash": "d511121c28548f3ddc0a11fadc403628",
-    "semantic_hash": "d511121c28548f3ddc0a11fadc403628"
+    "mtime": 1785052691.4095004,
+    "ast_hash": "dc3529502822404a2da306ff378964c8",
+    "semantic_hash": "dc3529502822404a2da306ff378964c8"
   },
   "CLAUDE.md": {
     "mtime": 1784843216.3686686,
@@ -18910,14 +18910,14 @@
     "semantic_hash": "fdfd101a6bc91459d349549c31ae30da"
   },
   "cipp/backend/Config/function-permissions.json": {
-    "mtime": 1785051989.0048108,
+    "mtime": 1785052195.7355657,
     "ast_hash": "68154ea9e4586d3589c4e2b6cdacfbd2",
     "semantic_hash": "68154ea9e4586d3589c4e2b6cdacfbd2"
   },
   "dev.sh": {
-    "mtime": 1784914234.392394,
-    "ast_hash": "2ff2f94b64326fa253769a67ae6fdfe0",
-    "semantic_hash": "2ff2f94b64326fa253769a67ae6fdfe0"
+    "mtime": 1785052695.6856804,
+    "ast_hash": "5a63e0bc08d0c266890c97afaab7435a",
+    "semantic_hash": "5a63e0bc08d0c266890c97afaab7435a"
   },
   "setup.sh": {
     "mtime": 1784915099.7617452,
@@ -21240,9 +21240,9 @@
     "semantic_hash": "a3c4adb81da846ec8f2687106593ff6a"
   },
   "craft/Craft.csproj": {
-    "mtime": 1784915382.6089036,
-    "ast_hash": "11267d283cf3727e232fd24175260d5a",
-    "semantic_hash": "11267d283cf3727e232fd24175260d5a"
+    "mtime": 1785269816.46525,
+    "ast_hash": "dd1a52a543fad6a2aa851345742788c9",
+    "semantic_hash": "dd1a52a543fad6a2aa851345742788c9"
   },
   "craft/Runtime/CraftRuntime/Invoke-CraftPostExecution.ps1": {
     "mtime": 1784915382.6109078,
@@ -21269,185 +21269,10 @@
     "ast_hash": "bef110a52eb740fc841f22756e0c122b",
     "semantic_hash": "bef110a52eb740fc841f22756e0c122b"
   },
-  "craft/Services/AppLifecycleBridge.cs": {
-    "mtime": 1784915382.6144207,
-    "ast_hash": "a7e64022043557df89e3daa786d412f5",
-    "semantic_hash": "a7e64022043557df89e3daa786d412f5"
-  },
-  "craft/Services/AuthService.cs": {
-    "mtime": 1784915382.6144207,
-    "ast_hash": "2c78d4f7dbb47d83456b590f4bd9a96a",
-    "semantic_hash": "2c78d4f7dbb47d83456b590f4bd9a96a"
-  },
-  "craft/Services/AzureTableStore.cs": {
-    "mtime": 1784915382.6144207,
-    "ast_hash": "d4fbe4207d3290457bf7eef6403f9308",
-    "semantic_hash": "d4fbe4207d3290457bf7eef6403f9308"
-  },
-  "craft/Services/BackgroundTaskLimiter.cs": {
-    "mtime": 1784915382.6159236,
-    "ast_hash": "e761d9169c5ecb82b4e4493b5851aa35",
-    "semantic_hash": "e761d9169c5ecb82b4e4493b5851aa35"
-  },
-  "craft/Services/CacheProfiler.cs": {
-    "mtime": 1784915382.6159236,
-    "ast_hash": "d74e8bbbecb1995877e79acb1acbac35",
-    "semantic_hash": "d74e8bbbecb1995877e79acb1acbac35"
-  },
-  "craft/Services/CacheService.cs": {
-    "mtime": 1784915382.6159236,
-    "ast_hash": "26790ab073407c7b55dcebe4f67f86d5",
-    "semantic_hash": "26790ab073407c7b55dcebe4f67f86d5"
-  },
-  "craft/Services/ContainerHealthMonitor.cs": {
-    "mtime": 1784915382.6174386,
-    "ast_hash": "4ec92b6ee12829d4fa26fd3e91fd74e7",
-    "semantic_hash": "4ec92b6ee12829d4fa26fd3e91fd74e7"
-  },
-  "craft/Services/CraftSettings.cs": {
-    "mtime": 1784915382.6184468,
-    "ast_hash": "45732a14b6ecb48ef9d3b9ae50826749",
-    "semantic_hash": "45732a14b6ecb48ef9d3b9ae50826749"
-  },
-  "craft/Services/DispatchProfiler.cs": {
-    "mtime": 1784915382.6184468,
-    "ast_hash": "d341a42e353dbce9eaa4d08f9583e874",
-    "semantic_hash": "d341a42e353dbce9eaa4d08f9583e874"
-  },
-  "craft/Services/FileLoggerProvider.cs": {
-    "mtime": 1784915382.6184468,
-    "ast_hash": "cd6563b6cea7e9356bc79e131d203286",
-    "semantic_hash": "cd6563b6cea7e9356bc79e131d203286"
-  },
-  "craft/Services/HttpDiagnosticListener.cs": {
-    "mtime": 1784915382.6184468,
-    "ast_hash": "1fead66fb90208a4c18022ac1269e4b8",
-    "semantic_hash": "1fead66fb90208a4c18022ac1269e4b8"
-  },
-  "craft/Services/HttpResponseContext.cs": {
-    "mtime": 1784915382.6184468,
-    "ast_hash": "58cc94b69bee3a58ca735792e2c3eabe",
-    "semantic_hash": "58cc94b69bee3a58ca735792e2c3eabe"
-  },
-  "craft/Services/ICraftTableStore.cs": {
-    "mtime": 1784915382.6199546,
-    "ast_hash": "c56db36c755695ca78c8dd6427686ebb",
-    "semantic_hash": "c56db36c755695ca78c8dd6427686ebb"
-  },
-  "craft/Services/JobManager.cs": {
-    "mtime": 1784915382.6199546,
-    "ast_hash": "cb4791b6995288c3cc86ad27c22bfa54",
-    "semantic_hash": "cb4791b6995288c3cc86ad27c22bfa54"
-  },
-  "craft/Services/LogBridge.cs": {
-    "mtime": 1784915382.6209643,
-    "ast_hash": "07a42f80dbe6c6129e21edb5b2cf436f",
-    "semantic_hash": "07a42f80dbe6c6129e21edb5b2cf436f"
-  },
-  "craft/Services/OperationContext.cs": {
-    "mtime": 1784915382.6209643,
-    "ast_hash": "fe11a68dcdb07219cf31400990cff479",
-    "semantic_hash": "fe11a68dcdb07219cf31400990cff479"
-  },
-  "craft/Services/OrchestratorService.cs": {
-    "mtime": 1784915382.6219585,
-    "ast_hash": "76cf1a186250e6bcf310312bcb0ce590",
-    "semantic_hash": "76cf1a186250e6bcf310312bcb0ce590"
-  },
-  "craft/Services/OrchestratorStatusWriter.cs": {
-    "mtime": 1784915382.6219585,
-    "ast_hash": "ccdd7e65b8153d041e79ba9bec6ac830",
-    "semantic_hash": "ccdd7e65b8153d041e79ba9bec6ac830"
-  },
-  "craft/Services/OrchestratorTableStore.cs": {
-    "mtime": 1784915382.622963,
-    "ast_hash": "4c28e84ae2d3d48d24eda4613cf6cd0f",
-    "semantic_hash": "4c28e84ae2d3d48d24eda4613cf6cd0f"
-  },
-  "craft/Services/PowerShellRunnerService.cs": {
-    "mtime": 1784915382.622963,
-    "ast_hash": "4c946d816ee192723fdb50b2346341e0",
-    "semantic_hash": "4c946d816ee192723fdb50b2346341e0"
-  },
-  "craft/Services/PowerShellWorker.cs": {
-    "mtime": 1784915382.622963,
-    "ast_hash": "edfaf75c3091a1f42bb0f2bdd6720c6a",
-    "semantic_hash": "edfaf75c3091a1f42bb0f2bdd6720c6a"
-  },
-  "craft/Services/PowerShellWorkerPool.cs": {
-    "mtime": 1784915382.6240704,
-    "ast_hash": "01b772dc3da59b140a7727aa63163b23",
-    "semantic_hash": "01b772dc3da59b140a7727aa63163b23"
-  },
   "craft/Services/Program.cs": {
-    "mtime": 1784915382.6246133,
-    "ast_hash": "1aeb8fbf90d93dd8cd59403a66f899ea",
-    "semantic_hash": "1aeb8fbf90d93dd8cd59403a66f899ea"
-  },
-  "craft/Services/QueueStatusBridge.cs": {
-    "mtime": 1784915382.625617,
-    "ast_hash": "37c8c7c84407135201d31275b940ca83",
-    "semantic_hash": "37c8c7c84407135201d31275b940ca83"
-  },
-  "craft/Services/RealtimeBridge.cs": {
-    "mtime": 1784915382.625617,
-    "ast_hash": "5458fc0a58d8736cb36abe1be4df81df",
-    "semantic_hash": "5458fc0a58d8736cb36abe1be4df81df"
-  },
-  "craft/Services/RealtimeService.cs": {
-    "mtime": 1784915382.625617,
-    "ast_hash": "9be962651da9aa2d3a2a8d80b42f36d3",
-    "semantic_hash": "9be962651da9aa2d3a2a8d80b42f36d3"
-  },
-  "craft/Services/SchedulerService.cs": {
-    "mtime": 1784915382.6266232,
-    "ast_hash": "79c0a36ad91b282cf1cb8004a5c5aa7a",
-    "semantic_hash": "79c0a36ad91b282cf1cb8004a5c5aa7a"
-  },
-  "craft/Services/ScriptRepository.cs": {
-    "mtime": 1784915382.6266232,
-    "ast_hash": "636392e2ccfbd2212f3d48daeb3b1157",
-    "semantic_hash": "636392e2ccfbd2212f3d48daeb3b1157"
-  },
-  "craft/Services/SetupPages.cs": {
-    "mtime": 1784915382.6276174,
-    "ast_hash": "23b6351e0859638461a18c956ae233b8",
-    "semantic_hash": "23b6351e0859638461a18c956ae233b8"
-  },
-  "craft/Services/SetupService.cs": {
-    "mtime": 1784915382.6276174,
-    "ast_hash": "a0901627c38758158c6c4d3bd3506c80",
-    "semantic_hash": "a0901627c38758158c6c4d3bd3506c80"
-  },
-  "craft/Services/StartupInfoBridge.cs": {
-    "mtime": 1784915382.6286304,
-    "ast_hash": "901f9c5295cc3ea697f6accda9237b3a",
-    "semantic_hash": "901f9c5295cc3ea697f6accda9237b3a"
-  },
-  "craft/Services/StatsHistoryBridge.cs": {
-    "mtime": 1784915382.6286304,
-    "ast_hash": "e005b7a0517d2235356be661fe6d0424",
-    "semantic_hash": "e005b7a0517d2235356be661fe6d0424"
-  },
-  "craft/Services/StatsHistoryService.cs": {
-    "mtime": 1784915382.6296175,
-    "ast_hash": "8bcdf21af5645d441cca398e012d928d",
-    "semantic_hash": "8bcdf21af5645d441cca398e012d928d"
-  },
-  "craft/Services/StorageHealthMonitor.cs": {
-    "mtime": 1784915382.6296175,
-    "ast_hash": "2535457c66d6cd6a703fe859435f29ec",
-    "semantic_hash": "2535457c66d6cd6a703fe859435f29ec"
-  },
-  "craft/Services/WorkerMetricsBridge.cs": {
-    "mtime": 1784915382.6306176,
-    "ast_hash": "3ab46dbe5406f17823345704ae5ee0fa",
-    "semantic_hash": "3ab46dbe5406f17823345704ae5ee0fa"
-  },
-  "craft/appsettings.json": {
-    "mtime": 1784915382.6306176,
-    "ast_hash": "574e762769e163b35931eebd13a92da2",
-    "semantic_hash": "574e762769e163b35931eebd13a92da2"
+    "mtime": 1785269816.509364,
+    "ast_hash": "75a9757a92bbd6fd19b2d0351dad710b",
+    "semantic_hash": "75a9757a92bbd6fd19b2d0351dad710b"
   },
   "AGENTS.md": {
     "mtime": 1784919331.901333,
@@ -21460,19 +21285,19 @@
     "semantic_hash": "70a8850cfd9ec40310231cb74e3ab1e1"
   },
   "craft/.github/workflows/dev-container.yml": {
-    "mtime": 1784915382.6063514,
-    "ast_hash": "dfbcce8591cb7508aa77e7d1584d33be",
-    "semantic_hash": "dfbcce8591cb7508aa77e7d1584d33be"
+    "mtime": 1785269816.4632504,
+    "ast_hash": "79e5df64c720368233846e9016a6e10c",
+    "semantic_hash": "79e5df64c720368233846e9016a6e10c"
   },
   "craft/.github/workflows/regression.yml": {
-    "mtime": 1784915382.6073568,
-    "ast_hash": "04cfe0172e8ed7c3f04e85e043b23a24",
-    "semantic_hash": "04cfe0172e8ed7c3f04e85e043b23a24"
+    "mtime": 1785269816.4632504,
+    "ast_hash": "00259122599394cfdda7dd983710f002",
+    "semantic_hash": "00259122599394cfdda7dd983710f002"
   },
   "craft/.github/workflows/release-container.yml": {
-    "mtime": 1784915382.6073568,
-    "ast_hash": "861456e5056bbb0d246b6d66cd78d7f0",
-    "semantic_hash": "861456e5056bbb0d246b6d66cd78d7f0"
+    "mtime": 1785269816.4642513,
+    "ast_hash": "e070e1bff7c918ddf7a7418a0d1d99f0",
+    "semantic_hash": "e070e1bff7c918ddf7a7418a0d1d99f0"
   },
   "craft/CLA.md": {
     "mtime": 1784915382.6083522,
@@ -21495,9 +21320,9 @@
     "semantic_hash": "81936e46314e4a094681aa5a17eb0ed8"
   },
   "craft/README.md": {
-    "mtime": 1784915382.6099117,
-    "ast_hash": "35ad93183910bed384e5fc4ea276434e",
-    "semantic_hash": "35ad93183910bed384e5fc4ea276434e"
+    "mtime": 1785269816.4662538,
+    "ast_hash": "9caa294aac1bdc3fd21da75ed2f01dc4",
+    "semantic_hash": "9caa294aac1bdc3fd21da75ed2f01dc4"
   },
   "craft/SECURITY.md": {
     "mtime": 1784915382.6134202,
@@ -21505,19 +21330,9 @@
     "semantic_hash": "38908f010b3d99e45bbe501d0126839c"
   },
   "craft/docs/configuration.md": {
-    "mtime": 1784915382.633618,
-    "ast_hash": "6f368809a55e99aa04f77d6165cb8bbd",
-    "semantic_hash": "6f368809a55e99aa04f77d6165cb8bbd"
-  },
-  "craft/docs/craft-risk-assessment-code-evidence.md": {
-    "mtime": 1784915382.633618,
-    "ast_hash": "27c130c20320cfc0d392b60c39573547",
-    "semantic_hash": "27c130c20320cfc0d392b60c39573547"
-  },
-  "craft/docs/realtime-bridge-plan.md": {
-    "mtime": 1784915382.6346233,
-    "ast_hash": "d947b5d2ba6ffe0aa2e83ee5bfe0d7b8",
-    "semantic_hash": "d947b5d2ba6ffe0aa2e83ee5bfe0d7b8"
+    "mtime": 1785269816.518363,
+    "ast_hash": "dc80da61a3febdeaa0c4da56ed2738f6",
+    "semantic_hash": "dc80da61a3febdeaa0c4da56ed2738f6"
   },
   "cipp/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/SharePoint Permissions/Push-DBCacheSharePointPermissionsBatch.ps1": {
     "mtime": 1784923209.6635919,
@@ -21635,7 +21450,7 @@
     "semantic_hash": "277ed3cd431c03d9bd83b9550dba2c4e"
   },
   "cipp/backend/Config/function-parameters.json": {
-    "mtime": 1785051978.1776748,
+    "mtime": 1785052188.7609296,
     "ast_hash": "9787b127fe09a264b3a8369b0fc7f335",
     "semantic_hash": "9787b127fe09a264b3a8369b0fc7f335"
   },
@@ -21683,5 +21498,695 @@
     "mtime": 1785051967.9708734,
     "ast_hash": "0d85b5129b81f9d7a1cad5ed244800eb",
     "semantic_hash": "0d85b5129b81f9d7a1cad5ed244800eb"
+  },
+  "craft/Craft.sln": {
+    "mtime": 1785269816.46525,
+    "ast_hash": "b7adbe2db47cb93200f2b8743b1adf2e",
+    "semantic_hash": "b7adbe2db47cb93200f2b8743b1adf2e"
+  },
+  "craft/Services/Auth/AuthService.cs": {
+    "mtime": 1785269816.4662538,
+    "ast_hash": "d49274900aa2fec5b72ece09d3b672b7",
+    "semantic_hash": "d49274900aa2fec5b72ece09d3b672b7"
+  },
+  "craft/Services/Auth/EasyAuthPrincipal.cs": {
+    "mtime": 1785269816.4672523,
+    "ast_hash": "b3aa73253b0f3d0884e4979508d77272",
+    "semantic_hash": "b3aa73253b0f3d0884e4979508d77272"
+  },
+  "craft/Services/Bridges/AppLifecycleBridge.cs": {
+    "mtime": 1785269816.4672523,
+    "ast_hash": "f13debd42d3da752b9067ea61ee8f836",
+    "semantic_hash": "f13debd42d3da752b9067ea61ee8f836"
+  },
+  "craft/Services/Bridges/AuthBridge.cs": {
+    "mtime": 1785269816.4682534,
+    "ast_hash": "7c93fc2eca531ec456361ea05dd420b7",
+    "semantic_hash": "7c93fc2eca531ec456361ea05dd420b7"
+  },
+  "craft/Services/Bridges/CacheBridge.cs": {
+    "mtime": 1785269816.4682534,
+    "ast_hash": "f9be08e9a05bad3264a4847859c4f855",
+    "semantic_hash": "f9be08e9a05bad3264a4847859c4f855"
+  },
+  "craft/Services/Bridges/CacheStats.cs": {
+    "mtime": 1785269816.4682534,
+    "ast_hash": "2bac288f64961ea95356d0551061ae92",
+    "semantic_hash": "2bac288f64961ea95356d0551061ae92"
+  },
+  "craft/Services/Bridges/GenerationDetail.cs": {
+    "mtime": 1785269816.4692538,
+    "ast_hash": "30e88a43e094924bb0477b42b60cea51",
+    "semantic_hash": "30e88a43e094924bb0477b42b60cea51"
+  },
+  "craft/Services/Bridges/JobDetail.cs": {
+    "mtime": 1785269816.4692538,
+    "ast_hash": "0cc56da574c5aad800467476f7a9a74c",
+    "semantic_hash": "0cc56da574c5aad800467476f7a9a74c"
+  },
+  "craft/Services/Bridges/JobMetrics.cs": {
+    "mtime": 1785269816.4702525,
+    "ast_hash": "fcb284166573027585bde96cc107f8fa",
+    "semantic_hash": "fcb284166573027585bde96cc107f8fa"
+  },
+  "craft/Services/Bridges/JobRecord.cs": {
+    "mtime": 1785269816.4702525,
+    "ast_hash": "fc78e26ca3e3b0581e5564897ff7b718",
+    "semantic_hash": "fc78e26ca3e3b0581e5564897ff7b718"
+  },
+  "craft/Services/Bridges/JobRunSummary.cs": {
+    "mtime": 1785269816.4702525,
+    "ast_hash": "4f1272143785a20d4d07ef76a7b18bfb",
+    "semantic_hash": "4f1272143785a20d4d07ef76a7b18bfb"
+  },
+  "craft/Services/Bridges/JobSummary.cs": {
+    "mtime": 1785269816.471253,
+    "ast_hash": "ac86753e3315e1eb327f571fe8d08be2",
+    "semantic_hash": "ac86753e3315e1eb327f571fe8d08be2"
+  },
+  "craft/Services/Bridges/LimiterMetrics.cs": {
+    "mtime": 1785269816.471253,
+    "ast_hash": "c0bd5ac14bc40145901b8594b123a184",
+    "semantic_hash": "c0bd5ac14bc40145901b8594b123a184"
+  },
+  "craft/Services/Bridges/LogBridge.cs": {
+    "mtime": 1785269816.471253,
+    "ast_hash": "a1f0555a4054cc664072f71d3fdcde99",
+    "semantic_hash": "a1f0555a4054cc664072f71d3fdcde99"
+  },
+  "craft/Services/Bridges/LogFileInfo.cs": {
+    "mtime": 1785269816.4722545,
+    "ast_hash": "ba49e15137654d9ceba89b72f8ef3b28",
+    "semantic_hash": "ba49e15137654d9ceba89b72f8ef3b28"
+  },
+  "craft/Services/Bridges/MemoryBreakdown.cs": {
+    "mtime": 1785269816.4722545,
+    "ast_hash": "ee19480c0f58f9282c02f64bdfc3dbba",
+    "semantic_hash": "ee19480c0f58f9282c02f64bdfc3dbba"
+  },
+  "craft/Services/Bridges/MemoryMetrics.cs": {
+    "mtime": 1785269816.4722545,
+    "ast_hash": "39d91a7a49814159a8f0940659f1d6cf",
+    "semantic_hash": "39d91a7a49814159a8f0940659f1d6cf"
+  },
+  "craft/Services/Bridges/OrchestratorBridge.cs": {
+    "mtime": 1785269816.4732568,
+    "ast_hash": "c6b45696604b19b967cb063657110b11",
+    "semantic_hash": "c6b45696604b19b967cb063657110b11"
+  },
+  "craft/Services/Bridges/PoolMetrics.cs": {
+    "mtime": 1785269816.4732568,
+    "ast_hash": "351e9c4688b98fa4b1358d46b7feac16",
+    "semantic_hash": "351e9c4688b98fa4b1358d46b7feac16"
+  },
+  "craft/Services/Bridges/QueueBridge.cs": {
+    "mtime": 1785269816.4732568,
+    "ast_hash": "c4bc9d44988d76127017c97628642f8e",
+    "semantic_hash": "c4bc9d44988d76127017c97628642f8e"
+  },
+  "craft/Services/Bridges/QueueStatusBridge.cs": {
+    "mtime": 1785269816.4742534,
+    "ast_hash": "d752975e1bae033343f235a577918e68",
+    "semantic_hash": "d752975e1bae033343f235a577918e68"
+  },
+  "craft/Services/Bridges/RealtimeBridge.cs": {
+    "mtime": 1785269816.4742534,
+    "ast_hash": "95be6d8b41f9efdd05885e20e106c339",
+    "semantic_hash": "95be6d8b41f9efdd05885e20e106c339"
+  },
+  "craft/Services/Bridges/SchedulerBridge.cs": {
+    "mtime": 1785269816.475255,
+    "ast_hash": "80af6f5ce19a5574ffa84ed5340163ce",
+    "semantic_hash": "80af6f5ce19a5574ffa84ed5340163ce"
+  },
+  "craft/Services/Bridges/StartupInfoBridge.cs": {
+    "mtime": 1785269816.475255,
+    "ast_hash": "813a9d28a947e6eaa6f8047fd3dbc59f",
+    "semantic_hash": "813a9d28a947e6eaa6f8047fd3dbc59f"
+  },
+  "craft/Services/Bridges/StartupStats.cs": {
+    "mtime": 1785269816.475255,
+    "ast_hash": "6811bbe1797a8c69cae594a0f524366d",
+    "semantic_hash": "6811bbe1797a8c69cae594a0f524366d"
+  },
+  "craft/Services/Bridges/StatsDataPoint.cs": {
+    "mtime": 1785269816.475255,
+    "ast_hash": "529fab47ae77fbadb8606ba4227c1215",
+    "semantic_hash": "529fab47ae77fbadb8606ba4227c1215"
+  },
+  "craft/Services/Bridges/StatsHistoryBridge.cs": {
+    "mtime": 1785269816.4762564,
+    "ast_hash": "b40698df1ac710fa3607095c67edbc16",
+    "semantic_hash": "b40698df1ac710fa3607095c67edbc16"
+  },
+  "craft/Services/Bridges/WorkerDetail.cs": {
+    "mtime": 1785269816.4762564,
+    "ast_hash": "a980ab7d28d2f52e8a814427041e7ab6",
+    "semantic_hash": "a980ab7d28d2f52e8a814427041e7ab6"
+  },
+  "craft/Services/Bridges/WorkerMetricsBridge.cs": {
+    "mtime": 1785269816.4772534,
+    "ast_hash": "3bc78973471a1e329d638709d63071d7",
+    "semantic_hash": "3bc78973471a1e329d638709d63071d7"
+  },
+  "craft/Services/Bridges/WorkerMetricsSnapshot.cs": {
+    "mtime": 1785269816.4772534,
+    "ast_hash": "4abd7430162f9b44428b2863c8034e76",
+    "semantic_hash": "4abd7430162f9b44428b2863c8034e76"
+  },
+  "craft/Services/Bridges/WorkerStats.cs": {
+    "mtime": 1785269816.4782534,
+    "ast_hash": "42428f67ef38987d078d73fcccf712c0",
+    "semantic_hash": "42428f67ef38987d078d73fcccf712c0"
+  },
+  "craft/Services/Bridges/WorkerSummary.cs": {
+    "mtime": 1785269816.4782534,
+    "ast_hash": "599e8e9c15ebb7ef02fb8d8b6aae1f41",
+    "semantic_hash": "599e8e9c15ebb7ef02fb8d8b6aae1f41"
+  },
+  "craft/Services/Caching/CacheEntry.cs": {
+    "mtime": 1785269816.4782534,
+    "ast_hash": "c150d474052425a2e50cb7adef9317f6",
+    "semantic_hash": "c150d474052425a2e50cb7adef9317f6"
+  },
+  "craft/Services/Caching/CacheService.cs": {
+    "mtime": 1785269816.479254,
+    "ast_hash": "4a1b1051ba6f40a87a7ba5ca50266452",
+    "semantic_hash": "4a1b1051ba6f40a87a7ba5ca50266452"
+  },
+  "craft/Services/Caching/CachedResponse.cs": {
+    "mtime": 1785269816.479254,
+    "ast_hash": "d6081fe98c9e3bd0f74ec6888a727329",
+    "semantic_hash": "d6081fe98c9e3bd0f74ec6888a727329"
+  },
+  "craft/Services/Caching/ResponseCachePolicy.cs": {
+    "mtime": 1785269816.4802551,
+    "ast_hash": "c0518c444c3366f518fb43ec1a17afa2",
+    "semantic_hash": "c0518c444c3366f518fb43ec1a17afa2"
+  },
+  "craft/Services/Configuration/AuthSettings.cs": {
+    "mtime": 1785269816.4807606,
+    "ast_hash": "d11a8393cb0c9f927c555ba311292d06",
+    "semantic_hash": "d11a8393cb0c9f927c555ba311292d06"
+  },
+  "craft/Services/Configuration/CacheSettings.cs": {
+    "mtime": 1785269816.4807606,
+    "ast_hash": "24facc4d844b1b2e899ad33ba4d5326f",
+    "semantic_hash": "24facc4d844b1b2e899ad33ba4d5326f"
+  },
+  "craft/Services/Configuration/ContainerHealthSettings.cs": {
+    "mtime": 1785269816.4817677,
+    "ast_hash": "a14ed2a604796e3d875e80d54682b852",
+    "semantic_hash": "a14ed2a604796e3d875e80d54682b852"
+  },
+  "craft/Services/Configuration/CraftSettings.cs": {
+    "mtime": 1785269816.4817677,
+    "ast_hash": "703f92e13f8567fcf6d5dc05202be1dd",
+    "semantic_hash": "703f92e13f8567fcf6d5dc05202be1dd"
+  },
+  "craft/Services/Configuration/FileLoggingSettings.cs": {
+    "mtime": 1785269816.4817677,
+    "ast_hash": "51ad8eedbca82576795ae8e77a3bcca9",
+    "semantic_hash": "51ad8eedbca82576795ae8e77a3bcca9"
+  },
+  "craft/Services/Configuration/FrontendSettings.cs": {
+    "mtime": 1785269816.482768,
+    "ast_hash": "d866441741b5e41659c92e3f701eef8d",
+    "semantic_hash": "d866441741b5e41659c92e3f701eef8d"
+  },
+  "craft/Services/Configuration/GlobalJsonPreload.cs": {
+    "mtime": 1785269816.482768,
+    "ast_hash": "552a41f531427ef0eb415e12dbf94d47",
+    "semantic_hash": "552a41f531427ef0eb415e12dbf94d47"
+  },
+  "craft/Services/Configuration/HealthSettings.cs": {
+    "mtime": 1785269816.482768,
+    "ast_hash": "7dd5ec6e6a62d9c7fce36f052784cd90",
+    "semantic_hash": "7dd5ec6e6a62d9c7fce36f052784cd90"
+  },
+  "craft/Services/Configuration/KestrelLimitsSettings.cs": {
+    "mtime": 1785269816.483767,
+    "ast_hash": "38e06af859c6cd6005b8195658bcaea9",
+    "semantic_hash": "38e06af859c6cd6005b8195658bcaea9"
+  },
+  "craft/Services/Configuration/ModuleInjection.cs": {
+    "mtime": 1785269816.483767,
+    "ast_hash": "98a22bca84dd993b30809033ecbd6f0e",
+    "semantic_hash": "98a22bca84dd993b30809033ecbd6f0e"
+  },
+  "craft/Services/Configuration/OrchestratorSettings.cs": {
+    "mtime": 1785269816.4847682,
+    "ast_hash": "43934bd8d1c11cf971071480d1ef96a6",
+    "semantic_hash": "43934bd8d1c11cf971071480d1ef96a6"
+  },
+  "craft/Services/Configuration/PermissionExtractionSettings.cs": {
+    "mtime": 1785269816.4847682,
+    "ast_hash": "7ecf2dd130971762be7e5ece859e1604",
+    "semantic_hash": "7ecf2dd130971762be7e5ece859e1604"
+  },
+  "craft/Services/Configuration/RateLimitSettings.cs": {
+    "mtime": 1785269816.4847682,
+    "ast_hash": "ada0c38e36975b2362422f7c0145a09a",
+    "semantic_hash": "ada0c38e36975b2362422f7c0145a09a"
+  },
+  "craft/Services/Configuration/RealtimeSettings.cs": {
+    "mtime": 1785269816.4857683,
+    "ast_hash": "06897602e7485b0b48c4ba9d8fbdb5b1",
+    "semantic_hash": "06897602e7485b0b48c4ba9d8fbdb5b1"
+  },
+  "craft/Services/Configuration/RolesSettings.cs": {
+    "mtime": 1785269816.4857683,
+    "ast_hash": "f71a0ef6ae18dd7937fef054d765cef8",
+    "semantic_hash": "f71a0ef6ae18dd7937fef054d765cef8"
+  },
+  "craft/Services/Configuration/RuntimePaths.cs": {
+    "mtime": 1785269816.486768,
+    "ast_hash": "8f4b8ca3825d82048cfca9a710554f3d",
+    "semantic_hash": "8f4b8ca3825d82048cfca9a710554f3d"
+  },
+  "craft/Services/Configuration/SchedulerSettings.cs": {
+    "mtime": 1785269816.486768,
+    "ast_hash": "57416b38220938219f87cee77043df4f",
+    "semantic_hash": "57416b38220938219f87cee77043df4f"
+  },
+  "craft/Services/Configuration/ScriptRepoSettings.cs": {
+    "mtime": 1785269816.486768,
+    "ast_hash": "f6e64182663679bd1eff6ae7b9a4832b",
+    "semantic_hash": "f6e64182663679bd1eff6ae7b9a4832b"
+  },
+  "craft/Services/Configuration/SetupSettings.cs": {
+    "mtime": 1785269816.4877667,
+    "ast_hash": "9e79debabca664d054b0befbb7735b97",
+    "semantic_hash": "9e79debabca664d054b0befbb7735b97"
+  },
+  "craft/Services/Configuration/SkuProfile.cs": {
+    "mtime": 1785269816.4877667,
+    "ast_hash": "732f4bc0ef86ff85627ff39b85b77927",
+    "semantic_hash": "732f4bc0ef86ff85627ff39b85b77927"
+  },
+  "craft/Services/Configuration/SsoSecretNames.cs": {
+    "mtime": 1785269816.4877667,
+    "ast_hash": "e2025aa4ec050645e3bcd213686563ad",
+    "semantic_hash": "e2025aa4ec050645e3bcd213686563ad"
+  },
+  "craft/Services/Configuration/StatsHistorySettings.cs": {
+    "mtime": 1785269816.4887679,
+    "ast_hash": "1857d0230c99826eafe0e35a9f929a23",
+    "semantic_hash": "1857d0230c99826eafe0e35a9f929a23"
+  },
+  "craft/Services/Configuration/StorageSettings.cs": {
+    "mtime": 1785269816.4887679,
+    "ast_hash": "2f7a056c8747b6e0f39bf691e3b173a8",
+    "semantic_hash": "2f7a056c8747b6e0f39bf691e3b173a8"
+  },
+  "craft/Services/Configuration/WorkerSettings.cs": {
+    "mtime": 1785269816.4897697,
+    "ast_hash": "de4e12d096cc14cd57e8f8392abe3f8f",
+    "semantic_hash": "de4e12d096cc14cd57e8f8392abe3f8f"
+  },
+  "craft/Services/Hosting/CacheProfiler.cs": {
+    "mtime": 1785269816.4897697,
+    "ast_hash": "d8c48c16b96c9523e7ab9c82faa15117",
+    "semantic_hash": "d8c48c16b96c9523e7ab9c82faa15117"
+  },
+  "craft/Services/Hosting/ContainerHealthMonitor.cs": {
+    "mtime": 1785269816.490777,
+    "ast_hash": "cf8fa916187fb6fc05e70a866a588bf5",
+    "semantic_hash": "cf8fa916187fb6fc05e70a866a588bf5"
+  },
+  "craft/Services/Hosting/CraftAuthMiddleware.cs": {
+    "mtime": 1785269816.490777,
+    "ast_hash": "2ba6c0fd66677fb52f9a02ce3d8e87de",
+    "semantic_hash": "2ba6c0fd66677fb52f9a02ce3d8e87de"
+  },
+  "craft/Services/Hosting/CraftHostBuilderExtensions.cs": {
+    "mtime": 1785269816.490777,
+    "ast_hash": "4a435663aa4e3beb61191fba216befc5",
+    "semantic_hash": "4a435663aa4e3beb61191fba216befc5"
+  },
+  "craft/Services/Hosting/CraftRoles.cs": {
+    "mtime": 1785269816.491774,
+    "ast_hash": "abdce430d749646955dba6c9a69a2392",
+    "semantic_hash": "abdce430d749646955dba6c9a69a2392"
+  },
+  "craft/Services/Hosting/DevFrontendProxy.cs": {
+    "mtime": 1785269816.491774,
+    "ast_hash": "bcab8b46e6bc3ce875bb0a3d2bc56cf0",
+    "semantic_hash": "bcab8b46e6bc3ce875bb0a3d2bc56cf0"
+  },
+  "craft/Services/Hosting/DispatchProfiler.cs": {
+    "mtime": 1785269816.491774,
+    "ast_hash": "ded839695e52859219d3c0363a441e70",
+    "semantic_hash": "ded839695e52859219d3c0363a441e70"
+  },
+  "craft/Services/Hosting/DispatchTiming.cs": {
+    "mtime": 1785269816.4927735,
+    "ast_hash": "27dbc97e7263030b7b30c847ac09e39f",
+    "semantic_hash": "27dbc97e7263030b7b30c847ac09e39f"
+  },
+  "craft/Services/Hosting/Endpoints/AuthEndpoints.cs": {
+    "mtime": 1785269816.4927735,
+    "ast_hash": "54e47c3090651b1b381db088888c4b73",
+    "semantic_hash": "54e47c3090651b1b381db088888c4b73"
+  },
+  "craft/Services/Hosting/Endpoints/FrontendFallbackEndpoint.cs": {
+    "mtime": 1785269816.493774,
+    "ast_hash": "bc8d4612209ef559783acffefc6cd298",
+    "semantic_hash": "bc8d4612209ef559783acffefc6cd298"
+  },
+  "craft/Services/Hosting/Endpoints/HealthEndpoint.cs": {
+    "mtime": 1785269816.493774,
+    "ast_hash": "1b2bd92a7397b4936dc21be352c38c75",
+    "semantic_hash": "1b2bd92a7397b4936dc21be352c38c75"
+  },
+  "craft/Services/Hosting/Endpoints/JobEndpoints.cs": {
+    "mtime": 1785269816.494774,
+    "ast_hash": "5e12c6233b518bf159bec04556bfd175",
+    "semantic_hash": "5e12c6233b518bf159bec04556bfd175"
+  },
+  "craft/Services/Hosting/Endpoints/PowerShellDispatchEndpoint.cs": {
+    "mtime": 1785269816.494774,
+    "ast_hash": "154bfe65cb120cae6ea875775f947fb1",
+    "semantic_hash": "154bfe65cb120cae6ea875775f947fb1"
+  },
+  "craft/Services/Hosting/Endpoints/RealtimeEndpoint.cs": {
+    "mtime": 1785269816.494774,
+    "ast_hash": "7b732ed0b8655a34afc19266a7612710",
+    "semantic_hash": "7b732ed0b8655a34afc19266a7612710"
+  },
+  "craft/Services/Hosting/Endpoints/SetupEndpoints.cs": {
+    "mtime": 1785269816.4957747,
+    "ast_hash": "4144712fb59fd899e7526959e6727264",
+    "semantic_hash": "4144712fb59fd899e7526959e6727264"
+  },
+  "craft/Services/Hosting/EnvFlag.cs": {
+    "mtime": 1785269816.4957747,
+    "ast_hash": "19b584904f3af9333cc1d0c2fb58df63",
+    "semantic_hash": "19b584904f3af9333cc1d0c2fb58df63"
+  },
+  "craft/Services/Hosting/FileLoggerProvider.cs": {
+    "mtime": 1785269816.4967735,
+    "ast_hash": "69c971efda0d02daee9487c506c0cf63",
+    "semantic_hash": "69c971efda0d02daee9487c506c0cf63"
+  },
+  "craft/Services/Hosting/HandlerHeaders.cs": {
+    "mtime": 1785269816.4967735,
+    "ast_hash": "e3e694e1a9559103efdd12aa28db217e",
+    "semantic_hash": "e3e694e1a9559103efdd12aa28db217e"
+  },
+  "craft/Services/Hosting/HttpDiagnosticListener.cs": {
+    "mtime": 1785269816.4967735,
+    "ast_hash": "15755ee5cb5c559d9ca4cefde3ff64ac",
+    "semantic_hash": "15755ee5cb5c559d9ca4cefde3ff64ac"
+  },
+  "craft/Services/Hosting/OperationContext.cs": {
+    "mtime": 1785269816.497774,
+    "ast_hash": "8dbb825b129d4fe360fdc6b43bca7c20",
+    "semantic_hash": "8dbb825b129d4fe360fdc6b43bca7c20"
+  },
+  "craft/Services/Hosting/PrecompressedEncoding.cs": {
+    "mtime": 1785269816.497774,
+    "ast_hash": "0dbd1505bcdaecd60ab25c7d0fb6a0df",
+    "semantic_hash": "0dbd1505bcdaecd60ab25c7d0fb6a0df"
+  },
+  "craft/Services/Hosting/RateLimitPartitionKey.cs": {
+    "mtime": 1785269816.497774,
+    "ast_hash": "02a00dae43b463645c1709dc496b6ee3",
+    "semantic_hash": "02a00dae43b463645c1709dc496b6ee3"
+  },
+  "craft/Services/Hosting/RequestCounter.cs": {
+    "mtime": 1785269816.498773,
+    "ast_hash": "81789806db5ef2fa03f5fdb7ab496c83",
+    "semantic_hash": "81789806db5ef2fa03f5fdb7ab496c83"
+  },
+  "craft/Services/Hosting/ResponseTriggers.cs": {
+    "mtime": 1785269816.498773,
+    "ast_hash": "bd14b86f3a04fefeca730fd7d1620321",
+    "semantic_hash": "bd14b86f3a04fefeca730fd7d1620321"
+  },
+  "craft/Services/Hosting/SetupModeMiddleware.cs": {
+    "mtime": 1785269816.498773,
+    "ast_hash": "b72212bfd833fb4d581d92680bf8975b",
+    "semantic_hash": "b72212bfd833fb4d581d92680bf8975b"
+  },
+  "craft/Services/Hosting/SkuProfileSelector.cs": {
+    "mtime": 1785269816.4997737,
+    "ast_hash": "25f18e4f4f25f88ea74323d5836a9d72",
+    "semantic_hash": "25f18e4f4f25f88ea74323d5836a9d72"
+  },
+  "craft/Services/Hosting/StartupGate.cs": {
+    "mtime": 1785269816.4997737,
+    "ast_hash": "ee8c4dee9346433cc76b3404f5ce4277",
+    "semantic_hash": "ee8c4dee9346433cc76b3404f5ce4277"
+  },
+  "craft/Services/Hosting/StaticCachePolicy.cs": {
+    "mtime": 1785269816.5007737,
+    "ast_hash": "1aedc2d18ad2b7360b6499542e446119",
+    "semantic_hash": "1aedc2d18ad2b7360b6499542e446119"
+  },
+  "craft/Services/Hosting/StaticFilePipeline.cs": {
+    "mtime": 1785269816.5007737,
+    "ast_hash": "97698366a8b5d9beda87e5e2be6eec77",
+    "semantic_hash": "97698366a8b5d9beda87e5e2be6eec77"
+  },
+  "craft/Services/Hosting/StatsHistoryService.cs": {
+    "mtime": 1785269816.5007737,
+    "ast_hash": "ec2adccae92855cbee86f62c7d5cad80",
+    "semantic_hash": "ec2adccae92855cbee86f62c7d5cad80"
+  },
+  "craft/Services/Orchestration/BackgroundTaskLimiter.cs": {
+    "mtime": 1785269816.5017757,
+    "ast_hash": "127109d1305ebccde96453e3c26c92d5",
+    "semantic_hash": "127109d1305ebccde96453e3c26c92d5"
+  },
+  "craft/Services/Orchestration/JobManager.cs": {
+    "mtime": 1785269816.5017757,
+    "ast_hash": "d827880674d42b7af389507211f717db",
+    "semantic_hash": "d827880674d42b7af389507211f717db"
+  },
+  "craft/Services/Orchestration/OrchestratorRun.cs": {
+    "mtime": 1785269816.502773,
+    "ast_hash": "41d2473c20536d240704d37dc079fb01",
+    "semantic_hash": "41d2473c20536d240704d37dc079fb01"
+  },
+  "craft/Services/Orchestration/OrchestratorService.cs": {
+    "mtime": 1785269816.502773,
+    "ast_hash": "874132995913273a8af61ac16a048b44",
+    "semantic_hash": "874132995913273a8af61ac16a048b44"
+  },
+  "craft/Services/Orchestration/OrchestratorStatusWriter.cs": {
+    "mtime": 1785269816.5037742,
+    "ast_hash": "4de2608e3d833d5cf30964bf6cd59545",
+    "semantic_hash": "4de2608e3d833d5cf30964bf6cd59545"
+  },
+  "craft/Services/Orchestration/OrchestratorTaskItem.cs": {
+    "mtime": 1785269816.5037742,
+    "ast_hash": "1eb4de76bf80cd8564654f8f0f7771f3",
+    "semantic_hash": "1eb4de76bf80cd8564654f8f0f7771f3"
+  },
+  "craft/Services/Orchestration/SchedulerService.cs": {
+    "mtime": 1785269816.5047767,
+    "ast_hash": "96e17314d82647f4f48dac605c848c3d",
+    "semantic_hash": "96e17314d82647f4f48dac605c848c3d"
+  },
+  "craft/Services/Orchestration/SchedulerTask.cs": {
+    "mtime": 1785269816.5047767,
+    "ast_hash": "7730538ae502e4370fe7359db65f0cce",
+    "semantic_hash": "7730538ae502e4370fe7359db65f0cce"
+  },
+  "craft/Services/PowerShellHost/ExportedModuleState.cs": {
+    "mtime": 1785269816.5047767,
+    "ast_hash": "535fae16cf8001b6821d285385a925f2",
+    "semantic_hash": "535fae16cf8001b6821d285385a925f2"
+  },
+  "craft/Services/PowerShellHost/FunctionCategory.cs": {
+    "mtime": 1785269816.5057733,
+    "ast_hash": "7463623704c6864c2db3fd551be5a51b",
+    "semantic_hash": "7463623704c6864c2db3fd551be5a51b"
+  },
+  "craft/Services/PowerShellHost/FunctionEntry.cs": {
+    "mtime": 1785269816.5057733,
+    "ast_hash": "9d1d30c052386a5e636e15732f2f3c3b",
+    "semantic_hash": "9d1d30c052386a5e636e15732f2f3c3b"
+  },
+  "craft/Services/PowerShellHost/HttpResponseContext.cs": {
+    "mtime": 1785269816.506809,
+    "ast_hash": "7b8f54a4cd06c450c054ceac5b860823",
+    "semantic_hash": "7b8f54a4cd06c450c054ceac5b860823"
+  },
+  "craft/Services/PowerShellHost/PowerShellRunnerService.cs": {
+    "mtime": 1785269816.506809,
+    "ast_hash": "6f829b92f9aa1d584f95fbfdeb929e73",
+    "semantic_hash": "6f829b92f9aa1d584f95fbfdeb929e73"
+  },
+  "craft/Services/PowerShellHost/PowerShellWorker.cs": {
+    "mtime": 1785269816.5078087,
+    "ast_hash": "aef7ba44cb63faa502a8bdeb18e19f36",
+    "semantic_hash": "aef7ba44cb63faa502a8bdeb18e19f36"
+  },
+  "craft/Services/PowerShellHost/PowerShellWorkerPool.cs": {
+    "mtime": 1785269816.5083578,
+    "ast_hash": "c48abbe70d8b794b758e779b00680af0",
+    "semantic_hash": "c48abbe70d8b794b758e779b00680af0"
+  },
+  "craft/Services/PowerShellHost/ScriptRepository.cs": {
+    "mtime": 1785269816.5083578,
+    "ast_hash": "1d6b05f913365854b5f650b69401f358",
+    "semantic_hash": "1d6b05f913365854b5f650b69401f358"
+  },
+  "craft/Services/PowerShellHost/ScriptResult.cs": {
+    "mtime": 1785269816.5083578,
+    "ast_hash": "bb7d099a8dd12e43eb6b48928fe68c3d",
+    "semantic_hash": "bb7d099a8dd12e43eb6b48928fe68c3d"
+  },
+  "craft/Services/Realtime/RealtimeService.cs": {
+    "mtime": 1785269816.510363,
+    "ast_hash": "77238ec03e5cb4626abb5e68eeb26f7a",
+    "semantic_hash": "77238ec03e5cb4626abb5e68eeb26f7a"
+  },
+  "craft/Services/Setup/SetupGate.cs": {
+    "mtime": 1785269816.510363,
+    "ast_hash": "5450cbf0afcd922df4de0935a5a68dbc",
+    "semantic_hash": "5450cbf0afcd922df4de0935a5a68dbc"
+  },
+  "craft/Services/Setup/SetupPages.cs": {
+    "mtime": 1785269816.5113628,
+    "ast_hash": "56a4cb91bf23ecc491e712249459ae0b",
+    "semantic_hash": "56a4cb91bf23ecc491e712249459ae0b"
+  },
+  "craft/Services/Setup/SetupService.cs": {
+    "mtime": 1785269816.5113628,
+    "ast_hash": "886b9a598d1c29839c21e70e9e3879c0",
+    "semantic_hash": "886b9a598d1c29839c21e70e9e3879c0"
+  },
+  "craft/Services/Storage/AzureTableStore.cs": {
+    "mtime": 1785269816.513363,
+    "ast_hash": "a43598268cd232df831348399ac820ae",
+    "semantic_hash": "a43598268cd232df831348399ac820ae"
+  },
+  "craft/Services/Storage/ICraftTableStore.cs": {
+    "mtime": 1785269816.513363,
+    "ast_hash": "8c4266fb1de7563b3b4eb9e2bdfe5bb2",
+    "semantic_hash": "8c4266fb1de7563b3b4eb9e2bdfe5bb2"
+  },
+  "craft/Services/Storage/OrchestratorTableStore.cs": {
+    "mtime": 1785269816.5143626,
+    "ast_hash": "cd33cc2ee1284dc1111fee9836b517dc",
+    "semantic_hash": "cd33cc2ee1284dc1111fee9836b517dc"
+  },
+  "craft/Services/Storage/StorageHealthMonitor.cs": {
+    "mtime": 1785269816.5143626,
+    "ast_hash": "490b9167d2a940ad4a96f32c8af0de57",
+    "semantic_hash": "490b9167d2a940ad4a96f32c8af0de57"
+  },
+  "craft/Services/Storage/StoreRow.cs": {
+    "mtime": 1785269816.5153627,
+    "ast_hash": "4831c5ba73d47b96c42ee17d7beba9a7",
+    "semantic_hash": "4831c5ba73d47b96c42ee17d7beba9a7"
+  },
+  "craft/Services/Storage/TaskStatusWrite.cs": {
+    "mtime": 1785269816.5153627,
+    "ast_hash": "2080bd0a3c8c7650c414b42806e889bf",
+    "semantic_hash": "2080bd0a3c8c7650c414b42806e889bf"
+  },
+  "craft/global.json": {
+    "mtime": 1785269816.518363,
+    "ast_hash": "5efb794d99cb4fd0fc96336b69c8e6f5",
+    "semantic_hash": "5efb794d99cb4fd0fc96336b69c8e6f5"
+  },
+  "craft/tests/Craft.Tests/ConfigurationReferenceTests.cs": {
+    "mtime": 1785269816.5203638,
+    "ast_hash": "a75a4a2fafa229c2e123af263e55c798",
+    "semantic_hash": "a75a4a2fafa229c2e123af263e55c798"
+  },
+  "craft/tests/Craft.Tests/ContentSecurityPolicyTests.cs": {
+    "mtime": 1785269816.5203638,
+    "ast_hash": "28eca3555ca96570cb61fb3c282ca74a",
+    "semantic_hash": "28eca3555ca96570cb61fb3c282ca74a"
+  },
+  "craft/tests/Craft.Tests/Craft.Tests.csproj": {
+    "mtime": 1785269816.5203638,
+    "ast_hash": "586d6badabc37051e9b5336176b584f5",
+    "semantic_hash": "586d6badabc37051e9b5336176b584f5"
+  },
+  "craft/tests/Craft.Tests/CraftRolesTests.cs": {
+    "mtime": 1785269816.5213642,
+    "ast_hash": "3c6a65b5703618408cd78f093ec448fc",
+    "semantic_hash": "3c6a65b5703618408cd78f093ec448fc"
+  },
+  "craft/tests/Craft.Tests/EasyAuthPrincipalTests.cs": {
+    "mtime": 1785269816.5213642,
+    "ast_hash": "c5b8ffd5a52ed03ab072d38cdbc65f0c",
+    "semantic_hash": "c5b8ffd5a52ed03ab072d38cdbc65f0c"
+  },
+  "craft/tests/Craft.Tests/EndpointShapeTests.cs": {
+    "mtime": 1785269816.5213642,
+    "ast_hash": "c8a6c316f1be76a3415a891bd448c9f6",
+    "semantic_hash": "c8a6c316f1be76a3415a891bd448c9f6"
+  },
+  "craft/tests/Craft.Tests/HandlerHeadersTests.cs": {
+    "mtime": 1785269816.5213642,
+    "ast_hash": "f7479cf71ad0451fd8497d6bfddc320e",
+    "semantic_hash": "f7479cf71ad0451fd8497d6bfddc320e"
+  },
+  "craft/tests/Craft.Tests/HostConfigurationTests.cs": {
+    "mtime": 1785269816.522868,
+    "ast_hash": "ceaf82ea9a4bafa5f0010f7ae9bff2d8",
+    "semantic_hash": "ceaf82ea9a4bafa5f0010f7ae9bff2d8"
+  },
+  "craft/tests/Craft.Tests/PowerShellContractTests.cs": {
+    "mtime": 1785269816.522868,
+    "ast_hash": "126b81d33e4a801418bdf006e90ba83b",
+    "semantic_hash": "126b81d33e4a801418bdf006e90ba83b"
+  },
+  "craft/tests/Craft.Tests/PrecompressedEncodingTests.cs": {
+    "mtime": 1785269816.522868,
+    "ast_hash": "90946acfa746b732c502e6375fb413df",
+    "semantic_hash": "90946acfa746b732c502e6375fb413df"
+  },
+  "craft/tests/Craft.Tests/ResponseCachePolicyTests.cs": {
+    "mtime": 1785269816.5238726,
+    "ast_hash": "c649056c22c2574aa1544828943882fa",
+    "semantic_hash": "c649056c22c2574aa1544828943882fa"
+  },
+  "craft/tests/Craft.Tests/ResponseTriggersTests.cs": {
+    "mtime": 1785269816.5244057,
+    "ast_hash": "9c85b4e1533784b44821aa8007e34de1",
+    "semantic_hash": "9c85b4e1533784b44821aa8007e34de1"
+  },
+  "craft/tests/Craft.Tests/SetupGateTests.cs": {
+    "mtime": 1785269816.5244057,
+    "ast_hash": "945021880dd1e8752359bac5969023b1",
+    "semantic_hash": "945021880dd1e8752359bac5969023b1"
+  },
+  "craft/tests/Craft.Tests/SetupWizardStatusTests.cs": {
+    "mtime": 1785269816.52541,
+    "ast_hash": "82bb42f350378ca6b626d26c716dabc8",
+    "semantic_hash": "82bb42f350378ca6b626d26c716dabc8"
+  },
+  "craft/tests/Craft.Tests/SkuProfileSelectorTests.cs": {
+    "mtime": 1785269816.52541,
+    "ast_hash": "b53a0cfcce93cde72c1cd360e16420c4",
+    "semantic_hash": "b53a0cfcce93cde72c1cd360e16420c4"
+  },
+  "craft/tests/Craft.Tests/StaticServingTests.cs": {
+    "mtime": 1785269816.52541,
+    "ast_hash": "a5612b9e884e84d29619634fad0a36b7",
+    "semantic_hash": "a5612b9e884e84d29619634fad0a36b7"
+  },
+  "craft/tests/setup-wizard/decide-wizard-state.test.mjs": {
+    "mtime": 1785269816.5264137,
+    "ast_hash": "de366e8296221206c7d97926f487def1",
+    "semantic_hash": "de366e8296221206c7d97926f487def1"
+  },
+  "craft/Services/Setup/index.html": {
+    "mtime": 1785269816.5123644,
+    "ast_hash": "4c0f2cd8fc9f50a589347e7bc30dff66",
+    "semantic_hash": "4c0f2cd8fc9f50a589347e7bc30dff66"
+  },
+  "craft/Services/Setup/startup.html": {
+    "mtime": 1785269816.5123644,
+    "ast_hash": "8bca3720f3fb3fc2ae70f943895e9252",
+    "semantic_hash": "8bca3720f3fb3fc2ae70f943895e9252"
   }
 }
