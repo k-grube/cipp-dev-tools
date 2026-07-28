@@ -38,6 +38,16 @@ if ($LASTEXITCODE -ne 0) {
     throw 'docker desktop not running'
 }
 
+# non-elevated git refuses admin-owned repos (dubious ownership), elevated shells mask the
+# error so add unconditionally, dedupe keeps re-runs clean
+function Add-SafeDirectory([string]$path) {
+    $p = $path -replace '\\', '/'
+    if ((git config --global --get-all safe.directory) -notcontains $p) {
+        git config --global --add safe.directory $p
+    }
+}
+Add-SafeDirectory $root
+
 # fork-prompt + clone + remote repair, shared by cipp and craft
 function Initialize-ForkClone {
     param([string]$Upstream, [string]$Dest)
@@ -106,10 +116,7 @@ function Initialize-ForkClone {
         }
     }
 
-    # git refuses repos owned by another user (dubious ownership), breaks phpstorm markers too
-    if ((git -C $destPath rev-parse --git-dir 2>&1) -match 'dubious ownership') {
-        git config --global --add safe.directory ($destPath -replace '\\', '/')
-    }
+    Add-SafeDirectory $destPath
 
     # idempotent remote repair: origin = fork (left as gh set it), upstream stays canonical
     Push-Location $destPath

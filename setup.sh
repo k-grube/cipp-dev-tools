@@ -17,6 +17,14 @@ need pwsh 'brew install --cask powershell (upstream module builder + watcher are
 gh auth status >/dev/null 2>&1 || { echo 'gh not authenticated -> gh auth login' >&2; exit 1; }
 docker info >/dev/null 2>&1 || { echo 'docker desktop not running' >&2; exit 1; }
 
+# git refuses repos owned by another user (dubious ownership), sudo/elevated shells mask the
+# error so add unconditionally, dedupe keeps re-runs clean
+add_safe_directory() {
+    git config --global --get-all safe.directory 2>/dev/null | grep -qxF "$1" \
+        || git config --global --add safe.directory "$1"
+}
+add_safe_directory "$root"
+
 # fork-prompt + clone + remote repair, shared by cipp and craft
 init_fork_clone() { # upstream owner/repo, dest dir
     local upstream="$1" dest="$2"
@@ -77,10 +85,7 @@ init_fork_clone() { # upstream owner/repo, dest dir
         esac
     fi
 
-    # git refuses repos owned by another user (dubious ownership), breaks ide markers too
-    if git -C "$dest_path" rev-parse --git-dir 2>&1 | grep -q 'dubious ownership'; then
-        git config --global --add safe.directory "$dest_path"
-    fi
+    add_safe_directory "$dest_path"
 
     # idempotent remote repair: origin = fork (left as gh set it), upstream stays canonical
     (
