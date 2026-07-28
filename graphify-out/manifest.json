@@ -11105,7 +11105,7 @@
     "semantic_hash": "a4655fd9f896332df6145307fbbe3e98"
   },
   "cipp/backend/Tests/Invoke-CippTests.ps1": {
-    "mtime": 1784682021.0056167,
+    "mtime": 1785271519.5304892,
     "ast_hash": "954ca3792d50631c1aac6cb40727ea42",
     "semantic_hash": "954ca3792d50631c1aac6cb40727ea42"
   },
@@ -15820,9 +15820,9 @@
     "semantic_hash": "475b2af6293146214059ba604d0ac929"
   },
   "setup.ps1": {
-    "mtime": 1784915120.1669912,
-    "ast_hash": "bb5a4c2fd54b4c4396da326d7619f425",
-    "semantic_hash": "bb5a4c2fd54b4c4396da326d7619f425"
+    "mtime": 1785271716.6466303,
+    "ast_hash": "98b3ea70881a1db2c461512932ad2ec6",
+    "semantic_hash": "98b3ea70881a1db2c461512932ad2ec6"
   },
   "README.md": {
     "mtime": 1784707412.0923884,
@@ -18920,9 +18920,9 @@
     "semantic_hash": "5a63e0bc08d0c266890c97afaab7435a"
   },
   "setup.sh": {
-    "mtime": 1784915099.7617452,
-    "ast_hash": "780b2fa0063c24e87fc674b9acc0c292",
-    "semantic_hash": "780b2fa0063c24e87fc674b9acc0c292"
+    "mtime": 1785271743.0166957,
+    "ast_hash": "ee63ec313a732a1c4ea6b3d15d7d2c69",
+    "semantic_hash": "ee63ec313a732a1c4ea6b3d15d7d2c69"
   },
   "spec/cipp-openapi-v2.json": {
     "mtime": 1774819168.3864353,
