@@ -138,8 +138,8 @@ function Initialize-ForkClone {
     }
 }
 
-Initialize-ForkClone 'CyberDrain/CIPP' 'cipp'
-Initialize-ForkClone 'CyberDrain/Craft' 'craft'
+Initialize-ForkClone 'CyberDrain/CIPP' 'CIPP'
+Initialize-ForkClone 'CyberDrain/Craft' 'Craft'
 
 python -c "import graphify" 2>$null
 if ($LASTEXITCODE -ne 0) {

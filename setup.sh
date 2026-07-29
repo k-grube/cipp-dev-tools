@@ -103,8 +103,8 @@ init_fork_clone() { # upstream owner/repo, dest dir
     )
 }
 
-init_fork_clone 'CyberDrain/CIPP' 'cipp'
-init_fork_clone 'CyberDrain/Craft' 'craft'
+init_fork_clone 'CyberDrain/CIPP' 'CIPP'
+init_fork_clone 'CyberDrain/Craft' 'Craft'
 
 # graphifyy needs python >=3.10
 py_ok() {

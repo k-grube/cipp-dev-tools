@@ -9,7 +9,7 @@ usage:
 find   substring match over label/id/source_file, one line per node
 node   resolve one node, print details + every in/out edge
 path   shortest directed path (undirected fallback), prints the edge chain
-trace  frontend callers -> Invoke-<name> -> forward paths into craft/ and external_* nodes
+trace  frontend callers -> Invoke-<name> -> forward paths into Craft/ and external_* nodes
 
 path/trace add synthetic in_file hops (function -> its file node) so directed walks
 can reach file-level edges like bridge_calls
@@ -167,7 +167,7 @@ def cmd_trace(argv):
         print(f'   ... {len(callers) - 15} more')
     goals = {nid for nid, n in nodes.items()
              if str(n.get('type', '')) == 'external_api'
-             or str(n.get('source_file') or '').replace('\\', '/').startswith('craft/')}
+             or str(n.get('source_file') or '').replace('\\', '/').startswith('Craft/')}
     path = bfs(fn['id'], goals, add_file_hops(nodes, out_adj))
     print('-- forward path into craft/microsoft:')
     if path is None:

@@ -3,7 +3,7 @@
 pin is exact (`graphifyy==0.9.12`). before bumping, re-verify each:
 
 - ignore matching uses python fnmatch: `*` crosses `/`. root-anchored patterns (leading `/`) fnmatch against the scan-root-relative path as a full string; unanchored patterns match every path component at every depth (why all our entries are anchored)
-- detect merges the scan root's own `.gitignore` into the ignore set: this workspace's `cipp/` gitignore line would collapse the corpus to nothing, so `.graphifyignore` carries an unanchored `!cipp` negation (last-match-wins) before the anchored excludes. keep that line
+- detect merges the scan root's own `.gitignore` into the ignore set: this workspace's `CIPP/` gitignore line would collapse the corpus to nothing, so `.graphifyignore` carries an unanchored `!CIPP` negation (last-match-wins) before the anchored excludes. keep that line
 - nested `.gitignore` / `.graphifyignore` inside subdirectories are NOT read when scanning from a parent root (`_load_graphifyignore` walks upward only). our committed `.graphifyignore` is the single scope authority
 - `build_merge` does NOT persist to disk (docstring claims otherwise). every caller must to_json afterward
 - `build_merge` replace-on-re-extract: all base-graph nodes/edges whose `source_file` matches any incoming one are dropped before merge. this is why route edges use the synthetic `graph-tools/route-links` source

@@ -2,8 +2,8 @@
 # stops the stack dev.sh started: compose services, module watcher, frontend dev server
 set -euo pipefail
 root="$(cd "$(dirname "$0")" && pwd)"
-build="$root/cipp/build"
-[ -d "$build" ] || { echo 'cipp/ missing, nothing to stop' >&2; exit 1; }
+build="$root/CIPP/build"
+[ -d "$build" ] || { echo 'CIPP/ missing, nothing to stop' >&2; exit 1; }
 
 # same -f chain as dev.sh so compose resolves the same project
 override="$root/docker-compose.override.yml"
@@ -29,7 +29,7 @@ if [ -n "$pids" ]; then
 fi
 
 # esbuild service daemons can outlive the dev server, sweep this workspace's only
-if pkill -f "$root/cipp/frontend/node_modules/.*/esbuild" 2>/dev/null; then
+if pkill -f "$root/CIPP/frontend/node_modules/.*/esbuild" 2>/dev/null; then
     echo 'stopped orphaned esbuild'
 fi
 

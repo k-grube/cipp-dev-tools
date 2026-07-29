@@ -1,6 +1,6 @@
 # clone upstream
-cipp/
-craft/
+CIPP/
+Craft/
 # graph outputs: commit graph.json + sidecars + semantic cache (the LLM spend),
 # regenerable stuff stays out (ast cache ~3min rebuild, html, .bak, stat caches)
 graphify-out/*

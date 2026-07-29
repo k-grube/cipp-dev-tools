@@ -1,21 +1,21 @@
-# cipp/ and craft/ are gitignored (not tracked here) but are the corpus roots, un-ignore them
-!cipp
-!craft
+# CIPP/ and Craft/ are gitignored (not tracked here) but are the corpus roots, un-ignore them
+!CIPP
+!Craft
 # workspace tooling, not corpus
 /graph-tools
 /graphify-out
 /docs
 /.superpowers
 # monorepo non-code
-/cipp/build
-/cipp/frontend/public
-/cipp/github_assets
+/CIPP/build
+/CIPP/frontend/public
+/CIPP/github_assets
 # craft non-code (benchmarks, container build files)
-/craft/perf-harness
-/craft/build
+/Craft/perf-harness
+/Craft/build
 # vendored third-party modules
-/cipp/backend/Modules/MicrosoftTeams
-/cipp/backend/Modules/AzBobbyTables
-/cipp/backend/Modules/PassPushPosh
-/cipp/backend/Modules/HuduAPI
-/cipp/backend/Modules/DNSHealth
+/CIPP/backend/Modules/MicrosoftTeams
+/CIPP/backend/Modules/AzBobbyTables
+/CIPP/backend/Modules/PassPushPosh
+/CIPP/backend/Modules/HuduAPI
+/CIPP/backend/Modules/DNSHealth

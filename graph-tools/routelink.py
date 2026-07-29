@@ -12,7 +12,7 @@ ROUTE_RE = re.compile(r'/api/([A-Za-z][A-Za-z0-9_]*)')
 
 def scan_routes():
     routes = {}
-    src = ROOT / 'cipp' / 'frontend' / 'src'
+    src = ROOT / 'CIPP' / 'frontend' / 'src'
     for f in src.rglob('*'):
         if f.suffix.lower() not in ('.js', '.jsx', '.json'):
             continue
@@ -34,7 +34,7 @@ def build_fragment(graph):
     for n in nodes:
         sf = (n.get('source_file') or '').replace('\\', '/')
         label = n.get('label', '')
-        if sf.startswith('cipp/frontend/src') and label == Path(sf).name:
+        if sf.startswith('CIPP/frontend/src') and label == Path(sf).name:
             file_nodes[sf] = n['id']
         if label.lower().startswith('invoke-') and label.endswith('()'):
             # prefer http entrypoints on name collision

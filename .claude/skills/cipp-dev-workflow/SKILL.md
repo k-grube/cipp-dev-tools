@@ -1,15 +1,15 @@
 ---
 name: cipp-dev-workflow
-description: Use when working a CIPP GitHub issue, branching, syncing the fork, checking fork drift, or opening a PR to upstream from the cipp\ monorepo clone in this workspace. Triggers - "tackle this CIPP issue", "start work on issue #X", "sync the fork", "open a PR for CIPP", any git branch/PR work inside cipp\.
+description: Use when working a CIPP GitHub issue, branching, syncing the fork, checking fork drift, or opening a PR to upstream from the CIPP\ monorepo clone in this workspace. Triggers - "tackle this CIPP issue", "start work on issue #X", "sync the fork", "open a PR for CIPP", any git branch/PR work inside CIPP\.
 ---
 
 # CIPP Contribution Workflow
 
-How contributions flow from your fork of the CIPP monorepo to CyberDrain upstream, from picking up a GitHub issue to landing the fix. Frontend and backend live in one repo now (`cipp\frontend\`, `cipp\backend\`), one branch and one PR covers both.
+How contributions flow from your fork of the CIPP monorepo to CyberDrain upstream, from picking up a GitHub issue to landing the fix. Frontend and backend live in one repo now (`CIPP\frontend\`, `CIPP\backend\`), one branch and one PR covers both.
 
 ## Repo layout
 
-`cipp\` under this workspace root is the monorepo clone (gitignored here, its own git history):
+`CIPP\` under this workspace root is the monorepo clone (gitignored here, its own git history):
 
 | Remote | Points to | Purpose |
 |---|---|---|
@@ -18,7 +18,7 @@ How contributions flow from your fork of the CIPP monorepo to CyberDrain upstrea
 
 **PRs go to `upstream/dev`, never `main`** (`main` is release-only). This overrides any generic "PR to main" instinct.
 
-**Never run `git commit` or `git push` in `cipp\` unless the user explicitly asks.** Prepare the changes, suggest a commit message, stop. Same for squash and force-push steps below: print the commands and message, let the user run them.
+**Never run `git commit` or `git push` in `CIPP\` unless the user explicitly asks.** Prepare the changes, suggest a commit message, stop. Same for squash and force-push steps below: print the commands and message, let the user run them.
 
 ## Before grepping: the knowledge graph
 
@@ -44,7 +44,7 @@ If `origin/dev` is behind, sync before branching (fast-forward merge of `upstrea
 
 ### 2. Confirm the dev stack is healthy
 
-From the workspace root (not `cipp\`): `dev.ps1` launches the full stack (azurite + Craft api container + module watcher + yarn frontend), everything at http://localhost:5196. `stop.ps1` tears it down. The module watcher rebuilds backend modules on save and the frontend hot-reloads, no manual container rebuild for normal code changes. Don't trust test results against a half-started stack.
+From the workspace root (not `CIPP\`): `dev.ps1` launches the full stack (azurite + Craft api container + module watcher + yarn frontend), everything at http://localhost:5196. `stop.ps1` tears it down. The module watcher rebuilds backend modules on save and the frontend hot-reloads, no manual container rebuild for normal code changes. Don't trust test results against a half-started stack.
 
 ### 3. Branch off `dev`
 
@@ -61,7 +61,7 @@ Edit freely, run `graph-tools\update-graph.ps1` after changes. When a checkpoint
 
 ### 5. Test
 
-- frontend: exercise the UI against the local stack, `yarn lint` in `cipp\frontend\`
+- frontend: exercise the UI against the local stack, `yarn lint` in `CIPP\frontend\`
 - backend: **Pester coverage is mandatory for any changed or added PowerShell function.** Tests live in `backend\Tests\` mirroring the module path (`Modules/CIPPCore/Public/Get-CIPPDrift.ps1` -> `Tests/Reports/Get-CIPPDrift.Tests.ps1`). Run via the repo runner:
 
 ```

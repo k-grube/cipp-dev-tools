@@ -1,7 +1,7 @@
 #Requires -Version 7.2
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
-$cipp = Join-Path $root 'cipp'
+$cipp = Join-Path $root 'CIPP'
 if (-not (Test-Path $cipp)) {
     throw 'cipp\ missing -> run setup.ps1 first'
 }

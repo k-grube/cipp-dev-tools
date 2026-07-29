@@ -1,6 +1,6 @@
 # cipp-dev-tools workspace
 
-bootstrap workspace for CIPP monorepo dev. `cipp\` is the monorepo clone (origin = your fork of CyberDrain/CIPP, upstream = CyberDrain/CIPP), gitignored here. `craft\` is the Craft runtime clone (the C# host that serves the CIPP api container; same fork/upstream pattern against CyberDrain/Craft), also gitignored.
+bootstrap workspace for CIPP monorepo dev. `CIPP\` is the monorepo clone (origin = your fork of CyberDrain/CIPP, upstream = CyberDrain/CIPP), gitignored here. `Craft\` is the Craft runtime clone (the C# host that serves the CIPP api container; same fork/upstream pattern against CyberDrain/Craft), also gitignored.
 
 ## dev environment
 
@@ -22,11 +22,11 @@ bootstrap workspace for CIPP monorepo dev. `cipp\` is the monorepo clone (origin
 
 ## rules
 
-- never run the /graphify skill or `graphify extract` against `cipp\` or `craft\` directly, work from this root, outputs stay here
-- detect scope: `.graphifyignore` at this root (committed, root-anchored, graphify's fnmatch `*` crosses `/`). new vendored modules under `cipp\backend\Modules\` need an entry
-- the `!cipp` and `!craft` lines in `.graphifyignore` are load-bearing (workspace .gitignore excludes both clones and detect merges gitignores), never remove them
+- never run the /graphify skill or `graphify extract` against `CIPP\` or `Craft\` directly, work from this root, outputs stay here
+- detect scope: `.graphifyignore` at this root (committed, root-anchored, graphify's fnmatch `*` crosses `/`). new vendored modules under `CIPP\backend\Modules\` need an entry
+- the `!CIPP` and `!Craft` lines in `.graphifyignore` are load-bearing (workspace .gitignore excludes both clones and detect merges gitignores), never remove them
 - link-pass edges carry synthetic `source_file` values `graph-tools/route-links` / `graph-tools/craft-links` (real path in `source_location`), never retag with real paths (build_merge replace-on-re-extract would wipe those files' AST nodes)
 - graphifyy is pinned ==0.9.12, `spec\graphify-internals.md` lists the internals the toolkit depends on, re-verify before any bump
 - `spec\cipp-openapi-v2.json` is an auto-generated OpenAPI snapshot of the CIPP API (2026-03-02, ~80% endpoint coverage), useful for request/response shapes but the graph + code are authoritative
-- contributions: branch on your fork of CyberDrain/CIPP, PR to CyberDrain/CIPP `dev` (never `main`, release-only). commit in `cipp\` only when the user asks, suggest message and stop
-- `craft\` is upstream-tracking for reading/tracing; treat commits there the same way (user asks first), craft PRs target CyberDrain/Craft `dev` like CIPP
+- contributions: branch on your fork of CyberDrain/CIPP, PR to CyberDrain/CIPP `dev` (never `main`, release-only). commit in `CIPP\` only when the user asks, suggest message and stop
+- `Craft\` is upstream-tracking for reading/tracing; treat commits there the same way (user asks first), craft PRs target CyberDrain/Craft `dev` like CIPP

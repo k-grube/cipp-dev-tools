@@ -9,7 +9,7 @@ one-clone bootstrap for [CIPP](https://github.com/CyberDrain/CIPP) monorepo loca
 ```powershell
 git clone https://github.com/k-grube/cipp-dev-tools
 cd cipp-dev-tools
-.\setup.ps1     # forks + clones CyberDrain/CIPP into cipp\, installs pinned graphify, builds the graph
+.\setup.ps1     # forks + clones CyberDrain/CIPP into CIPP\, installs pinned graphify, builds the graph
 .\dev.ps1       # launches the local dev stack -> http://localhost:5196
 ```
 
@@ -18,7 +18,7 @@ cd cipp-dev-tools
 ```shell
 git clone https://github.com/k-grube/cipp-dev-tools
 cd cipp-dev-tools
-./setup.sh      # forks + clones CyberDrain/CIPP into cipp\, installs pinned graphify, builds the graph
+./setup.sh      # forks + clones CyberDrain/CIPP into CIPP\, installs pinned graphify, builds the graph
 ./dev.sh        # launches the local dev stack -> http://localhost:5196
 ```
 
@@ -28,7 +28,7 @@ prereqs: PowerShell 7.2+ (pwsh), git, gh (authed), Docker Desktop, node + yarn, 
 
 ## what you get
 
-- `cipp\` - monorepo clone, origin = your fork of CyberDrain/CIPP, upstream = CyberDrain (PR-ready)
+- `CIPP\` - monorepo clone, origin = your fork of CyberDrain/CIPP, upstream = CyberDrain (PR-ready)
 - local dev stack via upstream's own `build\` tooling (azurite, [Craft](https://github.com/CyberDrain/Craft) api container, module watcher, frontend dev server)
 - `graphify-out\graph.json` - directed knowledge graph of frontend + backend incl. `http_calls` edges mapping `/api/X` calls to `Invoke-X` functions
 - `CLAUDE.md` so Claude Code sessions know all of the above

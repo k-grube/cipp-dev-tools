@@ -5,8 +5,8 @@
 set -euo pipefail
 [ "$(uname)" = "Darwin" ] || { echo 'dev.sh is macos-only, use dev.ps1 on windows' >&2; exit 1; }
 root="$(cd "$(dirname "$0")" && pwd)"
-cipp="$root/cipp"
-[ -d "$cipp" ] || { echo 'cipp/ missing -> run setup.sh first' >&2; exit 1; }
+cipp="$root/CIPP"
+[ -d "$cipp" ] || { echo 'CIPP/ missing -> run setup.sh first' >&2; exit 1; }
 launcher_ref="$cipp/build/tools/Start-Cipp-Dev-Windows-docker.ps1"
 [ -f "$launcher_ref" ] || { echo "upstream launcher not found at $launcher_ref (monorepo layout changed?)" >&2; exit 1; }
 command -v pwsh >/dev/null 2>&1 || { echo 'missing pwsh -> brew install --cask powershell' >&2; exit 1; }

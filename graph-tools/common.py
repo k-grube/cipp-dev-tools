@@ -36,7 +36,7 @@ def drop_noise_nodes(extraction):
 
 def clean_repo_stat_caches():
     # detect writes stat caches into the scan root, keep repos clean
-    for repo in ('cipp', 'craft'):
+    for repo in ('CIPP', 'Craft'):
         stray = ROOT / repo / 'graphify-out'
         if stray.exists():
             shutil.rmtree(stray)

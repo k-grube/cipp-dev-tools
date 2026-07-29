@@ -27,7 +27,7 @@ def read_text(f):
 
 def scan_bridge_calls():
     calls = {}
-    src = ROOT / 'cipp' / 'backend'
+    src = ROOT / 'CIPP' / 'backend'
     for f in src.rglob('*'):
         if f.suffix.lower() not in ('.ps1', '.psm1'):
             continue
@@ -39,12 +39,12 @@ def scan_bridge_calls():
 
 def scan_ms_calls():
     hosts = {}
-    src = ROOT / 'craft'
+    src = ROOT / 'Craft'
     for f in src.rglob('*'):
         if f.suffix.lower() not in ('.cs', '.ps1'):
             continue
         rel = f.relative_to(ROOT).as_posix()
-        if rel.startswith('craft/perf-harness'):
+        if rel.startswith('Craft/perf-harness'):
             continue
         found = set()
         for line in read_text(f).splitlines():
@@ -59,7 +59,7 @@ def scan_ms_calls():
 
 
 def scan_craft_routes():
-    prog = ROOT / 'craft' / 'Services' / 'Program.cs'
+    prog = ROOT / 'Craft' / 'Services' / 'Program.cs'
     if not prog.exists():
         return {}
     return {name.lower() for name in CRAFT_ROUTE_RE.findall(read_text(prog))}
@@ -76,7 +76,7 @@ def build_fragment(graph):
         label = str(n.get('label', ''))
         if label == Path(sf).name:
             file_nodes[sf] = n['id']
-        if sf.startswith('craft/'):
+        if sf.startswith('Craft/'):
             if label.startswith('.') and label.endswith('()'):
                 method_nodes[(sf, label)] = n['id']
             elif label and label != Path(sf).name:
@@ -128,7 +128,7 @@ def build_fragment(graph):
 
     # frontend -> craft-served /api routes (auth/setup), backend Invoke-* wins on collision
     craft_routes = scan_craft_routes()
-    prog_id = file_nodes.get('craft/Services/Program.cs')
+    prog_id = file_nodes.get('Craft/Services/Program.cs')
     if craft_routes and prog_id:
         for fe_file, names in scan_routes().items():
             fe_id = file_nodes.get(fe_file)
@@ -149,9 +149,9 @@ def inject(directed=True):
     from graphify.build import build_merge
     from graphify.export import to_json
     graph = json.loads((OUT / 'graph.json').read_text(encoding='utf-8'))
-    if not any(str(n.get('source_file', '')).replace('\\', '/').startswith('craft/')
+    if not any(str(n.get('source_file', '')).replace('\\', '/').startswith('Craft/')
                for n in graph['nodes']):
-        print('craft pass: no craft/ nodes in graph, run graph-tools\\rebuild-graph.ps1 after cloning craft (setup.ps1)')
+        print('craft pass: no Craft/ nodes in graph, run graph-tools\\rebuild-graph.ps1 after cloning Craft (setup.ps1)')
         return
     fragment, orphans = build_fragment(graph)
     (OUT / 'craft-orphans.json').write_text(json.dumps(orphans, indent=2), encoding='utf-8')
