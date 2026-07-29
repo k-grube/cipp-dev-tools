@@ -110489,140 +110489,6 @@
       "id": "cipp_frontend_src_pages_tenant_manage_drift_managedriftpage"
     },
     {
-      "label": "setup.ps1",
-      "file_type": "code",
-      "source_file": "setup.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "setup.ps1",
-      "id": "setup_ps1_setup"
-    },
-    {
-      "label": "Assert-Tool()",
-      "file_type": "code",
-      "source_file": "setup.ps1",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "assert-tool()",
-      "id": "setup_assert_tool"
-    },
-    {
-      "label": "Add-SafeDirectory()",
-      "file_type": "code",
-      "source_file": "setup.ps1",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "add-safedirectory()",
-      "id": "setup_add_safedirectory"
-    },
-    {
-      "label": "Initialize-ForkClone()",
-      "file_type": "code",
-      "source_file": "setup.ps1",
-      "source_location": "L52",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "initialize-forkclone()",
-      "id": "setup_initialize_forkclone"
-    },
-    {
-      "label": "setup.sh",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "setup.sh",
-      "id": "setup_sh_setup"
-    },
-    {
-      "label": "setup.sh script",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "setup.sh script",
-      "id": "setup_sh__entry"
-    },
-    {
-      "label": "need()",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L6",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_function"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "need()",
-      "id": "setup_need"
-    },
-    {
-      "label": "add_safe_directory()",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L22",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_function"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "add_safe_directory()",
-      "id": "setup_add_safe_directory"
-    },
-    {
-      "label": "init_fork_clone()",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L29",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_function"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "init_fork_clone()",
-      "id": "setup_init_fork_clone"
-    },
-    {
-      "label": "py_ok()",
-      "file_type": "code",
-      "source_file": "setup.sh",
-      "source_location": "L110",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_function"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "dependencies cluster",
-      "norm_label": "py_ok()",
-      "id": "setup_py_ok"
-    },
-    {
       "label": "Test-CIPPAccess.ps1",
       "file_type": "code",
       "source_file": "cipp/backend/Modules/CIPPCore/Public/Authentication/Test-CIPPAccess.ps1",
@@ -111039,6 +110905,140 @@
       "community_name": "dependencies cluster",
       "norm_label": "invoke-cippstandardreusablesettingstemplate.tests.ps1",
       "id": "cipp_backend_tests_standards_invoke_cippstandardreusablesettingstemplate_tests"
+    },
+    {
+      "label": "setup.ps1",
+      "file_type": "code",
+      "source_file": "setup.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "setup.ps1",
+      "id": "setup_ps1_setup"
+    },
+    {
+      "label": "Assert-Tool()",
+      "file_type": "code",
+      "source_file": "setup.ps1",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "assert-tool()",
+      "id": "setup_assert_tool"
+    },
+    {
+      "label": "Add-SafeDirectory()",
+      "file_type": "code",
+      "source_file": "setup.ps1",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "add-safedirectory()",
+      "id": "setup_add_safedirectory"
+    },
+    {
+      "label": "Initialize-ForkClone()",
+      "file_type": "code",
+      "source_file": "setup.ps1",
+      "source_location": "L52",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "initialize-forkclone()",
+      "id": "setup_initialize_forkclone"
+    },
+    {
+      "label": "setup.sh",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "setup.sh",
+      "id": "setup_sh_setup"
+    },
+    {
+      "label": "setup.sh script",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "setup.sh script",
+      "id": "setup_sh__entry"
+    },
+    {
+      "label": "need()",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L6",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "need()",
+      "id": "setup_need"
+    },
+    {
+      "label": "add_safe_directory()",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L22",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "add_safe_directory()",
+      "id": "setup_add_safe_directory"
+    },
+    {
+      "label": "init_fork_clone()",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L29",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "init_fork_clone()",
+      "id": "setup_init_fork_clone"
+    },
+    {
+      "label": "py_ok()",
+      "file_type": "code",
+      "source_file": "setup.sh",
+      "source_location": "L110",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "py_ok()",
+      "id": "setup_py_ok"
     },
     {
       "label": "graph.microsoft.com",
@@ -362199,151 +362199,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "setup.ps1",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_ps1_setup",
-      "target": "setup_add_safedirectory"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.ps1",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_ps1_setup",
-      "target": "setup_assert_tool"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.ps1",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_ps1_setup",
-      "target": "setup_initialize_forkclone"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.ps1",
-      "source_location": "L119",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_initialize_forkclone",
-      "target": "setup_add_safedirectory"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_sh_setup",
-      "target": "setup_add_safe_directory"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_sh_setup",
-      "target": "setup_init_fork_clone"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_sh_setup",
-      "target": "setup_need"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L110",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_sh_setup",
-      "target": "setup_py_ok"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "setup_sh_setup",
-      "target": "setup_sh__entry"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L26",
-      "weight": 1.0,
-      "context": "call",
-      "confidence_score": 1.0,
-      "source": "setup_sh__entry",
-      "target": "setup_add_safe_directory"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L106",
-      "weight": 1.0,
-      "context": "call",
-      "confidence_score": 1.0,
-      "source": "setup_sh__entry",
-      "target": "setup_init_fork_clone"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L9",
-      "weight": 1.0,
-      "context": "call",
-      "confidence_score": 1.0,
-      "source": "setup_sh__entry",
-      "target": "setup_need"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L116",
-      "weight": 1.0,
-      "context": "call",
-      "confidence_score": 1.0,
-      "source": "setup_sh__entry",
-      "target": "setup_py_ok"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "setup.sh",
-      "source_location": "L88",
-      "weight": 1.0,
-      "context": "call",
-      "confidence_score": 1.0,
-      "source": "setup_init_fork_clone",
-      "target": "setup_add_safe_directory"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "cipp/backend/Modules/CIPPCore/Public/Authentication/Test-CIPPAccess.ps1",
       "source_location": "L1",
       "weight": 1.0,
@@ -362919,6 +362774,151 @@
       "confidence_score": 1.0,
       "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy",
       "target": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.ps1",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_ps1_setup",
+      "target": "setup_add_safedirectory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.ps1",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_ps1_setup",
+      "target": "setup_assert_tool"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.ps1",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_ps1_setup",
+      "target": "setup_initialize_forkclone"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.ps1",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_initialize_forkclone",
+      "target": "setup_add_safedirectory"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_sh_setup",
+      "target": "setup_add_safe_directory"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_sh_setup",
+      "target": "setup_init_fork_clone"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_sh_setup",
+      "target": "setup_need"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_sh_setup",
+      "target": "setup_py_ok"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "setup_sh_setup",
+      "target": "setup_sh__entry"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 1.0,
+      "source": "setup_sh__entry",
+      "target": "setup_add_safe_directory"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L106",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 1.0,
+      "source": "setup_sh__entry",
+      "target": "setup_init_fork_clone"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 1.0,
+      "source": "setup_sh__entry",
+      "target": "setup_need"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L116",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 1.0,
+      "source": "setup_sh__entry",
+      "target": "setup_py_ok"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "setup.sh",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 1.0,
+      "source": "setup_init_fork_clone",
+      "target": "setup_add_safe_directory"
     }
   ],
   "hyperedges": [
@@ -363014,5 +363014,5 @@
       "source_file": "cipp/docs/SUMMARY.md"
     }
   ],
-  "built_at_commit": "d7d4b3c48368d1adf6f225017e689a8ac4b5eacd"
+  "built_at_commit": "238f3f59d5fa5959eae9f64c81acd530c5bb955b"
 }
