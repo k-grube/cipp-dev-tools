@@ -6500,28 +6500,6 @@
       "id": "cipp_backend_modules_cippcore_public_get_cippdomainanalyser_get_cippdomainanalyser"
     },
     {
-      "label": "Get-CIPPDrift.ps1",
-      "file_type": "code",
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "get-cippdrift.ps1",
-      "id": "cipp_backend_modules_cippcore_public_get_cippdrift"
-    },
-    {
-      "label": "Get-CIPPDrift()",
-      "file_type": "code",
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "get-cippdrift()",
-      "id": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift"
-    },
-    {
       "label": "Get-CIPPFeatureFlag.ps1",
       "file_type": "code",
       "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPFeatureFlag.ps1",
@@ -33461,28 +33439,6 @@
       "id": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafeattachmentpolicy_invoke_cippstandardsafeattachmentpolicy"
     },
     {
-      "label": "Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "file_type": "code",
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Add-CIPPBPAField() cluster",
-      "norm_label": "invoke-cippstandardsafelinkspolicy.ps1",
-      "id": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy"
-    },
-    {
-      "label": "Invoke-CIPPStandardSafeLinksPolicy()",
-      "file_type": "code",
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Add-CIPPBPAField() cluster",
-      "norm_label": "invoke-cippstandardsafelinkspolicy()",
-      "id": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy"
-    },
-    {
       "label": "Invoke-CIPPStandardSafeLinksTemplatePolicy.ps1",
       "file_type": "code",
       "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksTemplatePolicy.ps1",
@@ -49727,17 +49683,6 @@
       "community_name": "Invoke-ExecSetSecurityIncident.Tests.ps1 cluster",
       "norm_label": "invoke-execsetsecurityincident.tests.ps1",
       "id": "cipp_backend_tests_security_invoke_execsetsecurityincident_tests"
-    },
-    {
-      "label": "Invoke-CIPPStandardReusableSettingsTemplate.Tests.ps1",
-      "file_type": "code",
-      "source_file": "cipp/backend/Tests/Standards/Invoke-CIPPStandardReusableSettingsTemplate.Tests.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1107,
-      "community_name": "Invoke-CIPPStandardReusableSettingsTemplate.Tests.ps1 cluster",
-      "norm_label": "invoke-cippstandardreusablesettingstemplate.tests.ps1",
-      "id": "cipp_backend_tests_standards_invoke_cippstandardreusablesettingstemplate_tests"
     },
     {
       "label": "Test-ODataFilterInjection.ps1",
@@ -111041,6 +110986,61 @@
       "id": "cipp_frontend_src_pages_tenant_administration_alert_configuration_snoozed_alerts_page"
     },
     {
+      "label": "Get-CIPPDrift.ps1",
+      "file_type": "code",
+      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "get-cippdrift.ps1",
+      "id": "cipp_backend_modules_cippcore_public_get_cippdrift"
+    },
+    {
+      "label": "Get-CIPPDrift()",
+      "file_type": "code",
+      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "get-cippdrift()",
+      "id": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift"
+    },
+    {
+      "label": "Invoke-CIPPStandardSafeLinksPolicy.ps1",
+      "file_type": "code",
+      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "invoke-cippstandardsafelinkspolicy.ps1",
+      "id": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy"
+    },
+    {
+      "label": "Invoke-CIPPStandardSafeLinksPolicy()",
+      "file_type": "code",
+      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "invoke-cippstandardsafelinkspolicy()",
+      "id": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy"
+    },
+    {
+      "label": "Invoke-CIPPStandardReusableSettingsTemplate.Tests.ps1",
+      "file_type": "code",
+      "source_file": "cipp/backend/Tests/Standards/Invoke-CIPPStandardReusableSettingsTemplate.Tests.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "dependencies cluster",
+      "norm_label": "invoke-cippstandardreusablesettingstemplate.tests.ps1",
+      "id": "cipp_backend_tests_standards_invoke_cippstandardreusablesettingstemplate_tests"
+    },
+    {
       "label": "graph.microsoft.com",
       "type": "external_api",
       "source_file": "graph-tools/craft-links",
@@ -123299,71 +123299,6 @@
       "weight": 1.0,
       "source": "cipp_backend_modules_cippcore_public_get_cippdomainanalyser_get_cippdomainanalyser",
       "target": "cipp_backend_modules_cippcore_public_graphhelper_get_tenants_get_tenants"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L507",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_add_cippazdatatableentity_add_cippazdatatableentity"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L115",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_functions_get_cipptenantalignment_get_cipptenantalignment"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_functions_test_cippstandardlicense_test_cippstandardlicense"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_get_cippazdatatableentity_get_cippazdatatableentity"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
-      "source_location": "L275",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_new_graphbulkrequest_new_graphbulkrequest"
     },
     {
       "relation": "contains",
@@ -179371,104 +179306,6 @@
       "source_location": "L159",
       "weight": 1.0,
       "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafeattachmentpolicy_invoke_cippstandardsafeattachmentpolicy",
-      "target": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkstemplatepolicy_convertto_safearray"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L222",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_add_cippbpafield_add_cippbpafield"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L64",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_functions_test_cippstandardlicense_test_cippstandardlicense"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_get_normalizederror_get_normalizederror"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_new_exorequest_new_exorequest"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_write_logmessage_write_logmessage"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L216",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_write_standardsalert_write_standardsalert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L252",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
-      "target": "cipp_backend_modules_cippcore_public_set_cippstandardscomparefield_set_cippstandardscomparefield"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
-      "source_location": "L184",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy",
       "target": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkstemplatepolicy_convertto_safearray"
     },
     {
@@ -363062,6 +362899,26 @@
       "confidence_score": 1.0,
       "source": "cipp_frontend_src_pages_tenant_administration_alert_configuration_snoozed_alerts",
       "target": "cipp_frontend_src_pages_tenant_administration_alert_configuration_snoozed_alerts_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cipp/backend/Modules/CIPPCore/Public/Get-CIPPDrift.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_get_cippdrift",
+      "target": "cipp_backend_modules_cippcore_public_get_cippdrift_get_cippdrift"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cipp/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardSafeLinksPolicy.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy",
+      "target": "cipp_backend_modules_cippstandards_public_standards_invoke_cippstandardsafelinkspolicy_invoke_cippstandardsafelinkspolicy"
     }
   ],
   "hyperedges": [
@@ -363157,5 +363014,5 @@
       "source_file": "cipp/docs/SUMMARY.md"
     }
   ],
-  "built_at_commit": "185793b914282d60c4dfd3fb5c3cb3d572e7f3d5"
+  "built_at_commit": "d7d4b3c48368d1adf6f225017e689a8ac4b5eacd"
 }
