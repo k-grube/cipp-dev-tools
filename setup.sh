@@ -130,6 +130,17 @@ fi
 "$venv_py" -c "import importlib.metadata as m; v = m.version('graphifyy'); assert v == '0.9.12', v; print('graphifyy', v)" \
     || { echo 'graphifyy version check failed, expected exactly 0.9.12' >&2; exit 1; }
 
+# /graphify sessions need the skill registered with claude code (one-time, writes ~/.claude)
+claude_dir="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+if [ ! -f "$claude_dir/skills/graphify/SKILL.md" ]; then
+    printf 'graphify skill not registered with Claude Code, register now? [Y/n] '
+    read -r ans || ans=n
+    case "$ans" in
+        [Nn]*) echo "skipped, register later with: $venv_py -m graphify install --platform claude" ;;
+        *) "$venv_py" -m graphify install --platform claude ;;
+    esac
+fi
+
 if [ "${1:-}" != "--skip-graph" ]; then
     if [ -x "$root/graph-tools/rebuild-graph.sh" ]; then
         "$root/graph-tools/rebuild-graph.sh" \

@@ -48,4 +48,4 @@ personal docker tweaks: drop a `docker-compose.override.yml` at the repo root (g
 ## notes
 
 - `graphifyy` is pinned to 0.9.12 on purpose - `spec\graphify-internals.md` explains what must be re-verified before bumping
-- fresh clones build an AST+routes graph; doc-derived semantic content needs a one-time `/graphify` session in Claude Code
+- fresh clones build an AST+routes graph; doc-derived semantic content needs a one-time `/graphify` session in Claude Code, register the skill first: `python -m graphify install` (macos: `.venv/bin/graphify install`)

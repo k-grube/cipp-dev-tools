@@ -153,6 +153,20 @@ if ($LASTEXITCODE -ne 0) {
     throw 'graphifyy version check failed, expected exactly 0.9.12'
 }
 
+# /graphify sessions need the skill registered with claude code (one-time, writes ~/.claude)
+$claudeDir = if ($env:CLAUDE_CONFIG_DIR) { $env:CLAUDE_CONFIG_DIR } else { Join-Path $HOME '.claude' }
+if (-not (Test-Path (Join-Path $claudeDir 'skills\graphify\SKILL.md'))) {
+    try { $ans = Read-Host 'graphify skill not registered with Claude Code, register now? [Y/n]' } catch { $ans = 'n' }
+    if ($ans -match '^[nN]') {
+        Write-Host 'skipped, register later with: python -m graphify install --platform claude'
+    } else {
+        python -m graphify install --platform claude
+        if ($LASTEXITCODE -ne 0) {
+            throw 'graphify install failed'
+        }
+    }
+}
+
 if (-not $SkipGraph) {
     $rebuild = Join-Path $root 'graph-tools\rebuild-graph.ps1'
     if (Test-Path $rebuild) {
