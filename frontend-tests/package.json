@@ -1,0 +1,32 @@
+{
+  "name": "cipp-frontend-tests",
+  "private": true,
+  "description": "vitest mirror of the unmerged CIPP feat/frontend-tests branch, runs against ../CIPP/frontend working tree",
+  "scripts": {
+    "test": "node ensure-links.mjs && vitest run",
+    "test:watch": "node ensure-links.mjs && vitest",
+    "test:unit": "node ensure-links.mjs && vitest run --project unit",
+    "test:storybook": "node ensure-links.mjs && vitest run --project storybook",
+    "test:browser": "node ensure-links.mjs && vitest run --project storybook --browser.headless=false",
+    "storybook": "node ensure-links.mjs && storybook dev -p 6006 --no-open"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "10.3.5",
+    "@storybook/addon-docs": "10.3.5",
+    "@storybook/addon-themes": "10.3.5",
+    "@storybook/addon-vitest": "10.3.5",
+    "@storybook/react-vite": "10.3.5",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "14.6.1",
+    "@vitest/browser-playwright": "4.1.10",
+    "jsdom": "29.0.1",
+    "msw": "2.12.14",
+    "msw-storybook-addon": "2.0.6",
+    "playwright": "1.59.1",
+    "storybook": "10.3.5",
+    "vite": "7.3.6",
+    "vitest": "4.1.10"
+  }
+}

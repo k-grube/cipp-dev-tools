@@ -141,6 +141,45 @@ function Initialize-ForkClone {
 Initialize-ForkClone 'CyberDrain/CIPP' 'CIPP'
 Initialize-ForkClone 'CyberDrain/Craft' 'Craft'
 
+# frontend test harness (frontend-tests\ mirrors the unmerged CIPP frontend-tests branch)
+$ft = Join-Path $root 'frontend-tests'
+if (Test-Path (Join-Path $ft 'package.json')) {
+    # singletons junction into the clone's node_modules, needs the yarn tree first
+    if (-not (Test-Path (Join-Path $root 'CIPP\frontend\node_modules'))) {
+        Push-Location (Join-Path $root 'CIPP\frontend')
+        try {
+            yarn install --frozen-lockfile
+            if ($LASTEXITCODE -ne 0) {
+                throw 'yarn install in CIPP\frontend failed'
+            }
+        } finally {
+            Pop-Location
+        }
+    }
+    Push-Location $ft
+    try {
+        # vitest as install sentinel, node_modules alone can be junctions-only
+        if (-not (Test-Path (Join-Path $ft 'node_modules\vitest'))) {
+            npm ci
+            if ($LASTEXITCODE -ne 0) {
+                throw 'npm ci in frontend-tests\ failed'
+            }
+        }
+        # after npm ci: replaces npm's real react/singleton copies with junctions
+        node ensure-links.mjs
+        if ($LASTEXITCODE -ne 0) {
+            throw 'ensure-links failed'
+        }
+        # postinstall disabled repo-wide, browser download is manual (idempotent)
+        npx playwright install chromium
+        if ($LASTEXITCODE -ne 0) {
+            throw 'playwright chromium install failed'
+        }
+    } finally {
+        Pop-Location
+    }
+}
+
 python -c "import graphify" 2>$null
 if ($LASTEXITCODE -ne 0) {
     python -m pip install graphifyy==0.9.12

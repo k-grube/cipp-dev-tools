@@ -10,6 +10,15 @@ bootstrap workspace for CIPP monorepo dev. `CIPP\` is the monorepo clone (origin
 - `setup.ps1` is idempotent, re-run to repair prereqs/remotes
 - macos equivalents: `setup.sh` / `dev.sh` / `stop.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
 
+## frontend tests
+
+`frontend-tests\` mirrors the jsdom suite from the unmerged CIPP `feat/frontend-tests` branch so UI changes can be tested without waiting on the upstream PR. runs against the live `CIPP\frontend` working tree on any branch, nothing test-related enters CIPP PRs.
+
+- run: `.\test.ps1` / `./test.sh` at this root (`--unit`, `--storybook`, `--watch`, `--browser`, extra args pass to vitest), or npm scripts in `frontend-tests\`
+- `src` is a junction into `CIPP\frontend\src`; `ensure-links.mjs` junctions react/mui/query/etc into local node_modules so both trees share one copy (dual react breaks hooks). both are gitignored, the test script recreates links
+- deps come from `CIPP\frontend\node_modules`, so `yarn install` there first
+- excluded from the graph (`.graphifyignore`). delete the mirror once upstream merges the tests PR
+
 ## knowledge graph
 
 `graphify-out\graph.json` is a directed graph of the monorepo + craft runtime. AST nodes plus cross-repo link passes: `http_calls` edges (frontend `/api/X` -> backend `Invoke-X`, and frontend -> craft-served auth/setup routes), `bridge_calls` edges (backend ps1 `[Craft.Services.X]::Y()` -> craft C# bridge methods), and `external_api` nodes for the microsoft endpoints craft hits (graph.microsoft.com, login.microsoftonline.com, ...). check it before grepping. `graphify-out\GRAPH_REPORT.md` has the community map, `route-orphans.json` / `craft-orphans.json` the unresolved links.

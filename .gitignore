@@ -27,3 +27,7 @@ docs
 .idea/
 # CIPPAPIModule clone
 CIPPAPIModule/
+# frontend test mirror: src is a junction into CIPP\frontend\src
+frontend-tests/node_modules/
+frontend-tests/src
+frontend-tests/public
