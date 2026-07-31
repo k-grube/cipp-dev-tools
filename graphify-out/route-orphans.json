@@ -1500,11 +1500,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippSettings/CippAppServiceDomains.jsx",
-    "route": "ExecAppServiceDomains",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/components/CippSettings/CippBackupRetentionSettings.jsx",
     "route": "ApiCall",
     "missing": "backend node"
