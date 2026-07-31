@@ -26,7 +26,7 @@ How contributions flow from your fork of the CIPP monorepo to CyberDrain upstrea
 
 Keeping it current (graph.json + sidecars + `cache\semantic\` are committed in this repo, commit the refreshed files after any of these):
 
-- code changes (yours or upstream sync): `graph-tools\update-graph.ps1` (~10s, no LLM)
+- code changes (yours or upstream sync): `graph-tools\update-graph.ps1` (~10s, no LLM). run it with `dev` checked out in `CIPP\` (switch back after), the committed graph tracks dev, never feature-branch state
 - doc changes: run a `/graphify . --update` session (only changed docs re-extract, content-hash cache), then `graph-tools\rebuild-graph.ps1` to merge
 - shrink-guard refusal, `.graphifyignore` change, or doc deletions: `graph-tools\rebuild-graph.ps1`
 
