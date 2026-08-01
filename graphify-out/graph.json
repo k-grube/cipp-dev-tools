@@ -4771,28 +4771,6 @@
       "id": "cipp_backend_modules_cippcore_public_authentication_get_cipprequestcontext_get_cipprequestcontext"
     },
     {
-      "label": "Initialize-CIPPTimezone.ps1",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "New-GradientServiceSyncRun() cluster",
-      "norm_label": "initialize-cipptimezone.ps1",
-      "id": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone"
-    },
-    {
-      "label": "Initialize-CIPPTimezone()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "New-GradientServiceSyncRun() cluster",
-      "norm_label": "initialize-cipptimezone()",
-      "id": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone"
-    },
-    {
       "label": "Initialize-CippRequestContext.ps1",
       "file_type": "code",
       "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CippRequestContext.ps1",
@@ -17364,28 +17342,6 @@
       "community_name": "New-GradientServiceSyncRun() cluster",
       "norm_label": "invoke-execsamroles()",
       "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execsamroles_invoke_execsamroles"
-    },
-    {
-      "label": "Invoke-ExecTimeSettings.ps1",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Get-CIPPTable() cluster",
-      "norm_label": "invoke-exectimesettings.ps1",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings"
-    },
-    {
-      "label": "Invoke-ExecTimeSettings()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Get-CIPPTable() cluster",
-      "norm_label": "invoke-exectimesettings()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
     },
     {
       "label": "Invoke-ListCIPPUsers.ps1",
@@ -67668,28 +67624,6 @@
       "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_tenant_mode_page"
     },
     {
-      "label": "time-settings.js",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "TabbedLayout.jsx cluster",
-      "norm_label": "time-settings.js",
-      "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings"
-    },
-    {
-      "label": "Page()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "TabbedLayout.jsx cluster",
-      "norm_label": "page()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page"
-    },
-    {
       "label": "table-maintenance.js",
       "file_type": "code",
       "source_file": "CIPP/frontend/src/pages/cipp/advanced/table-maintenance.js",
@@ -111004,47 +110938,6 @@
       "id": "setup_py_ok"
     },
     {
-      "label": "test.ps1",
-      "file_type": "code",
-      "source_file": "test.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.ps1",
-      "id": "test_ps1_test"
-    },
-    {
-      "label": "test.sh",
-      "file_type": "code",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.sh",
-      "id": "test_sh_test"
-    },
-    {
-      "label": "test.sh script",
-      "file_type": "code",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.sh script",
-      "id": "test_sh__entry"
-    },
-    {
       "label": "Push-SchedulerCIPPNotifications.ps1",
       "file_type": "code",
       "source_file": "CIPP/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/Push-SchedulerCIPPNotifications.ps1",
@@ -122123,6 +122016,135 @@
       "id": "controllablestore"
     },
     {
+      "label": "Initialize-CIPPTimezone.ps1",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "initialize-cipptimezone.ps1",
+      "id": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone"
+    },
+    {
+      "label": "Initialize-CIPPTimezone()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "initialize-cipptimezone()",
+      "id": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone"
+    },
+    {
+      "label": "Get-CIPPRegionTimezone.ps1",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Get-CIPPRegionTimezone.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "get-cippregiontimezone.ps1",
+      "id": "cipp_backend_modules_cippcore_public_get_cippregiontimezone"
+    },
+    {
+      "label": "Get-CIPPRegionTimezone()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Get-CIPPRegionTimezone.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "get-cippregiontimezone()",
+      "id": "cipp_backend_modules_cippcore_public_get_cippregiontimezone_get_cippregiontimezone"
+    },
+    {
+      "label": "Invoke-ExecTimeSettings.ps1",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-exectimesettings.ps1",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings"
+    },
+    {
+      "label": "Invoke-ExecTimeSettings()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-exectimesettings()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
+    },
+    {
+      "label": "time-settings.js",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "time-settings.js",
+      "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings"
+    },
+    {
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "page()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page"
+    },
+    {
+      "label": "test.ps1",
+      "file_type": "code",
+      "source_file": "test.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.ps1",
+      "id": "test_ps1_test"
+    },
+    {
+      "label": "test.sh",
+      "file_type": "code",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.sh",
+      "id": "test_sh_test"
+    },
+    {
+      "label": "test.sh script",
+      "file_type": "code",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.sh script",
+      "id": "test_sh__entry"
+    },
+    {
       "label": "graph.microsoft.com",
       "type": "external_api",
       "source_file": "graph-tools/craft-links",
@@ -129811,48 +129833,6 @@
       "confidence_score": 1.0,
       "source": "cipp_backend_modules_cippcore_public_authentication_get_cipprequestcontext",
       "target": "cipp_backend_modules_cippcore_public_authentication_get_cipprequestcontext_get_cipprequestcontext"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone",
-      "target": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone",
-      "target": "craft_services_powershellhost_powershellrunnerservice_craft_services_powershellrunnerservice_setprocessenvvar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone",
-      "target": "cipp_backend_modules_cippcore_public_get_cippazdatatableentity_get_cippazdatatableentity"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_get_cipptable_get_cipptable"
     },
     {
       "relation": "contains",
@@ -153499,69 +153479,6 @@
       "weight": 1.0,
       "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execsamroles_invoke_execsamroles",
       "target": "cipp_backend_modules_cippcore_public_graphhelper_get_cipptable_get_cipptable"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
-      "target": "craft_services_bridges_schedulerbridge_craft_services_schedulerbridge_settimezone"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
-      "target": "craft_services_powershellhost_powershellrunnerservice_craft_services_powershellrunnerservice_setprocessenvvar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings",
-      "target": "cipp_backend_modules_cippcore_public_add_cippazdatatableentity_add_cippazdatatableentity"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_get_cipptable_get_cipptable"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_write_logmessage_write_logmessage"
     },
     {
       "relation": "contains",
@@ -263288,190 +263205,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "graph-tools/route-links",
-      "source_location": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "weight": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execbackendurls_invoke_execbackendurls"
-    },
-    {
-      "relation": "http_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/route-links",
-      "source_location": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "weight": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_api_apicall"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_api_apicall_apigetcall"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_components_cippcomponents_cippformcomponent"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_components_cippcomponents_cippformcomponent_cippformcomponent"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_components_cippformpages_cippformpage"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_components_cippformpages_cippformpage_cippformpage"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_hooks_use_timezones"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_hooks_use_timezones_usetimezones"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_layouts_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_layouts_index_layout"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_layouts_tabbedlayout"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_layouts_tabbedlayout_tabbedlayout"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
-      "target": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page",
-      "target": "cipp_frontend_src_api_apicall_apigetcall"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page",
-      "target": "cipp_frontend_src_hooks_use_timezones_usetimezones"
-    },
-    {
-      "relation": "http_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/route-links",
       "source_location": "CIPP/frontend/src/pages/cipp/advanced/table-maintenance.js",
       "weight": 1.0,
       "source": "cipp_frontend_src_pages_cipp_advanced_table_maintenance",
@@ -366305,16 +366038,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "test_sh_test",
-      "target": "test_sh__entry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "CIPP/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/Push-SchedulerCIPPNotifications.ps1",
       "source_location": "L1",
       "weight": 1.0,
@@ -385802,6 +385525,127 @@
       "confidence_score": 1.0,
       "source": "craft_tests_craft_tests_statuswriterdurabilitytests_craft_tests_statuswritertestextensions_queuerunwarmup",
       "target": "craft_tests_craft_tests_statuswriterdurabilitytests_cs_task"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone",
+      "target": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone",
+      "target": "craft_services_bridges_schedulerbridge_craft_services_schedulerbridge_settimezone"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone",
+      "target": "craft_services_powershellhost_powershellrunnerservice_craft_services_powershellrunnerservice_setprocessenvvar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Initialize-CIPPTimezone.ps1",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_authentication_initialize_cipptimezone_initialize_cipptimezone",
+      "target": "cipp_backend_modules_cippcore_public_get_cippregiontimezone_get_cippregiontimezone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPCore/Public/Get-CIPPRegionTimezone.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cippcore_public_get_cippregiontimezone",
+      "target": "cipp_backend_modules_cippcore_public_get_cippregiontimezone_get_cippregiontimezone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
+      "target": "craft_services_bridges_schedulerbridge_craft_services_schedulerbridge_settimezone"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecTimeSettings.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings",
+      "target": "craft_services_powershellhost_powershellrunnerservice_craft_services_powershellrunnerservice_setprocessenvvar"
+    },
+    {
+      "relation": "http_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/route-links",
+      "source_location": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+      "weight": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execbackendurls_invoke_execbackendurls"
+    },
+    {
+      "relation": "http_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/route-links",
+      "source_location": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+      "weight": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_exectimesettings_invoke_exectimesettings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings",
+      "target": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "test_sh_test",
+      "target": "test_sh__entry"
     }
   ],
   "hyperedges": [
@@ -386379,5 +386223,5 @@
       "source_file": "CIPP/docs/user-documentation/tools/tenant-tools/README.md"
     }
   ],
-  "built_at_commit": "75b8168e92ea4b9e4609448bc59ee3925206be6d"
+  "built_at_commit": "efb49d1b950cd07fe3fab79ccb97ea055c9108bd"
 }
