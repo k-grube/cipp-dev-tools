@@ -256,6 +256,39 @@ describe('CippDataTable', () => {
     expect(container.querySelector('table')).not.toBeNull()
   })
 
+  // pins parked branch fix/table-preset-filter-reset, unskip when it lands (upstream-findings #28)
+  it.skip('column preset clears a stale global filter left by a legacy untyped preset', async () => {
+    const userEvent = (await import('@testing-library/user-event')).default
+    const user = userEvent.setup()
+    renderWithProviders(
+      <CippDataTable
+        data={basicData}
+        simpleColumns={['displayName', 'department']}
+        filters={[
+          // untyped preset = legacy shape, lands its column array in the GLOBAL filter slot
+          { filterName: 'Legacy IT', value: [{ id: 'department', value: 'IT' }] },
+          { filterName: 'IT only', value: [{ id: 'department', value: 'IT' }], type: 'column' },
+        ]}
+        maxHeightOffset="100px"
+      />
+    )
+    await screen.findByText('1-3 of 3')
+
+    // legacy preset stringifies to "[object Object]" in the global filter, matches zero rows
+    await user.click(screen.getByRole('button', { name: 'Filters' }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Legacy IT' }))
+    await waitFor(() => {
+      expect(screen.queryByText('1-3 of 3')).not.toBeInTheDocument()
+    }, { timeout: 3000 })
+
+    // the column preset must not leave the stale global filter in place
+    await user.click(screen.getByRole('button', { name: 'Filters' }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByText('1-1 of 1')).toBeInTheDocument()
+    }, { timeout: 3000 })
+  }, 20000)
+
   it('renders with conditional actions', () => {
     const mockFn = vi.fn()
     const { container } = renderWithProviders(
