@@ -38,7 +38,9 @@ function drawerApplyButton() {
   return screen.getByText('Apply Filter', { selector: 'button' })
 }
 
-describe('CippGraphExplorerSimpleFilter', () => {
+// 15s suite timeout, heavy MRT + drawer mounts starve the 5s default under
+// full-suite worker contention (same class as GraphExplorerPage's heaviest test)
+describe('CippGraphExplorerSimpleFilter', { timeout: 15000 }, () => {
   beforeEach(() => {
     vi.clearAllMocks()
     ApiGetCall.mockReturnValue({ isSuccess: false, isFetching: false, data: undefined, refetch: vi.fn() })

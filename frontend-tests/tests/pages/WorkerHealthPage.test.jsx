@@ -2,11 +2,12 @@ import React from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { renderWithProviders, settingsWith } from '../test-utils'
+import { renderWithProviders } from '../test-utils'
 import Page from '../../src/pages/cipp/advanced/worker-health.js'
 
 vi.mock('../../src/api/ApiCall', async () => (await import('../mocks/api-call')).apiCallMock())
 import { api, getResult, paginatedResult, postResult } from '../mocks/api-call'
+import { ApiGetCallWithPagination } from '../../src/api/ApiCall'
 
 // stable refs, see GraphExplorerPage.test.jsx (fresh literals per call loop the data-sync effects)
 const jobsResult = paginatedResult([
@@ -34,57 +35,37 @@ describe('Worker Health page - job queue preset filters', () => {
     expect(await screen.findByText('1-5 of 5')).toBeInTheDocument()
   })
 
-  it('Queued preset filters the table to queued jobs', async () => {
+  // PR #144: status filters server-side (before Limit truncates), a client-side filter
+  // would only ever see the oldest N jobs. pin the param contract, not row counts
+  it('status toggle requests server-side filtering via the Status param', async () => {
     const user = userEvent.setup()
     renderWithProviders(<Page />)
     await screen.findByText('1-5 of 5')
 
-    await user.click(screen.getByRole('button', { name: 'Filters' }))
-    await user.click(await screen.findByRole('menuitem', { name: 'Queued' }))
+    await user.click(screen.getByRole('button', { name: 'Queued' }))
 
     await waitFor(() => {
-      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+      const last = ApiGetCallWithPagination.mock.calls.at(-1)[0]
+      expect(last.queryKey).toBe('WorkerHealthJobs-2000-Queued')
+      expect(last.data).toMatchObject({ Action: 'Jobs', Limit: '2000', Status: 'Queued' })
     })
   })
 
-  it('Running preset filters the table to running jobs', async () => {
+  it('All toggle drops the Status param instead of sending an empty string', async () => {
     const user = userEvent.setup()
     renderWithProviders(<Page />)
     await screen.findByText('1-5 of 5')
 
-    await user.click(screen.getByRole('button', { name: 'Filters' }))
-    await user.click(await screen.findByRole('menuitem', { name: 'Running' }))
-
+    await user.click(screen.getByRole('button', { name: 'Queued' }))
     await waitFor(() => {
-      expect(screen.getByText('1-1 of 1')).toBeInTheDocument()
+      expect(ApiGetCallWithPagination.mock.calls.at(-1)[0].data.Status).toBe('Queued')
+    })
+
+    await user.click(screen.getByRole('button', { name: 'All' }))
+    await waitFor(() => {
+      const last = ApiGetCallWithPagination.mock.calls.at(-1)[0]
+      expect(last.queryKey).toBe('WorkerHealthJobs-2000-')
+      expect(last.data.Status).toBeUndefined()
     })
   })
-
-  // presets saved before they carried type: "column" persisted a column-filter array into the
-  // GLOBAL filter slot (stringifies to "[object Object]", matches zero rows). restore must
-  // ignore that garbage and preset clicks must still work
-  // pins parked branch fix/table-preset-filter-reset, unskip when it lands (upstream-findings #28)
-  it.skip('ignores a stale persisted legacy global filter, presets still work', async () => {
-    const user = userEvent.setup()
-    renderWithProviders(<Page />, {
-      settings: settingsWith({
-        persistFilters: true,
-        // pageName resolves to '' under the router mock (pathname '/')
-        lastUsedFilters: { '': { type: 'global', value: [{ id: 'Status', value: 'Queued' }], name: 'Queued' } },
-        setLastUsedFilter: () => {},
-      }),
-    })
-    await screen.findByText('1-5 of 5')
-
-    // restore effect fires 100ms after mount, garbage global value must not empty the table
-    await new Promise((resolve) => setTimeout(resolve, 300))
-    expect(screen.getByText('1-5 of 5')).toBeInTheDocument()
-
-    await user.click(screen.getByRole('button', { name: 'Filters' }))
-    await user.click(await screen.findByRole('menuitem', { name: 'Queued' }))
-
-    await waitFor(() => {
-      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
-    }, { timeout: 3000 })
-  }, 20000)
 })
