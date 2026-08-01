@@ -31,6 +31,8 @@ const defaultStore = configureStore({
   },
 })
 
+export const settingsWith = (overrides = {}) => ({ ...defaultSettings, ...overrides })
+
 export function renderWithTheme(ui, options = {}) {
   const { theme = defaultTheme, ...renderOptions } = options
   return render(

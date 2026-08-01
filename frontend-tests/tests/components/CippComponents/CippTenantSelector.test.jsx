@@ -3,6 +3,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderWithProviders } from '../../test-utils'
 import { CippTenantSelector } from '../../../src/components/CippComponents/CippTenantSelector'
+import { tenantsContosoFabrikam } from '../../mocks/fixtures'
 
 // url-keyed api state + per-test router, both hoisted for the mock factories
 const apiState = vi.hoisted(() => ({ tenants: {}, details: {}, urls: [] }))
@@ -38,21 +39,6 @@ vi.mock('next/router', () => ({
   useRouter: () => routerState.router,
 }))
 
-const tenants = [
-  {
-    displayName: 'Contoso',
-    defaultDomainName: 'contoso.com',
-    customerId: '11111111-aaaa-bbbb-cccc-000000000001',
-    initialDomainName: 'contoso.onmicrosoft.com',
-  },
-  {
-    displayName: 'Fabrikam',
-    defaultDomainName: 'fabrikam.com',
-    customerId: '22222222-aaaa-bbbb-cccc-000000000002',
-    initialDomainName: 'fabrikam.onmicrosoft.com',
-  },
-]
-
 const result = (overrides = {}) => ({
   isLoading: false,
   isFetching: false,
@@ -78,7 +64,7 @@ const makeSettings = (overrides = {}) => ({
 
 describe('CippTenantSelector', () => {
   beforeEach(() => {
-    apiState.tenants = result({ data: tenants })
+    apiState.tenants = result({ data: tenantsContosoFabrikam })
     apiState.details = result()
     apiState.urls = []
     routerState.router = {

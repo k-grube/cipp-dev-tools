@@ -6,6 +6,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { createTheme } from '../../src/theme'
 import { PrivateRoute } from '../../src/components/PrivateRoute'
+import { swaPrincipal, cippPrincipal } from '../mocks/fixtures'
 
 // mutable per-test auth responses, vi.mock factory is hoisted so state must be too
 const authState = vi.hoisted(() => ({ me: {}, swa: {} }))
@@ -31,14 +32,6 @@ const result = (overrides = {}) => ({
   data: undefined,
   refetch: vi.fn(),
   ...overrides,
-})
-
-const swaPrincipal = (userDetails = 'john@contoso.com') => ({
-  clientPrincipal: { userDetails, userRoles: ['anonymous', 'authenticated'] },
-})
-
-const cippPrincipal = (userRoles, userDetails = 'john@contoso.com') => ({
-  clientPrincipal: { userDetails, userRoles },
 })
 
 const theme = createTheme({

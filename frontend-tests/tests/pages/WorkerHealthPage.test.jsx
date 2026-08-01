@@ -2,46 +2,26 @@ import React from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { renderWithProviders } from '../test-utils'
+import { renderWithProviders, settingsWith } from '../test-utils'
 import Page from '../../src/pages/cipp/advanced/worker-health.js'
 
+vi.mock('../../src/api/ApiCall', async () => (await import('../mocks/api-call')).apiCallMock())
+import { api, getResult, paginatedResult, postResult } from '../mocks/api-call'
+
 // stable refs, see GraphExplorerPage.test.jsx (fresh literals per call loop the data-sync effects)
-const jobsResult = vi.hoisted(() => ({
-  isSuccess: true,
-  isFetching: false,
-  isLoading: false,
-  isError: false,
-  data: {
-    pages: [
-      {
-        Results: [
-          { Id: 'j1', Name: 'Job One', RunName: 'run-a', Priority: 1, Status: 'Queued', QueuedUtc: '2026-07-30T10:00:00Z', WaitSeconds: 5, DurationSeconds: 0 },
-          { Id: 'j2', Name: 'Job Two', RunName: 'run-a', Priority: 1, Status: 'Queued', QueuedUtc: '2026-07-30T10:01:00Z', WaitSeconds: 3, DurationSeconds: 0 },
-          { Id: 'j3', Name: 'Job Three', RunName: 'run-b', Priority: 2, Status: 'Running', QueuedUtc: '2026-07-30T10:02:00Z', WaitSeconds: 1, DurationSeconds: 4 },
-          { Id: 'j4', Name: 'Job Four', RunName: 'run-b', Priority: 2, Status: 'Completed', QueuedUtc: '2026-07-30T10:03:00Z', WaitSeconds: 1, DurationSeconds: 9 },
-          { Id: 'j5', Name: 'Job Five', RunName: 'run-c', Priority: 3, Status: 'Completed', QueuedUtc: '2026-07-30T10:04:00Z', WaitSeconds: 2, DurationSeconds: 7 },
-        ],
-      },
-    ],
-  },
-  fetchNextPage: vi.fn(),
-  refetch: vi.fn(),
-}))
+const jobsResult = paginatedResult([
+  { Id: 'j1', Name: 'Job One', RunName: 'run-a', Priority: 1, Status: 'Queued', QueuedUtc: '2026-07-30T10:00:00Z', WaitSeconds: 5, DurationSeconds: 0 },
+  { Id: 'j2', Name: 'Job Two', RunName: 'run-a', Priority: 1, Status: 'Queued', QueuedUtc: '2026-07-30T10:01:00Z', WaitSeconds: 3, DurationSeconds: 0 },
+  { Id: 'j3', Name: 'Job Three', RunName: 'run-b', Priority: 2, Status: 'Running', QueuedUtc: '2026-07-30T10:02:00Z', WaitSeconds: 1, DurationSeconds: 4 },
+  { Id: 'j4', Name: 'Job Four', RunName: 'run-b', Priority: 2, Status: 'Completed', QueuedUtc: '2026-07-30T10:03:00Z', WaitSeconds: 1, DurationSeconds: 9 },
+  { Id: 'j5', Name: 'Job Five', RunName: 'run-c', Priority: 3, Status: 'Completed', QueuedUtc: '2026-07-30T10:04:00Z', WaitSeconds: 2, DurationSeconds: 7 },
+])
 
-const emptyGetResult = vi.hoisted(() => ({
-  isSuccess: false,
-  isFetching: false,
-  isLoading: false,
-  isError: false,
-  data: undefined,
-  refetch: vi.fn(),
-}))
+const emptyGetResult = getResult({ isSuccess: false })
 
-vi.mock('../../src/api/ApiCall', () => ({
-  ApiGetCall: vi.fn(() => emptyGetResult),
-  ApiPostCall: vi.fn(() => ({ mutate: vi.fn(), isPending: false, isSuccess: false, isError: false, data: undefined, error: null })),
-  ApiGetCallWithPagination: vi.fn(() => jobsResult),
-}))
+api.get = emptyGetResult
+api.post = postResult()
+api.paginated = jobsResult
 
 describe('Worker Health page - job queue preset filters', () => {
   beforeEach(() => {
@@ -87,20 +67,12 @@ describe('Worker Health page - job queue preset filters', () => {
   it.skip('ignores a stale persisted legacy global filter, presets still work', async () => {
     const user = userEvent.setup()
     renderWithProviders(<Page />, {
-      settings: {
-        currentTenant: 'testdomain.com',
-        currentTheme: { value: 'light', label: 'light' },
-        paletteMode: 'light',
-        direction: 'ltr',
-        pinNav: true,
-        handleUpdate: () => {},
-        handleReset: () => {},
-        isCustom: false,
+      settings: settingsWith({
         persistFilters: true,
         // pageName resolves to '' under the router mock (pathname '/')
         lastUsedFilters: { '': { type: 'global', value: [{ id: 'Status', value: 'Queued' }], name: 'Queued' } },
         setLastUsedFilter: () => {},
-      },
+      }),
     })
     await screen.findByText('1-5 of 5')
 

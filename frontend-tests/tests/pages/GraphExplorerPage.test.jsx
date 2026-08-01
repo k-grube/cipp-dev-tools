@@ -2,26 +2,12 @@ import React from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { renderWithProviders } from '../test-utils'
+import { renderWithProviders, settingsWith } from '../test-utils'
 import Page from '../../src/pages/tenant/tools/graph-explorer/index.js'
 import { ApiGetCallWithPagination } from '../../src/api/ApiCall'
 
-// CippDataTable/CippAutoComplete key effects off the raw data object; a factory returning a fresh literal each call spins Maximum update depth exceeded, so paginatedResult must stay the same reference
-const paginatedResult = vi.hoisted(() => ({
-  isSuccess: true,
-  isFetching: false,
-  isLoading: false,
-  isError: false,
-  data: { pages: [{ Results: [] }] },
-  fetchNextPage: vi.fn(),
-  refetch: vi.fn(),
-}))
-
-vi.mock('../../src/api/ApiCall', () => ({
-  ApiGetCall: vi.fn(() => ({ isSuccess: false, isFetching: false, data: undefined, refetch: vi.fn() })),
-  ApiPostCall: vi.fn(() => ({ mutate: vi.fn(), isPending: false, isSuccess: false, isError: false, data: undefined, error: null })),
-  ApiGetCallWithPagination: vi.fn(() => paginatedResult),
-}))
+vi.mock('../../src/api/ApiCall', async () => (await import('../mocks/api-call')).apiCallMock())
+import { api, getResult, paginatedResult, postResult } from '../mocks/api-call'
 
 // monaco never resolves in jsdom; canonical mock copied verbatim from CippCodeBlock.test.jsx
 vi.mock('@monaco-editor/react', () => ({
@@ -30,16 +16,10 @@ vi.mock('@monaco-editor/react', () => ({
   ),
 }))
 
-const settingsWith = (tenant) => ({
-  currentTenant: tenant,
-  currentTheme: { value: 'light', label: 'light' },
-  paletteMode: 'light',
-  direction: 'ltr',
-  pinNav: true,
-  handleUpdate: () => {},
-  handleReset: () => {},
-  isCustom: false,
-})
+// CippDataTable/CippAutoComplete key effects off the raw data object; a factory returning a fresh literal each call spins Maximum update depth exceeded, so this stays the same reference
+api.get = getResult({ isSuccess: false })
+api.post = postResult()
+api.paginated = paginatedResult()
 
 describe('Graph Explorer page', () => {
   beforeEach(() => {
@@ -80,7 +60,7 @@ describe('Graph Explorer page', () => {
   }, 15000) // heaviest test in the file (MRT mount + autocomplete remount + monaco Suspense); default 5000ms flakes under full-suite worker contention
 
   it('warns when no tenant is selected in table mode', () => {
-    renderWithProviders(<Page />, { settings: settingsWith(null) })
+    renderWithProviders(<Page />, { settings: settingsWith({ currentTenant: null }) })
     expect(
       screen.getByText('No tenant selected. Please select a tenant from the dropdown above.')
     ).toBeInTheDocument()

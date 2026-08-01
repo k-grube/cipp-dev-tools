@@ -4,6 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { useForm } from 'react-hook-form'
 import { renderWithProviders } from '../../test-utils'
 import { CippFormTenantSelector } from '../../../src/components/CippComponents/CippFormTenantSelector'
+import { tenantsContosoFabrikam } from '../../mocks/fixtures'
 
 // url-keyed api state, hoisted for the mock factory
 const apiState = vi.hoisted(() => ({ tenants: {}, groups: {}, urls: [] }))
@@ -34,19 +35,6 @@ vi.mock('../../../src/api/ApiCall', () => ({
   },
 }))
 
-const tenants = [
-  {
-    displayName: 'Contoso',
-    defaultDomainName: 'contoso.com',
-    customerId: '11111111-aaaa-bbbb-cccc-000000000001',
-  },
-  {
-    displayName: 'Fabrikam',
-    defaultDomainName: 'fabrikam.com',
-    customerId: '22222222-aaaa-bbbb-cccc-000000000002',
-  },
-]
-
 const result = (overrides = {}) => ({
   isLoading: false,
   isFetching: false,
@@ -71,7 +59,7 @@ const Harness = (props) => {
 
 describe('CippFormTenantSelector', () => {
   beforeEach(() => {
-    apiState.tenants = result({ data: tenants })
+    apiState.tenants = result({ data: tenantsContosoFabrikam })
     apiState.groups = result({ data: { Results: [] } })
     apiState.urls = []
     controlRef.current = null

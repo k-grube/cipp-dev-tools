@@ -20,6 +20,7 @@ docker-compose.override.yml
 # personal skills, keep the shared workflow one
 .claude/skills/*
 !.claude/skills/cipp-dev-workflow/
+!.claude/skills/test-sweep/
 __pycache__/
 .venv/
 .superpowers/
