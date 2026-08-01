@@ -14,7 +14,7 @@ foreach ($a in $args) {
         $script = $map[$a]
     } elseif ($a -in '--help', '-h') {
         Write-Host 'usage: .\test.ps1 [--watch|--unit|--storybook|--browser|--coverage] [vitest args, e.g. a test file or -t "name"]'
-        Write-Host 'no flag runs both projects (unit jsdom + storybook chromium)'
+        Write-Host 'default (no flag): both projects (unit jsdom + storybook chromium)'
         exit 0
     } else {
         $rest += $a

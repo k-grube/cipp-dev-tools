@@ -13,7 +13,7 @@ for a in "$@"; do
         --coverage|-c) script=test:coverage ;;
         --help|-h)
             echo 'usage: ./test.sh [--watch|--unit|--storybook|--browser|--coverage] [vitest args, e.g. a test file or -t "name"]'
-            echo 'no flag runs both projects (unit jsdom + storybook chromium)'
+            echo 'default (no flag): both projects (unit jsdom + storybook chromium)'
             exit 0 ;;
         *) rest+=("$a") ;;
     esac
