@@ -17344,28 +17344,6 @@
       "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listtenantgroups_invoke_listtenantgroups"
     },
     {
-      "label": "Invoke-ListWorkerHealth.ps1",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 510,
-      "community_name": "Invoke-ListWorkerHealth.ps1 cluster",
-      "norm_label": "invoke-listworkerhealth.ps1",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth"
-    },
-    {
-      "label": "Invoke-ListWorkerHealth()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 510,
-      "community_name": "Invoke-ListWorkerHealth.ps1 cluster",
-      "norm_label": "invoke-listworkerhealth()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
-    },
-    {
       "label": "Resolve-CippRoleTenantEntry.ps1",
       "file_type": "code",
       "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Resolve-CippRoleTenantEntry.ps1",
@@ -121246,47 +121224,6 @@
       "id": "cipp_frontend_src_pages_cipp_advanced_super_admin_time_settings_page"
     },
     {
-      "label": "test.ps1",
-      "file_type": "code",
-      "source_file": "test.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.ps1",
-      "id": "test_ps1_test"
-    },
-    {
-      "label": "test.sh",
-      "file_type": "code",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.sh",
-      "id": "test_sh_test"
-    },
-    {
-      "label": "test.sh script",
-      "file_type": "code",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "test.sh script",
-      "id": "test_sh__entry"
-    },
-    {
       "label": "Get-CIPPSiteHostname.ps1",
       "file_type": "code",
       "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Get-CIPPSiteHostname.ps1",
@@ -121395,72 +121332,6 @@
       "community_name": "Get-CIPPAzDataTableEntity() cluster",
       "norm_label": "get-cippmfastatereport()",
       "id": "cipp_backend_modules_cippcore_public_get_cippmfastatereport_get_cippmfastatereport"
-    },
-    {
-      "label": "Invoke-ExecContainerManagement.ps1",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "invoke-execcontainermanagement.ps1",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement"
-    },
-    {
-      "label": "Invoke-ExecContainerManagement()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "invoke-execcontainermanagement()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
-    },
-    {
-      "label": "Get-ContainerSiteInfo()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "get-containersiteinfo()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
-    },
-    {
-      "label": "Get-GHCRImageInfo()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "get-ghcrimageinfo()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
-    },
-    {
-      "label": "ConvertFrom-RawJson()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L60",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "convertfrom-rawjson()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
-    },
-    {
-      "label": "Get-GHCRBuildChannel()",
-      "file_type": "code",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L106",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "get-ghcrbuildchannel()",
-      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
     },
     {
       "label": "Invoke-ExecSSOSetup.ps1",
@@ -121672,61 +121543,6 @@
       "id": "cipp_frontend_src_components_cippcomponents_securescorecard_securescorecard"
     },
     {
-      "label": "CippContainerManagement.jsx",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "cippcontainermanagement.jsx",
-      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement"
-    },
-    {
-      "label": "channelLabels",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L20",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "channellabels",
-      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_channellabels"
-    },
-    {
-      "label": "intervalOptions",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L27",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "intervaloptions",
-      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_intervaloptions"
-    },
-    {
-      "label": "hourOptions",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "houroptions",
-      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_houroptions"
-    },
-    {
-      "label": "CippContainerManagement()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "cippcontainermanagement()",
-      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_cippcontainermanagement"
-    },
-    {
       "label": "CippSSOSettings.jsx",
       "file_type": "code",
       "source_file": "CIPP/frontend/src/components/CippSettings/CippSSOSettings.jsx",
@@ -121868,149 +121684,6 @@
       "community_name": "Get-CIPPAzDataTableEntity() cluster",
       "norm_label": "executivereportbutton()",
       "id": "cipp_frontend_src_components_executivereportbutton_executivereportbutton"
-    },
-    {
-      "label": "worker-health.js",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "worker-health.js",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health"
-    },
-    {
-      "label": "formatDuration()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L66",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "formatduration()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
-    },
-    {
-      "label": "formatUptime()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L73",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "formatuptime()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
-    },
-    {
-      "label": "WorkerStatusChip()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L81",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "workerstatuschip()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_workerstatuschip"
-    },
-    {
-      "label": "UtilizationBar()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L96",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "utilizationbar()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_utilizationbar"
-    },
-    {
-      "label": "WorkerTable()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L112",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "workertable()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable"
-    },
-    {
-      "label": "TIME_RANGES",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L178",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "time_ranges",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_time_ranges"
-    },
-    {
-      "label": "formatChartTime()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L186",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "formatcharttime()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
-    },
-    {
-      "label": "STARTUP_PHASES",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L199",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "startup_phases",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_startup_phases"
-    },
-    {
-      "label": "StartupTimingBar()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L208",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "startuptimingbar()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar"
-    },
-    {
-      "label": "CompactStatsRow()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L309",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "compactstatsrow()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow"
-    },
-    {
-      "label": "HistoryChart()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L423",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "historychart()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_historychart"
-    },
-    {
-      "label": "Page()",
-      "file_type": "code",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L456",
-      "_origin": "ast",
-      "community": -1,
-      "community_name": "Get-CIPPAzDataTableEntity() cluster",
-      "norm_label": "page()",
-      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_page"
     },
     {
       "label": "index.js",
@@ -122209,6 +121882,432 @@
       "community_name": "Get-CIPPAzDataTableEntity() cluster",
       "norm_label": "getcippformatting()",
       "id": "cipp_frontend_src_utils_get_cipp_formatting_getcippformatting"
+    },
+    {
+      "label": "workflow.js",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "workflow.js",
+      "id": "claude_skills_test_sweep_workflow"
+    },
+    {
+      "label": "meta",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "meta",
+      "id": "claude_skills_test_sweep_workflow_meta"
+    },
+    {
+      "label": "WRITE_SCHEMA",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "write_schema",
+      "id": "claude_skills_test_sweep_workflow_write_schema"
+    },
+    {
+      "label": "VERIFY_SCHEMA",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "verify_schema",
+      "id": "claude_skills_test_sweep_workflow_verify_schema"
+    },
+    {
+      "label": "GATE_SCHEMA",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "gate_schema",
+      "id": "claude_skills_test_sweep_workflow_gate_schema"
+    },
+    {
+      "label": "fill()",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "fill()",
+      "id": "claude_skills_test_sweep_workflow_fill"
+    },
+    {
+      "label": "kept",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "kept",
+      "id": "claude_skills_test_sweep_workflow_kept"
+    },
+    {
+      "label": "expectedRed",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "expectedred",
+      "id": "claude_skills_test_sweep_workflow_expectedred"
+    },
+    {
+      "label": "anyStorybook",
+      "file_type": "code",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L69",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "anystorybook",
+      "id": "claude_skills_test_sweep_workflow_anystorybook"
+    },
+    {
+      "label": "Invoke-ExecContainerManagement.ps1",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-execcontainermanagement.ps1",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement"
+    },
+    {
+      "label": "Invoke-ExecContainerManagement()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-execcontainermanagement()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
+    },
+    {
+      "label": "Get-ContainerSiteInfo()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "get-containersiteinfo()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
+    },
+    {
+      "label": "Get-GHCRImageInfo()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L51",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "get-ghcrimageinfo()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
+    },
+    {
+      "label": "ConvertFrom-RawJson()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L60",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "convertfrom-rawjson()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
+    },
+    {
+      "label": "Get-GHCRBuildChannel()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L106",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "get-ghcrbuildchannel()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
+    },
+    {
+      "label": "Invoke-ListWorkerHealth.ps1",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-listworkerhealth.ps1",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth"
+    },
+    {
+      "label": "Invoke-ListWorkerHealth()",
+      "file_type": "code",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "invoke-listworkerhealth()",
+      "id": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
+    },
+    {
+      "label": "CippContainerManagement.jsx",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "cippcontainermanagement.jsx",
+      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement"
+    },
+    {
+      "label": "channelLabels",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "channellabels",
+      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_channellabels"
+    },
+    {
+      "label": "intervalOptions",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "intervaloptions",
+      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_intervaloptions"
+    },
+    {
+      "label": "hourOptions",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "houroptions",
+      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_houroptions"
+    },
+    {
+      "label": "CippContainerManagement()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "cippcontainermanagement()",
+      "id": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_cippcontainermanagement"
+    },
+    {
+      "label": "worker-health.js",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "worker-health.js",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health"
+    },
+    {
+      "label": "formatDuration()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "formatduration()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
+    },
+    {
+      "label": "formatUptime()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L73",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "formatuptime()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
+    },
+    {
+      "label": "WorkerStatusChip()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "workerstatuschip()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_workerstatuschip"
+    },
+    {
+      "label": "UtilizationBar()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L98",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "utilizationbar()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_utilizationbar"
+    },
+    {
+      "label": "WorkerTable()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L114",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "workertable()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable"
+    },
+    {
+      "label": "TIME_RANGES",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L180",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "time_ranges",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_time_ranges"
+    },
+    {
+      "label": "formatChartTime()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L188",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "formatcharttime()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
+    },
+    {
+      "label": "STARTUP_PHASES",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L201",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "startup_phases",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_startup_phases"
+    },
+    {
+      "label": "StartupTimingBar()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L210",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "startuptimingbar()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar"
+    },
+    {
+      "label": "CompactStatsRow()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L311",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "compactstatsrow()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow"
+    },
+    {
+      "label": "HistoryChart()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L425",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "historychart()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_historychart"
+    },
+    {
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L458",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "page()",
+      "id": "cipp_frontend_src_pages_cipp_advanced_worker_health_page"
+    },
+    {
+      "label": "test.ps1",
+      "file_type": "code",
+      "source_file": "test.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.ps1",
+      "id": "test_ps1_test"
+    },
+    {
+      "label": "test.sh",
+      "file_type": "code",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.sh",
+      "id": "test_sh_test"
+    },
+    {
+      "label": "test.sh script",
+      "file_type": "code",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "Get-CIPPAzDataTableEntity() cluster",
+      "norm_label": "test.sh script",
+      "id": "test_sh__entry"
     },
     {
       "label": "graph.microsoft.com",
@@ -153477,157 +153576,6 @@
       "weight": 1.0,
       "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listtenantgroups_invoke_listtenantgroups",
       "target": "cipp_backend_modules_cippcore_public_tenantgroups_get_tenantgroups_get_tenantgroups"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_startupinfobridge_craft_services_startupinfobridge_getinfo"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_statshistorybridge_craft_services_statshistorybridge_getcount"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_statshistorybridge_craft_services_statshistorybridge_gethistory"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_canceljob"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_cancelrun"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_changepriority"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_deletejob"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getjobdetails"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getmemorybreakdown"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getpoolmetrics"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getrunsummaries"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getsnapshot"
-    },
-    {
-      "relation": "bridge_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/craft-links",
-      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
-      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getsummary"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
-      "source_location": "L124",
-      "weight": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth",
-      "target": "cipp_backend_modules_cippcore_public_graphhelper_write_logmessage_write_logmessage"
     },
     {
       "relation": "contains",
@@ -381534,16 +381482,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "test.sh",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "test_sh_test",
-      "target": "test_sh__entry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "CIPP/backend/Modules/CIPPCore/Public/Authentication/Get-CIPPSiteHostname.ps1",
       "source_location": "L1",
       "weight": 1.0,
@@ -381612,96 +381550,6 @@
       "confidence_score": 1.0,
       "source": "cipp_backend_modules_cippcore_public_get_cippmfastatereport",
       "target": "cipp_backend_modules_cippcore_public_get_cippmfastatereport_get_cippmfastatereport"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L60",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L146",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L263",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L329",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
     },
     {
       "relation": "contains",
@@ -382004,56 +381852,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "graph-tools/route-links",
-      "source_location": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "weight": 1.0,
-      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
-      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_channellabels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
-      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_cippcontainermanagement"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
-      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_houroptions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
-      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_intervaloptions"
-    },
-    {
-      "relation": "http_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/route-links",
       "source_location": "CIPP/frontend/src/components/CippSettings/CippSSOSettings.jsx",
       "weight": 1.0,
       "source": "cipp_frontend_src_components_cippsettings_cippssosettings",
@@ -382269,191 +382067,6 @@
       "confidence_score": 1.0,
       "source": "cipp_frontend_src_components_executivereportbutton",
       "target": "cipp_frontend_src_components_executivereportbutton_executivereportdocument"
-    },
-    {
-      "relation": "http_calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graph-tools/route-links",
-      "source_location": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "weight": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L309",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L186",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L423",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_historychart"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L456",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_page"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L199",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_startup_phases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L208",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L178",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_time_ranges"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_utilizationbar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L81",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_workerstatuschip"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L112",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L235",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L327",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L519",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_page",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
-      "source_location": "L734",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_page",
-      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
     },
     {
       "relation": "http_calls",
@@ -382891,6 +382504,561 @@
       "confidence_score": 1.0,
       "source": "cipp_frontend_src_utils_get_cipp_formatting_getcippformatting",
       "target": "cipp_frontend_src_utils_get_cipp_formatting_getcountrynamefromcode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_anystorybook"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_expectedred"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_fill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_gate_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_kept"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_verify_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/test-sweep/workflow.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_test_sweep_workflow",
+      "target": "claude_skills_test_sweep_workflow_write_schema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_containersiteinfo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrbuildchannel"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L328",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecContainerManagement.ps1",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_get_ghcrimageinfo",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_convertfrom_rawjson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_startupinfobridge_craft_services_startupinfobridge_getinfo"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_statshistorybridge_craft_services_statshistorybridge_getcount"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_statshistorybridge_craft_services_statshistorybridge_gethistory"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_canceljob"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_cancelrun"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_changepriority"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_deletejob"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getjobdetails"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getmemorybreakdown"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getpoolmetrics"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getrunsummaries"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getsnapshot"
+    },
+    {
+      "relation": "bridge_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/craft-links",
+      "source_location": "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ListWorkerHealth.ps1",
+      "weight": 1.0,
+      "source": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth",
+      "target": "craft_services_bridges_workermetricsbridge_craft_services_workermetricsbridge_getsummary"
+    },
+    {
+      "relation": "http_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/route-links",
+      "source_location": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "weight": 1.0,
+      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_execcontainermanagement_invoke_execcontainermanagement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
+      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_channellabels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
+      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_cippcontainermanagement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
+      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_houroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/components/CippSettings/CippContainerManagement.jsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_components_cippsettings_cippcontainermanagement",
+      "target": "cipp_frontend_src_components_cippsettings_cippcontainermanagement_intervaloptions"
+    },
+    {
+      "relation": "http_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graph-tools/route-links",
+      "source_location": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "weight": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_backend_modules_cipphttp_public_entrypoints_http_functions_cipp_settings_invoke_listworkerhealth_invoke_listworkerhealth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L188",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L425",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_historychart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L458",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_startup_phases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L180",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_time_ranges"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_utilizationbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_workerstatuschip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_workertable",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L237",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_startuptimingbar",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L329",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_compactstatsrow",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatduration"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L523",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_page",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatcharttime"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
+      "source_location": "L735",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cipp_frontend_src_pages_cipp_advanced_worker_health_page",
+      "target": "cipp_frontend_src_pages_cipp_advanced_worker_health_formatuptime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "test_sh_test",
+      "target": "test_sh__entry"
     }
   ],
   "hyperedges": [
@@ -383468,5 +383636,5 @@
       "source_file": "CIPP/docs/user-documentation/tools/tenant-tools/README.md"
     }
   ],
-  "built_at_commit": "5c30a00bae538785737692ba6f9ed8bc4620d2cf"
+  "built_at_commit": "8e8857c6b6ef7b46bffbbe2f4046a19bd901cf5a"
 }
