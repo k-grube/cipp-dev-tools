@@ -108,3 +108,19 @@ describe('getCippFormatting (text mode)', () => {
     expect(getCippFormatting(604800, 'ReportInterval', 'text')).toBe('7 days')
   })
 })
+
+describe('getCippFormatting (component mode)', () => {
+  it('ScheduledBackupValues cell tolerates rows missing the key (regression, finding #23)', () => {
+    // scheduler system-jobs view: scripted alert rows have no ScheduledBackupValues,
+    // branch used to Object.keys(undefined) before the global null guard
+    expect(() => getCippFormatting(undefined, 'Parameters.ScheduledBackupValues')).not.toThrow()
+    expect(() => getCippFormatting(null, 'Parameters.ScheduledBackupValues')).not.toThrow()
+    expect(getCippFormatting(undefined, 'Parameters.ScheduledBackupValues', 'text')).toBe('No data')
+  })
+
+  it('Severity and logsToInclude cells tolerate null (same class as #23)', () => {
+    expect(() => getCippFormatting(null, 'Severity')).not.toThrow()
+    expect(() => getCippFormatting(undefined, 'logsToInclude')).not.toThrow()
+    expect(getCippFormatting(null, 'Severity', 'text')).toBe('No data')
+  })
+})
