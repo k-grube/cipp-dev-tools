@@ -6,7 +6,7 @@
     "test": "node ensure-links.mjs && vitest run",
     "test:watch": "node ensure-links.mjs && vitest",
     "test:unit": "node ensure-links.mjs && vitest run --project unit",
-    "test:coverage": "node ensure-links.mjs && vitest run --project unit --coverage",
+    "test:coverage": "node ensure-links.mjs && vitest run --coverage",
     "test:storybook": "node ensure-links.mjs && vitest run --project storybook",
     "test:browser": "node ensure-links.mjs && vitest run --project storybook --browser.headless=false",
     "storybook": "node ensure-links.mjs && storybook dev -p 6006 --no-open"

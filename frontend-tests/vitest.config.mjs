@@ -37,6 +37,8 @@ export default defineConfig({
       // path outside this root, so coverage needs allowExternal + the real-path glob
       allowExternal: true,
       include: ['src/**', '**/CIPP/frontend/src/**'],
+      // suite carries red pins for open upstream PRs, report anyway
+      reportOnFailure: true,
     },
     projects: [
       {
