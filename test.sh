@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# forwards to frontend-tests npm scripts: ./test.sh [--watch|--unit|--storybook|--browser] [vitest args]
+# forwards to frontend-tests npm scripts: ./test.sh [--watch|--unit|--storybook|--browser|--coverage] [vitest args]
 set -euo pipefail
 root="$(cd "$(dirname "$0")" && pwd)"
 script=test
@@ -10,8 +10,9 @@ for a in "$@"; do
         --unit|-u) script=test:unit ;;
         --storybook|-s) script=test:storybook ;;
         --browser|-b) script=test:browser ;;
+        --coverage|-c) script=test:coverage ;;
         --help|-h)
-            echo 'usage: ./test.sh [--watch|--unit|--storybook|--browser] [vitest args, e.g. a test file or -t "name"]'
+            echo 'usage: ./test.sh [--watch|--unit|--storybook|--browser|--coverage] [vitest args, e.g. a test file or -t "name"]'
             echo 'no flag runs both projects (unit jsdom + storybook chromium)'
             exit 0 ;;
         *) rest+=("$a") ;;

@@ -30,6 +30,14 @@ export default defineConfig({
   define: { 'process.env': '{}' },
   test: {
     globals: true,
+    coverage: {
+      provider: 'v8',
+      reportsDirectory: './coverage',
+      // src is a junction into CIPP\frontend\src, vite resolves imports to the real
+      // path outside this root, so coverage needs allowExternal + the real-path glob
+      allowExternal: true,
+      include: ['src/**', '**/CIPP/frontend/src/**'],
+    },
     projects: [
       {
         resolve: { alias: nextAliases },
