@@ -181,6 +181,33 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     })
   }, 15000)
 
+  it('renders exactly one Filters menu with sections when both kinds exist', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await screen.findByRole('menuitem', { name: 'Widget View' })
+    // #22 regression: desktop used to mount a second identical menu on the same anchor
+    expect(document.querySelectorAll('.MuiMenu-paper').length).toBe(1)
+    expect(screen.getByText('Graph filters')).toBeInTheDocument()
+    expect(screen.getByText('Table filters')).toBeInTheDocument()
+  }, 15000)
+
+  it('button shows the active slot count', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: 'Filters (2)' })).toBeInTheDocument()
+    })
+  }, 15000)
+
   it('reset all filters clears the search box text', async () => {
     const user = userEvent.setup()
     renderGraphTable()

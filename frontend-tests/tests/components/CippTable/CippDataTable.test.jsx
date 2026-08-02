@@ -282,7 +282,8 @@ describe('CippDataTable', () => {
     }, { timeout: 3000 })
 
     // the column preset must not leave the stale global filter in place
-    await user.click(screen.getByRole('button', { name: 'Filters' }))
+    // Legacy IT preset is active here, button label is 'Filters (1)'
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
     await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
     await waitFor(() => {
       expect(screen.getByText('1-1 of 1')).toBeInTheDocument()

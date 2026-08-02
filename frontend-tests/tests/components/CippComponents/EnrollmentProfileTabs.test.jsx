@@ -144,7 +144,8 @@ describe('AppleADEEnrollmentProfiles - platform preset filters', () => {
     })
 
     // untyped All would setGlobalFilter([]) and leave the column filter live at 2 rows
-    await user.click(screen.getByRole('button', { name: 'Filters' }))
+    // macOS preset is active here, button label is 'Filters (1)'
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
     await user.click(await screen.findByRole('menuitem', { name: 'All' }))
     await waitFor(() => {
       expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
