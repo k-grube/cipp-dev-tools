@@ -1,6 +1,6 @@
 import React from 'react'
 import { describe, it, expect, vi } from 'vitest'
-import { screen } from '@testing-library/react'
+import { screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderWithProviders } from '../../test-utils'
 import { CippDataTable } from '../../../src/components/CippTable/CippDataTable'
@@ -98,5 +98,24 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     presetsResult = savedPresets
     await user.click(screen.getByRole('button', { name: 'Filters' }))
     await screen.findByRole('menuitem', { name: 'My Saved Preset' }, { timeout: 3000 })
+  }, 15000)
+
+  it('graph preset and column preset are both marked active', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await waitFor(() => {
+      // scope to the live accessible menu: a closing menu's DOM can linger
+      // (aria-hidden, unmount pending) and would otherwise double-count
+      const menu = within(screen.getByRole('menu'))
+      expect(menu.getAllByTestId('CheckIcon').length).toBeGreaterThanOrEqual(2)
+    })
   }, 15000)
 })
