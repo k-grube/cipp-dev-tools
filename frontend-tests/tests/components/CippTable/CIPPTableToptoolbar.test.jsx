@@ -180,4 +180,17 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
     })
   }, 15000)
+
+  it('reset all filters clears the search box text', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.type(screen.getByPlaceholderText('Search...'), 'alice')
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Reset all filters' }))
+    await waitFor(() => {
+      expect(screen.getByPlaceholderText('Search...')).toHaveValue('')
+    })
+  }, 15000)
 })
