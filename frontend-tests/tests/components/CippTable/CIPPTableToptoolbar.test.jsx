@@ -234,7 +234,11 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       }),
     })
     await screen.findByText('1-3 of 3')
+    // cross the restore effect's setTimeout(100) window before asserting, otherwise
+    // cleanup unmounts (and cancels the pending timer) before it ever runs
+    await new Promise((resolve) => setTimeout(resolve, 250))
     // garbage discarded: table stays unfiltered, no active slot
+    expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /Filters \(/ })).toBeNull()
   })
 
