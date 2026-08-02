@@ -18,6 +18,17 @@ const refreshRows = [
   { displayName: 'Bob Johnson', mail: 'bob@contoso.com' },
 ]
 
+const rows = [
+  { displayName: 'Alice Smith', mail: 'alice@contoso.com', department: 'IT' },
+  { displayName: 'Bob Johnson', mail: 'bob@contoso.com', department: 'Sales' },
+  { displayName: 'Carol Williams', mail: 'carol@contoso.com', department: 'IT' },
+]
+
+const tablePresets = [
+  { filterName: 'IT only', value: [{ id: 'department', value: 'IT' }], type: 'column' },
+  { filterName: 'Sales only', value: [{ id: 'department', value: 'Sales' }], type: 'column' },
+]
+
 // stable refs per phase, fresh literals per call loop the data-sync effects
 const emptyPresets = getResult({ data: { Results: [] } })
 const savedPresets = getResult({
@@ -25,12 +36,21 @@ const savedPresets = getResult({
     Results: [{ id: 'p1', name: 'My Saved Preset', params: { endpoint: 'testWidgets' } }],
   },
 })
+const graphPresetResult = getResult({
+  data: {
+    Results: [
+      { id: 'gp-1', name: 'Widget View', params: { endpoint: 'testWidgets', $filter: "state eq 'on'" } },
+    ],
+  },
+})
 const emptyGetResult = getResult({ isSuccess: false })
 const tableData = paginatedResult(refreshRows)
+const slotsTableData = paginatedResult(rows)
 
 let presetsResult = emptyPresets
 api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResult : emptyGetResult)
-api.paginated = tableData
+// route by queryKey: renderGraphTable's table gets the 3-row fixture, the #34 table keeps its 2-row one
+api.paginated = (opts) => (opts.queryKey === 'SlotsTest' ? slotsTableData : tableData)
 api.post = postResult()
 
 const graphTable = (
@@ -43,26 +63,10 @@ const graphTable = (
   />
 )
 
-const rows = [
-  { displayName: 'Alice Smith', mail: 'alice@contoso.com', department: 'IT' },
-  { displayName: 'Bob Johnson', mail: 'bob@contoso.com', department: 'Sales' },
-  { displayName: 'Carol Williams', mail: 'carol@contoso.com', department: 'IT' },
-]
-
-const tablePresets = [
-  { filterName: 'IT only', value: [{ id: 'department', value: 'IT' }], type: 'column' },
-  { filterName: 'Sales only', value: [{ id: 'department', value: 'Sales' }], type: 'column' },
-]
-
-const graphPresetResult = getResult({
-  data: {
-    Results: [
-      { id: 'gp-1', name: 'Widget View', params: { endpoint: 'testWidgets', $filter: "state eq 'on'" } },
-    ],
-  },
-})
-
 function renderGraphTable(extraProps = {}) {
+  // pin the preset route here so renderGraphTable-based tests see 'Widget View'
+  // regardless of what an earlier test left presetsResult pointing at
+  presetsResult = graphPresetResult
   return renderWithProviders(
     <CippDataTable
       api={{ url: '/api/ListGraphRequest', dataKey: 'Results', data: { Endpoint: 'testWidgets' } }}
@@ -78,6 +82,7 @@ function renderGraphTable(extraProps = {}) {
 describe('CIPPTableToptoolbar - preset list refresh', () => {
   it('shows a newly saved preset in the Filters dropdown without a remount', async () => {
     const user = userEvent.setup()
+    presetsResult = emptyPresets // order-independent: not relying on the module-scope initial value
     renderWithProviders(graphTable)
     await screen.findByText('1-2 of 2')
 
