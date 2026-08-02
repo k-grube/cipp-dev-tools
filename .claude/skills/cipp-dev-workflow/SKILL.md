@@ -82,7 +82,24 @@ git commit                            # one message with full what/why detail
 git push origin fix/<short-name>      # --force-with-lease if already pushed
 ```
 
-Then open the PR: `fix/<short-name>` -> `CyberDrain/CIPP` `dev`. Once it merges and `origin/dev` syncs back down (step 1's drift check), the branch is fully merged and can be deleted.
+Then open the PR: `fix/<short-name>` -> `CyberDrain/CIPP` `dev`. Once it merges and `origin/dev` syncs back down (step 1's drift check), sweep branches (step 7).
+
+### 7. Delete merged branches
+
+Whenever step 1 runs (or the user asks for cleanup), check for branches whose PR already landed:
+
+```
+gh pr list --repo CyberDrain/CIPP --author @me --state merged --limit 30 --json headRefName -q '.[].headRefName'
+```
+
+Cross-check against `git branch` and `git branch -r`. PR state is the authority, `git branch --merged` misses squash-merged branches. For each merged branch still present:
+
+```
+git branch -D <branch>
+git push origin --delete <branch>
+```
+
+Never delete: branches with an open PR, parked work (check memory + `docs\upstream-findings.md` before assuming), never-PR'd experiment branches, anything not yours (`KelvinTegelaar-patch-1`). The `push --delete` falls under the explicit-ask rule above: list what qualifies and let the user say go.
 
 ## Notes
 
