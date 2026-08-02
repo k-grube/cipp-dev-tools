@@ -35,7 +35,7 @@ describe('Worker Health page - job queue preset filters', () => {
     expect(await screen.findByText('1-5 of 5')).toBeInTheDocument()
   })
 
-  // PR #144: status filters server-side (before Limit truncates), a client-side filter
+  // status filters server-side (before Limit truncates), a client-side filter
   // would only ever see the oldest N jobs. pin the param contract, not row counts
   it('status toggle requests server-side filtering via the Status param', async () => {
     const user = userEvent.setup()

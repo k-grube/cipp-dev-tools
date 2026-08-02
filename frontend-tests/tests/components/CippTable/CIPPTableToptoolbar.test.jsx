@@ -42,11 +42,11 @@ const slotsTableData = paginatedResult(rows)
 
 let presetsResult = emptyPresets
 api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResult : emptyGetResult)
-// route by queryKey: SlotsTest* gets the 3-row fixture (incl. graph-preset key swap), #34 table keeps 2-row
+// route by queryKey: SlotsTest* gets the 3-row fixture (incl. graph-preset key swap), preset-refetch tests keep 2-row
 api.paginated = (opts) => (opts.queryKey?.startsWith('SlotsTest') ? slotsTableData : tableData)
 api.post = postResult()
 
-// swaps presetsResult with a fresh getResult() call, mimics the identity-change a background refetch produces (#34 + rename pin)
+// swaps presetsResult with a fresh getResult() call, mimics the identity-change a background refetch produces
 function swapGraphPresets(overrides) {
   presetsResult = getResult(overrides)
 }
@@ -187,7 +187,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
 
     await user.click(screen.getByRole('button', { name: /Filters/ }))
     await screen.findByRole('menuitem', { name: 'Widget View' })
-    // #22 regression: desktop used to mount a second identical menu on the same anchor
+    // two Menu blocks share this anchor, a dup mount would render two identical papers
     expect(document.querySelectorAll('.MuiMenu-paper').length).toBe(1)
     expect(screen.getByText('Graph filters')).toBeInTheDocument()
     expect(screen.getByText('Table filters')).toBeInTheDocument()
@@ -226,7 +226,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
         persistFilters: true,
         setLastUsedFilter: vi.fn(),
         lastUsedFilters: {
-          // legacy single-slot shape with a non-string global value = the #28 garbage
+          // legacy single-slot shape with a non-string global value
           '': { type: 'global', value: [{ id: 'department', value: 'IT' }], name: 'Legacy Garbage' },
         },
       }),
@@ -246,7 +246,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
         persistFilters: true,
         setLastUsedFilter: vi.fn(),
         lastUsedFilters: {
-          // new shape can carry the same #28 garbage the legacy branch discards
+          // new shape can carry the same non-string global garbage the legacy branch discards
           '': {
             graph: null,
             table: { id: 'Garbage', name: 'Garbage', type: 'global', value: [{ id: 'department', value: 'IT' }] },
