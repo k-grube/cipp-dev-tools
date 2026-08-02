@@ -13,7 +13,7 @@ import { CippDataTable } from '../../../src/components/CippTable/CippDataTable'
 vi.mock('../../../src/api/ApiCall', async () => (await import('../../mocks/api-call')).apiCallMock())
 import { api, getResult, paginatedResult, postResult } from '../../mocks/api-call'
 
-const rows = [
+const refreshRows = [
   { displayName: 'Alice Smith', mail: 'alice@contoso.com' },
   { displayName: 'Bob Johnson', mail: 'bob@contoso.com' },
 ]
@@ -26,7 +26,7 @@ const savedPresets = getResult({
   },
 })
 const emptyGetResult = getResult({ isSuccess: false })
-const tableData = paginatedResult(rows)
+const tableData = paginatedResult(refreshRows)
 
 let presetsResult = emptyPresets
 api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResult : emptyGetResult)
@@ -42,6 +42,38 @@ const graphTable = (
     maxHeightOffset="100px"
   />
 )
+
+const rows = [
+  { displayName: 'Alice Smith', mail: 'alice@contoso.com', department: 'IT' },
+  { displayName: 'Bob Johnson', mail: 'bob@contoso.com', department: 'Sales' },
+  { displayName: 'Carol Williams', mail: 'carol@contoso.com', department: 'IT' },
+]
+
+const tablePresets = [
+  { filterName: 'IT only', value: [{ id: 'department', value: 'IT' }], type: 'column' },
+  { filterName: 'Sales only', value: [{ id: 'department', value: 'Sales' }], type: 'column' },
+]
+
+const graphPresetResult = getResult({
+  data: {
+    Results: [
+      { id: 'gp-1', name: 'Widget View', params: { endpoint: 'testWidgets', $filter: "state eq 'on'" } },
+    ],
+  },
+})
+
+function renderGraphTable(extraProps = {}) {
+  return renderWithProviders(
+    <CippDataTable
+      api={{ url: '/api/ListGraphRequest', dataKey: 'Results', data: { Endpoint: 'testWidgets' } }}
+      queryKey="SlotsTest"
+      simpleColumns={['displayName', 'mail', 'department']}
+      filters={tablePresets}
+      maxHeightOffset="100px"
+      {...extraProps}
+    />
+  )
+}
 
 describe('CIPPTableToptoolbar - preset list refresh', () => {
   it('shows a newly saved preset in the Filters dropdown without a remount', async () => {
