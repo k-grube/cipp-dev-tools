@@ -44,13 +44,11 @@ const slotsTableData = paginatedResult(rows)
 
 let presetsResult = emptyPresets
 api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResult : emptyGetResult)
-// route by queryKey: renderGraphTable's table gets the 3-row fixture (including the
-// key swap a graph preset causes, 'SlotsTest-<filterName>'), the #34 table keeps its 2-row one
+// route by queryKey: SlotsTest* gets the 3-row fixture (incl. graph-preset key swap), #34 table keeps 2-row
 api.paginated = (opts) => (opts.queryKey?.startsWith('SlotsTest') ? slotsTableData : tableData)
 api.post = postResult()
 
-// swaps presetsResult with a fresh getResult() call, same identity-change a
-// background refetch produces (mechanism #34 needs, reused by the rename pin)
+// swaps presetsResult with a fresh getResult() call, mimics the identity-change a background refetch produces (#34 + rename pin)
 function swapGraphPresets(overrides) {
   presetsResult = getResult(overrides)
 }
@@ -117,8 +115,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
 
     await user.click(screen.getByRole('button', { name: /Filters/ }))
     await waitFor(() => {
-      // scope to the live accessible menu: a closing menu's DOM can linger
-      // (aria-hidden, unmount pending) and would otherwise double-count
+      // scope to the live accessible menu, a closing menu's DOM can linger (aria-hidden) and double-count
       const menu = within(screen.getByRole('menu'))
       expect(menu.getAllByTestId('CheckIcon').length).toBeGreaterThanOrEqual(2)
     })
@@ -233,6 +230,29 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
         lastUsedFilters: {
           // legacy single-slot shape with a non-string global value = the #28 garbage
           '': { type: 'global', value: [{ id: 'department', value: 'IT' }], name: 'Legacy Garbage' },
+        },
+      }),
+    })
+    await screen.findByText('1-3 of 3')
+    // cross the restore effect's setTimeout(100) window before asserting, otherwise
+    // cleanup unmounts (and cancels the pending timer) before it ever runs
+    await new Promise((resolve) => setTimeout(resolve, 250))
+    // garbage discarded: table stays unfiltered, no active slot
+    expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Filters \(/ })).toBeNull()
+  })
+
+  it('restores both persisted slots and discards new-shape garbage global values', async () => {
+    renderGraphTable({}, {
+      settings: settingsWith({
+        persistFilters: true,
+        setLastUsedFilter: vi.fn(),
+        lastUsedFilters: {
+          // new shape can carry the same #28 garbage the legacy branch discards
+          '': {
+            graph: null,
+            table: { id: 'Garbage', name: 'Garbage', type: 'global', value: [{ id: 'department', value: 'IT' }] },
+          },
         },
       }),
     })
