@@ -256,7 +256,7 @@ describe('CippDataTable', () => {
     expect(container.querySelector('table')).not.toBeNull()
   })
 
-  // slot semantics: cross-type table preset switch clears the outgoing type (upstream-findings #28)
+  // slot semantics: cross-type table preset switch clears the outgoing type
   it('column preset clears a stale global filter left by a legacy untyped preset', async () => {
     const userEvent = (await import('@testing-library/user-event')).default
     const user = userEvent.setup()

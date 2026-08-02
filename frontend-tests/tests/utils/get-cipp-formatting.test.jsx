@@ -110,7 +110,7 @@ describe('getCippFormatting (text mode)', () => {
 })
 
 describe('getCippFormatting (component mode)', () => {
-  it('ScheduledBackupValues cell tolerates rows missing the key (regression, finding #23)', () => {
+  it('ScheduledBackupValues cell tolerates rows missing the key', () => {
     // scheduler system-jobs view: scripted alert rows have no ScheduledBackupValues,
     // branch used to Object.keys(undefined) before the global null guard
     expect(() => getCippFormatting(undefined, 'Parameters.ScheduledBackupValues')).not.toThrow()

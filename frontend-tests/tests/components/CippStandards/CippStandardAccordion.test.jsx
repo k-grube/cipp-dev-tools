@@ -90,7 +90,7 @@ describe('CippStandardAccordion Set All Actions', () => {
       <Harness
         selected={{
           'standards.SPDirectSharing': true,
-          'standards.GhostStandardRemovedUpstream': true,
+          'standards.GhostStandardRemovedFromCatalog': true,
           'standards.AuditLog': true,
         }}
       />,
@@ -100,7 +100,7 @@ describe('CippStandardAccordion Set All Actions', () => {
 
     expect(capturedForm.getValues('standards.AuditLog.action')).toEqual([REPORT])
     expect(capturedForm.getValues('standards.SPDirectSharing.action')).toBeUndefined()
-    expect(capturedForm.getValues('standards.GhostStandardRemovedUpstream.action')).toBeUndefined()
+    expect(capturedForm.getValues('standards.GhostStandardRemovedFromCatalog.action')).toBeUndefined()
   })
 
   it('bulk apply keeps previously saved fields, configured standard stays configured', async () => {

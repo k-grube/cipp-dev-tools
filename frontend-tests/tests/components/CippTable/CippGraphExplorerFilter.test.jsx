@@ -79,8 +79,6 @@ describe('CippGraphExplorerFilter', () => {
     mockPresetList()
   })
 
-  // upstream-findings #35: rename+save keeps the old name in "Select a preset"
-  // until the selection is cleared
   it('selector shows the new name once the renamed preset list arrives', async () => {
     const user = userEvent.setup()
     renderWithProviders(<CippGraphExplorerFilter onSubmitFilter={vi.fn()} component="card" />)

@@ -119,5 +119,5 @@ describe('CippFormTenantSelector', () => {
 
   // no required-validator test: the component passes `validators` as a function and
   // CippFormComponent spreads it ({...fn} -> {}), so the rule is silently dropped.
-  // component bug, add the test when it's fixed upstream
+  // add the test when the component bug is fixed
 })

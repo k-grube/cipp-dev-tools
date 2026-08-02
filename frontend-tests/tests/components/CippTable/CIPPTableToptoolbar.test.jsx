@@ -5,10 +5,8 @@ import userEvent from '@testing-library/user-event'
 import { renderWithProviders, settingsWith } from '../../test-utils'
 import { CippDataTable } from '../../../src/components/CippTable/CippDataTable'
 
-// upstream-findings #34: saved preset doesn't appear in the Filters dropdown until
-// reload. the filterList effect deps on presetList.isSuccess only; a background
-// refetch after save-preset invalidation swaps data without an isSuccess
-// transition, so the dropdown never rebuilds
+// save-preset invalidation refetches presetList in the background (data swap, no
+// isSuccess transition), the Filters dropdown must rebuild from the refetched list
 
 vi.mock('../../../src/api/ApiCall', async () => (await import('../../mocks/api-call')).apiCallMock())
 import { api, getResult, paginatedResult, postResult } from '../../mocks/api-call'
