@@ -57,12 +57,15 @@ function mockPresetList() {
   const idleResult = { isSuccess: false, isFetching: false, data: undefined, refetch: vi.fn() }
   ApiGetCall.mockImplementation(({ queryKey }) => {
     if (queryKey === 'ListGraphExplorerPresets') {
-      return presetListResult
+      return currentPresetListResult ?? presetListResult
     }
     // propertyList and anything else stays idle
     return idleResult
   })
 }
+
+// tests can swap this to simulate the post-save invalidation refetch delivering new data
+let currentPresetListResult = null
 
 async function pickPreset(user, label) {
   await user.click(screen.getByRole('combobox', { name: 'Select a preset' }))
@@ -72,8 +75,34 @@ async function pickPreset(user, label) {
 describe('CippGraphExplorerFilter', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    currentPresetListResult = null
     mockPresetList()
   })
+
+  // upstream-findings #35: rename+save keeps the old name in "Select a preset"
+  // until the selection is cleared, the refreshed options never re-sync the value
+  it('selector label refreshes after a rename lands in the preset list', async () => {
+    const user = userEvent.setup()
+    renderWithProviders(<CippGraphExplorerFilter onSubmitFilter={vi.fn()} component="card" />)
+    await pickPreset(user, 'Saved Object Select')
+    await waitFor(() => {
+      expect(screen.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
+    })
+
+    // save-preset invalidation refetches with the new name, same id
+    currentPresetListResult = {
+      isSuccess: true,
+      isFetching: false,
+      data: { Results: [{ ...savedObjectSelect, name: 'Renamed Preset' }, savedStringArraySelect] },
+      refetch: vi.fn(),
+    }
+    // any form keystroke re-renders (watchedValues subscribes to the whole form), delivering the swap
+    await user.type(screen.getByRole('textbox', { name: 'Endpoint' }), 'x')
+
+    await waitFor(() => {
+      expect(screen.getByRole('combobox', { name: 'Select a preset' })).toHaveValue('Renamed Preset')
+    }, { timeout: 3000 })
+  }, 15000)
 
   describe('preset normalization into the form', () => {
     it('built-in preset with comma-string $select populates chips, endpoint, default version', async () => {
