@@ -80,7 +80,7 @@ describe('Graph Explorer page', () => {
     expect(
       await screen.findByText('Graph Explorer - All users with email addresses - testdomain.com')
     ).toBeInTheDocument()
-  })
+  }, 15000) // same contention budget as the view-toggle test, default 5000ms testTimeout kills it under full-suite load
 
   it('running a preset sends tenant and filter params to ListGraphRequest', async () => {
     const user = userEvent.setup()
@@ -100,5 +100,5 @@ describe('Graph Explorer page', () => {
         })
       )
     })
-  })
+  }, 15000) // same contention budget, see above
 })

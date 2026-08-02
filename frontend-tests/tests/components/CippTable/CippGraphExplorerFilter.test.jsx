@@ -108,7 +108,7 @@ describe('CippGraphExplorerFilter', () => {
 
     await waitFor(() => {
       expect(screen.getByRole('combobox', { name: 'Select a preset' })).toHaveValue('Renamed Preset')
-    }, { timeout: 3000 })
+    })
     expect(screen.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices/registeredOwners')
   }, 15000)
 

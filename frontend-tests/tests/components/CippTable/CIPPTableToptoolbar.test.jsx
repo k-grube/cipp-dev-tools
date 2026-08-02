@@ -100,7 +100,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       data: { Results: [{ id: 'p1', name: 'My Saved Preset', params: { endpoint: 'testWidgets' } }] },
     })
     await user.click(screen.getByRole('button', { name: 'Filters' }))
-    await screen.findByRole('menuitem', { name: 'My Saved Preset' }, { timeout: 3000 })
+    await screen.findByRole('menuitem', { name: 'My Saved Preset' })
   }, 15000)
 
   it('graph preset and column preset are both marked active', async () => {

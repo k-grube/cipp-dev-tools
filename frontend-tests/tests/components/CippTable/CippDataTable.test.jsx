@@ -279,7 +279,7 @@ describe('CippDataTable', () => {
     await user.click(await screen.findByRole('menuitem', { name: 'Legacy IT' }))
     await waitFor(() => {
       expect(screen.queryByText('1-3 of 3')).not.toBeInTheDocument()
-    }, { timeout: 3000 })
+    })
 
     // the column preset must not leave the stale global filter in place
     // Legacy IT preset is active here, button label is 'Filters (1)'
@@ -287,7 +287,7 @@ describe('CippDataTable', () => {
     await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
     await waitFor(() => {
       expect(screen.getByText('1-1 of 1')).toBeInTheDocument()
-    }, { timeout: 3000 })
+    })
   }, 20000)
 
   it('renders with conditional actions', () => {
