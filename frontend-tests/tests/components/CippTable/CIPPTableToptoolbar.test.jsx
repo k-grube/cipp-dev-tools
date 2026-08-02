@@ -138,4 +138,46 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
     })
   }, 15000)
+
+  it('clicking the active graph preset toggles it off and keeps the column filter', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+    })
+
+    // second click on the active graph preset = toggle off, column filter survives on base data
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await waitFor(() => {
+      // scope to the live accessible menu, same reason as the dual-slot pin above
+      const menu = within(screen.getByRole('menu'))
+      expect(menu.getAllByTestId('CheckIcon')).toHaveLength(1)
+    })
+    expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+  }, 20000)
+
+  it('clicking the active column preset toggles back to unfiltered rows', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+    })
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
+    })
+  }, 15000)
 })
