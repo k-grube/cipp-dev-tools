@@ -64,7 +64,7 @@ function mockPresetList() {
   })
 }
 
-// tests can swap this to simulate the post-save invalidation refetch delivering new data
+// tests swap this to simulate the post-save invalidation refetch delivering new data
 let currentPresetListResult = null
 
 async function pickPreset(user, label) {
@@ -80,8 +80,8 @@ describe('CippGraphExplorerFilter', () => {
   })
 
   // upstream-findings #35: rename+save keeps the old name in "Select a preset"
-  // until the selection is cleared, the refreshed options never re-sync the value
-  it('selector label refreshes after a rename lands in the preset list', async () => {
+  // until the selection is cleared
+  it('selector shows the new name once the renamed preset list arrives', async () => {
     const user = userEvent.setup()
     renderWithProviders(<CippGraphExplorerFilter onSubmitFilter={vi.fn()} component="card" />)
     await pickPreset(user, 'Saved Object Select')
@@ -89,19 +89,27 @@ describe('CippGraphExplorerFilter', () => {
       expect(screen.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
     })
 
-    // save-preset invalidation refetches with the new name, same id
+    const nameBox = screen.getByRole('textbox', { name: 'Preset Name' })
+    await user.clear(nameBox)
+    await user.type(nameBox, 'Renamed Preset')
+    // unsaved param edits must survive, display sync may not touch form state
+    const endpointBox = screen.getByRole('textbox', { name: 'Endpoint' })
+    await user.type(endpointBox, '/registeredOwners')
+    await user.click(screen.getByRole('button', { name: 'Save Preset' }))
+
+    // invalidation refetch lands the rename, same id; next keystroke re-renders the drawer
     currentPresetListResult = {
       isSuccess: true,
       isFetching: false,
       data: { Results: [{ ...savedObjectSelect, name: 'Renamed Preset' }, savedStringArraySelect] },
       refetch: vi.fn(),
     }
-    // any form keystroke re-renders (watchedValues subscribes to the whole form), delivering the swap
-    await user.type(screen.getByRole('textbox', { name: 'Endpoint' }), 'x')
+    await user.type(nameBox, '!')
 
     await waitFor(() => {
       expect(screen.getByRole('combobox', { name: 'Select a preset' })).toHaveValue('Renamed Preset')
     }, { timeout: 3000 })
+    expect(screen.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices/registeredOwners')
   }, 15000)
 
   describe('preset normalization into the form', () => {
