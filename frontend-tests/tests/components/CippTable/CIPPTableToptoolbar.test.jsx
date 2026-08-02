@@ -31,11 +31,6 @@ const tablePresets = [
 
 // stable refs per phase, fresh literals per call loop the data-sync effects
 const emptyPresets = getResult({ data: { Results: [] } })
-const savedPresets = getResult({
-  data: {
-    Results: [{ id: 'p1', name: 'My Saved Preset', params: { endpoint: 'testWidgets' } }],
-  },
-})
 const graphPresetResult = getResult({
   data: {
     Results: [
@@ -53,6 +48,12 @@ api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResul
 // key swap a graph preset causes, 'SlotsTest-<filterName>'), the #34 table keeps its 2-row one
 api.paginated = (opts) => (opts.queryKey?.startsWith('SlotsTest') ? slotsTableData : tableData)
 api.post = postResult()
+
+// swaps presetsResult with a fresh getResult() call, same identity-change a
+// background refetch produces (mechanism #34 needs, reused by the rename pin)
+function swapGraphPresets(overrides) {
+  presetsResult = getResult(overrides)
+}
 
 const graphTable = (
   <CippDataTable
@@ -97,7 +98,9 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     // save-preset invalidation refetches: same isSuccess, new data identity.
     // reopening the menu re-renders the toolbar, which is all a background
     // refetch does, and matches the real repro (reopening doesn't help)
-    presetsResult = savedPresets
+    swapGraphPresets({
+      data: { Results: [{ id: 'p1', name: 'My Saved Preset', params: { endpoint: 'testWidgets' } }] },
+    })
     await user.click(screen.getByRole('button', { name: 'Filters' }))
     await screen.findByRole('menuitem', { name: 'My Saved Preset' }, { timeout: 3000 })
   }, 15000)
@@ -257,4 +260,23 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     }, { timeout: 5000 })
     expect(screen.getByRole('button', { name: 'Filters (1)' })).toBeInTheDocument()
   })
+
+  it('renaming an applied graph preset keeps it marked active', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+
+    // rename lands via refetch, same id
+    swapGraphPresets({
+      data: { Results: [{ id: 'gp-1', name: 'Widget View v2', params: { endpoint: 'testWidgets', $filter: "state eq 'on'" } }] },
+    })
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    const renamed = await screen.findByRole('menuitem', { name: 'Widget View v2' })
+    await waitFor(() => {
+      expect(within(renamed).queryByTestId('CheckIcon')).not.toBeNull()
+    })
+  }, 15000)
 })
