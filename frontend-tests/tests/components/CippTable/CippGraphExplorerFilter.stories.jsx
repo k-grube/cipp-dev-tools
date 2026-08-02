@@ -45,18 +45,23 @@ export const AccordionComponent = {
 
 export const PresetSelected = {
   args: { component: 'card', onSubmitFilter: () => {} },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
     const combo = canvas.getByRole('combobox', { name: 'Select a preset' })
-    // combobox disabled while ListGraphExplorerPresets is in flight (CippAutocomplete.jsx disabled={... || isFetching}), same wait as CippAutocomplete.stories.jsx ApiDriven
-    await waitFor(async () => {
-      await expect(combo).toBeEnabled()
+    await step('pick the saved preset once the list loads', async () => {
+      // combobox disabled while ListGraphExplorerPresets is in flight (CippAutocomplete.jsx disabled={... || isFetching}), same wait as CippAutocomplete.stories.jsx ApiDriven
+      await waitFor(async () => {
+        await expect(combo).toBeEnabled()
+      })
+      await userEvent.click(combo)
+      const body = within(canvasElement.ownerDocument.body)
+      await userEvent.click(await body.findByRole('option', { name: 'Devices by name' }))
     })
-    await userEvent.click(combo)
-    const body = within(canvasElement.ownerDocument.body)
-    await userEvent.click(await body.findByRole('option', { name: 'Devices by name' }))
-    await waitFor(async () => {
-      await expect(canvas.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
+
+    await step('preset params hydrate the Endpoint field', async () => {
+      await waitFor(async () => {
+        await expect(canvas.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
+      })
     })
   },
 }
@@ -67,10 +72,12 @@ export const ToolbarPresetShape = {
     onSubmitFilter: () => {},
     selectedPreset: { id: 'saved-1', filterName: 'Devices by name', value: savedPreset.params, type: 'graph' },
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await waitFor(async () => {
-      await expect(canvas.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
+    await step('toolbar-shaped selectedPreset hydrates the Endpoint field', async () => {
+      await waitFor(async () => {
+        await expect(canvas.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices')
+      })
     })
   },
 }

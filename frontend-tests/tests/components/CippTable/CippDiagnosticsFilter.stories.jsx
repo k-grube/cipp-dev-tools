@@ -29,15 +29,17 @@ export const Default = {
   args: {
     onSubmitFilter: fn(),
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
 
-    await expect(canvas.getByText('Query')).toBeVisible()
-    await expect(canvas.getByText('Requirements')).toBeVisible()
+    await step('Query and Requirements sections render', async () => {
+      await expect(canvas.getByText('Query')).toBeVisible()
+      await expect(canvas.getByText('Requirements')).toBeVisible()
+    })
 
-    // Execute button should be disabled with no query
-    const executeButton = canvas.getByRole('button', { name: /execute query/i })
-    await expect(executeButton).toBeDisabled()
+    await step('Execute Query stays disabled while the query is empty', async () => {
+      await expect(canvas.getByRole('button', { name: /execute query/i })).toBeDisabled()
+    })
   },
 }
 
@@ -45,28 +47,27 @@ export const ExecuteQuery = {
   args: {
     onSubmitFilter: fn(),
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const canvas = within(canvasElement)
 
-    // Type a query into the KQL field
-    const queryInput = canvas.getByPlaceholderText(/enter your kql query/i)
-    await userEvent.click(queryInput)
-    await userEvent.type(queryInput, 'traces | where timestamp > ago(1h)')
-
-    // Execute button should now be enabled
-    const executeButton = canvas.getByRole('button', { name: /execute query/i })
-    await waitFor(() => {
-      expect(executeButton).toBeEnabled()
+    await step('typing a kql query enables Execute Query', async () => {
+      const queryInput = canvas.getByPlaceholderText(/enter your kql query/i)
+      await userEvent.click(queryInput)
+      await userEvent.type(queryInput, 'traces | where timestamp > ago(1h)')
+      await waitFor(() => {
+        expect(canvas.getByRole('button', { name: /execute query/i })).toBeEnabled()
+      })
     })
 
-    await userEvent.click(executeButton)
-
-    await waitFor(() => {
-      expect(args.onSubmitFilter).toHaveBeenCalledWith(
-        expect.objectContaining({
-          query: 'traces | where timestamp > ago(1h)',
-        })
-      )
+    await step('submit passes the query to onSubmitFilter', async () => {
+      await userEvent.click(canvas.getByRole('button', { name: /execute query/i }))
+      await waitFor(() => {
+        expect(args.onSubmitFilter).toHaveBeenCalledWith(
+          expect.objectContaining({
+            query: 'traces | where timestamp > ago(1h)',
+          })
+        )
+      })
     })
   },
 }
@@ -75,25 +76,24 @@ export const ClearQuery = {
   args: {
     onSubmitFilter: fn(),
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const canvas = within(canvasElement)
 
-    // Type a query
-    const queryInput = canvas.getByPlaceholderText(/enter your kql query/i)
-    await userEvent.click(queryInput)
-    await userEvent.type(queryInput, 'some query')
+    await step('type a query then hit Clear', async () => {
+      const queryInput = canvas.getByPlaceholderText(/enter your kql query/i)
+      await userEvent.click(queryInput)
+      await userEvent.type(queryInput, 'some query')
+      await userEvent.click(canvas.getByRole('button', { name: /clear/i }))
+    })
 
-    // Click clear
-    const clearButton = canvas.getByRole('button', { name: /clear/i })
-    await userEvent.click(clearButton)
-
-    // onSubmitFilter should be called with empty query
-    await waitFor(() => {
-      expect(args.onSubmitFilter).toHaveBeenCalledWith(
-        expect.objectContaining({
-          query: '',
-        })
-      )
+    await step('clear submits an empty query', async () => {
+      await waitFor(() => {
+        expect(args.onSubmitFilter).toHaveBeenCalledWith(
+          expect.objectContaining({
+            query: '',
+          })
+        )
+      })
     })
   },
 }

@@ -139,12 +139,14 @@ export const BasicUsage = {
     title: 'Basic User List',
     data: basicData,
   },
-  play: async ({ canvasElement }) => {
-    await waitFor(() => {
-      expect(canvasElement.textContent).toContain('Alice Smith')
+  play: async ({ canvasElement, step }) => {
+    await step('rows render from the data prop', async () => {
+      await waitFor(() => {
+        expect(canvasElement.textContent).toContain('Alice Smith')
+      })
+      expect(canvasElement.textContent).toContain('bob@contoso.com')
+      expect(canvasElement.textContent).toContain('HR')
     })
-    expect(canvasElement.textContent).toContain('bob@contoso.com')
-    expect(canvasElement.textContent).toContain('HR')
   },
 }
 
@@ -240,24 +242,29 @@ export const WithActions = {
       },
     ],
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const root = within(document.body)
 
-    await waitFor(() => {
-      const icons = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')
-      expect(icons.length).toBeGreaterThan(0)
+    await step('open the first row action menu', async () => {
+      await waitFor(() => {
+        const icons = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')
+        expect(icons.length).toBeGreaterThan(0)
+      })
+      const actionButton = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')[0].closest('button')
+      await userEvent.click(actionButton)
     })
 
-    const actionButton = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')[0].closest('button')
-    await userEvent.click(actionButton)
-
-    await waitFor(() => {
-      expect(root.getByText('View User')).toBeVisible()
+    await step('menu lists the actions', async () => {
+      await waitFor(() => {
+        expect(root.getByText('View User')).toBeVisible()
+      })
+      await expect(root.getByText('Delete User')).toBeVisible()
     })
-    await expect(root.getByText('Delete User')).toBeVisible()
 
-    await userEvent.click(root.getByText('View User'))
-    await expect(args.actions[0].customFunction).toHaveBeenCalledTimes(1)
+    await step('View User runs its customFunction', async () => {
+      await userEvent.click(root.getByText('View User'))
+      await expect(args.actions[0].customFunction).toHaveBeenCalledTimes(1)
+    })
   },
 }
 
@@ -331,19 +338,22 @@ export const WithFilters = {
       },
     ],
   },
-  play: async ({ canvasElement }) => {
-    await waitFor(() => {
-      const rows = canvasElement.querySelectorAll('tbody tr')
-      expect(rows.length).toBeGreaterThan(0)
+  play: async ({ canvasElement, step }) => {
+    await step('rows render', async () => {
+      await waitFor(() => {
+        const rows = canvasElement.querySelectorAll('tbody tr')
+        expect(rows.length).toBeGreaterThan(0)
+      })
     })
 
-    // filter applied via initialState -> only Engineering rows survive
-    await waitFor(() => {
-      expect(canvasElement.textContent).toContain('Engineering')
+    await step('initialState filter leaves only Engineering rows', async () => {
+      await waitFor(() => {
+        expect(canvasElement.textContent).toContain('Engineering')
+      })
+      for (const dept of ['Sales', 'Marketing', 'Finance', 'Legal']) {
+        expect(canvasElement.textContent).not.toContain(dept)
+      }
     })
-    for (const dept of ['Sales', 'Marketing', 'Finance', 'Legal']) {
-      expect(canvasElement.textContent).not.toContain(dept)
-    }
   },
 }
 
@@ -354,12 +364,14 @@ export const LoadingState = {
     isFetching: true,
     simpleColumns: ['displayName', 'mail', 'department'],
   },
-  play: async ({ canvasElement }) => {
-    await waitFor(() => {
-      const skeletons = canvasElement.querySelectorAll('.MuiSkeleton-root')
-      expect(skeletons.length).toBeGreaterThan(0)
+  play: async ({ canvasElement, step }) => {
+    await step('isFetching renders skeletons, no row text', async () => {
+      await waitFor(() => {
+        const skeletons = canvasElement.querySelectorAll('.MuiSkeleton-root')
+        expect(skeletons.length).toBeGreaterThan(0)
+      })
+      expect(canvasElement.textContent).not.toContain('Alice Smith')
     })
-    expect(canvasElement.textContent).not.toContain('Alice Smith')
   },
 }
 
@@ -370,16 +382,18 @@ export const DefaultSorting = {
     simpleColumns: ['displayName', 'createdDateTime', 'department', 'Status'],
     defaultSorting: [{ id: 'createdDateTime', desc: true }],
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     // dateTimeNullsLast sorts on the raw ISO value -> newest createdDateTime first
     const expected = [...args.data].sort(
       (a, b) => new Date(b.createdDateTime) - new Date(a.createdDateTime)
     )[0]
 
-    await waitFor(() => {
-      const firstRow = canvasElement.querySelector('tbody tr')
-      expect(firstRow).not.toBeNull()
-      expect(firstRow.textContent).toContain(expected.displayName)
+    await step('newest createdDateTime row sorts first', async () => {
+      await waitFor(() => {
+        const firstRow = canvasElement.querySelector('tbody tr')
+        expect(firstRow).not.toBeNull()
+        expect(firstRow.textContent).toContain(expected.displayName)
+      })
     })
   },
 }
@@ -407,27 +421,29 @@ export const WithConditionalActions = {
       },
     ],
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const root = within(document.body)
 
-    await waitFor(() => {
-      const icons = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')
-      expect(icons.length).toBeGreaterThan(0)
+    await step('open the first row action menu', async () => {
+      await waitFor(() => {
+        const icons = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')
+        expect(icons.length).toBeGreaterThan(0)
+      })
+      const actionButton = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')[0].closest('button')
+      await userEvent.click(actionButton)
     })
 
-    // no sorting -> first menu button belongs to args.data[0]
-    const firstRow = args.data[0]
-    const actionButton = canvasElement.querySelectorAll('[data-testid="MoreHorizIcon"]')[0].closest('button')
-    await userEvent.click(actionButton)
-
-    // failed conditions render the action disabled, not hidden
-    const enabledLabel = firstRow.accountEnabled ? 'Block Sign-in' : 'Enable Account'
-    const disabledLabel = firstRow.accountEnabled ? 'Enable Account' : 'Block Sign-in'
-    await waitFor(() => {
-      expect(root.getByRole('menuitem', { name: enabledLabel })).toBeVisible()
+    await step('failed condition renders the action disabled, not hidden', async () => {
+      // no sorting -> first menu button belongs to args.data[0]
+      const firstRow = args.data[0]
+      const enabledLabel = firstRow.accountEnabled ? 'Block Sign-in' : 'Enable Account'
+      const disabledLabel = firstRow.accountEnabled ? 'Enable Account' : 'Block Sign-in'
+      await waitFor(() => {
+        expect(root.getByRole('menuitem', { name: enabledLabel })).toBeVisible()
+      })
+      await expect(root.getByRole('menuitem', { name: enabledLabel })).not.toHaveAttribute('aria-disabled')
+      await expect(root.getByRole('menuitem', { name: disabledLabel })).toHaveAttribute('aria-disabled', 'true')
     })
-    await expect(root.getByRole('menuitem', { name: enabledLabel })).not.toHaveAttribute('aria-disabled')
-    await expect(root.getByRole('menuitem', { name: disabledLabel })).toHaveAttribute('aria-disabled', 'true')
   },
 }
 
@@ -451,19 +467,24 @@ export const GraphBackedEditFilters = {
     api: { url: '/api/ListGraphRequest', dataKey: 'Results' },
     simpleColumns: ['userPrincipalName', 'mail'],
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    // getByText('a@x.com') multi-matches (upn + mail cells, plus exact:false substring-matches row text) -> assert via textContent
-    await waitFor(async () => {
-      expect(canvasElement.textContent).toContain('a@x.com')
+    await step('table loads from ListGraphRequest', async () => {
+      // getByText('a@x.com') multi-matches (upn + mail cells, plus exact:false substring-matches row text) -> assert via textContent
+      await waitFor(async () => {
+        expect(canvasElement.textContent).toContain('a@x.com')
+      })
     })
-    // desktop toolbar's own "Filters" button (ModernButton, plain text, no Tooltip) - exact match avoids catching an MRT-native filter toggle if one is added
-    const filterButton = await canvas.findByRole('button', { name: 'Filters' })
-    await userEvent.click(filterButton)
-    const body = within(canvasElement.ownerDocument.body)
-    await userEvent.click(await body.findByRole('menuitem', { name: 'Edit filters' }))
-    await waitFor(async () => {
-      await expect(body.getByRole('button', { name: 'Apply Filter' })).toBeVisible()
+
+    await step('Filters menu opens the edit-filters drawer', async () => {
+      // desktop toolbar's own "Filters" button (ModernButton, plain text, no Tooltip) - exact match avoids catching an MRT-native filter toggle if one is added
+      const filterButton = await canvas.findByRole('button', { name: 'Filters' })
+      await userEvent.click(filterButton)
+      const body = within(canvasElement.ownerDocument.body)
+      await userEvent.click(await body.findByRole('menuitem', { name: 'Edit filters' }))
+      await waitFor(async () => {
+        await expect(body.getByRole('button', { name: 'Apply Filter' })).toBeVisible()
+      })
     })
   },
 }

@@ -70,18 +70,22 @@ export const WithActions = {
       },
     ],
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByText('Delete User'))
-
-    // dialog renders in a portal outside canvasElement, fades in
-    const body = within(canvasElement.ownerDocument.body)
-    await waitFor(() => {
-      expect(body.getByText('Confirmation')).toBeVisible()
+    await step('click the Delete User action', async () => {
+      await userEvent.click(canvas.getByText('Delete User'))
     })
-    await expect(
-      body.getByText('Are you sure you want to delete alice@contoso.com?')
-    ).toBeVisible()
+
+    await step('confirm dialog substitutes [userPrincipalName] into confirmText', async () => {
+      // dialog renders in a portal outside canvasElement, fades in
+      const body = within(canvasElement.ownerDocument.body)
+      await waitFor(() => {
+        expect(body.getByText('Confirmation')).toBeVisible()
+      })
+      await expect(
+        body.getByText('Are you sure you want to delete alice@contoso.com?')
+      ).toBeVisible()
+    })
   },
 }
 

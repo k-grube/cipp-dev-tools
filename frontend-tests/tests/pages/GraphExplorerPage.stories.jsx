@@ -27,20 +27,25 @@ export default meta
 export const TableMode = {}
 
 export const PresetRun = {
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
     const combo = canvas.getByRole('combobox', { name: 'Select a query' })
-    // combobox disabled while ListGraphExplorerPresets is in flight, same wait as CippGraphExplorerSimpleFilter.stories.jsx PresetPickedAndRun
-    await waitFor(async () => {
-      await expect(combo).toBeEnabled()
+    await step('pick a built-in preset and run it', async () => {
+      // combobox disabled while ListGraphExplorerPresets is in flight, same wait as CippGraphExplorerSimpleFilter.stories.jsx PresetPickedAndRun
+      await waitFor(async () => {
+        await expect(combo).toBeEnabled()
+      })
+      await userEvent.click(combo)
+      const body = within(canvasElement.ownerDocument.body)
+      await userEvent.click(await body.findByRole('option', { name: 'All users with email addresses' }))
+      await userEvent.click(canvas.getByRole('button', { name: 'Run' }))
     })
-    await userEvent.click(combo)
-    const body = within(canvasElement.ownerDocument.body)
-    await userEvent.click(await body.findByRole('option', { name: 'All users with email addresses' }))
-    await userEvent.click(canvas.getByRole('button', { name: 'Run' }))
-    // getByText('a@x.com') multi-matches (upn + mail cells, plus exact:false substring-matches row text) -> assert via textContent
-    await waitFor(async () => {
-      expect(canvasElement.textContent).toContain('a@x.com')
+
+    await step('table shows the mocked ListGraphRequest rows', async () => {
+      // getByText('a@x.com') multi-matches (upn + mail cells, plus exact:false substring-matches row text) -> assert via textContent
+      await waitFor(async () => {
+        expect(canvasElement.textContent).toContain('a@x.com')
+      })
     })
   },
 }

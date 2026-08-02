@@ -27,21 +27,24 @@ export const ObjectData = {
     },
     tableTitle: 'User Details',
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByRole('button'))
-
-    const root = within(document.body)
-    await waitFor(() => {
-      expect(root.getByRole('dialog')).toBeVisible()
+    await step('button opens the details dialog', async () => {
+      await userEvent.click(canvas.getByRole('button'))
+      const root = within(document.body)
+      await waitFor(() => {
+        expect(root.getByRole('dialog')).toBeVisible()
+      })
     })
 
-    // object keys run through getCippTranslation -> 'userPrincipalName' becomes 'User Principal Name'
-    const dialog = within(root.getByRole('dialog'))
-    await waitFor(() => {
-      expect(dialog.getByText('User Principal Name')).toBeVisible()
+    await step('object keys render translated', async () => {
+      // object keys run through getCippTranslation -> 'userPrincipalName' becomes 'User Principal Name'
+      const dialog = within(within(document.body).getByRole('dialog'))
+      await waitFor(() => {
+        expect(dialog.getByText('User Principal Name')).toBeVisible()
+      })
+      await expect(dialog.getByText('john@example.com')).toBeVisible()
     })
-    await expect(dialog.getByText('john@example.com')).toBeVisible()
   },
 }
 

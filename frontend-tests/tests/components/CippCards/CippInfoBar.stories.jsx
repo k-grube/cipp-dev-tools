@@ -49,14 +49,18 @@ export const WithOffcanvas = {
       },
     ],
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByText('Blocked'))
+    await step('click the Blocked stat', async () => {
+      await userEvent.click(canvas.getByText('Blocked'))
+    })
 
-    // drawer renders in a portal outside canvasElement
-    const body = within(canvasElement.ownerDocument.body)
-    await expect(await body.findByText('bob@contoso.com')).toBeVisible()
-    await expect(body.getByText('Most Recent')).toBeVisible()
+    await step('drawer opens with the property items', async () => {
+      // drawer renders in a portal outside canvasElement
+      const body = within(canvasElement.ownerDocument.body)
+      await expect(await body.findByText('bob@contoso.com')).toBeVisible()
+      await expect(body.getByText('Most Recent')).toBeVisible()
+    })
   },
 }
 

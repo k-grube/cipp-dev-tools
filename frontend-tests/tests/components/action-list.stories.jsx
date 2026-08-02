@@ -36,22 +36,26 @@ export const WithActions = {
       />,
     ],
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
 
-    await expect(canvas.getByText('Mark as Paid')).toBeVisible()
-    await expect(canvas.getByText('Duplicate Order')).toBeVisible()
-    await expect(canvas.getByText('Request a Refund')).toBeVisible()
+    await step('all three actions render as buttons', async () => {
+      await expect(canvas.getByText('Mark as Paid')).toBeVisible()
+      await expect(canvas.getByText('Duplicate Order')).toBeVisible()
+      await expect(canvas.getByText('Request a Refund')).toBeVisible()
+      await expect(canvas.getAllByRole('button')).toHaveLength(3)
+    })
 
-    const buttons = canvas.getAllByRole('button')
-    await expect(buttons).toHaveLength(3)
+    await step('disabled item exposes aria-disabled, enabled item does not', async () => {
+      const disabledButton = canvas.getByText('Duplicate Order').closest('[role="button"]')
+      await expect(disabledButton).toHaveAttribute('aria-disabled', 'true')
+      const enabledButton = canvas.getByText('Mark as Paid').closest('[role="button"]')
+      await expect(enabledButton).not.toHaveAttribute('aria-disabled', 'true')
+    })
 
-    const disabledButton = canvas.getByText('Duplicate Order').closest('[role="button"]')
-    await expect(disabledButton).toHaveAttribute('aria-disabled', 'true')
-
-    const enabledButton = canvas.getByText('Mark as Paid').closest('[role="button"]')
-    await expect(enabledButton).not.toHaveAttribute('aria-disabled', 'true')
-    await userEvent.click(enabledButton)
+    await step('enabled action accepts a click', async () => {
+      await userEvent.click(canvas.getByText('Mark as Paid').closest('[role="button"]'))
+    })
   },
 }
 

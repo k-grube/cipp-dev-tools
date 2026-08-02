@@ -106,10 +106,12 @@ export const Idle = {
     queryKey: 'storybook-idle',
     title: 'Queue Tracker',
   },
-  play: async ({ canvasElement }) => {
-    // Component returns null when no queueId, canvas should be empty
-    await new Promise((r) => setTimeout(r, 500))
-    expect(canvasElement.querySelector('button')).toBeNull()
+  play: async ({ canvasElement, step }) => {
+    await step('no queueId renders nothing', async () => {
+      // Component returns null when no queueId, canvas should be empty
+      await new Promise((r) => setTimeout(r, 500))
+      expect(canvasElement.querySelector('button')).toBeNull()
+    })
   },
 }
 
@@ -119,23 +121,23 @@ export const InProgress = {
     queryKey: 'storybook-running',
     title: 'Processing Users',
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const root = within(document.body)
 
-    // Wait for the icon button to appear (queue data loaded)
-    await waitFor(() => {
-      expect(canvasElement.querySelector('button')).not.toBeNull()
+    await step('tracker button appears once queue data loads', async () => {
+      await waitFor(() => {
+        expect(canvasElement.querySelector('button')).not.toBeNull()
+      })
+      await userEvent.click(canvasElement.querySelector('button'))
     })
 
-    // Click to open offcanvas
-    await userEvent.click(canvasElement.querySelector('button'))
-
-    // Verify running state content
-    await waitFor(() => {
-      expect(root.getByText('Processing Users')).toBeVisible()
+    await step('offcanvas shows running progress and the active task', async () => {
+      await waitFor(() => {
+        expect(root.getByText('Processing Users')).toBeVisible()
+      })
+      expect(root.getByText(/60\.0%/)).toBeVisible()
+      expect(root.getByText('Process user 7')).toBeVisible()
     })
-    expect(root.getByText(/60\.0%/)).toBeVisible()
-    expect(root.getByText('Process user 7')).toBeVisible()
   },
 }
 
@@ -145,22 +147,24 @@ export const Completed = {
     queryKey: 'storybook-done',
     title: 'User Processing',
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const root = within(document.body)
 
-    await waitFor(() => {
-      expect(canvasElement.querySelector('button')).not.toBeNull()
+    await step('open the tracker offcanvas', async () => {
+      await waitFor(() => {
+        expect(canvasElement.querySelector('button')).not.toBeNull()
+      })
+      await userEvent.click(canvasElement.querySelector('button'))
     })
 
-    await userEvent.click(canvasElement.querySelector('button'))
-
-    await waitFor(() => {
-      expect(root.getByText('User Processing')).toBeVisible()
-    })
-    expect(root.getByText(/100\.0%/)).toBeVisible()
-
-    await waitFor(() => {
-      expect(args.onQueueComplete).toHaveBeenCalled()
+    await step('shows 100% and fires onQueueComplete', async () => {
+      await waitFor(() => {
+        expect(root.getByText('User Processing')).toBeVisible()
+      })
+      expect(root.getByText(/100\.0%/)).toBeVisible()
+      await waitFor(() => {
+        expect(args.onQueueComplete).toHaveBeenCalled()
+      })
     })
   },
 }
@@ -171,18 +175,21 @@ export const Failed = {
     queryKey: 'storybook-failed',
     title: 'Failed Operation',
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const root = within(document.body)
 
-    await waitFor(() => {
-      expect(canvasElement.querySelector('button')).not.toBeNull()
+    await step('open the tracker offcanvas', async () => {
+      await waitFor(() => {
+        expect(canvasElement.querySelector('button')).not.toBeNull()
+      })
+      await userEvent.click(canvasElement.querySelector('button'))
     })
 
-    await userEvent.click(canvasElement.querySelector('button'))
-
-    await waitFor(() => {
-      expect(root.getByText('Failed Operation')).toBeVisible()
+    await step('shows the failed operation and its failed task', async () => {
+      await waitFor(() => {
+        expect(root.getByText('Failed Operation')).toBeVisible()
+      })
+      expect(root.getByText('Process user 3')).toBeVisible()
     })
-    expect(root.getByText('Process user 3')).toBeVisible()
   },
 }

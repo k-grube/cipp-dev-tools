@@ -26,31 +26,38 @@ export const Default = {
 
 export const EditDrawerOpen = {
   args: { onSubmitFilter: () => {}, viewMode: 'table', onViewModeChange: () => {} },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByRole('button', { name: 'Edit Query' }))
-    const body = within(canvasElement.ownerDocument.body)
-    await waitFor(async () => {
-      await expect(body.getByRole('button', { name: 'Apply Filter' })).toBeVisible()
+    await step('Edit Query opens the drawer with Apply Filter', async () => {
+      await userEvent.click(canvas.getByRole('button', { name: 'Edit Query' }))
+      const body = within(canvasElement.ownerDocument.body)
+      await waitFor(async () => {
+        await expect(body.getByRole('button', { name: 'Apply Filter' })).toBeVisible()
+      })
     })
   },
 }
 
 export const PresetPickedAndRun = {
   args: { onSubmitFilter: () => {}, viewMode: 'table', onViewModeChange: () => {} },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
     const combo = canvas.getByRole('combobox', { name: 'Select a query' })
-    // combobox disabled while ListGraphExplorerPresets is in flight (CippAutocomplete.jsx disabled={... || isFetching}), same wait as CippGraphExplorerFilter.stories.jsx PresetSelected
-    await waitFor(async () => {
-      await expect(combo).toBeEnabled()
+    await step('pick a built-in preset once the list loads', async () => {
+      // combobox disabled while ListGraphExplorerPresets is in flight (CippAutocomplete.jsx disabled={... || isFetching}), same wait as CippGraphExplorerFilter.stories.jsx PresetSelected
+      await waitFor(async () => {
+        await expect(combo).toBeEnabled()
+      })
+      await userEvent.click(combo)
+      const body = within(canvasElement.ownerDocument.body)
+      await userEvent.click(await body.findByRole('option', { name: 'All users with email addresses' }))
     })
-    await userEvent.click(combo)
-    const body = within(canvasElement.ownerDocument.body)
-    await userEvent.click(await body.findByRole('option', { name: 'All users with email addresses' }))
-    await waitFor(async () => {
-      await expect(canvas.getByRole('button', { name: 'Run' })).toBeEnabled()
+
+    await step('Run enables and accepts the click', async () => {
+      await waitFor(async () => {
+        await expect(canvas.getByRole('button', { name: 'Run' })).toBeEnabled()
+      })
+      await userEvent.click(canvas.getByRole('button', { name: 'Run' }))
     })
-    await userEvent.click(canvas.getByRole('button', { name: 'Run' }))
   },
 }

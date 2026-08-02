@@ -50,9 +50,11 @@ export const CustomButton = {
     linkText: 'Click Me',
     onButtonClick: fn(),
   },
-  play: async ({ canvasElement, args }) => {
+  play: async ({ canvasElement, args, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByRole('button', { name: /Click Me/i }))
-    await expect(args.onButtonClick).toHaveBeenCalled()
+    await step('custom button click fires onButtonClick', async () => {
+      await userEvent.click(canvas.getByRole('button', { name: /Click Me/i }))
+      await expect(args.onButtonClick).toHaveBeenCalled()
+    })
   },
 }

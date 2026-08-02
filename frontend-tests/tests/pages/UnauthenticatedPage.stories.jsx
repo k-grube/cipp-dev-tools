@@ -29,13 +29,14 @@ export const AccessDenied = {
       ],
     },
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await waitFor(() => {
-      expect(canvas.getByText('Access Denied')).toBeInTheDocument()
+    await step('access denied page renders with a Login link', async () => {
+      await waitFor(() => {
+        expect(canvas.getByText('Access Denied')).toBeInTheDocument()
+      })
+      await expect(canvas.getByText('Permission Denied')).toBeInTheDocument()
+      await expect(canvas.getByRole('link', { name: /Login/i })).toBeInTheDocument()
     })
-    await expect(canvas.getByText('Permission Denied')).toBeInTheDocument()
-    const loginButton = canvas.getByRole('link', { name: /Login/i })
-    await expect(loginButton).toBeInTheDocument()
   },
 }

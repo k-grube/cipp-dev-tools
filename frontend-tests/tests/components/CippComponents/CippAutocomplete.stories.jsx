@@ -28,13 +28,15 @@ export const MultiMode = {
 
 export const Creatable = {
   args: { multiple: false, label: 'Type to add', options: OPTIONS, onChange: () => {} },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await userEvent.type(canvas.getByRole('combobox'), 'zzz')
-    // popup renders in a portal outside canvasElement
-    const body = within(canvasElement.ownerDocument.body)
-    await waitFor(async () => {
-      await expect(body.getByRole('option', { name: 'Add option: "zzz"' })).toBeVisible()
+    await step('typing an unknown value offers an Add option', async () => {
+      await userEvent.type(canvas.getByRole('combobox'), 'zzz')
+      // popup renders in a portal outside canvasElement
+      const body = within(canvasElement.ownerDocument.body)
+      await waitFor(async () => {
+        await expect(body.getByRole('option', { name: 'Add option: "zzz"' })).toBeVisible()
+      })
     })
   },
 }
@@ -74,15 +76,20 @@ export const ApiDriven = {
     onChange: () => {},
     api: { url: '/api/ListUsers', labelField: 'displayName', valueField: 'id', dataKey: 'Results', queryKey: 'story-users' },
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await waitFor(async () => {
-      await expect(canvas.getByRole('combobox')).toBeEnabled()
+    await step('combobox enables once the api load lands', async () => {
+      await waitFor(async () => {
+        await expect(canvas.getByRole('combobox')).toBeEnabled()
+      })
     })
-    await userEvent.click(canvas.getByRole('combobox'))
-    const body = within(canvasElement.ownerDocument.body)
-    await waitFor(async () => {
-      await expect(body.getByRole('option', { name: 'Alice Example' })).toBeVisible()
+
+    await step('options come from the mocked ListUsers response', async () => {
+      await userEvent.click(canvas.getByRole('combobox'))
+      const body = within(canvasElement.ownerDocument.body)
+      await waitFor(async () => {
+        await expect(body.getByRole('option', { name: 'Alice Example' })).toBeVisible()
+      })
     })
   },
 }

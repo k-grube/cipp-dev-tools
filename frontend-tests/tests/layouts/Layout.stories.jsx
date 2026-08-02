@@ -71,18 +71,21 @@ export const Default = {
       </div>
     ),
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
-    await expect(canvas.getByText('Dashboard Content')).toBeInTheDocument()
+    await step('children render in the content area', async () => {
+      await expect(canvas.getByText('Dashboard Content')).toBeInTheDocument()
+    })
 
-    // menu-config + permission filtering must leave known items in the side nav
-    await waitFor(() => {
-      expect(canvasElement.querySelector('[data-tutorial="side-nav"]')).not.toBeNull()
+    await step('side nav keeps known items after permission filtering', async () => {
+      await waitFor(() => {
+        expect(canvasElement.querySelector('[data-tutorial="side-nav"]')).not.toBeNull()
+      })
+      const sideNav = within(canvasElement.querySelector('[data-tutorial="side-nav"]'))
+      await waitFor(() => {
+        expect(sideNav.getByText('Dashboard')).toBeInTheDocument()
+      })
+      await expect(sideNav.getByText('Identity Management')).toBeInTheDocument()
     })
-    const sideNav = within(canvasElement.querySelector('[data-tutorial="side-nav"]'))
-    await waitFor(() => {
-      expect(sideNav.getByText('Dashboard')).toBeInTheDocument()
-    })
-    await expect(sideNav.getByText('Identity Management')).toBeInTheDocument()
   },
 }
