@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Table, TableBody, TableCell, TableHead, TableRow, Typography, Paper } from '@mui/material'
+import { expect, within } from 'storybook/test'
 import { getCippFormatting } from '../../../src/utils/get-cipp-formatting'
 
 const FormattingShowcase = ({ cases }) => (
@@ -56,6 +57,16 @@ export const SpecialFields = {
       { cellName: 'delegatedPrivilegeStatus', data: 'gdap', description: 'GDAP tenant' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement)
+    await step('fixed labels for addrow, baseline, delegated privilege', async () => {
+      await expect(canvasElement.textContent).toContain('Download Baseline')
+      await expect(canvasElement.textContent).toContain('Direct Tenant')
+      await expect(canvasElement.textContent).toContain('GDAP Tenant')
+      // addrow: 'No data' in text cell + chip
+      expect(canvas.getAllByText('No data').length).toBeGreaterThanOrEqual(2)
+    })
+  },
 }
 
 export const SeverityAndStatus = {
@@ -86,6 +97,18 @@ export const SeverityAndStatus = {
       { cellName: 'complianceState', data: 'NonCompliant' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('array severity joins in text mode', async () => {
+      await expect(canvasElement.textContent).toContain('High, Medium, Low')
+    })
+
+    await step('status chips carry semantic colors', async () => {
+      expect(canvasElement.querySelector('.MuiChip-colorSuccess')).not.toBeNull()
+      expect(canvasElement.querySelector('.MuiChip-colorError')).not.toBeNull()
+      expect(canvasElement.querySelector('.MuiChip-colorWarning')).not.toBeNull()
+      expect(canvasElement.querySelector('.MuiChip-colorInfo')).not.toBeNull()
+    })
+  },
 }
 
 export const StateField = {
@@ -97,6 +120,15 @@ export const StateField = {
       { cellName: 'state', data: 'report-only', description: 'Alternate report only' },
       { cellName: 'state', data: 'CustomState', description: 'Unknown state' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement)
+    await step('state values normalize to display labels', async () => {
+      await expect(canvasElement.textContent).toContain('Enabled')
+      await expect(canvasElement.textContent).toContain('Disabled')
+      // both report-only spellings, each in text cell + chip (5th match is this row's description cell)
+      expect(canvas.getAllByText('Report Only').length).toBeGreaterThanOrEqual(4)
+    })
   },
 }
 
@@ -111,6 +143,18 @@ export const Booleans = {
       { cellName: 'someField', data: { enabled: true, date: '2026-04-10T10:00:00Z' }, description: 'Scheduled enabled' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('booleans render Yes/No text and check/cancel icons', async () => {
+      await expect(canvasElement.textContent).toContain('Yes')
+      await expect(canvasElement.textContent).toContain('No')
+      expect(canvasElement.querySelector('[data-testid="CheckIcon"]')).not.toBeNull()
+      expect(canvasElement.querySelector('[data-testid="CancelIcon"]')).not.toBeNull()
+    })
+
+    await step('enabled+date renders the scheduled variant', async () => {
+      await expect(canvasElement.textContent).toContain('Yes, Scheduled for')
+    })
+  },
 }
 
 export const DateTimeFields = {
@@ -123,6 +167,12 @@ export const DateTimeFields = {
       { cellName: 'customExpirationDate', data: '2025-06-15T00:00:00Z', description: 'Regex match' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('date fields render relative time in component mode', async () => {
+      await expect(canvasElement.textContent).toContain('1 hour ago')
+      await expect(canvasElement.textContent).toContain('5 minutes ago')
+    })
+  },
 }
 
 export const PasswordsAndSecrets = {
@@ -132,6 +182,14 @@ export const PasswordsAndSecrets = {
       { cellName: 'applicationSecret', data: 'abc-123-def-456', description: 'App secret' },
       { cellName: 'refreshToken', data: 'eyJhbGciOiJSUzI1NiIs...', description: 'Refresh token' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement)
+    await step('secret fields hide their value in text mode', async () => {
+      // 2 not 3: passwordItems lists camelCase 'breachPass' but the compare lowercases
+      // the cellName, so breachPass never matches and renders raw
+      expect(canvas.getAllByText('Password hidden')).toHaveLength(2)
+    })
   },
 }
 
@@ -146,6 +204,12 @@ export const PortalLinks = {
       { cellName: 'portal_security', data: 'https://security.microsoft.com', description: 'Security' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('each portal renders a new-tab icon link with its url', async () => {
+      expect(canvasElement.querySelectorAll('a[target="_blank"]')).toHaveLength(6)
+      expect(canvasElement.querySelector('a[href="https://entra.microsoft.com"]')).not.toBeNull()
+    })
+  },
 }
 
 export const BytesAndPercentages = {
@@ -159,6 +223,19 @@ export const BytesAndPercentages = {
       { cellName: 'LicenseMissingPercentage', data: 15, description: '15% missing (flipped)' },
       { cellName: 'ScorePercentage', data: 88, description: '88% score' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('bytes convert to two-decimal GB, null falls back to No data', async () => {
+      await expect(canvasElement.textContent).toContain('5.00 GB')
+      await expect(canvasElement.textContent).toContain('50.00 GB')
+      await expect(canvasElement.textContent).toContain('No data')
+    })
+
+    await step('scores render as percentages', async () => {
+      await expect(canvasElement.textContent).toContain('75%')
+      await expect(canvasElement.textContent).toContain('15%')
+      await expect(canvasElement.textContent).toContain('88%')
+    })
   },
 }
 
@@ -177,6 +254,20 @@ export const DomainAnalysis = {
       { cellName: 'ReportInterval', data: 604800, description: '7 days in seconds' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('DMARC shorthand expands to readable labels', async () => {
+      await expect(canvasElement.textContent).toContain('Strict')
+      await expect(canvasElement.textContent).toContain('Relaxed')
+      await expect(canvasElement.textContent).toContain('Authentication Failure')
+      await expect(canvasElement.textContent).toContain('No DMARC Action')
+    })
+
+    await step('Null provider maps to Unknown, intervals to days', async () => {
+      await expect(canvasElement.textContent).toContain('Unknown')
+      await expect(canvasElement.textContent).toContain('1 days')
+      await expect(canvasElement.textContent).toContain('7 days')
+    })
+  },
 }
 
 export const RepeatSchedules = {
@@ -187,6 +278,14 @@ export const RepeatSchedules = {
       { cellName: 'RepeatsEvery', data: '1w', description: 'Weekly' },
       { cellName: 'RepeatsEvery', data: '30m', description: 'Every 30 minutes' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('shorthand expands to Every N unit', async () => {
+      await expect(canvasElement.textContent).toContain('Every 1 day')
+      await expect(canvasElement.textContent).toContain('Every 4 hour')
+      await expect(canvasElement.textContent).toContain('Every 1 week')
+      await expect(canvasElement.textContent).toContain('Every 30 minutes')
+    })
   },
 }
 
@@ -200,6 +299,13 @@ export const TenantFields = {
       { cellName: 'Tenant', data: null, description: 'Null tenant' },
       { cellName: 'tenantFilter', data: 'contoso.com', description: 'Tenant filter' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('label objects and arrays flatten to labels', async () => {
+      await expect(canvasElement.textContent).toContain('Contoso Ltd')
+      await expect(canvasElement.textContent).toContain('contoso.com, fabrikam.com')
+      await expect(canvasElement.textContent).toContain('No data')
+    })
   },
 }
 
@@ -220,6 +326,18 @@ export const ArraysAndObjects = {
       { cellName: 'someField', data: { key1: 'val1', key2: 'val2' }, description: 'Generic object' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('proxyAddresses strip the smtp prefix and join', async () => {
+      await expect(canvasElement.textContent).toContain('alice@contoso.com, alice.smith@contoso.com')
+    })
+
+    await step('sku translates, display names and arrays join', async () => {
+      await expect(canvasElement.textContent).toContain('Microsoft 365 E3')
+      await expect(canvasElement.textContent).toContain('Alice,Bob')
+      await expect(canvasElement.textContent).toContain('FullAccess, SendAs')
+      await expect(canvasElement.textContent).toContain('tag1, tag2, tag3')
+    })
+  },
 }
 
 export const JSONStrings = {
@@ -231,6 +349,14 @@ export const JSONStrings = {
       { cellName: 'name', data: '["onlyOne"]', description: 'JSON single string' },
       { cellName: 'broken', data: '{invalid json', description: 'Invalid JSON fallback' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('json strings parse to joined arrays, booleans, quoted singles', async () => {
+      await expect(canvasElement.textContent).toContain('tag1, tag2, tag3')
+      await expect(canvasElement.textContent).toContain('Yes')
+      await expect(canvasElement.textContent).toContain('"onlyOne"')
+      expect(canvasElement.querySelector('[data-testid="CheckIcon"]')).not.toBeNull()
+    })
   },
 }
 
@@ -257,6 +383,20 @@ export const MiscFields = {
       { cellName: 'AutoMapUrl', data: '\\\\server\\share\\path', description: 'AutoMap UNC path' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('long hashes truncate at 15 chars, bulk users count', async () => {
+      await expect(canvasElement.textContent).toContain('ABCDEFGHIJKLMNO...')
+      await expect(canvasElement.textContent).toContain('5 new users to create')
+    })
+
+    await step('standard types, translation keys, html and links', async () => {
+      await expect(canvasElement.textContent).toContain('Drift Standard')
+      await expect(canvasElement.textContent).toContain('Classic Standard')
+      await expect(canvasElement.textContent).toContain('Account Enabled')
+      expect(canvasElement.querySelector('b')?.textContent).toBe('Bold')
+      expect(canvasElement.querySelector('a[href="https://example.com/path"]')).not.toBeNull()
+    })
+  },
 }
 
 export const ISODurations = {
@@ -267,15 +407,29 @@ export const ISODurations = {
       { cellName: 'deviceSetupDuration', data: 'PT2H15M30S', description: '2h 15m 30s' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('*Duration fields humanize from ISO 8601', async () => {
+      await expect(canvasElement.textContent).toContain('1 hour 30 minutes')
+      await expect(canvasElement.textContent).toContain('45 minutes')
+      await expect(canvasElement.textContent).toContain('2 hours 15 minutes 30 seconds')
+    })
+  },
 }
 
 export const ArrayOfJSONStrings = {
   args: {
     cases: [
       { cellName: 'configs', data: ['{"name":"policy1"}', '{"name":"policy2"}'], description: 'Array of JSON object strings' },
-      { cellName: 'simpleJsonArray', data: ['"tag1"', '"tag2"'], description: 'Array of JSON string values (parsed to strings)' },
+      { cellName: 'simpleJsonArray', data: ['"tag1"', '"tag2"'], description: 'Array of JSON string values (not parsed, quotes stay)' },
       { cellName: 'badJsonArray', data: ['{broken', '{also broken}'], description: 'Array of invalid JSON strings (catch branch)' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('quoted strings join unparsed, broken json falls back to raw join', async () => {
+      // '"tag1"' starts with a quote, not {/[, so the parse branch never runs, quotes stay
+      await expect(canvasElement.textContent).toContain('"tag1", "tag2"')
+      await expect(canvasElement.textContent).toContain('{broken, {also broken}')
+    })
   },
 }
 
@@ -291,6 +445,18 @@ export const CountriesAndRoles = {
       { cellName: 'CIPPAction', data: '{"label":"Single Action"}', description: 'Single JSON action' },
     ],
   },
+  play: async ({ canvasElement, step }) => {
+    await step('country codes resolve to names', async () => {
+      await expect(canvasElement.textContent).toContain('United States, United Kingdom, Germany')
+      await expect(canvasElement.textContent).toContain('France')
+    })
+
+    await step('role guids translate, CIPPAction labels join', async () => {
+      await expect(canvasElement.textContent).toContain('Global Administrator')
+      await expect(canvasElement.textContent).toContain('Enable User, Set Password')
+      await expect(canvasElement.textContent).toContain('Single Action')
+    })
+  },
 }
 
 export const ODataAndLocation = {
@@ -302,6 +468,13 @@ export const ODataAndLocation = {
       { cellName: 'status.errorCode', data: 50126, description: 'Sign-in error code' },
       { cellName: 'location', data: { geoCoordinates: { latitude: 47.6, longitude: -122.3 }, city: 'Seattle', state: 'WA' }, description: 'Location with coordinates' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('graph types and sign-in error codes translate', async () => {
+      await expect(canvasElement.textContent).toContain('Conditional Access Policy')
+      await expect(canvasElement.textContent).toContain('Success')
+      await expect(canvasElement.textContent).toContain('Invalid username or password')
+    })
   },
 }
 
@@ -315,6 +488,13 @@ export const ScheduleAndLicense = {
       { cellName: 'excludedTenants', data: ['tenant1.com', 'tenant2.com'], description: 'Excluded tenants array' },
       { cellName: 'excludedTenants', data: null, description: 'Null excluded tenants' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    await step('license states translate the sku, tenants join', async () => {
+      await expect(canvasElement.textContent).toContain('Microsoft 365 E3')
+      await expect(canvasElement.textContent).toContain('tenant1.com, tenant2.com')
+      await expect(canvasElement.textContent).toContain('No data')
+    })
   },
 }
 
@@ -330,5 +510,17 @@ export const NullAndFallbacks = {
       { cellName: 'anyField', data: { label: 'Option A', value: 'a' }, description: 'Autocomplete label/value' },
       { cellName: 'anyField', data: [{ label: 'X', value: 'x' }, { label: 'Y', value: 'y' }], description: 'Array of autocomplete' },
     ],
+  },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement)
+    await step('null-ish inputs fall back to No data', async () => {
+      expect(canvas.getAllByText('No data').length).toBeGreaterThanOrEqual(3)
+    })
+
+    await step('autocomplete shapes flatten to labels', async () => {
+      await expect(canvasElement.textContent).toContain('Option A')
+      await expect(canvasElement.textContent).toContain('X, Y')
+      await expect(canvasElement.textContent).toContain('tenant1, tenant2')
+    })
   },
 }
