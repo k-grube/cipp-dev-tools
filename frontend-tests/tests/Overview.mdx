@@ -31,8 +31,6 @@ tests/
     fixtures.js           # Producer-contract fixtures shared across test files
     handlers.js           # MSW request handlers for API mocking
     next-*.js             # Mocks for next/router, navigation, head, image, link, dynamic
-    node.js               # Node.js MSW server setup (for vitest unit tests)
-    fileMock.js           # Generic file import mock
     tiptap-extension-image.js  # Stub for mui-tiptap's uninstalled required peer
     users-1k.json         # Large dataset for table stories
   test-utils.jsx          # Shared render helpers for vitest unit tests
@@ -103,7 +101,7 @@ export const WithActions = {
 
 ## Mocking API Calls
 
-API mocks use MSW (Mock Service Worker). Handlers are defined in `tests/mocks/handlers.js`.
+Stories mock the API with MSW (Mock Service Worker). Handlers are defined in `tests/mocks/handlers.js`.
 
 ```js
 import { http, HttpResponse } from 'msw'
@@ -133,6 +131,9 @@ export const CustomApiResponse = {
   },
 }
 ```
+
+Unit tests don't go through MSW: they mock `src/api/ApiCall` with the shared factory in
+`tests/mocks/api-call.js`. Usage notes are at the top of that file.
 
 ## Components That Need Special Setup
 
