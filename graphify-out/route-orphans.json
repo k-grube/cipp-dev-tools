@@ -265,11 +265,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tools/community-repos/repo.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/pages/tools/custom-tests/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1361,6 +1356,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSitRulePackDetails.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippTemplateCatalog.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
