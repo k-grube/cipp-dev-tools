@@ -2,7 +2,7 @@ import React from 'react'
 import { describe, it, expect, vi } from 'vitest'
 import { screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { renderWithProviders } from '../../test-utils'
+import { renderWithProviders, settingsWith } from '../../test-utils'
 import { CippDataTable } from '../../../src/components/CippTable/CippDataTable'
 
 // upstream-findings #34: saved preset doesn't appear in the Filters dropdown until
@@ -64,7 +64,7 @@ const graphTable = (
   />
 )
 
-function renderGraphTable(extraProps = {}) {
+function renderGraphTable(extraProps = {}, options) {
   // pin the preset route here so renderGraphTable-based tests see 'Widget View'
   // regardless of what an earlier test left presetsResult pointing at
   presetsResult = graphPresetResult
@@ -76,7 +76,8 @@ function renderGraphTable(extraProps = {}) {
       filters={tablePresets}
       maxHeightOffset="100px"
       {...extraProps}
-    />
+    />,
+    options
   )
 }
 
@@ -220,4 +221,36 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       expect(screen.getByPlaceholderText('Search...')).toHaveValue('')
     })
   }, 15000)
+
+  it('restores both persisted slots and discards garbage global values', async () => {
+    renderGraphTable({}, {
+      settings: settingsWith({
+        persistFilters: true,
+        setLastUsedFilter: vi.fn(),
+        lastUsedFilters: {
+          // legacy single-slot shape with a non-string global value = the #28 garbage
+          '': { type: 'global', value: [{ id: 'department', value: 'IT' }], name: 'Legacy Garbage' },
+        },
+      }),
+    })
+    await screen.findByText('1-3 of 3')
+    // garbage discarded: table stays unfiltered, no active slot
+    expect(screen.queryByRole('button', { name: /Filters \(/ })).toBeNull()
+  })
+
+  it('restores a legacy column filter into the table slot', async () => {
+    renderGraphTable({}, {
+      settings: settingsWith({
+        persistFilters: true,
+        setLastUsedFilter: vi.fn(),
+        lastUsedFilters: {
+          '': { type: 'column', value: [{ id: 'department', value: 'IT' }], name: 'IT only' },
+        },
+      }),
+    })
+    await waitFor(() => {
+      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+    }, { timeout: 5000 })
+    expect(screen.getByRole('button', { name: 'Filters (1)' })).toBeInTheDocument()
+  })
 })
