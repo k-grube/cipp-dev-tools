@@ -110,7 +110,7 @@ describe('CippGraphExplorerFilter', () => {
       expect(screen.getByRole('combobox', { name: 'Select a preset' })).toHaveValue('Renamed Preset')
     })
     expect(screen.getByRole('textbox', { name: 'Endpoint' })).toHaveValue('/devices/registeredOwners')
-  }, 15000)
+  }, 30000)
 
   describe('preset normalization into the form', () => {
     it('built-in preset with comma-string $select populates chips, endpoint, default version', async () => {

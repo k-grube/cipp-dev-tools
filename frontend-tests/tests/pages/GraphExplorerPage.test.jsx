@@ -57,7 +57,7 @@ describe('Graph Explorer page', () => {
     expect(screen.getByRole('combobox', { name: 'Select a query' })).toHaveValue(
       'All users with email addresses'
     )
-  }, 15000) // heaviest test in the file (MRT mount + autocomplete remount + monaco Suspense); default 5000ms flakes under full-suite worker contention
+  }, 30000) // heaviest test in the file (MRT mount + autocomplete remount + monaco Suspense); default 5000ms flakes under full-suite worker contention
 
   it('warns when no tenant is selected in table mode', () => {
     renderWithProviders(<Page />, { settings: settingsWith({ currentTenant: null }) })
@@ -80,7 +80,7 @@ describe('Graph Explorer page', () => {
     expect(
       await screen.findByText('Graph Explorer - All users with email addresses - testdomain.com')
     ).toBeInTheDocument()
-  }, 15000) // same contention budget as the view-toggle test, default 5000ms testTimeout kills it under full-suite load
+  }, 30000) // same contention budget as the view-toggle test, default 5000ms testTimeout kills it under full-suite load
 
   it('running a preset sends tenant and filter params to ListGraphRequest', async () => {
     const user = userEvent.setup()
@@ -100,5 +100,5 @@ describe('Graph Explorer page', () => {
         })
       )
     })
-  }, 15000) // same contention budget, see above
+  }, 30000) // same contention budget, see above
 })

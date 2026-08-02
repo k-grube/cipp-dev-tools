@@ -53,6 +53,8 @@ const singletons = [
   '@monaco-editor/react',
   // @storybook/react's preset.js statically imports typescript despite being an optional peer dep, throws without it and kills renderToCanvas for every story
   'typescript',
+  // optimizeDeps.include resolves from this root, junction so the browser-project pre-bundle works instead of a mid-run re-optimize
+  'material-react-table',
 ]
 
 for (const pkg of singletons) {

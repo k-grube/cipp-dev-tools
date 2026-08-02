@@ -101,7 +101,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     })
     await user.click(screen.getByRole('button', { name: 'Filters' }))
     await screen.findByRole('menuitem', { name: 'My Saved Preset' })
-  }, 15000)
+  }, 30000)
 
   it('graph preset and column preset are both marked active', async () => {
     const user = userEvent.setup()
@@ -119,7 +119,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       const menu = within(screen.getByRole('menu'))
       expect(menu.getAllByTestId('CheckIcon').length).toBeGreaterThanOrEqual(2)
     })
-  }, 15000)
+  }, 30000)
 
   it('applying a graph preset keeps the column filter applied', async () => {
     const user = userEvent.setup()
@@ -138,7 +138,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     await waitFor(() => {
       expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
     })
-  }, 15000)
+  }, 30000)
 
   it('clicking the active graph preset toggles it off and keeps the column filter', async () => {
     const user = userEvent.setup()
@@ -180,7 +180,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     await waitFor(() => {
       expect(screen.getByText('1-3 of 3')).toBeInTheDocument()
     })
-  }, 15000)
+  }, 30000)
 
   it('renders exactly one Filters menu with sections when both kinds exist', async () => {
     const user = userEvent.setup()
@@ -193,7 +193,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     expect(document.querySelectorAll('.MuiMenu-paper').length).toBe(1)
     expect(screen.getByText('Graph filters')).toBeInTheDocument()
     expect(screen.getByText('Table filters')).toBeInTheDocument()
-  }, 15000)
+  }, 30000)
 
   it('button shows the active slot count', async () => {
     const user = userEvent.setup()
@@ -207,7 +207,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     await waitFor(() => {
       expect(screen.getByRole('button', { name: 'Filters (2)' })).toBeInTheDocument()
     })
-  }, 15000)
+  }, 30000)
 
   it('reset all filters clears the search box text', async () => {
     const user = userEvent.setup()
@@ -220,7 +220,7 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     await waitFor(() => {
       expect(screen.getByPlaceholderText('Search...')).toHaveValue('')
     })
-  }, 15000)
+  }, 30000)
 
   it('restores both persisted slots and discards garbage global values', async () => {
     renderGraphTable({}, {
@@ -298,5 +298,5 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
     await waitFor(() => {
       expect(within(renamed).queryByTestId('CheckIcon')).not.toBeNull()
     })
-  }, 15000)
+  }, 30000)
 })
