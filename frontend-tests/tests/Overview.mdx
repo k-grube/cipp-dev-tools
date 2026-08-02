@@ -6,44 +6,35 @@ This Storybook documents the shared UI components used across the CIPP frontend.
 
 ```bash
 # Run Storybook dev server
-npm run storybook
+yarn storybook
 
 # Run all tests (unit + storybook)
-npm run test
+yarn test
 
 # Run only storybook tests
-npm run test:storybook
+yarn test:storybook
 
 # Run tests with coverage report
-npm run test:coverage
+yarn test:coverage
 ```
 
 ## Project Structure
 
 ```
 tests/
-  components/            # Stories and tests, mirroring src/components/
-    CippCards/            # Card component stories and tests
-    CippComponents/       # Shared component stories and tests
-    CippTable/            # Table component stories and tests
-    action-list.stories.jsx
-  fixtures/               # Shared mock data for stories
-    property-items.js     # Property list, banner list, info bar data
-    form-options.js       # Select/radio/autocomplete option arrays
+  components/             # Stories and tests, mirroring src/components/
   layouts/                # Layout stories and tests
-  mocks/                  # Next.js module mocks + MSW API handlers
-    next-router.js        # Mock useRouter()
-    next-navigation.js    # Mock usePathname(), useSearchParams()
-    next-head.js          # Mock Head component
-    next-image.js         # Mock Image component
-    next-link.js          # Mock Link component
-    handlers.js           # MSW request handlers for API mocking
-    users-1k.json         # Large dataset for table stories
-    fileMock.js           # Generic file import mock
-    node.js               # Node.js MSW server setup (for vitest unit tests)
   pages/                  # Page-level stories and tests
-  utils/
-    form-decorator.jsx    # Storybook decorator for react-hook-form
+  utils/                  # Tests for src/utils, plus form-decorator.jsx (react-hook-form decorator)
+  mocks/                  # Next.js module mocks, MSW handlers, shared fixtures
+    api-call.js           # vi.mock factory for src/api/ApiCall
+    fixtures.js           # Producer-contract fixtures shared across test files
+    handlers.js           # MSW request handlers for API mocking
+    next-*.js             # Mocks for next/router, navigation, head, image, link, dynamic
+    node.js               # Node.js MSW server setup (for vitest unit tests)
+    fileMock.js           # Generic file import mock
+    tiptap-extension-image.js  # Stub for mui-tiptap's uninstalled required peer
+    users-1k.json         # Large dataset for table stories
   test-utils.jsx          # Shared render helpers for vitest unit tests
   Overview.mdx            # This file
 ```
@@ -85,7 +76,7 @@ export const Loading = {
 ## Adding Interaction Tests (play functions)
 
 Stories can include `play()` functions to test user interactions. These run automatically
-in the Storybook UI and as vitest tests via `npm run test:storybook`.
+in the Storybook UI and as vitest tests via `yarn test:storybook`.
 
 ```jsx
 import { fn, within, expect, userEvent, waitFor } from 'storybook/test'
@@ -192,7 +183,7 @@ that provides `useRouter()` with stub methods (`push`, `back`, `replace`, etc.).
 - Testing callback arguments, error states, or complex form validation
 
 **Both contribute to coverage.** Play tests run in a real browser (Playwright), unit tests
-run in jsdom. Coverage from both is merged when you run `npm run test:coverage`.
+run in jsdom. Coverage from both is merged when you run `yarn test:coverage`.
 
 As a rule of thumb: if you're writing a story anyway, add a `play()` function to verify the
 key behavior. Only write a separate unit test if you need to cover edge cases or prop
@@ -201,7 +192,7 @@ combinations that don't warrant their own story.
 ## Writing Unit Tests (vitest)
 
 Unit tests live alongside stories in `tests/components/` with a `.test.jsx` extension.
-They run in jsdom via `npm run test`.
+They run in jsdom via `yarn test:unit`.
 
 ```jsx
 // File: tests/components/CippCards/MyComponent.test.jsx
@@ -239,7 +230,7 @@ esbuild loader to treat `.js` files as JSX.
 
 ### How storybook tests contribute to coverage
 The `@storybook/addon-vitest` plugin converts stories into vitest browser tests
-(Playwright/Chromium). Running `npm run test:coverage` includes both unit tests (jsdom) and
+(Playwright/Chromium). Running `yarn test:coverage` includes both unit tests (jsdom) and
 storybook tests (real browser), with coverage merged into a single report.
 
 ### Suppressed warnings explained
