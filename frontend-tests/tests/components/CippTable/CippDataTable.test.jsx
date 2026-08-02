@@ -256,8 +256,8 @@ describe('CippDataTable', () => {
     expect(container.querySelector('table')).not.toBeNull()
   })
 
-  // pins parked branch fix/table-preset-filter-reset, unskip when it lands (upstream-findings #28)
-  it.skip('column preset clears a stale global filter left by a legacy untyped preset', async () => {
+  // slot semantics: cross-type table preset switch clears the outgoing type (upstream-findings #28)
+  it('column preset clears a stale global filter left by a legacy untyped preset', async () => {
     const userEvent = (await import('@testing-library/user-event')).default
     const user = userEvent.setup()
     renderWithProviders(

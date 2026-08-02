@@ -49,8 +49,9 @@ const slotsTableData = paginatedResult(rows)
 
 let presetsResult = emptyPresets
 api.get = (opts) => (opts.url === '/api/ListGraphExplorerPresets' ? presetsResult : emptyGetResult)
-// route by queryKey: renderGraphTable's table gets the 3-row fixture, the #34 table keeps its 2-row one
-api.paginated = (opts) => (opts.queryKey === 'SlotsTest' ? slotsTableData : tableData)
+// route by queryKey: renderGraphTable's table gets the 3-row fixture (including the
+// key swap a graph preset causes, 'SlotsTest-<filterName>'), the #34 table keeps its 2-row one
+api.paginated = (opts) => (opts.queryKey?.startsWith('SlotsTest') ? slotsTableData : tableData)
 api.post = postResult()
 
 const graphTable = (
@@ -116,6 +117,25 @@ describe('CIPPTableToptoolbar - preset list refresh', () => {
       // (aria-hidden, unmount pending) and would otherwise double-count
       const menu = within(screen.getByRole('menu'))
       expect(menu.getAllByTestId('CheckIcon').length).toBeGreaterThanOrEqual(2)
+    })
+  }, 15000)
+
+  it('applying a graph preset keeps the column filter applied', async () => {
+    const user = userEvent.setup()
+    renderGraphTable()
+    await screen.findByText('1-3 of 3')
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'IT only' }))
+    await waitFor(() => {
+      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
+    })
+
+    await user.click(screen.getByRole('button', { name: /Filters/ }))
+    await user.click(await screen.findByRole('menuitem', { name: 'Widget View' }))
+    // same mocked rows come back under the swapped queryKey, column filter must survive
+    await waitFor(() => {
+      expect(screen.getByText('1-2 of 2')).toBeInTheDocument()
     })
   }, 15000)
 })
