@@ -36,7 +36,7 @@ vi.mock('@react-pdf/renderer', () => {
     PDFViewer: passthrough('div'),
     PDFDownloadLink: passthrough('div'),
     StyleSheet: { create: (styles) => styles },
-    Font: { register: () => {} },
+    Font: { register: () => {}, registerHyphenationCallback: () => {} },
     pdf: () => ({ toBlob: () => Promise.resolve(new Blob()) }),
   }
 })

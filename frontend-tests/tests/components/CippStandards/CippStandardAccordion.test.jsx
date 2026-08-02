@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { describe, it, expect, vi } from 'vitest'
 import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
@@ -27,7 +27,10 @@ let capturedForm
 
 const Harness = ({ selected, defaultValues, editMode = false }) => {
   const formControl = useForm({ mode: 'onBlur', defaultValues })
-  capturedForm = formControl
+  // react-hooks lint rejects outer reassignment in component bodies, assign in an effect
+  useEffect(() => {
+    capturedForm = formControl
+  }, [formControl])
   const [expanded, setExpanded] = useState(null)
   return (
     <CippStandardAccordion
