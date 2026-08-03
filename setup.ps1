@@ -3,6 +3,14 @@ param([switch]$SkipGraph)
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 
+# Share the Claude skills with Codex without maintaining a second copy.
+$agentsDir = Join-Path $root '.agents'
+$skillsLink = Join-Path $agentsDir 'skills'
+if (-not (Test-Path $skillsLink)) {
+    New-Item -ItemType Directory -Path $agentsDir -Force | Out-Null
+    New-Item -ItemType Junction -Path $skillsLink -Target (Join-Path $root '.claude\skills') | Out-Null
+}
+
 function Assert-Tool($name, $hint) {
     if (-not (Get-Command $name -ErrorAction SilentlyContinue)) {
         throw "missing prerequisite: $name -> $hint"

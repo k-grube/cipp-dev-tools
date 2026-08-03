@@ -21,6 +21,7 @@ docker-compose.override.yml
 .claude/skills/*
 !.claude/skills/cipp-dev-workflow/
 !.claude/skills/test-sweep/
+.agents/skills
 __pycache__/
 .venv/
 .superpowers/
