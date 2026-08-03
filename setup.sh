@@ -3,6 +3,12 @@
 set -euo pipefail
 root="$(cd "$(dirname "$0")" && pwd)"
 
+# Share the Claude skills with Codex without maintaining a second copy.
+mkdir -p "$root/.agents"
+if [ ! -e "$root/.agents/skills" ] && [ ! -L "$root/.agents/skills" ]; then
+    ln -s ../.claude/skills "$root/.agents/skills"
+fi
+
 need() {
     command -v "$1" >/dev/null 2>&1 || { echo "missing prerequisite: $1 -> $2" >&2; exit 1; }
 }
