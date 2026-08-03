@@ -106,25 +106,14 @@ init_fork_clone() { # upstream owner/repo, dest dir
 init_fork_clone 'CyberDrain/CIPP' 'CIPP'
 init_fork_clone 'CyberDrain/Craft' 'Craft'
 
-# frontend test harness (frontend-tests/ mirrors the unmerged CIPP frontend-tests branch)
-ft="$root/frontend-tests"
-if [ -f "$ft/package.json" ]; then
-    # singletons junction into the clone's node_modules, needs the yarn tree first
-    if [ ! -d "$root/CIPP/frontend/node_modules" ]; then
-        (cd "$root/CIPP/frontend" && yarn install --frozen-lockfile)
+# frontend tests live in CIPP/frontend (yarn test), chromium download is manual (scripts disabled repo-wide)
+(
+    cd "$root/CIPP/frontend"
+    if [ ! -d node_modules ]; then
+        yarn install --frozen-lockfile
     fi
-    (
-        cd "$ft"
-        # vitest as install sentinel, node_modules alone can be junctions-only
-        if [ ! -d node_modules/vitest ]; then
-            npm ci
-        fi
-        # after npm ci: replaces npm's real react/singleton copies with symlinks
-        node ensure-links.mjs
-        # postinstall disabled repo-wide, browser download is manual (idempotent)
-        npx playwright install chromium
-    )
-fi
+    npx playwright install chromium
+)
 
 # graphifyy needs python >=3.10
 py_ok() {

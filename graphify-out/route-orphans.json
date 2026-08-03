@@ -45,6 +45,11 @@
     "missing": "frontend node"
   },
   {
+    "file": "CIPP/frontend/src/data/standards-v3-mock-data.js",
+    "route": "standards",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/data/standards.json",
     "route": "ListAppApprovalTemplates",
     "missing": "frontend node"
@@ -337,6 +342,16 @@
   {
     "file": "CIPP/frontend/src/pages/tenant/tools/graph-explorer/index.js",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/standards-v3/alignment/index.js",
+    "route": "standards",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/standards-v3/templates/index.js",
+    "route": "standards",
     "missing": "backend node"
   },
   {

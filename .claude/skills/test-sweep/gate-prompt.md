@@ -4,7 +4,7 @@ run the full suite and report. do not fix anything.
 
 1. from `C:\github\cipp-dev-tools`, run `.\test.ps1{{UNIT_ONLY}}` (append ` --unit` unless any assignment used the storybook project).
 2. expected red = exactly these tests: {{EXPECTED_RED_JSON}} (accumulated red pins). anything else failing -> list it.
-3. rerun each unexpected-failure FILE solo once (`npx vitest run --project unit <file>` from `frontend-tests`); a file that passes solo is a contention flake, report it under flakes, not failures.
+3. rerun each unexpected-failure FILE solo once (`npx vitest run --project unit <file>` from `CIPP\frontend`); a file that passes solo is a contention flake, report it under flakes, not failures.
 4. capture total runtime.
 
 ## return (StructuredOutput)

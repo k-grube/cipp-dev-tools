@@ -13,12 +13,12 @@ multi-agent frontend test sweep. spec: `docs/superpowers/specs/2026-08-01-test-s
 - forbidden: render-smoke tests, snapshots, MUI-internal assertions, style assertions, synthetic producer rows (find the shipped producer or drop the target), per-call waitFor timeouts
 - fixtures match the real producer shape: read the backend ps1 / Craft C# / graph producer before writing the fixture. `spec/cipp-openapi-v2.json` helps, code is authoritative
 - nothing that needs the live dev stack
-- read `docs/toolchain-notes.md` before writing (jsdom/MRT/coverage traps), and `frontend-tests/tests/test-utils.jsx` for providers
+- read `docs/toolchain-notes.md` before writing (jsdom/MRT/coverage traps), and `CIPP/frontend/tests/test-utils.jsx` for providers
 - follow repo comment/style conventions: terse lowercase comments, no decorative markers, ASCII ->, braces on all control flow
 
 ## jsdom vs storybook
 
-quoted from CIPP `d21bf34d6:docs/dev-documentation/cipp-dev-guide/frontend-testing.md` (feat/frontend-tests branch; re-point to the merged doc once upstream merges the tests PR):
+quoted from CIPP `docs/dev-documentation/cipp-dev-guide/frontend-testing.md`:
 
 > - If you are asserting render branches, prop handling, text output, or utility functions, write a `.test.jsx` file in jsdom. These are fast, need no browser, and heavy child components can be mocked with `vi.mock`.
 > - If the component needs real layout, scrolling, portals, or browser APIs that jsdom can't fake (the Material React Table row virtualizer, drag interactions), write a story with a `play()` function that asserts the behavior. The storybook project runs every story in Chromium.
@@ -52,7 +52,7 @@ score = fan-in x (has crash-pattern or findings mention) x churn, zero coverage 
 ## run pipeline
 
 1. scout per mode above, update `backlog.json`
-2. take top 10-12 `pending` (sync first, then score), build assignments: `{file, failureMode, evidence, testPath, project}` where `testPath` mirrors existing layout (`frontend-tests/tests/components/...` / `tests/pages/...`) and `project` is `unit` or `storybook` per the placement rule
+2. take top 10-12 `pending` (sync first, then score), build assignments: `{file, failureMode, evidence, testPath, project}` where `testPath` mirrors existing layout (`CIPP/frontend/tests/components/...` / `tests/pages/...`) and `project` is `unit` or `storybook` per the placement rule
 3. read `writer-prompt.md`, `verifier-prompt.md`, `gate-prompt.md` from this skill dir; expand `{{POLICY}}` in writer-prompt.md with the "hard rules" and "jsdom vs storybook" sections of this skill before passing it; launch Workflow with `scriptPath: .claude/skills/test-sweep/workflow.js` and `args: {assignments, writerPrompt, verifierPrompt, gatePrompt, priorRedPins}` where `priorRedPins` = `[{file, name}]` rebuilt from backlog entries with status red-pin
 4. session-side after the workflow returns: append findings entries for `red-pin` results (continue existing numbering), update backlog statuses, advance `last-sync.txt` (sync mode, gate green), commit test files with a `test:` commit (backlog/findings/marker are local-only under docs\, never committed); any NEW test the gate flags as an unexpected failure is pulled and logged in the report, report per `routing` below
 

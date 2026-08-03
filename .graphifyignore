@@ -6,8 +6,6 @@
 /graphify-out
 /docs
 /.superpowers
-# temporary mirror of the unmerged feat/frontend-tests branch (src is a junction into CIPP)
-/frontend-tests
 # monorepo non-code
 /CIPP/build
 /CIPP/frontend/public
