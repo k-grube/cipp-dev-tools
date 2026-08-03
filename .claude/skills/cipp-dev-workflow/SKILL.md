@@ -18,7 +18,7 @@ How contributions flow from your fork of the CIPP monorepo to CyberDrain upstrea
 
 **PRs go to `upstream/dev`, never `main`** (`main` is release-only). This overrides any generic "PR to main" instinct.
 
-**Never run `git commit` or `git push` in `CIPP\` unless the user explicitly asks.** Prepare the changes, suggest a commit message, stop. Same for squash and force-push steps below: print the commands and message, let the user run them.
+**Never run `git commit`, `git push`, or `gh pr create` against `CIPP\`/upstream unless the user explicitly asks.** Prepare the changes, suggest the commands and message/PR body, stop. Same for squash, force-push, and branch-delete steps below: print the commands, let the user run them.
 
 ## Before grepping: the knowledge graph
 
@@ -61,7 +61,7 @@ Edit freely, run `graph-tools\update-graph.ps1` after changes. When a checkpoint
 
 ### 5. Test
 
-- frontend: exercise the UI against the local stack, `yarn lint` in `CIPP\frontend\`
+- frontend: **vitest coverage is expected for changed or added components.** Suite lives at `frontend\tests\`; placement rule: logic/render branches in jsdom `.test.jsx` (`unit` project), browser behavior (layout, portals, MRT virtualization) in story `play()` functions (`storybook` project). Run `yarn test` from `CIPP\frontend\` (both projects; needs `npx playwright install chromium` once), plus `yarn lint` and exercising the UI against the local stack. Conventions in `frontend/tests/Overview.mdx` + `docs/dev-documentation/cipp-dev-guide/frontend-testing.md`, gotchas in `docs\toolchain-notes.md` (workspace root). Bulk coverage backfill is a different job: that's `/test-sweep`, not this workflow.
 - backend: **Pester coverage is mandatory for any changed or added PowerShell function.** Tests live in `backend\Tests\` mirroring the module path (`Modules/CIPPCore/Public/Get-CIPPDrift.ps1` -> `Tests/Reports/Get-CIPPDrift.Tests.ps1`). Run via the repo runner:
 
 ```
@@ -82,7 +82,7 @@ git commit                            # one message with full what/why detail
 git push origin fix/<short-name>      # --force-with-lease if already pushed
 ```
 
-Then open the PR: `fix/<short-name>` -> `CyberDrain/CIPP` `dev`. Once it merges and `origin/dev` syncs back down (step 1's drift check), sweep branches (step 7).
+Then suggest the PR command (`fix/<short-name>` -> `CyberDrain/CIPP` `dev`) with a drafted title + body, and stop. **Never run `gh pr create` against upstream yourself**, the user opens the PR (they can override by explicitly asking you to run it). Once it merges and `origin/dev` syncs back down (step 1's drift check), sweep branches (step 7).
 
 ### 7. Delete merged branches
 
