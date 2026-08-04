@@ -45,11 +45,6 @@
     "missing": "frontend node"
   },
   {
-    "file": "CIPP/frontend/src/data/standards-v3-mock-data.js",
-    "route": "standards",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/data/standards.json",
     "route": "ListAppApprovalTemplates",
     "missing": "frontend node"
@@ -140,6 +135,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/hooks/use-custom-variables.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/hooks/use-guid-resolver.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -206,6 +206,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/api-offline.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/api-offline.js",
     "route": "me",
     "missing": "backend node"
   },
@@ -217,11 +222,6 @@
   {
     "file": "CIPP/frontend/src/pages/loading.js",
     "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/loading.js",
-    "route": "me",
     "missing": "backend node"
   },
   {
@@ -295,6 +295,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/baselines/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/baselines/template.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/gdap-management/index.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -342,16 +352,6 @@
   {
     "file": "CIPP/frontend/src/pages/tenant/tools/graph-explorer/index.js",
     "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/tenant/standards-v3/alignment/index.js",
-    "route": "standards",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/tenant/standards-v3/templates/index.js",
-    "route": "standards",
     "missing": "backend node"
   },
   {
@@ -451,6 +451,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/tenant/conditional/list-template/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/baselines/alignment/index.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -986,6 +991,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippAllTenants/useAllTenantsDashboard.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
