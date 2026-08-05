@@ -865,11 +865,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/container-logs.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/pages/cipp/advanced/exchange-cmdlets.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -881,11 +876,6 @@
   },
   {
     "file": "CIPP/frontend/src/pages/cipp/advanced/timers.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/worker-health.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -955,32 +945,42 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "route": "ExecSAMAppPermissions",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "route": "execSamAppPermissions",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-roles.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/logs.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/worker-health.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/function-offloading.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
     "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/jit-admin-settings.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/sam-app-permissions.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/sam-app-permissions.js",
-    "route": "ExecSAMAppPermissions",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/sam-app-permissions.js",
-    "route": "execSamAppPermissions",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/sam-app-roles.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
