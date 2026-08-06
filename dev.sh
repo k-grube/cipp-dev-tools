@@ -4,6 +4,13 @@
 # windows (drift risk if upstream changes its compose flow)
 set -euo pipefail
 [ "$(uname)" = "Darwin" ] || { echo 'dev.sh is macos-only, use dev.ps1 on windows' >&2; exit 1; }
+storybook=1
+for arg in "$@"; do
+    case "$arg" in
+        --no-storybook) storybook=0 ;;
+        *) echo "unknown option: $arg (only --no-storybook)" >&2; exit 1 ;;
+    esac
+done
 root="$(cd "$(dirname "$0")" && pwd)"
 cipp="$root/CIPP"
 [ -d "$cipp" ] || { echo 'CIPP/ missing -> run setup.sh first' >&2; exit 1; }
@@ -25,21 +32,31 @@ if [ -f "$override" ]; then
     compose_files="$compose_files -f '$override'"
 fi
 
-# free the frontend dev port (upstream launcher kills all node, too broad)
-pids="$(lsof -ti tcp:3000 -sTCP:LISTEN 2>/dev/null || true)"
-if [ -n "$pids" ]; then
-    echo "killing listener(s) on :3000 (pid $pids)"
-    kill $pids
-    for _ in 1 2 3 4 5 6 7 8 9 10; do
-        lsof -ti tcp:3000 -sTCP:LISTEN >/dev/null 2>&1 || break
-        sleep 0.2
-    done
+# free the frontend dev ports (upstream launcher kills all node, too broad)
+free_ports="3000"
+if [ "$storybook" = 1 ]; then
+    free_ports="$free_ports 6006"
 fi
+for p in $free_ports; do
+    pids="$(lsof -ti tcp:"$p" -sTCP:LISTEN 2>/dev/null || true)"
+    if [ -n "$pids" ]; then
+        echo "killing listener(s) on :$p (pid $pids)"
+        kill $pids
+        for _ in 1 2 3 4 5 6 7 8 9 10; do
+            lsof -ti tcp:"$p" -sTCP:LISTEN >/dev/null 2>&1 || break
+            sleep 0.2
+        done
+    fi
+done
 
 # fail fast on blocked ports, name the holder (container name when docker owns it)
-# 3000 = frontend, 5196 = craft api, 10000-10002 = azurite
+# 3000 = frontend, 5196 = craft api, 6006 = storybook, 10000-10002 = azurite
+check_ports="3000 5196 10000 10001 10002"
+if [ "$storybook" = 1 ]; then
+    check_ports="$check_ports 6006"
+fi
 blocked=''
-for port in 3000 5196 10000 10001 10002; do
+for port in $check_ports; do
     holders="$(lsof -nP -iTCP:"$port" -sTCP:LISTEN 2>/dev/null | awk 'NR>1 {print $1" (pid "$2")"}' | sort -u | paste -sd, - || true)"
     [ -n "$holders" ] || continue
     # --filter publish resolves collapsed ranges like 10000-10002->
@@ -66,7 +83,14 @@ EOF
 
 tab 'CIPP Docker'   "$build"    "pwsh -File tools/build-dev-modules.ps1 && docker compose $compose_files up --pull always --watch"
 tab 'CIPP Modules'  "$build"    "pwsh -File tools/Watch-Cipp-Dev-Modules.ps1 -SkipInitialBuild"
-tab 'CIPP Frontend' "$frontend" "yarn install --network-timeout 500000 && yarn run dev"
+# --mutex network serializes the two yarn installs
+tab 'CIPP Frontend' "$frontend" "yarn install --network-timeout 500000 --mutex network && yarn run dev"
+if [ "$storybook" = 1 ]; then
+    tab 'CIPP Storybook' "$frontend" "yarn install --network-timeout 500000 --mutex network && yarn storybook"
+fi
 
 echo
 echo '  API + Frontend: http://localhost:5196'
+if [ "$storybook" = 1 ]; then
+    echo '  Storybook:      http://localhost:6006'
+fi

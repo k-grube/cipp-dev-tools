@@ -1,5 +1,5 @@
 #Requires -Version 7.2
-# stops the stack dev.ps1 started: compose services, module watcher, frontend dev server
+# stops the stack dev.ps1 started: compose services, module watcher, frontend + storybook dev servers
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $build = Join-Path $root 'cipp\build'
@@ -48,13 +48,16 @@ if ($watchers) {
     Write-Host 'stopped module watcher'
 }
 
-$frontendPids = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty OwningProcess -Unique
-foreach ($fp in $frontendPids) {
-    Stop-Process -Id $fp -ErrorAction SilentlyContinue
-}
-if ($frontendPids) {
-    Write-Host "stopped frontend dev server (pid $($frontendPids -join ', '))"
+$devServers = @{ 3000 = 'frontend dev server'; 6006 = 'storybook' }
+foreach ($port in 3000, 6006) {
+    $serverPids = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue |
+        Select-Object -ExpandProperty OwningProcess -Unique
+    foreach ($sp in $serverPids) {
+        Stop-Process -Id $sp -ErrorAction SilentlyContinue
+    }
+    if ($serverPids) {
+        Write-Host "stopped $($devServers[$port]) (pid $($serverPids -join ', '))"
+    }
 }
 
 # esbuild service daemons outlive a hard kill of the dev server, sweep this workspace's only
