@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# stops the stack dev.sh started: compose services, module watcher, frontend dev server
+# stops the stack dev.sh started: compose services, module watcher, frontend + storybook dev servers
 set -euo pipefail
 root="$(cd "$(dirname "$0")" && pwd)"
 build="$root/CIPP/build"
@@ -26,6 +26,12 @@ pids="$(lsof -ti tcp:3000 -sTCP:LISTEN 2>/dev/null || true)"
 if [ -n "$pids" ]; then
     kill $pids
     echo "stopped frontend dev server (pid $pids)"
+fi
+
+pids="$(lsof -ti tcp:6006 -sTCP:LISTEN 2>/dev/null || true)"
+if [ -n "$pids" ]; then
+    kill $pids
+    echo "stopped storybook (pid $pids)"
 fi
 
 # esbuild service daemons can outlive the dev server, sweep this workspace's only

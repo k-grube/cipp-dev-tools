@@ -4,8 +4,9 @@ bootstrap workspace for CIPP monorepo dev. `CIPP\` is the monorepo clone (origin
 
 ## dev environment
 
-- `dev.ps1` launches the full local stack (azurite + Craft api container + module watcher + yarn frontend), everything at http://localhost:5196
-- `stop.ps1` stops the stack (compose down with the same -f chain, module watcher, frontend on :3000; azurite volume kept)
+- `dev.ps1` launches the full local stack (azurite + Craft api container + module watcher + yarn frontend + storybook on :6006), everything at http://localhost:5196; `-NoStorybook` / `--no-storybook` skips the storybook tab
+- `stop.ps1` stops the stack (compose down with the same -f chain, module watcher, frontend on :3000, storybook on :6006; azurite volume kept)
+- azurite crash-looping with `Cannot create a string longer than 0x1fffffe8`: the table db hit v8's ~512MB string cap, CIS test snapshots (CippReportingDB/CippTestResults) refill it in ~2 days. `python tools\clear-azurite-reporting.py -y` empties the reporting tables in place (config/secrets kept), `--list` shows per-table row counts, don't nuke the volume
 - personal tweaks: drop a gitignored `docker-compose.override.yml` at this root, dev.ps1 / dev.sh chain it (upstream's own launcher would ignore it, explicit -f disables auto-merge)
 - `setup.ps1` is idempotent, re-run to repair prereqs/remotes
 - macos equivalents: `setup.sh` / `dev.sh` / `stop.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
