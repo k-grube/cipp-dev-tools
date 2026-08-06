@@ -995,6 +995,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippAllTenants/AllTenantsSecureScore.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippAllTenants/AllTenantsTestResults.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippAllTenants/useAllTenantsDashboard.js",
     "route": "ApiCall",
     "missing": "backend node"
