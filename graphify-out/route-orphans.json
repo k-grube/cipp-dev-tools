@@ -1515,6 +1515,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippIntegrations/CippApiDocumentation.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippIntegrations/CippIntegrationFieldMapping.jsx",
     "route": "ApiCall",
     "missing": "backend node"
