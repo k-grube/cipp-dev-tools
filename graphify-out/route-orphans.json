@@ -1475,6 +1475,26 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/SetupGatePage.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/SetupGatePage.jsx",
+    "route": "me",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/SetupPendingPage.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/SetupPendingPage.jsx",
+    "route": "me",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/SsoMigrationDialog.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1531,6 +1551,16 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippIntegrations/CippIntegrationTenantMapping.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippPdf/useBrandingSettings.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippPdf/useReportVariables.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
