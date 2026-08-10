@@ -42,6 +42,11 @@ const fill = (tpl, slots) => Object.entries(slots).reduce((s, [k, v]) => s.repla
 // args can arrive json-encoded, normalize before use
 const input = typeof args === 'string' ? JSON.parse(args) : args
 
+// policy is expanded session-side from component-tests/policy.md, fail loud if that was skipped
+if (input.writerPrompt.includes('{{POLICY}}')) {
+  throw new Error('writerPrompt still contains {{POLICY}}, expand it from .claude/skills/component-tests/policy.md before launching')
+}
+
 // write -> verify per assignment, no barrier between assignments
 const results = await pipeline(
   input.assignments,

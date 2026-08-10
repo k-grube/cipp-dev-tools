@@ -19,6 +19,7 @@ docker-compose.override.yml
 .claude/settings.local.json
 # personal skills, keep the shared workflow one
 .claude/skills/*
+!.claude/skills/component-tests/
 !.claude/skills/cipp-dev-workflow/
 !.claude/skills/test-sweep/
 .agents/skills
