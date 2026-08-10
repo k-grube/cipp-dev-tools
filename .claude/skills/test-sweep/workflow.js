@@ -71,6 +71,7 @@ const anyStorybook = input.assignments.some((a) => a.project === 'storybook')
 const gate = await agent(
   fill(input.gatePrompt, {
     EXPECTED_RED_JSON: JSON.stringify([...(input.priorRedPins ?? []), ...expectedRed]),
+    // skip the chromium project unless an assignment targeted it
     UNIT_ONLY: anyStorybook ? '' : ' --unit',
   }),
   { label: 'gate:full-suite', phase: 'Gate', schema: GATE_SCHEMA }

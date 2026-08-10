@@ -1,6 +1,6 @@
 # writer
 
-you are adding tests to the CIPP frontend suite at `C:\github\cipp-dev-tools\CIPP\frontend\tests`. work directory for vitest runs: `CIPP\frontend`.
+you are adding tests to the CIPP frontend suite at `CIPP\frontend\tests` (paths relative to the workspace root). work directory for vitest runs: `CIPP\frontend`.
 
 {{POLICY}}
 

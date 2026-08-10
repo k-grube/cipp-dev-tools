@@ -9,11 +9,11 @@ bootstrap workspace for CIPP monorepo dev. `CIPP\` is the monorepo clone (origin
 - azurite crash-looping with `Cannot create a string longer than 0x1fffffe8`: the table db hit v8's ~512MB string cap, CIS test snapshots (CippReportingDB/CippTestResults) refill it in ~2 days. `python tools\clear-azurite-reporting.py -y` empties the reporting tables in place (config/secrets kept), `--list` shows per-table row counts, don't nuke the volume
 - personal tweaks: drop a gitignored `docker-compose.override.yml` at this root, dev.ps1 / dev.sh chain it (upstream's own launcher would ignore it, explicit -f disables auto-merge)
 - `setup.ps1` is idempotent, re-run to repair prereqs/remotes
-- macos equivalents: `setup.sh` / `dev.sh` / `stop.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
+- macos equivalents: `setup.sh` / `dev.sh` / `stop.sh` / `test.sh` / `graph-tools\*.sh` (graphify in `.venv`, dev tabs via Terminal.app; dev.sh reimplements the upstream launcher flow, upstream ships windows-only)
 
 ## frontend tests
 
-vitest + storybook suite lives in the monorepo (`CIPP\frontend\tests`), run from `CIPP\frontend`: `yarn test` (both projects), `yarn test:unit`, `yarn test:storybook`, `yarn test:coverage`. chromium once via `npx playwright install chromium` (lifecycle scripts disabled repo-wide, no auto-download). docs: `docs/dev-documentation/cipp-dev-guide/frontend-testing.md` and `frontend/tests/Overview.mdx` in the repo.
+vitest + storybook suite lives in the monorepo (`CIPP\frontend\tests`), run from `CIPP\frontend`: `yarn test` (both projects), `yarn test:unit`, `yarn test:storybook`, `yarn test:coverage`. `.\test.ps1` at this root forwards to those (`--unit` / `--storybook` / `--browser` / `--coverage` / `--watch`, extra args reach vitest). chromium once via `npx playwright install chromium` (lifecycle scripts disabled repo-wide, no auto-download). docs: `docs/dev-documentation/cipp-dev-guide/frontend-testing.md` and `frontend/tests/Overview.mdx` in the repo, toolchain traps in `spec\toolchain-notes.md` here.
 
 ## knowledge graph
 

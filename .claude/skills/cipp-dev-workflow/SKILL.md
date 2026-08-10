@@ -61,7 +61,7 @@ Edit freely, run `graph-tools\update-graph.ps1` after changes. When a checkpoint
 
 ### 5. Test
 
-- frontend: **vitest coverage is expected for changed or added components.** Suite lives at `frontend\tests\`; placement rule: logic/render branches in jsdom `.test.jsx` (`unit` project), browser behavior (layout, portals, MRT virtualization) in story `play()` functions (`storybook` project). Run `yarn test` from `CIPP\frontend\` (both projects; needs `npx playwright install chromium` once), plus `yarn lint` and exercising the UI against the local stack. Conventions in `frontend/tests/Overview.mdx` + `docs/dev-documentation/cipp-dev-guide/frontend-testing.md`, gotchas in `docs\toolchain-notes.md` (workspace root). Bulk coverage backfill is a different job: that's `/test-sweep`, not this workflow.
+- frontend: **vitest coverage is expected for changed or added components.** Suite lives at `frontend\tests\`; placement rule: logic/render branches in jsdom `.test.jsx` (`unit` project), browser behavior (layout, portals, MRT virtualization) in story `play()` functions (`storybook` project). Run `yarn test` from `CIPP\frontend\` (both projects; needs `npx playwright install chromium` once), plus `yarn lint` and exercising the UI against the local stack. Conventions in `frontend/tests/Overview.mdx` + `docs/dev-documentation/cipp-dev-guide/frontend-testing.md`, gotchas in `spec\toolchain-notes.md` (workspace root). Bulk coverage backfill is a different job: that's `/test-sweep`, not this workflow.
 - backend: **Pester coverage is mandatory for any changed or added PowerShell function.** Tests live in `backend\Tests\` mirroring the module path (`Modules/CIPPCore/Public/Get-CIPPDrift.ps1` -> `Tests/Reports/Get-CIPPDrift.Tests.ps1`). Run via the repo runner:
 
 ```
@@ -99,7 +99,7 @@ git branch -D <branch>
 git push origin --delete <branch>
 ```
 
-Never delete: branches with an open PR, parked work (check memory + `docs\upstream-findings.md` before assuming), never-PR'd experiment branches, anything not yours (`KelvinTegelaar-patch-1`). The `push --delete` falls under the explicit-ask rule above: list what qualifies and let the user say go.
+Never delete: branches with an open PR, parked work (check memory + `docs\upstream-findings.md` if present, local-only), never-PR'd experiment branches, anything not yours (`KelvinTegelaar-patch-1`). The `push --delete` falls under the explicit-ask rule above: list what qualifies and let the user say go.
 
 ## Notes
 
