@@ -460,6 +460,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/baselines/templates/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/administration/alert-configuration/alert.jsx",
     "route": "ApiCall",
     "missing": "backend node"
