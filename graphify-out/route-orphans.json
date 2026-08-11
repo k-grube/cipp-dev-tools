@@ -1230,16 +1230,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippComponents/CIPPDeviceCodeButton.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/components/CippComponents/CIPPDeviceCodeButton.js",
-    "route": "ExecSAMSetup",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/components/CippComponents/CippDomainServiceConfigurationRecords.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1302,6 +1292,11 @@
   {
     "file": "CIPP/frontend/src/components/CippComponents/CIPPM365OAuthButton.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CIPPM365OAuthButton.jsx",
+    "route": "ExecDeviceCodeLogon",
     "missing": "backend node"
   },
   {
@@ -1772,6 +1767,11 @@
   {
     "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
+    "route": "ExecSamSecretStatus",
     "missing": "backend node"
   },
   {
