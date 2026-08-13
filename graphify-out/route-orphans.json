@@ -460,6 +460,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/baselines/templates/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/administration/alert-configuration/alert.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1225,16 +1230,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippComponents/CIPPDeviceCodeButton.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/components/CippComponents/CIPPDeviceCodeButton.js",
-    "route": "ExecSAMSetup",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/components/CippComponents/CippDomainServiceConfigurationRecords.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1300,12 +1295,12 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippComponents/CippMailboxRestoreDrawer.jsx",
-    "route": "ApiCall",
+    "file": "CIPP/frontend/src/components/CippComponents/CIPPM365OAuthButton.jsx",
+    "route": "ExecDeviceCodeLogon",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippComponents/CippMobileTenantPicker.jsx",
+    "file": "CIPP/frontend/src/components/CippComponents/CippMailboxRestoreDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1772,6 +1767,11 @@
   {
     "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
+    "route": "ExecSamSecretStatus",
     "missing": "backend node"
   },
   {
