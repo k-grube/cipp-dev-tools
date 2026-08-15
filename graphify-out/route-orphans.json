@@ -585,6 +585,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint2/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/teams-share/sharing-report/index.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1020,6 +1025,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippCards/CippSharePointQuotaCard.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippCards/CippUniversalSearch.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1270,6 +1280,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippImpersonationBanner.jsx",
+    "route": "me",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippIntunePolicyDetails.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1301,6 +1316,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippMailboxRestoreDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippMobileTenantPicker.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1376,6 +1396,21 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSharedMailboxDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSharePointBrowserPermissions.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSharePointBrowserProperties.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSharePointBrowserStorage.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
