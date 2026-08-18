@@ -1260,6 +1260,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEntitySwitcher.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippFormTemplateTenantSelector.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1427,6 +1432,11 @@
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSitRulePackDetails.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSupportBundleDialog.jsx",
+    "route": "me",
     "missing": "backend node"
   },
   {
