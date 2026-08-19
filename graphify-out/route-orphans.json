@@ -650,6 +650,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/identity/administration/guest-users/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/identity/administration/jit-admin/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -761,6 +766,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/email/transport/list-templates/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/email/tools/message-encryption/index.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
