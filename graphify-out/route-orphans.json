@@ -845,11 +845,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/administration/quarantine/index.js",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/pages/email/administration/exchange-retention/policies/policy.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1376,6 +1371,16 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippPolicyImportDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippQuarantineDetails.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippQuarantineTable.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
