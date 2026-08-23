@@ -21890,9 +21890,9 @@
     "semantic_hash": "35f270de08f795ec7d284915154343f8"
   },
   "CIPP/backend/Config/function-permissions.json": {
-    "mtime": 1787474201.180171,
-    "ast_hash": "0ce178d050f4e9b2b1954e7282514fe0",
-    "semantic_hash": "0ce178d050f4e9b2b1954e7282514fe0"
+    "mtime": 1787474268.445377,
+    "ast_hash": "628be4bc78813fef74186cb69e39ff6f",
+    "semantic_hash": "628be4bc78813fef74186cb69e39ff6f"
   },
   "CIPP/backend/Config/intuneCollection.json": {
     "mtime": 1785873411.0807066,
@@ -21900,9 +21900,9 @@
     "semantic_hash": "9b9c0a82efa191fb221354402d37d93a"
   },
   "CIPP/backend/Config/openapi.json": {
-    "mtime": 1787474193.567127,
-    "ast_hash": "e096f9238b5e82ef42cfa79bcf671304",
-    "semantic_hash": "e096f9238b5e82ef42cfa79bcf671304"
+    "mtime": 1787474263.7178638,
+    "ast_hash": "78eaf4eb13cf1bf0dfca92e5a64d1688",
+    "semantic_hash": "78eaf4eb13cf1bf0dfca92e5a64d1688"
   },
   "CIPP/backend/Config/schemaDefinitions.json": {
     "mtime": 1784682019.2929647,
@@ -37305,9 +37305,9 @@
     "semantic_hash": "19ca6ef0d43ef3f743d096d74ab93c91"
   },
   "Craft/Runtime/CraftRuntime/Start-CraftOrchestrator.ps1": {
-    "mtime": 1786405039.9340045,
-    "ast_hash": "d1cccebaa9bc0347a62ca99587e4ff94",
-    "semantic_hash": "d1cccebaa9bc0347a62ca99587e4ff94"
+    "mtime": 1787475583.0635054,
+    "ast_hash": "d47869d186c06e7edb62d0a257dd15e3",
+    "semantic_hash": "d47869d186c06e7edb62d0a257dd15e3"
   },
   "Craft/Runtime/HTTP/Exec/Invoke-ExecBackendProcess.ps1": {
     "mtime": 1784915382.6134202,
@@ -37355,9 +37355,9 @@
     "semantic_hash": "0cc56da574c5aad800467476f7a9a74c"
   },
   "Craft/Services/Bridges/JobMetrics.cs": {
-    "mtime": 1787034318.602358,
-    "ast_hash": "e701a7b9c2338760654ee67924e971df",
-    "semantic_hash": "e701a7b9c2338760654ee67924e971df"
+    "mtime": 1787475583.0645978,
+    "ast_hash": "def0e2c732df3b1b55c8e2c8610a1771",
+    "semantic_hash": "def0e2c732df3b1b55c8e2c8610a1771"
   },
   "Craft/Services/Bridges/JobRecord.cs": {
     "mtime": 1785269816.4702525,
@@ -37370,9 +37370,9 @@
     "semantic_hash": "4f1272143785a20d4d07ef76a7b18bfb"
   },
   "Craft/Services/Bridges/JobSummary.cs": {
-    "mtime": 1787034318.603362,
-    "ast_hash": "db75a150bd331e0e56a9a197f8213e78",
-    "semantic_hash": "db75a150bd331e0e56a9a197f8213e78"
+    "mtime": 1787475583.0661037,
+    "ast_hash": "1bd18cd055d5fa93c293ccbac5974848",
+    "semantic_hash": "1bd18cd055d5fa93c293ccbac5974848"
   },
   "Craft/Services/Bridges/LimiterMetrics.cs": {
     "mtime": 1785269816.471253,
@@ -37400,9 +37400,9 @@
     "semantic_hash": "39d91a7a49814159a8f0940659f1d6cf"
   },
   "Craft/Services/Bridges/OrchestratorBridge.cs": {
-    "mtime": 1786405039.9353366,
-    "ast_hash": "84e8df51fab96af6f2d8c304af718633",
-    "semantic_hash": "84e8df51fab96af6f2d8c304af718633"
+    "mtime": 1787475583.0661037,
+    "ast_hash": "cc804631cb1a70dbcb72fcc16701dd71",
+    "semantic_hash": "cc804631cb1a70dbcb72fcc16701dd71"
   },
   "Craft/Services/Bridges/PoolMetrics.cs": {
     "mtime": 1785269816.4732568,
@@ -37410,9 +37410,9 @@
     "semantic_hash": "351e9c4688b98fa4b1358d46b7feac16"
   },
   "Craft/Services/Bridges/QueueBridge.cs": {
-    "mtime": 1785269816.4732568,
-    "ast_hash": "c4bc9d44988d76127017c97628642f8e",
-    "semantic_hash": "c4bc9d44988d76127017c97628642f8e"
+    "mtime": 1787475583.0676196,
+    "ast_hash": "7e4fade8bd061f25e627542bf0de9d39",
+    "semantic_hash": "7e4fade8bd061f25e627542bf0de9d39"
   },
   "Craft/Services/Bridges/QueueStatusBridge.cs": {
     "mtime": 1787034318.604866,
@@ -37455,9 +37455,9 @@
     "semantic_hash": "a980ab7d28d2f52e8a814427041e7ab6"
   },
   "Craft/Services/Bridges/WorkerMetricsBridge.cs": {
-    "mtime": 1787034318.6058726,
-    "ast_hash": "6938ada91330c3bfabe80b436d9b1604",
-    "semantic_hash": "6938ada91330c3bfabe80b436d9b1604"
+    "mtime": 1787475583.0691502,
+    "ast_hash": "f575c3692bda8ce765274f0b7f3060cc",
+    "semantic_hash": "f575c3692bda8ce765274f0b7f3060cc"
   },
   "Craft/Services/Bridges/WorkerMetricsSnapshot.cs": {
     "mtime": 1785269816.4772534,
@@ -37710,9 +37710,9 @@
     "semantic_hash": "15755ee5cb5c559d9ca4cefde3ff64ac"
   },
   "Craft/Services/Hosting/OperationContext.cs": {
-    "mtime": 1785269816.497774,
-    "ast_hash": "8dbb825b129d4fe360fdc6b43bca7c20",
-    "semantic_hash": "8dbb825b129d4fe360fdc6b43bca7c20"
+    "mtime": 1787475583.0697367,
+    "ast_hash": "f6c3573769dbac50362fbee9de8be565",
+    "semantic_hash": "f6c3573769dbac50362fbee9de8be565"
   },
   "Craft/Services/Hosting/PrecompressedEncoding.cs": {
     "mtime": 1785269816.497774,
@@ -37770,19 +37770,19 @@
     "semantic_hash": "8ce8aa276ac7e891dfc476b9ae5355ca"
   },
   "Craft/Services/Orchestration/JobManager.cs": {
-    "mtime": 1786405039.9390643,
-    "ast_hash": "33bdf6f75f096e76f957c6181e6ba89e",
-    "semantic_hash": "33bdf6f75f096e76f957c6181e6ba89e"
+    "mtime": 1787475583.0717454,
+    "ast_hash": "3d488940bda71759a45aab841a86f0dd",
+    "semantic_hash": "3d488940bda71759a45aab841a86f0dd"
   },
   "Craft/Services/Orchestration/OrchestratorRun.cs": {
-    "mtime": 1786405039.9406435,
-    "ast_hash": "3e598adbfa325ac49c4307ed7de4d74c",
-    "semantic_hash": "3e598adbfa325ac49c4307ed7de4d74c"
+    "mtime": 1787475583.072743,
+    "ast_hash": "190a1ce4b99d5a32f83eb9fe24d8eb07",
+    "semantic_hash": "190a1ce4b99d5a32f83eb9fe24d8eb07"
   },
   "Craft/Services/Orchestration/OrchestratorService.cs": {
-    "mtime": 1787034318.6146803,
-    "ast_hash": "afd62e4be8cf272d8e0ad4205166f1f3",
-    "semantic_hash": "afd62e4be8cf272d8e0ad4205166f1f3"
+    "mtime": 1787475583.0737448,
+    "ast_hash": "fc4c4fac52eaf0c987fbba9d53e18e1d",
+    "semantic_hash": "fc4c4fac52eaf0c987fbba9d53e18e1d"
   },
   "Craft/Services/Orchestration/OrchestratorStatusWriter.cs": {
     "mtime": 1786131697.1593828,
@@ -37825,14 +37825,14 @@
     "semantic_hash": "7b8f54a4cd06c450c054ceac5b860823"
   },
   "Craft/Services/PowerShellHost/PowerShellRunnerService.cs": {
-    "mtime": 1787034318.6162848,
-    "ast_hash": "a90920e2bd110a33f27ed9dc8e458552",
-    "semantic_hash": "a90920e2bd110a33f27ed9dc8e458552"
+    "mtime": 1787475583.074745,
+    "ast_hash": "1d7274e0bbae2a97ee2691a2ced101a5",
+    "semantic_hash": "1d7274e0bbae2a97ee2691a2ced101a5"
   },
   "Craft/Services/PowerShellHost/PowerShellWorker.cs": {
-    "mtime": 1786405039.9443874,
-    "ast_hash": "db5df69f58564e38f996ade2949257e2",
-    "semantic_hash": "db5df69f58564e38f996ade2949257e2"
+    "mtime": 1787475583.074745,
+    "ast_hash": "921fe6437caeecb9409af01dc394a2d5",
+    "semantic_hash": "921fe6437caeecb9409af01dc394a2d5"
   },
   "Craft/Services/PowerShellHost/PowerShellWorkerPool.cs": {
     "mtime": 1787034318.6172898,
@@ -37885,9 +37885,9 @@
     "semantic_hash": "139b3e91f28a737a4eeb08dbafd1d9ae"
   },
   "Craft/Services/Storage/OrchestratorTableStore.cs": {
-    "mtime": 1787034318.624166,
-    "ast_hash": "e35bad179678213d0dd9a031aaaf9eb9",
-    "semantic_hash": "e35bad179678213d0dd9a031aaaf9eb9"
+    "mtime": 1787475583.0772579,
+    "ast_hash": "50676e2d3a4aefab51fb0fd62c6ea5ee",
+    "semantic_hash": "50676e2d3a4aefab51fb0fd62c6ea5ee"
   },
   "Craft/Services/Storage/StorageHealthMonitor.cs": {
     "mtime": 1785269816.5143626,
@@ -43170,9 +43170,9 @@
     "semantic_hash": "8bca3720f3fb3fc2ae70f943895e9252"
   },
   "Craft/docs/configuration.md": {
-    "mtime": 1786405039.953497,
-    "ast_hash": "468ad792b14c3d7bac84a745b6c1bedb",
-    "semantic_hash": "468ad792b14c3d7bac84a745b6c1bedb"
+    "mtime": 1787475583.0782576,
+    "ast_hash": "edaf0b0e07628de6ede9865db5df3b1b",
+    "semantic_hash": "edaf0b0e07628de6ede9865db5df3b1b"
   },
   "CIPP/docs/.gitbook/assets/Executive_Summary-Pentest.pdf": {
     "mtime": 1784771872.082061,
@@ -46370,9 +46370,9 @@
     "semantic_hash": "ddff201318404444e7b2ddb481ab6f17"
   },
   "Craft/tests/Craft.Tests/RunRemainingCounterTests.cs": {
-    "mtime": 1787034318.6331642,
-    "ast_hash": "b2aef8ef6fd773d9ba5df9c4e3fd5e87",
-    "semantic_hash": "b2aef8ef6fd773d9ba5df9c4e3fd5e87"
+    "mtime": 1787475583.0822542,
+    "ast_hash": "b015fe16f54b85d1580b2715949ef2f0",
+    "semantic_hash": "b015fe16f54b85d1580b2715949ef2f0"
   },
   "Craft/tests/Craft.Tests/TestApi/Modules/CraftPoolFixture/CraftPoolFixture.psd1": {
     "mtime": 1786405039.972537,
@@ -49135,9 +49135,9 @@
     "semantic_hash": "b9894626d818381aedf569fcf27c040a"
   },
   "Craft/tests/Craft.Tests/OrchestratorChildRunGuardTests.cs": {
-    "mtime": 1787034318.6321633,
-    "ast_hash": "f01a7cd94dbdc4f71bc8a47cd22a4f80",
-    "semantic_hash": "f01a7cd94dbdc4f71bc8a47cd22a4f80"
+    "mtime": 1787475583.080256,
+    "ast_hash": "0a972f638342e0954579c7f25a00cf38",
+    "semantic_hash": "0a972f638342e0954579c7f25a00cf38"
   },
   "Craft/tests/Craft.Tests/TableKeyTests.cs": {
     "mtime": 1787034318.6341643,
@@ -49648,5 +49648,20 @@
     "mtime": 1787474193.6300063,
     "ast_hash": "4c50a5145936afa212b2322c2f7a0fc8",
     "semantic_hash": "4c50a5145936afa212b2322c2f7a0fc8"
+  },
+  "Craft/tests/Craft.Tests/OperationContextPriorityTests.cs": {
+    "mtime": 1787475583.0792544,
+    "ast_hash": "4744a498abd03acc8b7a1bfca0762c26",
+    "semantic_hash": "4744a498abd03acc8b7a1bfca0762c26"
+  },
+  "Craft/tests/Craft.Tests/OrchestratorBridgeLineageTests.cs": {
+    "mtime": 1787475583.0792544,
+    "ast_hash": "2356f9b2769678b4abccc4aee76e4a85",
+    "semantic_hash": "2356f9b2769678b4abccc4aee76e4a85"
+  },
+  "Craft/tests/Craft.Tests/WorkerRunspaceDisposalTests.cs": {
+    "mtime": 1787475583.0822542,
+    "ast_hash": "f688c366a4f97e8790a1301f9cb8659f",
+    "semantic_hash": "f688c366a4f97e8790a1301f9cb8659f"
   }
 }
