@@ -180,6 +180,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/layouts/HeaderedTabbedLayout.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/layouts/index.js",
     "route": "ApiCall",
     "missing": "backend node"
