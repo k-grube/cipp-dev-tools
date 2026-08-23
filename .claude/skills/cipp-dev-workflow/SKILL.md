@@ -35,7 +35,7 @@ Keeping it current (graph.json + sidecars + `cache\semantic\` are committed in t
 ### 1. Check fork drift before starting anything new
 
 ```
-git fetch origin upstream
+git fetch --multiple origin upstream
 git log --oneline origin/dev..upstream/dev | wc -l   # commits origin is missing
 git log --oneline upstream/dev..origin/dev | wc -l   # should be ~0
 ```
