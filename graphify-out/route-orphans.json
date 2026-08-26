@@ -405,6 +405,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/optimization.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/pricing.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/gdap-management/invites/add.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1410,6 +1420,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSchedulerCountdown.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippSettingsSideBar.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1501,6 +1516,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippUserPhotoManager.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippUserReportedMessagesTable.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
