@@ -5,22 +5,22 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/ExecutiveReportButton.js",
+    "file": "CIPP/frontend/src/components/ExecutiveReportButton.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/PrivateRoute.js",
+    "file": "CIPP/frontend/src/components/PrivateRoute.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/PrivateRoute.js",
+    "file": "CIPP/frontend/src/components/PrivateRoute.jsx",
     "route": "me",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/ReleaseNotesDialog.js",
+    "file": "CIPP/frontend/src/components/ReleaseNotesDialog.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -150,6 +150,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/hooks/use-jit-allowed-roles.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/hooks/use-permissions.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -175,12 +180,12 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/account-popover.js",
+    "file": "CIPP/frontend/src/layouts/account-popover.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/account-popover.js",
+    "file": "CIPP/frontend/src/layouts/account-popover.jsx",
     "route": "me",
     "missing": "backend node"
   },
@@ -190,22 +195,22 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/index.js",
+    "file": "CIPP/frontend/src/layouts/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/index.js",
+    "file": "CIPP/frontend/src/layouts/index.jsx",
     "route": "me",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/side-nav.js",
+    "file": "CIPP/frontend/src/layouts/side-nav.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/layouts/side-nav.js",
+    "file": "CIPP/frontend/src/layouts/side-nav.jsx",
     "route": "me",
     "missing": "backend node"
   },
@@ -215,22 +220,22 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/api-offline.js",
+    "file": "CIPP/frontend/src/pages/api-offline.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/api-offline.js",
+    "file": "CIPP/frontend/src/pages/api-offline.jsx",
     "route": "me",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/dashboardv1.js",
+    "file": "CIPP/frontend/src/pages/dashboardv1.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/loading.js",
+    "file": "CIPP/frontend/src/pages/loading.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -240,42 +245,42 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/unauthenticated.js",
+    "file": "CIPP/frontend/src/pages/unauthenticated.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/unauthenticated.js",
+    "file": "CIPP/frontend/src/pages/unauthenticated.jsx",
     "route": "me",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/preferences.js",
+    "file": "CIPP/frontend/src/pages/cipp/preferences.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/preferences.js",
+    "file": "CIPP/frontend/src/pages/cipp/preferences.jsx",
     "route": "me",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/snooze-alert.js",
+    "file": "CIPP/frontend/src/pages/cipp/snooze-alert.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/dashboardv2/index.js",
+    "file": "CIPP/frontend/src/pages/dashboardv2/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tools/breachlookup/index.js",
+    "file": "CIPP/frontend/src/pages/tools/breachlookup/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tools/community-repos/index.js",
+    "file": "CIPP/frontend/src/pages/tools/community-repos/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -295,17 +300,17 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tools/report-builder/builder/index.js",
+    "file": "CIPP/frontend/src/pages/tools/report-builder/builder/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tools/report-builder/view/index.js",
+    "file": "CIPP/frontend/src/pages/tools/report-builder/view/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/baselines/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/baselines/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -315,82 +320,82 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/offboarding.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/offboarding.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/applied-standards.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/applied-standards.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/configuration-backup.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/configuration-backup.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/drift.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/drift.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/history.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/history.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/manage/policies-deployed.js",
+    "file": "CIPP/frontend/src/pages/tenant/manage/policies-deployed.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/tools/geoiplookup/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/tools/geoiplookup/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/tools/graph-explorer/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/tools/graph-explorer/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/alignment/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/alignment/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/builder.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/builder.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/view.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/bpa-report/view.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/domains-analyser/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/domains-analyser/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/standards/templates/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/standards/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -400,62 +405,62 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/reports/custom-test-report/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/reports/custom-test-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/reports/graph-office-reports/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/reports/graph-office-reports/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/optimization.js",
+    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/optimization.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/pricing.js",
+    "file": "CIPP/frontend/src/pages/tenant/reports/list-licenses/pricing.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/invites/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/invites/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/onboarding/start.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/onboarding/start.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/roles/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/roles/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/relationships/relationship/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/relationships/relationship/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/gdap-management/relationships/relationship/mappings.js",
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/relationships/relationship/mappings.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -470,17 +475,17 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/conditional/list-template/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/conditional/list-template/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/baselines/alignment/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/baselines/alignment/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/baselines/templates/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/baselines/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -490,32 +495,32 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/coverage.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/coverage.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/log.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/log.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/searches.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/searches.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/authentication-methods/registration-campaign.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/authentication-methods/registration-campaign.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/tenants/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/tenants/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/tenants/groups/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/tenants/groups/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -540,77 +545,77 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/add.jsx",
     "route": "ExecAppPermissionTemplate",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/edit.jsx",
     "route": "ExecAppPermissionTemplate",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/permission-sets/index.jsx",
     "route": "ExecAppPermissionTemplate",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/add.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/edit.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/index.js",
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/permissions-report/index.js",
+    "file": "CIPP/frontend/src/pages/teams-share/permissions-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharepoint/index.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/add.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/add.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/add.jsx",
     "route": "ExecSharePointTemplate",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/index.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint-templates/index.jsx",
     "route": "ExecSharePointTemplate",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharepoint2/index.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharepoint2/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/sharing-report/index.js",
+    "file": "CIPP/frontend/src/pages/teams-share/sharing-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -630,27 +635,27 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/security/reports/mde-onboarding/index.js",
+    "file": "CIPP/frontend/src/pages/security/reports/mde-onboarding/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/security/compliance/dlp-templates/index.js",
+    "file": "CIPP/frontend/src/pages/security/compliance/dlp-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/security/compliance/labels-templates/index.js",
+    "file": "CIPP/frontend/src/pages/security/compliance/labels-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/security/compliance/retention-templates/index.js",
+    "file": "CIPP/frontend/src/pages/security/compliance/retention-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/security/compliance/sit-templates/index.js",
+    "file": "CIPP/frontend/src/pages/security/compliance/sit-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -660,7 +665,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/identity/administration/group-templates/index.js",
+    "file": "CIPP/frontend/src/pages/identity/administration/group-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -670,7 +675,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/identity/administration/guest-users/index.js",
+    "file": "CIPP/frontend/src/pages/identity/administration/guest-users/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -685,7 +690,12 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/identity/administration/jit-admin-templates/index.js",
+    "file": "CIPP/frontend/src/pages/identity/administration/jit-admin-templates/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/identity/administration/jit-role-templates/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -725,7 +735,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/identity/administration/roles/templates/index.js",
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -740,7 +750,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/endpoint/MEM/assignment-filter-templates/index.js",
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/assignment-filter-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -750,7 +760,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/endpoint/MEM/compare-policies/index.js",
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/compare-policies/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -760,7 +770,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/endpoint/MEM/list-templates/index.js",
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/list-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -775,7 +785,7 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/endpoint/MEM/reusable-settings-templates/index.js",
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/reusable-settings-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -785,52 +795,52 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/endpoint/applications/templates/index.js",
+    "file": "CIPP/frontend/src/pages/endpoint/applications/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/transport/list-connector-templates/index.js",
+    "file": "CIPP/frontend/src/pages/email/transport/list-connector-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/transport/list-templates/index.js",
+    "file": "CIPP/frontend/src/pages/email/transport/list-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/tools/message-encryption/index.js",
+    "file": "CIPP/frontend/src/pages/email/tools/message-encryption/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/tools/message-trace/index.js",
+    "file": "CIPP/frontend/src/pages/email/tools/message-trace/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/tools/message-trace/historical-search/index.js",
+    "file": "CIPP/frontend/src/pages/email/tools/message-trace/historical-search/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/spamfilter/list-connectionfilter-templates/index.js",
+    "file": "CIPP/frontend/src/pages/email/spamfilter/list-connectionfilter-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/spamfilter/list-quarantine-policies/index.js",
+    "file": "CIPP/frontend/src/pages/email/spamfilter/list-quarantine-policies/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/spamfilter/list-quarantine-policies/index.js",
+    "file": "CIPP/frontend/src/pages/email/spamfilter/list-quarantine-policies/index.jsx",
     "route": "ListQuarantinePolicy",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/spamfilter/list-templates/index.js",
+    "file": "CIPP/frontend/src/pages/email/spamfilter/list-templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -850,22 +860,22 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/reports/antiphishing-filters/index.js",
+    "file": "CIPP/frontend/src/pages/email/reports/antiphishing-filters/index.jsx",
     "route": "RemoveAntiPhishingFilter",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/reports/mail-flow-statistics/index.js",
+    "file": "CIPP/frontend/src/pages/email/reports/mail-flow-statistics/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/reports/malware-filters/index.js",
+    "file": "CIPP/frontend/src/pages/email/reports/malware-filters/index.jsx",
     "route": "RemoveMalwareFilter",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/email/reports/safeattachments-filters/index.js",
+    "file": "CIPP/frontend/src/pages/email/reports/safeattachments-filters/index.jsx",
     "route": "RemoveSafeAttachmentsFilter",
     "missing": "backend node"
   },
@@ -895,157 +905,157 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/dashboardv2/custom/index.js",
+    "file": "CIPP/frontend/src/pages/dashboardv2/custom/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/dashboardv2/devices/index.js",
+    "file": "CIPP/frontend/src/pages/dashboardv2/devices/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/dashboardv2/identity/index.js",
+    "file": "CIPP/frontend/src/pages/dashboardv2/identity/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/copilot/shadow-ai/index.js",
+    "file": "CIPP/frontend/src/pages/copilot/shadow-ai/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/copilot/agent365/packages/index.js",
+    "file": "CIPP/frontend/src/pages/copilot/agent365/packages/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/exchange-cmdlets.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/exchange-cmdlets.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/table-maintenance.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/table-maintenance.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/timers.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/timers.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/integrations/configure.js",
+    "file": "CIPP/frontend/src/pages/cipp/integrations/configure.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/integrations/index.js",
+    "file": "CIPP/frontend/src/pages/cipp/integrations/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/logs/logentry.js",
+    "file": "CIPP/frontend/src/pages/cipp/logs/logentry.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/backend.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/backend.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/backup.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/backup.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/partner-webhooks.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/partner-webhooks.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/permissions.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/permissions.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/siem.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/siem.jsx",
     "route": "storageservices",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/settings/password-config/index.js",
+    "file": "CIPP/frontend/src/pages/cipp/settings/password-config/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/custom-data/directory-extensions/add.js",
+    "file": "CIPP/frontend/src/pages/cipp/custom-data/directory-extensions/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/custom-data/mappings/add.js",
+    "file": "CIPP/frontend/src/pages/cipp/custom-data/mappings/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/custom-data/mappings/edit.js",
+    "file": "CIPP/frontend/src/pages/cipp/custom-data/mappings/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/custom-data/schema-extensions/add.js",
+    "file": "CIPP/frontend/src/pages/cipp/custom-data/schema-extensions/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.jsx",
     "route": "ExecSAMAppPermissions",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-permissions.jsx",
     "route": "execSamAppPermissions",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-roles.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/authentication/sam-app-roles.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/logs.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/logs.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/worker-health.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/worker-health.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/function-offloading.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/function-offloading.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/jit-admin-settings.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/jit-admin-settings.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/tenant-mode.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/tenant-mode.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.js",
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/time-settings.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1520,6 +1530,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippTemplatePackageManager.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippTenantAllowBlockListTemplateDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1785,37 +1800,37 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippDataTable.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippDataTable.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippDiagnosticsFilter.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippDiagnosticsFilter.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerFilter.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerFilter.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerFilter.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerFilter.jsx",
     "route": "overview",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerSimpleFilter.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippGraphExplorerSimpleFilter.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CippQueueTracker.js",
+    "file": "CIPP/frontend/src/components/CippTable/CippQueueTracker.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippTable/CIPPTableToptoolbar.js",
+    "file": "CIPP/frontend/src/components/CippTable/CIPPTableToptoolbar.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
