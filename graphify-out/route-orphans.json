@@ -96,6 +96,11 @@
   },
   {
     "file": "CIPP/frontend/src/data/standards.json",
+    "route": "ListPIMRoleSettingsTemplates",
+    "missing": "frontend node"
+  },
+  {
+    "file": "CIPP/frontend/src/data/standards.json",
     "route": "ListRetentionCompliancePolicyTemplates",
     "missing": "frontend node"
   },
@@ -715,6 +720,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/templates/edit.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/templates/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/identity/administration/groups/group/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -795,6 +810,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/email/tools/message-trace/historical-search/index.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/email/spamfilter/list-connectionfilter-templates/index.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -832,6 +852,11 @@
   {
     "file": "CIPP/frontend/src/pages/email/reports/antiphishing-filters/index.js",
     "route": "RemoveAntiPhishingFilter",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/email/reports/mail-flow-statistics/index.js",
+    "route": "ApiCall",
     "missing": "backend node"
   },
   {
@@ -1345,6 +1370,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippMfaVerifyForm.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippMobileTenantPicker.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1451,6 +1481,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSharePointBrowserStorage.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSharePointLibraryCopyDialog.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1791,6 +1826,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippWizard/CippAddTenantTypeSelection.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippWizard/CippCertificateAuthStep.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
