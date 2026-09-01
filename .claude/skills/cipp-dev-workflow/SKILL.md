@@ -42,6 +42,14 @@ git log --oneline upstream/dev..origin/dev | wc -l   # should be ~0
 
 If `origin/dev` is behind, sync before branching (fast-forward merge of `upstream/dev`, then push to `origin/dev`), otherwise the eventual PR carries unrelated catch-up commits. Report the drift count and confirm before any push to `origin/dev`.
 
+After a sync that moved `dev`, check whether the frontend lockfile moved with it:
+
+```
+git diff --name-only <old-tip>..dev -- frontend/yarn.lock
+```
+
+Non-empty -> `yarn install --frozen-lockfile` from `CIPP\frontend\` before running anything (a dep bump can land silently inside an unrelated sync; stale `node_modules` then fails installs with EPERM while the dev stack holds native bindings, runs tests against old deps, and hot-reloads old code). If the install hits EPERM on a `.node` file, a running frontend/storybook/vitest process owns it: kill the process trees on ports 3000/6006 plus orphaned vitest workers, then retry. Restart affected dev-stack tabs after.
+
 ### 2. Confirm the dev stack is healthy
 
 From the workspace root (not `CIPP\`): `dev.ps1` launches the full stack (azurite + Craft api container + module watcher + yarn frontend), everything at http://localhost:5196. `stop.ps1` tears it down. The module watcher rebuilds backend modules on save and the frontend hot-reloads, no manual container rebuild for normal code changes. Don't trust test results against a half-started stack.
