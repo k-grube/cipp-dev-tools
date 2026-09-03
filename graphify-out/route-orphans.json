@@ -450,6 +450,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/role-templates/mappings.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/gdap-management/roles/add.jsx",
     "route": "ApiCall",
     "missing": "backend node"
