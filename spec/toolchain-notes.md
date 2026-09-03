@@ -11,8 +11,11 @@ non-obvious findings worth knowing before touching the frontend test/build toolc
 
 ## vite / vitest / storybook
 
-- vite 8 is rolldown-based and ignores `esbuild` config entirely. this codebase is JSX-in-`.js`, all three loader overrides depend on `esbuild.loader: 'jsx'`, so vite is pinned 7.3.6 via `resolutions` (yarn v1 otherwise nests vite 8 under vitest). unpin after the jsx-in-js rename
-- vitest 4: `@vitest/browser` is gone, playwright provider is `@vitest/browser-playwright` and `browser.provider` takes the imported `playwright()`, not a string
+- vite 8 is rolldown-based and ignores `esbuild` config entirely, jsx handling is by file extension only (upstream renamed all JSX-bearing `.js` to `.jsx` in PR 460, `resolutions` now just holds vite at 8.2.2 so yarn v1 doesn't fork versions)
+- vitest 4: `@vitest/browser` is gone, playwright provider is `@vitest/browser-playwright` and `browser.provider` takes the imported `playwright()`, not a string. browser context module is `vitest/browser` (`@vitest/browser/context` deprecated, gone in 5)
+- suites run shared-context (unit `pool: threads` + `isolate: false`, storybook `browser.isolate: false`, test/unit-suite-shared-context branch): `vitest.setup.js` afterAll flushes module registry, history.state, storage, fake timers per file. leak classes seen live: divergent per-file `vi.mock` factories (first-mocker-wins without the flush), `__cippOverlay` left in history.state, getter-only `navigator.clipboard` from `userEvent.setup()`. debug recipe: passes alone + fails in suite = neighbor leak, re-run with `--isolate` to confirm
+- vmThreads pool is a dead end here (102 suites crash on load), deps.optimizer and NODE_COMPILE_CACHE measured no gain, `--experimental.fsModuleCache` cuts warm transform 20s -> 3s (wall noise, fine for local watch loops)
+- `yarn test:coverage` logs 4 PARSE_ERROR stacks from `@vitest/coverage-v8` remapping through rolldown parseAst (vite 8 artifact, present with isolation forced back on, report still completes and merges)
 - `@storybook/addon-vitest` (thru 10.5.3) still calls the deprecated `vitest.init()`, the "use vitest.standalone()" warning is upstream storybook's problem, ignore it
 - `yarn test:coverage` merges both projects into one report, browser coverage works via CDP in chromium. story-only components show real percentages (that's the proof it merges)
 - coverage instrumentation slows lazy chunks/fetches past testing-library's 1s default `waitFor`. global `asyncUtilTimeout: 10000` set in `frontend/vitest.setup.js` and `frontend/.storybook/vitest.setup.js`, never add per-call timeouts
