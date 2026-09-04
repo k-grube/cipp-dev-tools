@@ -625,6 +625,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/teams-share/storage-report/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/security/safelinks/safelinks/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -931,6 +936,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/copilot/agent365/packages/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/cippdb-cache.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1516,6 +1526,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSitRulePackDetails.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippStorageCleanupDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
