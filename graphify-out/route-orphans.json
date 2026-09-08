@@ -300,6 +300,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tools/templatelib/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tools/report-builder/builder/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -736,6 +741,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/identity/administration/users/user/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/identity/administration/users/user/onedrive-shortcuts.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1522,6 +1532,11 @@
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippSharePointTemplateDeployDrawer.jsx",
     "route": "ExecSharePointTemplate",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippSharePointVersionCleanupFields.jsx",
+    "route": "ApiCall",
     "missing": "backend node"
   },
   {
