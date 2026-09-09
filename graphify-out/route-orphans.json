@@ -1320,6 +1320,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippDevicePolicySettingStates.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippDomainServiceConfigurationRecords.jsx",
     "route": "ApiCall",
     "missing": "backend node"
