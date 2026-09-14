@@ -750,6 +750,21 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/role/audit.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/role/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/identity/administration/roles/role/pim.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/identity/administration/roles/templates/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1055,6 +1070,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/diagnostics.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/cipp/advanced/container-management/logs.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1296,6 +1316,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippCADeployDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippCAPolicyCoverageDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1711,6 +1736,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippIntegrations/CippApiDocumentation.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippIntegrations/CippApiEgressCard.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
