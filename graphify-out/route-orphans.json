@@ -1945,11 +1945,6 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/components/CippWizard/CippIntunePolicy.jsx",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/components/CippWizard/CippPSACredentialsStep.jsx",
     "route": "ApiCall",
     "missing": "backend node"

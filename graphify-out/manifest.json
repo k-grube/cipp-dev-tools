@@ -12024,11 +12024,6 @@
     "ast_hash": "8baf0b3af2afc874ba6724e73c73d071",
     "semantic_hash": "8baf0b3af2afc874ba6724e73c73d071"
   },
-  "cipp/frontend/src/components/CippWizard/CippIntunePolicy.jsx": {
-    "mtime": 1784771606.9500768,
-    "ast_hash": "025078c54eabeb954f9907cbeafa0597",
-    "semantic_hash": "025078c54eabeb954f9907cbeafa0597"
-  },
   "cipp/frontend/src/components/CippWizard/CippNotificationsStep.jsx": {
     "mtime": 1784771606.9510772,
     "ast_hash": "5087d21f6672b2535dacb5f3ccc02115",
@@ -19525,9 +19520,9 @@
     "semantic_hash": "f1df88c792a3f7c37002a10d28b22490"
   },
   "CIPP/backend/Config/CIPPDBCacheTypes.json": {
-    "mtime": 1788542009.8243506,
-    "ast_hash": "b26d325af4e6392cc4c8aba78c17062d",
-    "semantic_hash": "b26d325af4e6392cc4c8aba78c17062d"
+    "mtime": 1789632956.7678447,
+    "ast_hash": "d310e62dce00da224337261c4b9584e9",
+    "semantic_hash": "d310e62dce00da224337261c4b9584e9"
   },
   "CIPP/backend/Config/CIPPDefaultTable.BPATemplate.json": {
     "mtime": 1784682019.239582,
@@ -19580,9 +19575,9 @@
     "semantic_hash": "7a494fab15f6ba9de9076f354b4381c2"
   },
   "CIPP/backend/Config/PermissionsTranslator.json": {
-    "mtime": 1789399888.960694,
-    "ast_hash": "eea686fe0071269adcb2a2372811e7fa",
-    "semantic_hash": "eea686fe0071269adcb2a2372811e7fa"
+    "mtime": 1789632956.7728899,
+    "ast_hash": "96d2add61f65f4ae4e77607d59c071cd",
+    "semantic_hash": "96d2add61f65f4ae4e77607d59c071cd"
   },
   "CIPP/backend/Config/RiskyPermissions.json": {
     "mtime": 1784682019.2492514,
@@ -19590,9 +19585,9 @@
     "semantic_hash": "c11f8af3163cc6749373a34fa5175f6a"
   },
   "CIPP/backend/Config/SAMManifest.json": {
-    "mtime": 1789399888.961842,
-    "ast_hash": "58640c491f55d872260dfc69e17370f5",
-    "semantic_hash": "58640c491f55d872260dfc69e17370f5"
+    "mtime": 1789632956.7738957,
+    "ast_hash": "f2eb7baf39e9279b6c9e361dfe88ea4e",
+    "semantic_hash": "f2eb7baf39e9279b6c9e361dfe88ea4e"
   },
   "CIPP/backend/Config/ShadowAI.json": {
     "mtime": 1784682019.2508147,
@@ -19660,9 +19655,9 @@
     "semantic_hash": "54d170d8ef996f80f80ef67dac8fa0b8"
   },
   "CIPP/backend/Config/openapi.json": {
-    "mtime": 1789399889.0212305,
-    "ast_hash": "13a36f8255b01b7cba6a812d6aac383a",
-    "semantic_hash": "13a36f8255b01b7cba6a812d6aac383a"
+    "mtime": 1789632956.7813964,
+    "ast_hash": "7e2e54af9b74d1e49396e1628202c4cf",
+    "semantic_hash": "7e2e54af9b74d1e49396e1628202c4cf"
   },
   "CIPP/backend/Config/schemaDefinitions.json": {
     "mtime": 1784682019.2929647,
@@ -19670,9 +19665,9 @@
     "semantic_hash": "d26b0f0de34b321946e3611ab6eaf43f"
   },
   "CIPP/backend/Config/standards.json": {
-    "mtime": 1789399889.0247495,
-    "ast_hash": "b433862970baf3f3379eb750ca8c7359",
-    "semantic_hash": "b433862970baf3f3379eb750ca8c7359"
+    "mtime": 1789632956.7839148,
+    "ast_hash": "906342b74995fce8d869676a6b5cea53",
+    "semantic_hash": "906342b74995fce8d869676a6b5cea53"
   },
   "CIPP/backend/ExecMaintenanceScripts/Scripts/Add-CippUser.ps1": {
     "mtime": 1785873411.0817077,
@@ -19725,14 +19720,14 @@
     "semantic_hash": "b3dd9de526f4a99b33ffab0f2ab2347a"
   },
   "CIPP/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/Domain Analyser/Push-DomainAnalyserDomain.ps1": {
-    "mtime": 1789399889.026256,
-    "ast_hash": "d33ff1072e30bba3dfa8595b4d246d67",
-    "semantic_hash": "d33ff1072e30bba3dfa8595b4d246d67"
+    "mtime": 1789632956.7849157,
+    "ast_hash": "86f8c770d775a2e829e8ba9a0c5fc566",
+    "semantic_hash": "86f8c770d775a2e829e8ba9a0c5fc566"
   },
   "CIPP/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/Domain Analyser/Push-DomainAnalyserTenant.ps1": {
-    "mtime": 1788888559.1781592,
-    "ast_hash": "0930059dc1c9de14755ab46f87611c9c",
-    "semantic_hash": "0930059dc1c9de14755ab46f87611c9c"
+    "mtime": 1789632956.7859159,
+    "ast_hash": "73fddb00cf7a7b59f54f2080c27c5fad",
+    "semantic_hash": "73fddb00cf7a7b59f54f2080c27c5fad"
   },
   "CIPP/backend/Modules/CIPPActivityTriggers/Public/Entrypoints/Activity Triggers/Domain Analyser/Push-GetDomainAnalyserResults.ps1": {
     "mtime": 1784682019.3464596,
@@ -20145,9 +20140,9 @@
     "semantic_hash": "f93a5fb3e16f05fcfd34e799f90bb547"
   },
   "CIPP/backend/Modules/CIPPAlerts/Public/Alerts/Get-CIPPAlertExpiringLicenses.ps1": {
-    "mtime": 1788275911.7676842,
-    "ast_hash": "d62ceb9c676a1dcc1a463f18061df575",
-    "semantic_hash": "d62ceb9c676a1dcc1a463f18061df575"
+    "mtime": 1789632956.786914,
+    "ast_hash": "12795b43e58c8bb8c0d011d9e08eadee",
+    "semantic_hash": "12795b43e58c8bb8c0d011d9e08eadee"
   },
   "CIPP/backend/Modules/CIPPAlerts/Public/Alerts/Get-CIPPAlertGlobalAdminAllowList.ps1": {
     "mtime": 1784682019.3867202,
@@ -20740,9 +20735,9 @@
     "semantic_hash": "c1dc56ef31940a5037a72a4c31221276"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Clear-CIPPImmutableId.ps1": {
-    "mtime": 1784682019.4425507,
-    "ast_hash": "f9eca5476181a774040093a5cd37bf39",
-    "semantic_hash": "f9eca5476181a774040093a5cd37bf39"
+    "mtime": 1789632956.7889154,
+    "ast_hash": "4162bf4e1801758de1694680022182cb",
+    "semantic_hash": "4162bf4e1801758de1694680022182cb"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Clear-CIPPTestDataCache.ps1": {
     "mtime": 1784682019.4425507,
@@ -21015,9 +21010,9 @@
     "semantic_hash": "4b242cb346d1c437db6d455476eb644a"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Functions/Get-CIPPTenantAlignment.ps1": {
-    "mtime": 1788414687.3747756,
-    "ast_hash": "4bd94af43c8c1b331a1ecfd84fac2a77",
-    "semantic_hash": "4bd94af43c8c1b331a1ecfd84fac2a77"
+    "mtime": 1789632956.7899153,
+    "ast_hash": "4d46badb6134ab3a295d529a38f32a8d",
+    "semantic_hash": "4d46badb6134ab3a295d529a38f32a8d"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Functions/Get-CIPPURLName.ps1": {
     "mtime": 1788276507.4324577,
@@ -21375,9 +21370,9 @@
     "semantic_hash": "88cdc50ae6a3273eba263bc5eb612cce"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Get-CIPPTestResultsTenants.ps1": {
-    "mtime": 1787127877.731918,
-    "ast_hash": "492e7b5e5d904d5dc98017ffb7df9aa5",
-    "semantic_hash": "492e7b5e5d904d5dc98017ffb7df9aa5"
+    "mtime": 1789632956.7914205,
+    "ast_hash": "9524e96bdbe92384a1faa53a21c79152",
+    "semantic_hash": "9524e96bdbe92384a1faa53a21c79152"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Get-CIPPTextReplacement.ps1": {
     "mtime": 1787359838.3498318,
@@ -21565,9 +21560,9 @@
     "semantic_hash": "8f27066dad179de8bdd71dcf4fedd45b"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/Get-ClassicAPIToken.ps1": {
-    "mtime": 1788275911.8116112,
-    "ast_hash": "de8b230313c53629277b0a09700cced0",
-    "semantic_hash": "de8b230313c53629277b0a09700cced0"
+    "mtime": 1789632956.792425,
+    "ast_hash": "206e44c6282cc112413d2e3e01955e31",
+    "semantic_hash": "206e44c6282cc112413d2e3e01955e31"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/Get-GraphBulkResultByID.ps1": {
     "mtime": 1784682019.5233576,
@@ -21575,9 +21570,9 @@
     "semantic_hash": "44e2adb4f515e99577aac11f46ca0e4e"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/Get-GraphToken.ps1": {
-    "mtime": 1788275911.8121362,
-    "ast_hash": "2be5d50166a5b3864960752c527c0de1",
-    "semantic_hash": "2be5d50166a5b3864960752c527c0de1"
+    "mtime": 1789632956.7934284,
+    "ast_hash": "3de5678bd36e18c21807cffbb423f6e0",
+    "semantic_hash": "3de5678bd36e18c21807cffbb423f6e0"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/Get-GraphTokenFromCert.ps1": {
     "mtime": 1784682019.5243814,
@@ -21595,9 +21590,9 @@
     "semantic_hash": "c9bc3a495e820867b23a2304f94c7a40"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/Get-Tenants.ps1": {
-    "mtime": 1788542009.8531268,
-    "ast_hash": "991150988afd665959bda43277bb1caf",
-    "semantic_hash": "991150988afd665959bda43277bb1caf"
+    "mtime": 1789632956.7944288,
+    "ast_hash": "409f529137f3a4195c846f443aae000b",
+    "semantic_hash": "409f529137f3a4195c846f443aae000b"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/New-CIPPAzRestRequest.ps1": {
     "mtime": 1785705847.7859979,
@@ -21645,9 +21640,9 @@
     "semantic_hash": "75c4c8ed093d30df77e561d21d78332b"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/New-GraphBulkRequest.ps1": {
-    "mtime": 1788888559.2057936,
-    "ast_hash": "a4297ffb01faa972d7b0084b11343c08",
-    "semantic_hash": "a4297ffb01faa972d7b0084b11343c08"
+    "mtime": 1789632956.795429,
+    "ast_hash": "fde38b3afbe167c5b5c60e799d2b6b6c",
+    "semantic_hash": "fde38b3afbe167c5b5c60e799d2b6b6c"
   },
   "CIPP/backend/Modules/CIPPCore/Public/GraphHelper/New-GraphGetRequest.ps1": {
     "mtime": 1789399889.049816,
@@ -21750,9 +21745,9 @@
     "semantic_hash": "c41bdd34354aad1bb96316288f672f44"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Invoke-CIPPDBCacheCollection.ps1": {
-    "mtime": 1788542009.8542295,
-    "ast_hash": "e4d63e3e0d08e73babcfc15184702d65",
-    "semantic_hash": "e4d63e3e0d08e73babcfc15184702d65"
+    "mtime": 1789632956.7964287,
+    "ast_hash": "84bde3b37d7664c0a7080e8a03512450",
+    "semantic_hash": "84bde3b37d7664c0a7080e8a03512450"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Invoke-CIPPOffboardingJob.ps1": {
     "mtime": 1788888559.2073648,
@@ -21815,9 +21810,9 @@
     "semantic_hash": "3939b0204c6408180ad38510be953a9a"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPBackupTask.ps1": {
-    "mtime": 1787359838.351943,
-    "ast_hash": "7d277cd994a0979a5c68fe794cd1e3be",
-    "semantic_hash": "7d277cd994a0979a5c68fe794cd1e3be"
+    "mtime": 1789632956.7974293,
+    "ast_hash": "c52585a90cf2aee8ed28af5e2f46530f",
+    "semantic_hash": "c52585a90cf2aee8ed28af5e2f46530f"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPCAPolicy.ps1": {
     "mtime": 1788888559.2084072,
@@ -21845,9 +21840,9 @@
     "semantic_hash": "77cacf180513612c635861dc016d3f6a"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPIntuneAppDeployment.ps1": {
-    "mtime": 1788888559.2094555,
-    "ast_hash": "5b46deb8b350f53c07b47235a7e458d0",
-    "semantic_hash": "5b46deb8b350f53c07b47235a7e458d0"
+    "mtime": 1789632956.7974293,
+    "ast_hash": "2fdab5aaab73ec9d998a6f7baddd1015",
+    "semantic_hash": "2fdab5aaab73ec9d998a6f7baddd1015"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPIntuneReportExportJob.ps1": {
     "mtime": 1785705847.8033998,
@@ -21870,9 +21865,9 @@
     "semantic_hash": "e43c4c2f6ec78193acc6ed93c5301857"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPRestoreTask.ps1": {
-    "mtime": 1785873411.1157126,
-    "ast_hash": "fe026aa479fb2eca8ed5ae83f986b415",
-    "semantic_hash": "fe026aa479fb2eca8ed5ae83f986b415"
+    "mtime": 1789632956.7989328,
+    "ast_hash": "6d621f6b1a00350a7210410451081549",
+    "semantic_hash": "6d621f6b1a00350a7210410451081549"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPSAMCertificate.ps1": {
     "mtime": 1784682019.5560815,
@@ -21885,9 +21880,9 @@
     "semantic_hash": "fe88d2e89f215625b1ee955ff3d78d7a"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPSharepointSite.ps1": {
-    "mtime": 1786835872.2720668,
-    "ast_hash": "0a5974dcbf29db925d5174fbecc90413",
-    "semantic_hash": "0a5974dcbf29db925d5174fbecc90413"
+    "mtime": 1789632956.7999368,
+    "ast_hash": "1810207b0507f5125000dc58aa52110f",
+    "semantic_hash": "1810207b0507f5125000dc58aa52110f"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPSitRulePackXml.ps1": {
     "mtime": 1784682019.5575995,
@@ -21900,9 +21895,9 @@
     "semantic_hash": "2479cbac733c64aaba97c51b01b8cc6f"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPTAP.ps1": {
-    "mtime": 1784682019.559111,
-    "ast_hash": "60ad09e87bb6116c77c4c420fd29261d",
-    "semantic_hash": "60ad09e87bb6116c77c4c420fd29261d"
+    "mtime": 1789632956.7999368,
+    "ast_hash": "86dbba2166078f606e8190ea42668bad",
+    "semantic_hash": "86dbba2166078f606e8190ea42668bad"
   },
   "CIPP/backend/Modules/CIPPCore/Public/New-CIPPTeam.ps1": {
     "mtime": 1784682019.559111,
@@ -22115,9 +22110,9 @@
     "semantic_hash": "56f4a3335ee400885b160fc346b4ceea"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Send-CIPPScheduledTaskAlert.ps1": {
-    "mtime": 1788414687.3916798,
-    "ast_hash": "c4b3d06e00bbdc9234b26e2bb230504a",
-    "semantic_hash": "c4b3d06e00bbdc9234b26e2bb230504a"
+    "mtime": 1789632956.8024507,
+    "ast_hash": "d3cf85cdd1d28a646eb88dbbddc5c8e3",
+    "semantic_hash": "d3cf85cdd1d28a646eb88dbbddc5c8e3"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPAlwaysShowFrom.ps1": {
     "mtime": 1784682019.5799077,
@@ -22125,14 +22120,14 @@
     "semantic_hash": "906124883aff9852053075a36e3ce11e"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPAssignedApplication.ps1": {
-    "mtime": 1785705847.8161492,
-    "ast_hash": "b771a6d50ed1bc92465a70fed862e5cc",
-    "semantic_hash": "b771a6d50ed1bc92465a70fed862e5cc"
+    "mtime": 1789632956.803452,
+    "ast_hash": "b942a04a0c029717b338e5864466e689",
+    "semantic_hash": "b942a04a0c029717b338e5864466e689"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPAssignedPolicy.ps1": {
-    "mtime": 1787359838.3577335,
-    "ast_hash": "f53b34074ee209c371c0f420e09fcb54",
-    "semantic_hash": "f53b34074ee209c371c0f420e09fcb54"
+    "mtime": 1789632956.803452,
+    "ast_hash": "85ff0fc78aa1cdf74c6b443f3e04539d",
+    "semantic_hash": "85ff0fc78aa1cdf74c6b443f3e04539d"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPAuditLogUserExclusion.ps1": {
     "mtime": 1785705847.8166523,
@@ -22275,9 +22270,9 @@
     "semantic_hash": "abb21d2c77aa5e77fa91e2831edd1175"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPIntunePolicy.ps1": {
-    "mtime": 1789399889.058466,
-    "ast_hash": "8c81328de4f7bf2885bc81b0da994266",
-    "semantic_hash": "8c81328de4f7bf2885bc81b0da994266"
+    "mtime": 1789632956.80445,
+    "ast_hash": "2322c030edaf468914661d202b39d757",
+    "semantic_hash": "2322c030edaf468914661d202b39d757"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPIntuneTemplate.ps1": {
     "mtime": 1784682019.5945828,
@@ -22370,9 +22365,9 @@
     "semantic_hash": "478b87a5cbc786591ce532c84c088123"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPRegistrationCampaign.ps1": {
-    "mtime": 1788275911.8419206,
-    "ast_hash": "f10df033bf64e233d356dc9982a844ee",
-    "semantic_hash": "f10df033bf64e233d356dc9982a844ee"
+    "mtime": 1789632956.8054502,
+    "ast_hash": "6b133bf8898c58c94c0eaaaa21b6f140",
+    "semantic_hash": "6b133bf8898c58c94c0eaaaa21b6f140"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Set-CIPPResetPassword.ps1": {
     "mtime": 1784682019.602646,
@@ -23580,9 +23575,9 @@
     "semantic_hash": "799f29847b9cb39a1f2f8f1d8c678c3c"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecApiClient.ps1": {
-    "mtime": 1789399889.0625112,
-    "ast_hash": "590184f36d4002a40109edb956b63899",
-    "semantic_hash": "590184f36d4002a40109edb956b63899"
+    "mtime": 1789632956.80745,
+    "ast_hash": "f631573ebe17bee0479ae254e45e348d",
+    "semantic_hash": "f631573ebe17bee0479ae254e45e348d"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Settings/Invoke-ExecAppServiceDomains.ps1": {
     "mtime": 1788414687.3989792,
@@ -23795,9 +23790,9 @@
     "semantic_hash": "6a563b0ad3629a99ac2e079c0e46375e"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Setup/Invoke-ExecAddTenant.ps1": {
-    "mtime": 1787127877.783931,
-    "ast_hash": "88701b4e2c517985936de15067eafe1c",
-    "semantic_hash": "88701b4e2c517985936de15067eafe1c"
+    "mtime": 1789632956.8084505,
+    "ast_hash": "285415ca5188aa194302cf7637e758b9",
+    "semantic_hash": "285415ca5188aa194302cf7637e758b9"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/Setup/Invoke-ExecCombinedSetup.ps1": {
     "mtime": 1788542009.8904595,
@@ -24430,29 +24425,29 @@
     "semantic_hash": "ba8216370aea7e8b4c61c2a974cdee66"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddChocoApp.ps1": {
-    "mtime": 1785944588.1845345,
-    "ast_hash": "e065fa4c1501f4d82104cbec27ea4f2d",
-    "semantic_hash": "e065fa4c1501f4d82104cbec27ea4f2d"
+    "mtime": 1789632956.811449,
+    "ast_hash": "42344c370f036685d57201bd7d06c119",
+    "semantic_hash": "42344c370f036685d57201bd7d06c119"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddMSPApp.ps1": {
-    "mtime": 1785944588.1855345,
-    "ast_hash": "0669d854443258d21bd16ebcc5e30063",
-    "semantic_hash": "0669d854443258d21bd16ebcc5e30063"
+    "mtime": 1789632956.8135762,
+    "ast_hash": "f09f518856cd7b1dce91bad92b5440a1",
+    "semantic_hash": "f09f518856cd7b1dce91bad92b5440a1"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddOfficeApp.ps1": {
-    "mtime": 1785705847.9183314,
-    "ast_hash": "7c6a2a3b14d42172e09e4c4912f7a5d0",
-    "semantic_hash": "7c6a2a3b14d42172e09e4c4912f7a5d0"
+    "mtime": 1789632956.8135762,
+    "ast_hash": "408372b27dbf28d987f7b9420250cd60",
+    "semantic_hash": "408372b27dbf28d987f7b9420250cd60"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddStoreApp.ps1": {
-    "mtime": 1785705847.9193358,
-    "ast_hash": "4f24691b2d934f2a06d9ec3f542eec0c",
-    "semantic_hash": "4f24691b2d934f2a06d9ec3f542eec0c"
+    "mtime": 1789632956.8150806,
+    "ast_hash": "bdce6d17be0026a6c938a0edac81e547",
+    "semantic_hash": "bdce6d17be0026a6c938a0edac81e547"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddWin32ScriptApp.ps1": {
-    "mtime": 1784682019.8150632,
-    "ast_hash": "c4668a53f8f01ab53b445c102b5470b8",
-    "semantic_hash": "c4668a53f8f01ab53b445c102b5470b8"
+    "mtime": 1789632956.8155982,
+    "ast_hash": "50d8c4d7e261f956fac90191499e36e6",
+    "semantic_hash": "50d8c4d7e261f956fac90191499e36e6"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-ExecAppUpload.ps1": {
     "mtime": 1784682019.8150632,
@@ -24605,9 +24600,9 @@
     "semantic_hash": "e954b2400086b3f22a9f1bddd5ce4888"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/MEM/Invoke-AddPolicy.ps1": {
-    "mtime": 1786835872.352486,
-    "ast_hash": "2037823833bafe3fe7f588ba53382302",
-    "semantic_hash": "2037823833bafe3fe7f588ba53382302"
+    "mtime": 1789632956.8155982,
+    "ast_hash": "58888e3219fab2d7a880a1384e1c510c",
+    "semantic_hash": "58888e3219fab2d7a880a1384e1c510c"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/MEM/Invoke-EditAssignmentFilter.ps1": {
     "mtime": 1788888559.2356243,
@@ -24840,9 +24835,9 @@
     "semantic_hash": "4dba8ee28145c43c5f84f1544f578a92"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-AddJITAdminTemplate.ps1": {
-    "mtime": 1784682019.8572094,
-    "ast_hash": "41187f4a0d5c1bb6b9d36e56152cd918",
-    "semantic_hash": "41187f4a0d5c1bb6b9d36e56152cd918"
+    "mtime": 1789632956.8171055,
+    "ast_hash": "042e49e1e41d66e8588d622e526267e8",
+    "semantic_hash": "042e49e1e41d66e8588d622e526267e8"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-AddUser.ps1": {
     "mtime": 1789399889.0675104,
@@ -24855,14 +24850,14 @@
     "semantic_hash": "acc743fb3a94cf6e00374b218201e452"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-AddUserDefaults.ps1": {
-    "mtime": 1788275911.9582846,
-    "ast_hash": "259ef0ba713d1380ccb21fca185aa8a9",
-    "semantic_hash": "259ef0ba713d1380ccb21fca185aa8a9"
+    "mtime": 1789632956.818109,
+    "ast_hash": "b2858138be48864b7ccdfd288a9c3200",
+    "semantic_hash": "b2858138be48864b7ccdfd288a9c3200"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-EditJITAdminTemplate.ps1": {
-    "mtime": 1784682019.8592706,
-    "ast_hash": "b7d4fd8d603ad023f9968ea51253386b",
-    "semantic_hash": "b7d4fd8d603ad023f9968ea51253386b"
+    "mtime": 1789632956.819109,
+    "ast_hash": "658839eb6c19c403464f52ed72e0fd71",
+    "semantic_hash": "658839eb6c19c403464f52ed72e0fd71"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-EditUser.ps1": {
     "mtime": 1784682019.859784,
@@ -24890,14 +24885,14 @@
     "semantic_hash": "3195e6904e3817e9a4d8cf2e1ee96f5b"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ExecClrImmId.ps1": {
-    "mtime": 1784682019.8618464,
-    "ast_hash": "ab3566ccf770971a6c2ec9d67e1334cc",
-    "semantic_hash": "ab3566ccf770971a6c2ec9d67e1334cc"
+    "mtime": 1789632956.819109,
+    "ast_hash": "ea545b842af39a1310b8d497ad04acbe",
+    "semantic_hash": "ea545b842af39a1310b8d497ad04acbe"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ExecCreateTAP.ps1": {
-    "mtime": 1785944588.2055755,
-    "ast_hash": "a1435f6d11d13652b5b0a78123f8a698",
-    "semantic_hash": "a1435f6d11d13652b5b0a78123f8a698"
+    "mtime": 1789632956.8211088,
+    "ast_hash": "4147c60606f93141aea1275747ff9457",
+    "semantic_hash": "4147c60606f93141aea1275747ff9457"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ExecDisableUser.ps1": {
     "mtime": 1784682019.8618464,
@@ -25055,9 +25050,9 @@
     "semantic_hash": "0f928b4e6e73d0b4970d972f04e2e2a1"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ListUsers.ps1": {
-    "mtime": 1788888559.2497602,
-    "ast_hash": "72479f2f7b0f135fb4e71b475f70a80e",
-    "semantic_hash": "72479f2f7b0f135fb4e71b475f70a80e"
+    "mtime": 1789632956.8216133,
+    "ast_hash": "42ab88619edd5d87bbc49de614453177",
+    "semantic_hash": "42ab88619edd5d87bbc49de614453177"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-PatchUser.ps1": {
     "mtime": 1784682019.8780856,
@@ -25320,14 +25315,14 @@
     "semantic_hash": "d5e1048d59014f552e0f261eec0e8d9e"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Teams-Sharepoint/Invoke-AddSite.ps1": {
-    "mtime": 1784682019.93978,
-    "ast_hash": "36f4bfedad954d27c0e06c7ac9046aa5",
-    "semantic_hash": "36f4bfedad954d27c0e06c7ac9046aa5"
+    "mtime": 1789632956.8231158,
+    "ast_hash": "634e1f794129c26ef95b683819900dca",
+    "semantic_hash": "634e1f794129c26ef95b683819900dca"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Teams-Sharepoint/Invoke-AddSiteBulk.ps1": {
-    "mtime": 1784682019.9413,
-    "ast_hash": "443fe7be42cced747a521d2d6100ae37",
-    "semantic_hash": "443fe7be42cced747a521d2d6100ae37"
+    "mtime": 1789632956.8231158,
+    "ast_hash": "31fd468017da968822efacd0e1ffebd8",
+    "semantic_hash": "31fd468017da968822efacd0e1ffebd8"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Teams-Sharepoint/Invoke-AddTeam.ps1": {
     "mtime": 1784682019.9413,
@@ -25460,9 +25455,9 @@
     "semantic_hash": "eb1e28dc3d21ae0d4509efa8311b2492"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Teams-Sharepoint/Invoke-ListSharepointQuota.ps1": {
-    "mtime": 1789399889.0707474,
-    "ast_hash": "57380afed0e553c20fba6088a6681269",
-    "semantic_hash": "57380afed0e553c20fba6088a6681269"
+    "mtime": 1789632956.824119,
+    "ast_hash": "094877271bfa4e10ca5750ca6e0a52a3",
+    "semantic_hash": "094877271bfa4e10ca5750ca6e0a52a3"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Teams-Sharepoint/Invoke-ListSharepointSettings.ps1": {
     "mtime": 1788275911.9837103,
@@ -25660,9 +25655,9 @@
     "semantic_hash": "f5ac613e98fe21133f92bac05a5b3d04"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Administration/Tenant/Invoke-ListTenants.ps1": {
-    "mtime": 1786835872.366203,
-    "ast_hash": "8096e27f201a0bfa154a71175da8ecce",
-    "semantic_hash": "8096e27f201a0bfa154a71175da8ecce"
+    "mtime": 1789632956.8251193,
+    "ast_hash": "8f6a810e83347ef5952d521ab774c7b7",
+    "semantic_hash": "8f6a810e83347ef5952d521ab774c7b7"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Administration/Tenant/Invoke-RemoveTenantCapabilitiesCache.ps1": {
     "mtime": 1788542009.9225621,
@@ -25850,9 +25845,9 @@
     "semantic_hash": "759171c00d2e2a4cf3ab3d4091df92f5"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Standards/Invoke-AddStandardsTemplate.ps1": {
-    "mtime": 1788888559.2591064,
-    "ast_hash": "84f7f622e9deecf94caec34d159aa855",
-    "semantic_hash": "84f7f622e9deecf94caec34d159aa855"
+    "mtime": 1789632956.8261192,
+    "ast_hash": "8a3525e9c77da7685ad65ca3aba348f0",
+    "semantic_hash": "8a3525e9c77da7685ad65ca3aba348f0"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Standards/Invoke-BestPracticeAnalyser_List.ps1": {
     "mtime": 1785944588.2370837,
@@ -26200,9 +26195,9 @@
     "semantic_hash": "24479f4fcaa39d97f4b62fedd7da611e"
   },
   "CIPP/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardConditionalAccessTemplate.ps1": {
-    "mtime": 1788414687.4140074,
-    "ast_hash": "c05641d41d1221d9205464be5217c9c6",
-    "semantic_hash": "c05641d41d1221d9205464be5217c9c6"
+    "mtime": 1789632956.8291192,
+    "ast_hash": "f37f3c3a228bf87bb1a615a14a4cda16",
+    "semantic_hash": "f37f3c3a228bf87bb1a615a14a4cda16"
   },
   "CIPP/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardCopilotLimitedMode.ps1": {
     "mtime": 1784682020.039738,
@@ -27325,9 +27320,9 @@
     "semantic_hash": "270b55a29495c47bf6c0a63073867c18"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/CIS/Identity/Invoke-CippTestCIS_2_1_1.ps1": {
-    "mtime": 1787684060.8825781,
-    "ast_hash": "70c373f07125f5b5e6492d779b533b60",
-    "semantic_hash": "70c373f07125f5b5e6492d779b533b60"
+    "mtime": 1789632956.832629,
+    "ast_hash": "28b6a17698560008fd759e1dbbc3c41f",
+    "semantic_hash": "28b6a17698560008fd759e1dbbc3c41f"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/CIS/Identity/Invoke-CippTestCIS_2_1_10.ps1": {
     "mtime": 1784682020.145114,
@@ -27370,14 +27365,14 @@
     "semantic_hash": "49517a2b491155d759e07dc6d39f760a"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/CIS/Identity/Invoke-CippTestCIS_2_1_4.ps1": {
-    "mtime": 1787684060.8846855,
-    "ast_hash": "9d5425062bddc046f88b82c8a7bb104a",
-    "semantic_hash": "9d5425062bddc046f88b82c8a7bb104a"
+    "mtime": 1789632956.8336325,
+    "ast_hash": "d6cecd4e30aa2b95953a67ff1e98a120",
+    "semantic_hash": "d6cecd4e30aa2b95953a67ff1e98a120"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/CIS/Identity/Invoke-CippTestCIS_2_1_5.ps1": {
-    "mtime": 1787684060.885734,
-    "ast_hash": "416b7baf2827bcf5ca5bd9c702f24fe7",
-    "semantic_hash": "416b7baf2827bcf5ca5bd9c702f24fe7"
+    "mtime": 1789632956.8341358,
+    "ast_hash": "f57e53c979a6240e6a8c5ba74129e24b",
+    "semantic_hash": "f57e53c979a6240e6a8c5ba74129e24b"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/CIS/Identity/Invoke-CippTestCIS_2_1_6.ps1": {
     "mtime": 1784682020.153759,
@@ -28930,14 +28925,14 @@
     "semantic_hash": "0ae8e7b2a44687c56cc16eb969dbe942"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA226.ps1": {
-    "mtime": 1789399889.083459,
-    "ast_hash": "f503a065dab13247c6a5ba9e7343895e",
-    "semantic_hash": "f503a065dab13247c6a5ba9e7343895e"
+    "mtime": 1789632956.835138,
+    "ast_hash": "4efa96b1ffc036b9cf56eae6bb513133",
+    "semantic_hash": "4efa96b1ffc036b9cf56eae6bb513133"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA227.ps1": {
-    "mtime": 1789399889.083459,
-    "ast_hash": "1d99d5a5000693d9a8112afeb0f10a46",
-    "semantic_hash": "1d99d5a5000693d9a8112afeb0f10a46"
+    "mtime": 1789632956.8371415,
+    "ast_hash": "d7b951b48be952060f03efc8f7c60260",
+    "semantic_hash": "d7b951b48be952060f03efc8f7c60260"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA228.ps1": {
     "mtime": 1784682020.4691193,
@@ -28950,19 +28945,19 @@
     "semantic_hash": "3eb147bc1e9f5cf7d96f148b384ba28d"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA230.ps1": {
-    "mtime": 1784682020.4706619,
-    "ast_hash": "8bec76875508d67b7116780345643eea",
-    "semantic_hash": "8bec76875508d67b7116780345643eea"
+    "mtime": 1789632956.8381417,
+    "ast_hash": "c77a43542cbf7d65c8cb7588bb11fda4",
+    "semantic_hash": "c77a43542cbf7d65c8cb7588bb11fda4"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA231.ps1": {
-    "mtime": 1784682020.4711735,
-    "ast_hash": "1b81d00927d235bae00ecaa100d89ba6",
-    "semantic_hash": "1b81d00927d235bae00ecaa100d89ba6"
+    "mtime": 1789632956.8391416,
+    "ast_hash": "20bbc8639e3da198aa0c5d24ef62bb31",
+    "semantic_hash": "20bbc8639e3da198aa0c5d24ef62bb31"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA232.ps1": {
-    "mtime": 1784682020.4722118,
-    "ast_hash": "4f12fef6404854a4e1f8aac527f71a0d",
-    "semantic_hash": "4f12fef6404854a4e1f8aac527f71a0d"
+    "mtime": 1789632956.8401415,
+    "ast_hash": "53d6f0eec3c9087b5d4eb4dbb59f6a74",
+    "semantic_hash": "53d6f0eec3c9087b5d4eb4dbb59f6a74"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA233.ps1": {
     "mtime": 1784682020.4727302,
@@ -29780,9 +29775,9 @@
     "semantic_hash": "e5c9c293dbd07201c0766124f172d98c"
   },
   "CIPP/backend/Modules/CippExtensions/Private/Hudu/Get-HuduLinkBlock.ps1": {
-    "mtime": 1784682020.6553655,
-    "ast_hash": "75bc1b5c33dea4190610ae32c02f9273",
-    "semantic_hash": "75bc1b5c33dea4190610ae32c02f9273"
+    "mtime": 1789632956.8411417,
+    "ast_hash": "5f2f9a2a892a33c61a34b2ae3903fe17",
+    "semantic_hash": "5f2f9a2a892a33c61a34b2ae3903fe17"
   },
   "CIPP/backend/Modules/CippExtensions/Public/Extension Functions/Add-HuduAssetLayoutField.ps1": {
     "mtime": 1784682020.6573968,
@@ -30380,9 +30375,9 @@
     "semantic_hash": "46a57093fe8e7b1f7f5ce1210709029f"
   },
   "CIPP/frontend/package.json": {
-    "mtime": 1789399889.1326823,
-    "ast_hash": "7430c89c292b836628bb048617ba4d1b",
-    "semantic_hash": "7430c89c292b836628bb048617ba4d1b"
+    "mtime": 1789632956.8955426,
+    "ast_hash": "2c93e13b95e244fe3a911567edacc5fe",
+    "semantic_hash": "2c93e13b95e244fe3a911567edacc5fe"
   },
   "CIPP/frontend/scripts/skip-export-build-traces.mjs": {
     "mtime": 1784771607.3219402,
@@ -30600,9 +30595,9 @@
     "semantic_hash": "31e8a249634447588a8f03ddb50562c4"
   },
   "CIPP/frontend/src/components/CippComponents/CippAlertSnoozeDialog.jsx": {
-    "mtime": 1788298431.0203853,
-    "ast_hash": "82a7df5f5bf083d42f991e46c554cc8f",
-    "semantic_hash": "82a7df5f5bf083d42f991e46c554cc8f"
+    "mtime": 1789632956.897543,
+    "ast_hash": "5b6e2f0b236c3b3318509ee324f4f4fd",
+    "semantic_hash": "5b6e2f0b236c3b3318509ee324f4f4fd"
   },
   "CIPP/frontend/src/components/CippComponents/CippAliasDialog.jsx": {
     "mtime": 1788542010.0113368,
@@ -30650,9 +30645,9 @@
     "semantic_hash": "8deaad68144df685601d577edbc2b5ff"
   },
   "CIPP/frontend/src/components/CippComponents/CippApplicationDeployDrawer.jsx": {
-    "mtime": 1788542010.0168436,
-    "ast_hash": "83dcf262021ca6062872ab6358ff52b8",
-    "semantic_hash": "83dcf262021ca6062872ab6358ff52b8"
+    "mtime": 1789632956.897543,
+    "ast_hash": "a3eeba197e60d411e8ddda7c877ff696",
+    "semantic_hash": "a3eeba197e60d411e8ddda7c877ff696"
   },
   "CIPP/frontend/src/components/CippComponents/CippAuditLogDetails.jsx": {
     "mtime": 1785876000.5072627,
@@ -30685,9 +30680,9 @@
     "semantic_hash": "728dca01e695e7c11617cb71c4ca1734"
   },
   "CIPP/frontend/src/components/CippComponents/CippBackupScheduleDrawer.jsx": {
-    "mtime": 1788542010.0208442,
-    "ast_hash": "7a0ca18c47a1c6ac956d98041c6e9346",
-    "semantic_hash": "7a0ca18c47a1c6ac956d98041c6e9346"
+    "mtime": 1789632956.899046,
+    "ast_hash": "a1594b5b523f9c45ef60631e5c4b3e75",
+    "semantic_hash": "a1594b5b523f9c45ef60631e5c4b3e75"
   },
   "CIPP/frontend/src/components/CippComponents/CippBitlockerKeySearch.jsx": {
     "mtime": 1788542010.0218453,
@@ -30835,9 +30830,9 @@
     "semantic_hash": "751bd7568c31e7e4985a58217408a204"
   },
   "CIPP/frontend/src/components/CippComponents/CippFormComponent.jsx": {
-    "mtime": 1788542010.0402434,
-    "ast_hash": "5e3ac8483dfb04a12fabf7caeb157da8",
-    "semantic_hash": "5e3ac8483dfb04a12fabf7caeb157da8"
+    "mtime": 1789632956.899046,
+    "ast_hash": "8c151b9d67dde569c125dc8002344218",
+    "semantic_hash": "8c151b9d67dde569c125dc8002344218"
   },
   "CIPP/frontend/src/components/CippComponents/CippFormCondition.jsx": {
     "mtime": 1788275912.1448855,
@@ -30930,9 +30925,9 @@
     "semantic_hash": "5e582bb19937ebe151c0eb47c5d2c9d6"
   },
   "CIPP/frontend/src/components/CippComponents/CippIntunePolicyActions.jsx": {
-    "mtime": 1788542010.0447774,
-    "ast_hash": "8b0cbad36c3b4dfe167e0e1be4b52065",
-    "semantic_hash": "8b0cbad36c3b4dfe167e0e1be4b52065"
+    "mtime": 1789632956.9008193,
+    "ast_hash": "c1bef8b7508795593e21a5697d89b637",
+    "semantic_hash": "c1bef8b7508795593e21a5697d89b637"
   },
   "CIPP/frontend/src/components/CippComponents/CippIntunePolicyDetails.jsx": {
     "mtime": 1788298431.0396645,
@@ -31020,9 +31015,9 @@
     "semantic_hash": "bb1c1073c189686877a9d58fae2ce7ca"
   },
   "CIPP/frontend/src/components/CippComponents/CippPolicyDeployDrawer.jsx": {
-    "mtime": 1789399889.2394526,
-    "ast_hash": "de557ef1e4e725fa1db01ba3fdb1d4ed",
-    "semantic_hash": "de557ef1e4e725fa1db01ba3fdb1d4ed"
+    "mtime": 1789632956.9013324,
+    "ast_hash": "250c37fcc29ef6c8586edf6ddcc787b1",
+    "semantic_hash": "250c37fcc29ef6c8586edf6ddcc787b1"
   },
   "CIPP/frontend/src/components/CippComponents/CippPolicyDiffTable.jsx": {
     "mtime": 1788298431.0527425,
@@ -31060,9 +31055,9 @@
     "semantic_hash": "0ac2a1a4a165e4b5f4ea774d63656848"
   },
   "CIPP/frontend/src/components/CippComponents/CippRestoreBackupDrawer.jsx": {
-    "mtime": 1788542010.0638402,
-    "ast_hash": "96cdfac0c26566c2759dcee7651180d6",
-    "semantic_hash": "96cdfac0c26566c2759dcee7651180d6"
+    "mtime": 1789632956.9023366,
+    "ast_hash": "24dafbd35f76fb6f8f4358d82e1310f7",
+    "semantic_hash": "24dafbd35f76fb6f8f4358d82e1310f7"
   },
   "CIPP/frontend/src/components/CippComponents/CippRestoreWizard.jsx": {
     "mtime": 1788542010.0648398,
@@ -31210,9 +31205,9 @@
     "semantic_hash": "781b7fcc7bd44a2f673a3b81d1520dfb"
   },
   "CIPP/frontend/src/components/CippComponents/CippTranslations.jsx": {
-    "mtime": 1789399889.2404573,
-    "ast_hash": "726d9759573c23c8282f94b5d2e8e704",
-    "semantic_hash": "726d9759573c23c8282f94b5d2e8e704"
+    "mtime": 1789632956.90334,
+    "ast_hash": "04b1bdd91f5e21ac9ee99b39f0f435c5",
+    "semantic_hash": "04b1bdd91f5e21ac9ee99b39f0f435c5"
   },
   "CIPP/frontend/src/components/CippComponents/CippTransportRuleDrawer.jsx": {
     "mtime": 1788542010.0898535,
@@ -31225,9 +31220,9 @@
     "semantic_hash": "d5e22bc713d7e4502356e21b98ee9674"
   },
   "CIPP/frontend/src/components/CippComponents/CippUserActions.jsx": {
-    "mtime": 1788888559.3161087,
-    "ast_hash": "e583d1e8db2f4551217773bdc06124ff",
-    "semantic_hash": "e583d1e8db2f4551217773bdc06124ff"
+    "mtime": 1789632956.904341,
+    "ast_hash": "de04d8e2f6739eeb197a1d41b6c3666b",
+    "semantic_hash": "de04d8e2f6739eeb197a1d41b6c3666b"
   },
   "CIPP/frontend/src/components/CippComponents/CippUserPhotoManager.jsx": {
     "mtime": 1788542010.091926,
@@ -31355,9 +31350,9 @@
     "semantic_hash": "c365f207a915ddb02b8d5562469a4151"
   },
   "CIPP/frontend/src/components/CippFormPages/CippAddEditUser.jsx": {
-    "mtime": 1788542010.108435,
-    "ast_hash": "afc9703e98d1e9eea25c967e23c0965c",
-    "semantic_hash": "afc9703e98d1e9eea25c967e23c0965c"
+    "mtime": 1789632956.90534,
+    "ast_hash": "22424b563bd262b2c5779771848ae772",
+    "semantic_hash": "22424b563bd262b2c5779771848ae772"
   },
   "CIPP/frontend/src/components/CippFormPages/CippAddGroupForm.jsx": {
     "mtime": 1788298431.0895367,
@@ -31684,11 +31679,6 @@
     "ast_hash": "6b6c74f673fb0e8d557fd2135567aa22",
     "semantic_hash": "6b6c74f673fb0e8d557fd2135567aa22"
   },
-  "CIPP/frontend/src/components/CippWizard/CippIntunePolicy.jsx": {
-    "mtime": 1788542010.1526992,
-    "ast_hash": "4d9d30ec8dd35eb0003cdecb0fe42fda",
-    "semantic_hash": "4d9d30ec8dd35eb0003cdecb0fe42fda"
-  },
   "CIPP/frontend/src/components/CippWizard/CippNotificationsStep.jsx": {
     "mtime": 1785876000.7653885,
     "ast_hash": "5087d21f6672b2535dacb5f3ccc02115",
@@ -31845,9 +31835,9 @@
     "semantic_hash": "8c9bdbda64040c60da746a373f8ab933"
   },
   "CIPP/frontend/src/data/CIPPDBCacheTypes.json": {
-    "mtime": 1788542010.175436,
-    "ast_hash": "c2484d0d25385edf759deccb0c4f2d85",
-    "semantic_hash": "c2484d0d25385edf759deccb0c4f2d85"
+    "mtime": 1789632956.90834,
+    "ast_hash": "5bb6b737b1cd6986987055082786ff9f",
+    "semantic_hash": "5bb6b737b1cd6986987055082786ff9f"
   },
   "CIPP/frontend/src/data/CIPPDefaultGDAPRoles.json": {
     "mtime": 1784704659.7089982,
@@ -31960,9 +31950,9 @@
     "semantic_hash": "6c82b48b8ff8bc58a18f031a66611d9a"
   },
   "CIPP/frontend/src/data/standards.json": {
-    "mtime": 1789399889.2505248,
-    "ast_hash": "b433862970baf3f3379eb750ca8c7359",
-    "semantic_hash": "b433862970baf3f3379eb750ca8c7359"
+    "mtime": 1789632956.91034,
+    "ast_hash": "906342b74995fce8d869676a6b5cea53",
+    "semantic_hash": "906342b74995fce8d869676a6b5cea53"
   },
   "CIPP/frontend/src/data/timezoneList.json": {
     "mtime": 1784704660.149652,
@@ -32300,19 +32290,19 @@
     "semantic_hash": "cb30f5807c916d355bac4127de005d80"
   },
   "CIPP/frontend/src/pages/identity/administration/jit-admin-templates/add.jsx": {
-    "mtime": 1788298431.1965117,
-    "ast_hash": "dda4eceb2629672475aca087d92c6d8a",
-    "semantic_hash": "dda4eceb2629672475aca087d92c6d8a"
+    "mtime": 1789632956.914371,
+    "ast_hash": "61b0c44370e10550b259806f5cff6e7d",
+    "semantic_hash": "61b0c44370e10550b259806f5cff6e7d"
   },
   "CIPP/frontend/src/pages/identity/administration/jit-admin-templates/edit.jsx": {
-    "mtime": 1788298431.1965117,
-    "ast_hash": "5f11d3ca12e4eb01658d0721d61e47a7",
-    "semantic_hash": "5f11d3ca12e4eb01658d0721d61e47a7"
+    "mtime": 1789632956.914371,
+    "ast_hash": "d6b3203bf22bfb3e3b0273d4f0c83df9",
+    "semantic_hash": "d6b3203bf22bfb3e3b0273d4f0c83df9"
   },
   "CIPP/frontend/src/pages/identity/administration/jit-admin/add.jsx": {
-    "mtime": 1788276507.617766,
-    "ast_hash": "456d130bc3d92b08bbbdd86c42508a11",
-    "semantic_hash": "456d130bc3d92b08bbbdd86c42508a11"
+    "mtime": 1789632956.9158745,
+    "ast_hash": "b409e4e4149ff16f1e725a801ab4be4d",
+    "semantic_hash": "b409e4e4149ff16f1e725a801ab4be4d"
   },
   "CIPP/frontend/src/pages/identity/administration/users/patch-wizard.jsx": {
     "mtime": 1788542010.2796683,
@@ -32470,14 +32460,14 @@
     "semantic_hash": "e53568accc58f487ad995d52af0af4e5"
   },
   "CIPP/frontend/src/pages/tenant/backup/backup-wizard/add.jsx": {
-    "mtime": 1788276507.6839948,
-    "ast_hash": "22192e80f128340144bbbe578d2d8797",
-    "semantic_hash": "22192e80f128340144bbbe578d2d8797"
+    "mtime": 1789632956.9214017,
+    "ast_hash": "fb9dadf92fdb86cd65379c8fe9bf8c81",
+    "semantic_hash": "fb9dadf92fdb86cd65379c8fe9bf8c81"
   },
   "CIPP/frontend/src/pages/tenant/backup/backup-wizard/restore.jsx": {
-    "mtime": 1788276507.6849947,
-    "ast_hash": "ab84a539f57eb08e4ccc2b11ec76b025",
-    "semantic_hash": "ab84a539f57eb08e4ccc2b11ec76b025"
+    "mtime": 1789632956.9225037,
+    "ast_hash": "c99f1b4be89d242d388577373e7446ce",
+    "semantic_hash": "c99f1b4be89d242d388577373e7446ce"
   },
   "CIPP/frontend/src/pages/tenant/conditional/list-named-locations/add.jsx": {
     "mtime": 1788276507.6901262,
@@ -33610,9 +33600,9 @@
     "semantic_hash": "816821409bdd6fc141bcb3a941d80c8e"
   },
   "CIPP/.github/workflows/CodeQL_Analyser.yml": {
-    "mtime": 1788888559.1647174,
-    "ast_hash": "d4f10da15367ce7e77f8d9145f19242e",
-    "semantic_hash": "d4f10da15367ce7e77f8d9145f19242e"
+    "mtime": 1789632956.764517,
+    "ast_hash": "e65e229bd067a3002a7c6008d588d61d",
+    "semantic_hash": "e65e229bd067a3002a7c6008d588d61d"
   },
   "CIPP/.github/workflows/Comment_on_Issues.yml": {
     "mtime": 1786835872.0601747,
@@ -35505,14 +35495,14 @@
     "semantic_hash": "12a12e031f688646159decb8bc39f965"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA226.md": {
-    "mtime": 1784682020.4667118,
-    "ast_hash": "f4014dc844b6e6e1570ac8e631d6f75a",
-    "semantic_hash": "f4014dc844b6e6e1570ac8e631d6f75a"
+    "mtime": 1789632956.835138,
+    "ast_hash": "9b8680726d8147ad56806508e0506132",
+    "semantic_hash": "9b8680726d8147ad56806508e0506132"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA227.md": {
-    "mtime": 1784682020.468083,
-    "ast_hash": "a85ff848122f035cefc87d688baecd51",
-    "semantic_hash": "a85ff848122f035cefc87d688baecd51"
+    "mtime": 1789632956.8361425,
+    "ast_hash": "45f6084733a5ce5aabb581ff5ec18cc4",
+    "semantic_hash": "45f6084733a5ce5aabb581ff5ec18cc4"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA228.md": {
     "mtime": 1784682020.4685967,
@@ -35525,19 +35515,19 @@
     "semantic_hash": "973c636a47a8bd6ed887bbd6891e58a2"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA230.md": {
-    "mtime": 1784682020.4701517,
-    "ast_hash": "7d92e61ccbc402489c72f507acea81e9",
-    "semantic_hash": "7d92e61ccbc402489c72f507acea81e9"
+    "mtime": 1789632956.8381417,
+    "ast_hash": "93ef0bc45f6661d4e1a32eb57c178983",
+    "semantic_hash": "93ef0bc45f6661d4e1a32eb57c178983"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA231.md": {
-    "mtime": 1784682020.4711735,
-    "ast_hash": "216da4b11f976c526636b0110d601ace",
-    "semantic_hash": "216da4b11f976c526636b0110d601ace"
+    "mtime": 1789632956.8381417,
+    "ast_hash": "2156a02b8aeb7cb039a7ab5043ae3215",
+    "semantic_hash": "2156a02b8aeb7cb039a7ab5043ae3215"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA232.md": {
-    "mtime": 1784682020.4716892,
-    "ast_hash": "3d2c87cf04eb9716ee4020db9ff87ca5",
-    "semantic_hash": "3d2c87cf04eb9716ee4020db9ff87ca5"
+    "mtime": 1789632956.8391416,
+    "ast_hash": "e274ef5ec1df5fef5c1e6e6723980c77",
+    "semantic_hash": "e274ef5ec1df5fef5c1e6e6723980c77"
   },
   "CIPP/backend/Modules/CIPPTests/Public/Tests/ORCA/Identity/Invoke-CippTestORCA233.md": {
     "mtime": 1784682020.4727302,
@@ -36600,9 +36590,9 @@
     "semantic_hash": "0c582e50dd645b62f88ad66f88d3e090"
   },
   "CIPP/backend/version_latest.txt": {
-    "mtime": 1789399889.1035564,
-    "ast_hash": "9a940033601bdbac22dc8ff39c2a8bbf",
-    "semantic_hash": "9a940033601bdbac22dc8ff39c2a8bbf"
+    "mtime": 1789632956.8552036,
+    "ast_hash": "b81eaab0b61a9a0a44c6d0312c1bb1f4",
+    "semantic_hash": "b81eaab0b61a9a0a44c6d0312c1bb1f4"
   },
   "CIPP/docs/.gitbook/assets/cipp-workflow.yml": {
     "mtime": 1784771872.1029446,
@@ -37130,9 +37120,9 @@
     "semantic_hash": "6f627c78da9e0e108b6fe2cd3cea98eb"
   },
   "CIPP/docs/user-documentation/cipp/advanced/super-admin/time-settings.md": {
-    "mtime": 1786835872.587939,
-    "ast_hash": "c6063b4ca320c4614f756b5fd90dbb3b",
-    "semantic_hash": "c6063b4ca320c4614f756b5fd90dbb3b"
+    "mtime": 1789632956.8572016,
+    "ast_hash": "73543f47176e257a98fe5eb75c10afb8",
+    "semantic_hash": "73543f47176e257a98fe5eb75c10afb8"
   },
   "CIPP/docs/user-documentation/cipp/advanced/table-maintenance.md": {
     "mtime": 1786835872.587939,
@@ -37190,9 +37180,9 @@
     "semantic_hash": "09589e5967f81ee2cc3d71a54e468c2d"
   },
   "CIPP/docs/user-documentation/cipp/integrations/cipp-api.md": {
-    "mtime": 1789399889.124658,
-    "ast_hash": "c22fa2af4d4d7699816c63e388cd58be",
-    "semantic_hash": "c22fa2af4d4d7699816c63e388cd58be"
+    "mtime": 1789632956.8582015,
+    "ast_hash": "f01b43585fc9dd9c7b6f4b6d17fb010b",
+    "semantic_hash": "f01b43585fc9dd9c7b6f4b6d17fb010b"
   },
   "CIPP/docs/user-documentation/cipp/integrations/cloudflare.md": {
     "mtime": 1786835872.595604,
@@ -37200,9 +37190,9 @@
     "semantic_hash": "553ae7d6f74097121691481eaa5e07ab"
   },
   "CIPP/docs/user-documentation/cipp/integrations/github.md": {
-    "mtime": 1787127877.8769078,
-    "ast_hash": "053f041358723cd4996b3464eed63fed",
-    "semantic_hash": "053f041358723cd4996b3464eed63fed"
+    "mtime": 1789632956.859704,
+    "ast_hash": "9913caed30fde1178204b0c60aa2e401",
+    "semantic_hash": "9913caed30fde1178204b0c60aa2e401"
   },
   "CIPP/docs/user-documentation/cipp/integrations/gradient.md": {
     "mtime": 1786835872.5966039,
@@ -37230,9 +37220,9 @@
     "semantic_hash": "9206378d812d1cc0d9c9a534b23ecf5f"
   },
   "CIPP/docs/user-documentation/cipp/integrations/ninjaone.md": {
-    "mtime": 1788414687.4466412,
-    "ast_hash": "9aca5b1cb34dd59453d6a86e67690377",
-    "semantic_hash": "9aca5b1cb34dd59453d6a86e67690377"
+    "mtime": 1789632956.859704,
+    "ast_hash": "8c6c0ac4feb609fd1870b8766d160d2d",
+    "semantic_hash": "8c6c0ac4feb609fd1870b8766d160d2d"
   },
   "CIPP/docs/user-documentation/cipp/integrations/passwordpusher.md": {
     "mtime": 1787149597.418811,
@@ -37240,9 +37230,9 @@
     "semantic_hash": "b3e81681573cd37be9c59749a2b37a9c"
   },
   "CIPP/docs/user-documentation/cipp/integrations/sherweb.md": {
-    "mtime": 1788414687.4476407,
-    "ast_hash": "55c30c504e9ae6990deb5615a22ac771",
-    "semantic_hash": "55c30c504e9ae6990deb5615a22ac771"
+    "mtime": 1789632956.8613095,
+    "ast_hash": "630ac727bd6aa2ac6f1b3afbe224f72e",
+    "semantic_hash": "630ac727bd6aa2ac6f1b3afbe224f72e"
   },
   "CIPP/docs/user-documentation/cipp/logs/README.md": {
     "mtime": 1788414687.4476407,
@@ -37285,14 +37275,14 @@
     "semantic_hash": "3d285bfaf7e89899615027ec23bee83b"
   },
   "CIPP/docs/user-documentation/cipp/settings/notifications.md": {
-    "mtime": 1786835872.6097157,
-    "ast_hash": "b5fd0637e9d2c97ea0e89ef1f5331a5f",
-    "semantic_hash": "b5fd0637e9d2c97ea0e89ef1f5331a5f"
+    "mtime": 1789632956.862316,
+    "ast_hash": "203c96040604dc614efae8c02f3e3a26",
+    "semantic_hash": "203c96040604dc614efae8c02f3e3a26"
   },
   "CIPP/docs/user-documentation/cipp/settings/partner-webhooks.md": {
-    "mtime": 1786835872.6097157,
-    "ast_hash": "3c97452bb4fc5172486d1890452cc9a9",
-    "semantic_hash": "3c97452bb4fc5172486d1890452cc9a9"
+    "mtime": 1789632956.8633134,
+    "ast_hash": "d6ddb08a4a296ee5a93e13335c123cbf",
+    "semantic_hash": "d6ddb08a4a296ee5a93e13335c123cbf"
   },
   "CIPP/docs/user-documentation/cipp/settings/permissions.md": {
     "mtime": 1787359838.4065127,
@@ -37355,9 +37345,9 @@
     "semantic_hash": "14b73f57eb9b9c14b438d245c6963418"
   },
   "CIPP/docs/user-documentation/dashboard/README.md": {
-    "mtime": 1788414687.4536593,
-    "ast_hash": "5487c7e73a525ce8eda84b36204efe42",
-    "semantic_hash": "5487c7e73a525ce8eda84b36204efe42"
+    "mtime": 1789632956.8643134,
+    "ast_hash": "e651db8e5f5da0619ba03091e39d24ce",
+    "semantic_hash": "e651db8e5f5da0619ba03091e39d24ce"
   },
   "CIPP/docs/user-documentation/dashboard/dashboard.md": {
     "mtime": 1786835872.6198308,
@@ -37435,9 +37425,9 @@
     "semantic_hash": "dc0f8119c05fa9fc596ac84a68be1413"
   },
   "CIPP/docs/user-documentation/email/administration/mailboxes.md": {
-    "mtime": 1788542009.9632456,
-    "ast_hash": "cfe8812ea91498d86c1f03b49c4fa65b",
-    "semantic_hash": "cfe8812ea91498d86c1f03b49c4fa65b"
+    "mtime": 1789632956.8679569,
+    "ast_hash": "b0b221a027ba13061921ebeb8ba6258f",
+    "semantic_hash": "b0b221a027ba13061921ebeb8ba6258f"
   },
   "CIPP/docs/user-documentation/email/administration/restricted-users.md": {
     "mtime": 1786835872.632551,
@@ -37685,9 +37675,9 @@
     "semantic_hash": "e76d15a6298bbfad6b165c6010515f98"
   },
   "CIPP/docs/user-documentation/endpoint/mem/list-templates/README.md": {
-    "mtime": 1788414687.4615574,
-    "ast_hash": "430604d46caedf068d29ea2b3ce834a9",
-    "semantic_hash": "430604d46caedf068d29ea2b3ce834a9"
+    "mtime": 1789632956.8714602,
+    "ast_hash": "7c7bd0b7d7907ddf1b8527bfa5d22e30",
+    "semantic_hash": "7c7bd0b7d7907ddf1b8527bfa5d22e30"
   },
   "CIPP/docs/user-documentation/endpoint/mem/list-templates/edit.md": {
     "mtime": 1786835872.6737468,
@@ -37810,14 +37800,14 @@
     "semantic_hash": "c82425b94c9d72a184e816ef182801c2"
   },
   "CIPP/docs/user-documentation/identity/administration/risky-users.md": {
-    "mtime": 1786835872.692537,
-    "ast_hash": "5d20269e3356e6d0d392d2f971727149",
-    "semantic_hash": "5d20269e3356e6d0d392d2f971727149"
+    "mtime": 1789632956.8724642,
+    "ast_hash": "46fdd1a1854cc73c5ad379cf7d96d813",
+    "semantic_hash": "46fdd1a1854cc73c5ad379cf7d96d813"
   },
   "CIPP/docs/user-documentation/identity/administration/users/README.md": {
-    "mtime": 1789399889.128164,
-    "ast_hash": "e5d4b10298478aa67a2ada3cf97b8b3e",
-    "semantic_hash": "e5d4b10298478aa67a2ada3cf97b8b3e"
+    "mtime": 1789632956.8734636,
+    "ast_hash": "da96cafbd0144a37c95ef89ed6fc2249",
+    "semantic_hash": "da96cafbd0144a37c95ef89ed6fc2249"
   },
   "CIPP/docs/user-documentation/identity/administration/users/patch-wizard.md": {
     "mtime": 1788542009.969245,
@@ -37830,9 +37820,9 @@
     "semantic_hash": "21390a9fc9c1163ca9d1f7b8e45cf78c"
   },
   "CIPP/docs/user-documentation/identity/administration/users/user/bec.md": {
-    "mtime": 1786835872.6950386,
-    "ast_hash": "7c24f29a0fe435aec4f0e2041e39763b",
-    "semantic_hash": "7c24f29a0fe435aec4f0e2041e39763b"
+    "mtime": 1789632956.8744638,
+    "ast_hash": "895982d6d5ffce7f3b8d1acb6edd7b1e",
+    "semantic_hash": "895982d6d5ffce7f3b8d1acb6edd7b1e"
   },
   "CIPP/docs/user-documentation/identity/administration/users/user/conditional-access.md": {
     "mtime": 1788542009.9702451,
@@ -37840,9 +37830,9 @@
     "semantic_hash": "6ad89da639441ffeb847d92ef733dd2b"
   },
   "CIPP/docs/user-documentation/identity/administration/users/user/edit.md": {
-    "mtime": 1788414687.4787707,
-    "ast_hash": "2fe61ad2bfedc539b59507dbd178a7f8",
-    "semantic_hash": "2fe61ad2bfedc539b59507dbd178a7f8"
+    "mtime": 1789632956.8754635,
+    "ast_hash": "9a1292c62e9b47b69ba06ef76351a298",
+    "semantic_hash": "9a1292c62e9b47b69ba06ef76351a298"
   },
   "CIPP/docs/user-documentation/identity/administration/users/user/exchange.md": {
     "mtime": 1788542009.9712453,
@@ -37880,9 +37870,9 @@
     "semantic_hash": "8e2697ff6c9cd000761c892d92825a4b"
   },
   "CIPP/docs/user-documentation/identity/reports/risk-detections.md": {
-    "mtime": 1786835872.7029045,
-    "ast_hash": "3137b14db5db6f80e8692f82c831cd01",
-    "semantic_hash": "3137b14db5db6f80e8692f82c831cd01"
+    "mtime": 1789632956.876968,
+    "ast_hash": "6fabe5cb092ec9a657693085f1efa2a8",
+    "semantic_hash": "6fabe5cb092ec9a657693085f1efa2a8"
   },
   "CIPP/docs/user-documentation/identity/reports/signin-report.md": {
     "mtime": 1786835872.7039044,
@@ -37995,19 +37985,19 @@
     "semantic_hash": "b94d73490acfb2225d32e76dbca1f4ad"
   },
   "CIPP/docs/user-documentation/security/safelinks/safelinks/README.md": {
-    "mtime": 1788414687.4832785,
-    "ast_hash": "f69907b9b9da7e4d9a486cb01153fc72",
-    "semantic_hash": "f69907b9b9da7e4d9a486cb01153fc72"
+    "mtime": 1789632956.8797548,
+    "ast_hash": "5bcadf27921f9b5c77d4b0c4132497a4",
+    "semantic_hash": "5bcadf27921f9b5c77d4b0c4132497a4"
   },
   "CIPP/docs/user-documentation/security/safelinks/safelinks/add.md": {
-    "mtime": 1788414687.484281,
-    "ast_hash": "f14c0ded4c517c518e645b6471198aa1",
-    "semantic_hash": "f14c0ded4c517c518e645b6471198aa1"
+    "mtime": 1789632956.8797548,
+    "ast_hash": "95bb491682a0a779e77195b83abe5d87",
+    "semantic_hash": "95bb491682a0a779e77195b83abe5d87"
   },
   "CIPP/docs/user-documentation/security/safelinks/safelinks/edit.md": {
-    "mtime": 1788414687.484281,
-    "ast_hash": "50bd24f0610657a7f4d046cbcd3db1de",
-    "semantic_hash": "50bd24f0610657a7f4d046cbcd3db1de"
+    "mtime": 1789632956.8812582,
+    "ast_hash": "36eb93cf9c4578caac5f1508a12f8ee5",
+    "semantic_hash": "36eb93cf9c4578caac5f1508a12f8ee5"
   },
   "CIPP/docs/user-documentation/shared-features/README.md": {
     "mtime": 1785337802.5654724,
@@ -38065,9 +38055,9 @@
     "semantic_hash": "246368825c8e8c99fd525a67d81b0493"
   },
   "CIPP/docs/user-documentation/shared-features/menu-bar/user-settings.md": {
-    "mtime": 1788542009.974246,
-    "ast_hash": "8cc9e27a9b74625611e6fc9236d9aba6",
-    "semantic_hash": "8cc9e27a9b74625611e6fc9236d9aba6"
+    "mtime": 1789632956.8822632,
+    "ast_hash": "565720dc3f57668ce38f728b357bb28c",
+    "semantic_hash": "565720dc3f57668ce38f728b357bb28c"
   },
   "CIPP/docs/user-documentation/shared-features/release-notes-notification.md": {
     "mtime": 1787127877.89299,
@@ -38165,14 +38155,14 @@
     "semantic_hash": "5eba3ebc52dcbf4b5fa517b14cd72701"
   },
   "CIPP/docs/user-documentation/tenant/administration/alert-configuration/alert.md": {
-    "mtime": 1788888559.2959468,
-    "ast_hash": "8e996a1b0d57c039000309544d12e6db",
-    "semantic_hash": "8e996a1b0d57c039000309544d12e6db"
+    "mtime": 1789632956.8839524,
+    "ast_hash": "e598f111f18b4d3ff7f3f1829fa87227",
+    "semantic_hash": "e598f111f18b4d3ff7f3f1829fa87227"
   },
   "CIPP/docs/user-documentation/tenant/administration/alert-configuration/snoozed-alerts.md": {
-    "mtime": 1786835872.7497385,
-    "ast_hash": "34200c41fd5d629522bbbd1b771889ad",
-    "semantic_hash": "34200c41fd5d629522bbbd1b771889ad"
+    "mtime": 1789632956.8864696,
+    "ast_hash": "1c3d0cefa56696278e60bfdb8f43590d",
+    "semantic_hash": "1c3d0cefa56696278e60bfdb8f43590d"
   },
   "CIPP/docs/user-documentation/tenant/administration/app-consent-requests.md": {
     "mtime": 1788414687.4917872,
@@ -38270,9 +38260,9 @@
     "semantic_hash": "73dd1c3140f348251d922adb5e21c5fd"
   },
   "CIPP/docs/user-documentation/tenant/administration/tenants/global-variables.md": {
-    "mtime": 1786835872.7712836,
-    "ast_hash": "9be9d0390055d8c7cddff312c56975de",
-    "semantic_hash": "9be9d0390055d8c7cddff312c56975de"
+    "mtime": 1789632956.8874686,
+    "ast_hash": "981305e9963a629108db57a3bc6e75ea",
+    "semantic_hash": "981305e9963a629108db57a3bc6e75ea"
   },
   "CIPP/docs/user-documentation/tenant/administration/tenants/groups/README.md": {
     "mtime": 1787149597.4365337,
@@ -38350,9 +38340,9 @@
     "semantic_hash": "211814d604f955b55d6057d61a113280"
   },
   "CIPP/docs/user-documentation/tenant/gdap-management/role-templates/README.md": {
-    "mtime": 1788414687.497823,
-    "ast_hash": "0e5c740a7d2003771d67db11ea7633cf",
-    "semantic_hash": "0e5c740a7d2003771d67db11ea7633cf"
+    "mtime": 1789632956.8884683,
+    "ast_hash": "a902d400fa5f1db317ac4d0d969a9325",
+    "semantic_hash": "a902d400fa5f1db317ac4d0d969a9325"
   },
   "CIPP/docs/user-documentation/tenant/gdap-management/role-templates/add.md": {
     "mtime": 1788414687.497823,
@@ -38380,9 +38370,9 @@
     "semantic_hash": "fe76ae1c02ddab8d2a6f1c122ee8e26c"
   },
   "CIPP/docs/user-documentation/tenant/manage/backup.md": {
-    "mtime": 1786835872.7925105,
-    "ast_hash": "30210431d3f5a8e3ceb78f01dc83ccc0",
-    "semantic_hash": "30210431d3f5a8e3ceb78f01dc83ccc0"
+    "mtime": 1789632956.88947,
+    "ast_hash": "b6094ede041aed752f6d29101a93020b",
+    "semantic_hash": "b6094ede041aed752f6d29101a93020b"
   },
   "CIPP/docs/user-documentation/tenant/manage/drift.md": {
     "mtime": 1788414687.5023348,
@@ -38460,19 +38450,19 @@
     "semantic_hash": "3dc91294f80b1cb31585decdd6411eee"
   },
   "CIPP/docs/user-documentation/tenant/standards/bpa-report/README.md": {
-    "mtime": 1786835872.8049154,
-    "ast_hash": "c1a0377dbda1e50bf5ea4cfa3e209203",
-    "semantic_hash": "c1a0377dbda1e50bf5ea4cfa3e209203"
+    "mtime": 1789632956.8904686,
+    "ast_hash": "73acd24cf0a9add0ed113d795105c8e4",
+    "semantic_hash": "73acd24cf0a9add0ed113d795105c8e4"
   },
   "CIPP/docs/user-documentation/tenant/standards/bpa-report/best-practice-templates.md": {
-    "mtime": 1786835872.8049154,
-    "ast_hash": "ac634d1f696fa3a6c0a0dcd99b0cb869",
-    "semantic_hash": "ac634d1f696fa3a6c0a0dcd99b0cb869"
+    "mtime": 1789632956.8915372,
+    "ast_hash": "745f769eb0b021de847dd73fc25d6908",
+    "semantic_hash": "745f769eb0b021de847dd73fc25d6908"
   },
   "CIPP/docs/user-documentation/tenant/standards/bpa-report/builder/README.md": {
-    "mtime": 1786835872.8059192,
-    "ast_hash": "6e83bfe6baad8cf19bee659fe9544bcc",
-    "semantic_hash": "6e83bfe6baad8cf19bee659fe9544bcc"
+    "mtime": 1789632956.8925416,
+    "ast_hash": "3aeb73c86c577f2630679bef5da5d208",
+    "semantic_hash": "3aeb73c86c577f2630679bef5da5d208"
   },
   "CIPP/docs/user-documentation/tenant/standards/bpa-report/builder/custom-report-options.md": {
     "mtime": 1786835872.8069193,
@@ -38510,9 +38500,9 @@
     "semantic_hash": "07fde14c6babb154a05a101a608a86e4"
   },
   "CIPP/docs/user-documentation/tools/custom-tests/add.md": {
-    "mtime": 1789399889.1306763,
-    "ast_hash": "d40bd1346e8b1906e4ae62f0bfdcf157",
-    "semantic_hash": "d40bd1346e8b1906e4ae62f0bfdcf157"
+    "mtime": 1789632956.893542,
+    "ast_hash": "d7251e65ece6f6bdf6a2612f4b68d65a",
+    "semantic_hash": "d7251e65ece6f6bdf6a2612f4b68d65a"
   },
   "CIPP/docs/user-documentation/tools/custom-tests/versions.md": {
     "mtime": 1786835872.8129199,
@@ -38580,9 +38570,9 @@
     "semantic_hash": "c6a96f13e11d32da4358962d2719a3ee"
   },
   "CIPP/docs/user-documentation/tools/report-builder/templates.md": {
-    "mtime": 1786835872.823023,
-    "ast_hash": "d8f9e7d9ec6b63678adb40278c22563b",
-    "semantic_hash": "d8f9e7d9ec6b63678adb40278c22563b"
+    "mtime": 1789632956.8945436,
+    "ast_hash": "7012281eb3cb8642ec8d48dfc46a4d88",
+    "semantic_hash": "7012281eb3cb8642ec8d48dfc46a4d88"
   },
   "CIPP/docs/user-documentation/tools/scheduler/README.md": {
     "mtime": 1788888559.2989457,
@@ -40355,9 +40345,9 @@
     "semantic_hash": "6181bd332dfc6f56cd3979598cb2d994"
   },
   "CIPP/backend/Tests/Endpoint/Invoke-AddUser.Tests.ps1": {
-    "mtime": 1785944588.2460847,
-    "ast_hash": "2cab34c278fccd4ff27b62f9f825b285",
-    "semantic_hash": "2cab34c278fccd4ff27b62f9f825b285"
+    "mtime": 1789632956.8436468,
+    "ast_hash": "f5994ecbf407756c8845b449e680fd1f",
+    "semantic_hash": "f5994ecbf407756c8845b449e680fd1f"
   },
   "CIPP/backend/Tests/Endpoint/Invoke-EditGroup.Tests.ps1": {
     "mtime": 1787359838.3831577,
@@ -40570,19 +40560,19 @@
     "semantic_hash": "fc99caa94fc23cad3239d541b071b814"
   },
   "CIPP/docs/user-documentation/dashboard/custom.md": {
-    "mtime": 1786835872.6198308,
-    "ast_hash": "6e844c7149ad6c6370239e456fa802f0",
-    "semantic_hash": "6e844c7149ad6c6370239e456fa802f0"
+    "mtime": 1789632956.8653133,
+    "ast_hash": "0241daecf8c92d428c55fa25f934f56e",
+    "semantic_hash": "0241daecf8c92d428c55fa25f934f56e"
   },
   "CIPP/docs/user-documentation/dashboard/devices.md": {
-    "mtime": 1786835872.6208344,
-    "ast_hash": "8f4f003677da114a6b6cbfd164d6bd2a",
-    "semantic_hash": "8f4f003677da114a6b6cbfd164d6bd2a"
+    "mtime": 1789632956.8653133,
+    "ast_hash": "ece8126f303848854266c2d1c30ff002",
+    "semantic_hash": "ece8126f303848854266c2d1c30ff002"
   },
   "CIPP/docs/user-documentation/dashboard/identity.md": {
-    "mtime": 1786835872.6218355,
-    "ast_hash": "05aad5e35a154de2f3b131dccd6ff1eb",
-    "semantic_hash": "05aad5e35a154de2f3b131dccd6ff1eb"
+    "mtime": 1789632956.8669503,
+    "ast_hash": "3ce8615fcae545693e25e6114ee543d1",
+    "semantic_hash": "3ce8615fcae545693e25e6114ee543d1"
   },
   "CIPP/docs/user-documentation/tenant/administration/applications/permission-sets.md": {
     "mtime": 1786835872.7549627,
@@ -40735,9 +40725,9 @@
     "semantic_hash": "41ed37ba4b83b91c24f7c5b4a8fcea53"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/CIPP/MCP/Invoke-PublicMcpRegister.ps1": {
-    "mtime": 1786835872.3374386,
-    "ast_hash": "5436b2a6ce6d645f314786cc4e0484ab",
-    "semantic_hash": "5436b2a6ce6d645f314786cc4e0484ab"
+    "mtime": 1789632956.80745,
+    "ast_hash": "db467e3ed2e15d9d2943b95c22e231ae",
+    "semantic_hash": "db467e3ed2e15d9d2943b95c22e231ae"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/MEM/Invoke-ListIntuneApprovalRequests.ps1": {
     "mtime": 1786048705.0817897,
@@ -40800,9 +40790,9 @@
     "semantic_hash": "0bb91bc60da60fd1e68dd18175d2e84d"
   },
   "CIPP/backend/Tests/Private/Set-CIPPAssignedPolicy.Tests.ps1": {
-    "mtime": 1786048705.097016,
-    "ast_hash": "7746814d4858d5b45d06e8fb5e497bf9",
-    "semantic_hash": "7746814d4858d5b45d06e8fb5e497bf9"
+    "mtime": 1789632956.8522017,
+    "ast_hash": "91c284519a1a3289c3bd92102b29ff4e",
+    "semantic_hash": "91c284519a1a3289c3bd92102b29ff4e"
   },
   "CIPP/backend/Tests/Private/Set-CIPPIntunePolicy.AppProtection.Tests.ps1": {
     "mtime": 1787359838.3946233,
@@ -41445,14 +41435,14 @@
     "semantic_hash": "95a2e8878d46d93376cc09ad2103bf89"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Tests/Invoke-ListTestResultsTenants.ps1": {
-    "mtime": 1789399889.072749,
-    "ast_hash": "3ac241465f11aae140268af6c79982f7",
-    "semantic_hash": "3ac241465f11aae140268af6c79982f7"
+    "mtime": 1789632956.8271194,
+    "ast_hash": "ea3d5567579b9cef4b0020affd831dce",
+    "semantic_hash": "ea3d5567579b9cef4b0020affd831dce"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Tests/Invoke-ListTests.ps1": {
-    "mtime": 1788888559.2644408,
-    "ast_hash": "fd3664af1a091daeacbdc6803d712530",
-    "semantic_hash": "fd3664af1a091daeacbdc6803d712530"
+    "mtime": 1789632956.8281193,
+    "ast_hash": "599ee123c82c12b367d5e6adb2ab0de4",
+    "semantic_hash": "599ee123c82c12b367d5e6adb2ab0de4"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Tenant/Tools/Invoke-ListGraphExplorerPresets.ps1": {
     "mtime": 1786116132.9991255,
@@ -41550,9 +41540,9 @@
     "semantic_hash": "8693754cc1d2426577714f33e361e92d"
   },
   "CIPP/docs/.gitbook/includes/deploy-policy-expand.md": {
-    "mtime": 1788542009.9572277,
-    "ast_hash": "2d4207a60342ea900893549e50b36200",
-    "semantic_hash": "2d4207a60342ea900893549e50b36200"
+    "mtime": 1789632956.856202,
+    "ast_hash": "5aa58de3fe17a2b261371e9ea3d0e8d4",
+    "semantic_hash": "5aa58de3fe17a2b261371e9ea3d0e8d4"
   },
   "CIPP/docs/user-documentation/email/administration/tenant-allow-block-lists.md": {
     "mtime": 1786835872.6335542,
@@ -41560,9 +41550,9 @@
     "semantic_hash": "81267de7406c4b16dba546fe58068512"
   },
   "CIPP/docs/user-documentation/endpoint/applications/list.md": {
-    "mtime": 1788888559.2916837,
-    "ast_hash": "f61546e706d72c660acbd3e94cb56b6a",
-    "semantic_hash": "f61546e706d72c660acbd3e94cb56b6a"
+    "mtime": 1789632956.869957,
+    "ast_hash": "12d08e091c8c31eb2ada2e62a1e4afc8",
+    "semantic_hash": "12d08e091c8c31eb2ada2e62a1e4afc8"
   },
   "CIPP/docs/user-documentation/endpoint/mem/approval-requests.md": {
     "mtime": 1786835872.662628,
@@ -41570,9 +41560,9 @@
     "semantic_hash": "6538f82ef1853ff4cbe72573a88af76f"
   },
   "CIPP/docs/user-documentation/endpoint/mem/assignment-filter-templates/edit-assignment-filter-template.md": {
-    "mtime": 1786116133.0309582,
-    "ast_hash": "51ebde7a5fc435d1be24faed713d978e",
-    "semantic_hash": "51ebde7a5fc435d1be24faed713d978e"
+    "mtime": 1789632956.8714602,
+    "ast_hash": "c87393592c6f40e909d40256afb0fbb2",
+    "semantic_hash": "c87393592c6f40e909d40256afb0fbb2"
   },
   "CIPP/docs/user-documentation/endpoint/mem/assignment-filters/edit.md": {
     "mtime": 1786835872.6669395,
@@ -41685,9 +41675,9 @@
     "semantic_hash": "f4ef9f26c5ece629393b5ba87233b1ac"
   },
   "CIPP/docs/user-documentation/security/safelinks/safelinks-template/add.md": {
-    "mtime": 1788414687.482278,
-    "ast_hash": "3fe7a6e28205aa375ace84118b9d322c",
-    "semantic_hash": "3fe7a6e28205aa375ace84118b9d322c"
+    "mtime": 1789632956.8787484,
+    "ast_hash": "a3ef6f24ef220bc7040ff0accf2df688",
+    "semantic_hash": "a3ef6f24ef220bc7040ff0accf2df688"
   },
   "CIPP/docs/user-documentation/security/safelinks/safelinks-template/create.md": {
     "mtime": 1786835872.718519,
@@ -41710,14 +41700,14 @@
     "semantic_hash": "bd7ed67d985b89e912c4732f79de54c8"
   },
   "CIPP/docs/user-documentation/teams-share/sharepoint/add-site.md": {
-    "mtime": 1786835872.7415724,
-    "ast_hash": "f6349089bd98e9800ff1a1995e8b006c",
-    "semantic_hash": "f6349089bd98e9800ff1a1995e8b006c"
+    "mtime": 1789632956.8822632,
+    "ast_hash": "bf740c0d37de9f16ce499d78423fb72a",
+    "semantic_hash": "bf740c0d37de9f16ce499d78423fb72a"
   },
   "CIPP/docs/user-documentation/teams-share/sharepoint/bulk-add-site.md": {
-    "mtime": 1786835872.742642,
-    "ast_hash": "48af74900ed65f409bb68a1b78e97001",
-    "semantic_hash": "48af74900ed65f409bb68a1b78e97001"
+    "mtime": 1789632956.8839524,
+    "ast_hash": "7432106772b47a20ce4c68a69df0c45f",
+    "semantic_hash": "7432106772b47a20ce4c68a69df0c45f"
   },
   "Craft/Services/Orchestration/JobQueuePump.cs": {
     "mtime": 1787034318.611434,
@@ -44605,14 +44595,14 @@
     "semantic_hash": "01bc314a28e3abdd44721e8d7b6aa09e"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Email-Exchange/Tools/Invoke-ExecIRMConfiguration.ps1": {
-    "mtime": 1787586168.4340136,
-    "ast_hash": "3ddcc1c9791963ea38c2803fbd175316",
-    "semantic_hash": "3ddcc1c9791963ea38c2803fbd175316"
+    "mtime": 1789632956.8104503,
+    "ast_hash": "c6f34c9bf4e7fa6857f57e58bd441fc1",
+    "semantic_hash": "c6f34c9bf4e7fa6857f57e58bd441fc1"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Email-Exchange/Tools/Invoke-ListIRMConfiguration.ps1": {
-    "mtime": 1787127877.7902377,
-    "ast_hash": "eb4d607698be4e247c4811e95b9a6e8b",
-    "semantic_hash": "eb4d607698be4e247c4811e95b9a6e8b"
+    "mtime": 1789632956.811449,
+    "ast_hash": "8ca55bb6f594e10deb87e22ec7f84dff",
+    "semantic_hash": "8ca55bb6f594e10deb87e22ec7f84dff"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ListGuestUsers.ps1": {
     "mtime": 1788414687.4046974,
@@ -44630,9 +44620,9 @@
     "semantic_hash": "a3e0b61aa25fa98410503f02763f49cd"
   },
   "CIPP/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardMessageEncryption.ps1": {
-    "mtime": 1787586168.435047,
-    "ast_hash": "de9d36c3ffc00e8fb5cf3d88ed37a4f8",
-    "semantic_hash": "de9d36c3ffc00e8fb5cf3d88ed37a4f8"
+    "mtime": 1789632956.8301203,
+    "ast_hash": "5d24f31a64b34ce0adb239416fd0ebe1",
+    "semantic_hash": "5d24f31a64b34ce0adb239416fd0ebe1"
   },
   "CIPP/backend/Modules/CippExtensions/Public/Halo/Get-HaloRequestSource.ps1": {
     "mtime": 1788987520.071486,
@@ -44675,9 +44665,9 @@
     "semantic_hash": "0f9fd01fdde9f9f282f67b4b8942a8cb"
   },
   "CIPP/backend/Tests/Endpoint/Invoke-ListIRMConfiguration.Tests.ps1": {
-    "mtime": 1787127877.8543527,
-    "ast_hash": "a538666152fa78a57f5fb91de27944f8",
-    "semantic_hash": "a538666152fa78a57f5fb91de27944f8"
+    "mtime": 1789632956.8466477,
+    "ast_hash": "0e42e0872802d74dcb3c806d92896369",
+    "semantic_hash": "0e42e0872802d74dcb3c806d92896369"
   },
   "CIPP/backend/Tests/Extensions/New-HaloPSATicket.Tests.ps1": {
     "mtime": 1788987520.0808325,
@@ -44685,9 +44675,9 @@
     "semantic_hash": "d3cc8b7929e79da4aad3d4716d0b9674"
   },
   "CIPP/backend/Tests/Standards/Invoke-CIPPStandardMessageEncryption.Tests.ps1": {
-    "mtime": 1787586168.439737,
-    "ast_hash": "9de865b03b275a5fd6da5584900be77d",
-    "semantic_hash": "9de865b03b275a5fd6da5584900be77d"
+    "mtime": 1789632956.8532016,
+    "ast_hash": "58a9266b4610007bc68147f1eeb0ccb2",
+    "semantic_hash": "58a9266b4610007bc68147f1eeb0ccb2"
   },
   "CIPP/frontend/tests/components/CippComponents/CippAddUserDrawer.test.jsx": {
     "mtime": 1789399889.2643623,
@@ -44700,9 +44690,9 @@
     "semantic_hash": "1ffeed76749e92f77dbb1ddc77e0827b"
   },
   "CIPP/frontend/tests/pages/MessageEncryptionPage.test.jsx": {
-    "mtime": 1788276507.7816339,
-    "ast_hash": "f9a77732818ba8fb637aa36dbb961506",
-    "semantic_hash": "f9a77732818ba8fb637aa36dbb961506"
+    "mtime": 1789632956.9265044,
+    "ast_hash": "a1b8a51a69fb7f45a529e6fee2f4bb01",
+    "semantic_hash": "a1b8a51a69fb7f45a529e6fee2f4bb01"
   },
   "CIPP/docs/user-documentation/shared-features/entity-switcher.md": {
     "mtime": 1787149597.43253,
@@ -44715,9 +44705,9 @@
     "semantic_hash": "ac429c30904e9181e8596765d27c5959"
   },
   "CIPP/docs/user-documentation/tools/email-tools/message-encryption.md": {
-    "mtime": 1788275912.1152894,
-    "ast_hash": "59a381521a0be4313f4e139a919421ad",
-    "semantic_hash": "59a381521a0be4313f4e139a919421ad"
+    "mtime": 1789632956.8945436,
+    "ast_hash": "841722f60c4f9845fd1e0b7ce84ba10e",
+    "semantic_hash": "841722f60c4f9845fd1e0b7ce84ba10e"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Test-CIPPCloudPCDevice.ps1": {
     "mtime": 1787149597.4053051,
@@ -45010,9 +45000,9 @@
     "semantic_hash": "1b70bec240f25ba0d17e4ffdae16f3a7"
   },
   "CIPP/docs/user-documentation/tenant/administration/alert-configuration/rogue-apps.md": {
-    "mtime": 1787359838.419255,
-    "ast_hash": "d8387d0824c524651266faa35dbbbca7",
-    "semantic_hash": "d8387d0824c524651266faa35dbbbca7"
+    "mtime": 1789632956.8854637,
+    "ast_hash": "8eafedd4716a99095129601be2b18a2e",
+    "semantic_hash": "8eafedd4716a99095129601be2b18a2e"
   },
   "CIPP/backend/Modules/CIPPCore/Public/Baselines/Invoke-CIPPBaselineMigration.ps1": {
     "mtime": 1787474193.5761921,
@@ -45725,9 +45715,9 @@
     "semantic_hash": "8c40084e48f89ccb97698df0eed8a4c8"
   },
   "CIPP/docs/user-documentation/email/reports/mail-flow-statistics.md": {
-    "mtime": 1788414687.458659,
-    "ast_hash": "dcb7d536502135130154a633dbc498fe",
-    "semantic_hash": "dcb7d536502135130154a633dbc498fe"
+    "mtime": 1789632956.8689575,
+    "ast_hash": "86a0a1ca4b13f9b786636c80404e24c0",
+    "semantic_hash": "86a0a1ca4b13f9b786636c80404e24c0"
   },
   "CIPP/docs/user-documentation/identity/administration/roles/README.md": {
     "mtime": 1789399889.1256578,
@@ -45795,9 +45785,9 @@
     "semantic_hash": "87f551714fc558caea9241060b183e8b"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Endpoint/Applications/Invoke-AddEdgeApp.ps1": {
-    "mtime": 1788276507.439027,
-    "ast_hash": "76d32c4875b41a7ba9cc6e56cbe9ac80",
-    "semantic_hash": "76d32c4875b41a7ba9cc6e56cbe9ac80"
+    "mtime": 1789632956.8125765,
+    "ast_hash": "83b04923997fa44641a4c0bd566304f6",
+    "semantic_hash": "83b04923997fa44641a4c0bd566304f6"
   },
   "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-AddJITRoleTemplate.ps1": {
     "mtime": 1788275911.9557042,
@@ -45855,9 +45845,9 @@
     "semantic_hash": "2583ab7b7dd9e6dab24cf96a94d0647f"
   },
   "CIPP/frontend/src/components/CippTable/CippDataTable.jsx": {
-    "mtime": 1788888559.3217533,
-    "ast_hash": "e69f63661c690cfcdd6d809d1d5f6d57",
-    "semantic_hash": "e69f63661c690cfcdd6d809d1d5f6d57"
+    "mtime": 1789632956.9073427,
+    "ast_hash": "cdc842923223d335b3d92287504daa32",
+    "semantic_hash": "cdc842923223d335b3d92287504daa32"
   },
   "CIPP/frontend/src/components/CippTable/CippDiagnosticsFilter.jsx": {
     "mtime": 1788542010.1436567,
@@ -46475,9 +46465,9 @@
     "semantic_hash": "35e035bb86c870399111fc9f73b30ade"
   },
   "CIPP/frontend/src/pages/cipp/snooze-alert.jsx": {
-    "mtime": 1788298431.1703455,
-    "ast_hash": "1640d26b11647c245208c68686a66f63",
-    "semantic_hash": "1640d26b11647c245208c68686a66f63"
+    "mtime": 1789632956.9123707,
+    "ast_hash": "14782dabe8e38fed0f4e62805dcf050c",
+    "semantic_hash": "14782dabe8e38fed0f4e62805dcf050c"
   },
   "CIPP/frontend/src/pages/cipp/statistics/index.jsx": {
     "mtime": 1788276507.5412228,
@@ -46730,9 +46720,9 @@
     "semantic_hash": "5590126451b28007f5fd9a314079326c"
   },
   "CIPP/frontend/src/pages/email/tools/message-encryption/index.jsx": {
-    "mtime": 1788298431.180464,
-    "ast_hash": "3b7f7d15213c9fab70762a6d5272c482",
-    "semantic_hash": "3b7f7d15213c9fab70762a6d5272c482"
+    "mtime": 1789632956.9133725,
+    "ast_hash": "083a89478e0a63e620d5a44de37cca14",
+    "semantic_hash": "083a89478e0a63e620d5a44de37cca14"
   },
   "CIPP/frontend/src/pages/email/tools/message-trace/historical-search/index.jsx": {
     "mtime": 1788542010.2355847,
@@ -46940,9 +46930,9 @@
     "semantic_hash": "5d1db8f920446a8d255db26806711652"
   },
   "CIPP/frontend/src/pages/identity/administration/groups/index.jsx": {
-    "mtime": 1788888559.333894,
-    "ast_hash": "2dcc9c9d653fb6749b30219a740f0417",
-    "semantic_hash": "2dcc9c9d653fb6749b30219a740f0417"
+    "mtime": 1789632956.914371,
+    "ast_hash": "2d2902c3db4d5cd5d4684e2da3035eb6",
+    "semantic_hash": "2d2902c3db4d5cd5d4684e2da3035eb6"
   },
   "CIPP/frontend/src/pages/identity/administration/guest-users/index.jsx": {
     "mtime": 1788542010.2707987,
@@ -47000,9 +46990,9 @@
     "semantic_hash": "d13bf2804dce23d131f10df23ed6cdd5"
   },
   "CIPP/frontend/src/pages/identity/administration/users/index.jsx": {
-    "mtime": 1788542010.278668,
-    "ast_hash": "d5f6f7659e13ded05cda6370ad669ef8",
-    "semantic_hash": "d5f6f7659e13ded05cda6370ad669ef8"
+    "mtime": 1789632956.9158745,
+    "ast_hash": "3d5bc906afcada2bb5da141fba6250e3",
+    "semantic_hash": "3d5bc906afcada2bb5da141fba6250e3"
   },
   "CIPP/frontend/src/pages/identity/administration/vacation-mode/add/index.jsx": {
     "mtime": 1788276507.6303709,
@@ -47200,14 +47190,14 @@
     "semantic_hash": "f066c5231beb501de1acd652c9676d2a"
   },
   "CIPP/frontend/src/pages/teams-share/sharepoint/add-site.jsx": {
-    "mtime": 1788276507.658963,
-    "ast_hash": "98dc5d66584daedff99a0a8bc4b8ae85",
-    "semantic_hash": "98dc5d66584daedff99a0a8bc4b8ae85"
+    "mtime": 1789632956.919402,
+    "ast_hash": "54a55a5e232476380601704ef95cec33",
+    "semantic_hash": "54a55a5e232476380601704ef95cec33"
   },
   "CIPP/frontend/src/pages/teams-share/sharepoint/bulk-add-site.jsx": {
-    "mtime": 1788276507.658963,
-    "ast_hash": "f2da67e4a1bbd2613734913cc8dfa511",
-    "semantic_hash": "f2da67e4a1bbd2613734913cc8dfa511"
+    "mtime": 1789632956.919402,
+    "ast_hash": "24f3ff79d5b2325216784efee299c287",
+    "semantic_hash": "24f3ff79d5b2325216784efee299c287"
   },
   "CIPP/frontend/src/pages/teams-share/sharepoint/index.jsx": {
     "mtime": 1788888559.336902,
@@ -47220,9 +47210,9 @@
     "semantic_hash": "9f4ea26545388638e919d7d2c87f2f98"
   },
   "CIPP/frontend/src/pages/teams-share/teams/business-voice/index.jsx": {
-    "mtime": 1788542010.3224542,
-    "ast_hash": "6292245dc5bc71067847e617db48e562",
-    "semantic_hash": "6292245dc5bc71067847e617db48e562"
+    "mtime": 1789632956.9204037,
+    "ast_hash": "c0ac4056a79d58c20a3f8d743d8db3c3",
+    "semantic_hash": "c0ac4056a79d58c20a3f8d743d8db3c3"
   },
   "CIPP/frontend/src/pages/teams-share/teams/list-team/index.jsx": {
     "mtime": 1788542010.3235164,
@@ -47505,9 +47495,9 @@
     "semantic_hash": "7e3feb332ac8c4083b0dfc38e338971c"
   },
   "CIPP/frontend/src/pages/tenant/manage/configuration-backup.jsx": {
-    "mtime": 1788542010.3744133,
-    "ast_hash": "8db63313a667a5acca0844e335363b43",
-    "semantic_hash": "8db63313a667a5acca0844e335363b43"
+    "mtime": 1789632956.923507,
+    "ast_hash": "900aecc80178451c52489fc934636853",
+    "semantic_hash": "900aecc80178451c52489fc934636853"
   },
   "CIPP/frontend/src/pages/tenant/manage/drift.jsx": {
     "mtime": 1788888559.3424318,
@@ -48135,9 +48125,9 @@
     "semantic_hash": "574fa6bf8cda8920d38fc2f88ede80c1"
   },
   "CIPP/backend/Tests/GraphHelper/Get-Tenants.RefreshLoop.Tests.ps1": {
-    "mtime": 1788542009.9443161,
-    "ast_hash": "4dcbce744aa2dca6e331c8c6eb88f6b7",
-    "semantic_hash": "4dcbce744aa2dca6e331c8c6eb88f6b7"
+    "mtime": 1789632956.848151,
+    "ast_hash": "9897c00ac728d49f2c6a0acbca892be6",
+    "semantic_hash": "9897c00ac728d49f2c6a0acbca892be6"
   },
   "CIPP/backend/Tests/Private/Set-CIPPSAMCertificate.Tests.ps1": {
     "mtime": 1788542009.9454494,
@@ -48165,9 +48155,9 @@
     "semantic_hash": "d28891cebbe14e39db62df5de37f831b"
   },
   "CIPP/frontend/src/pages/identity/administration/users/user-defaults.jsx": {
-    "mtime": 1788542010.283007,
-    "ast_hash": "a3702dfca97ce2812eea267aa3c2658a",
-    "semantic_hash": "a3702dfca97ce2812eea267aa3c2658a"
+    "mtime": 1789632956.917398,
+    "ast_hash": "ee7789d4d7bbb30d369f253fea33344a",
+    "semantic_hash": "ee7789d4d7bbb30d369f253fea33344a"
   },
   "CIPP/frontend/src/pages/teams-share/storage-report/index.jsx": {
     "mtime": 1788888559.3404305,
@@ -48315,9 +48305,9 @@
     "semantic_hash": "19458fddfcdbfd8980be14ec0c76c4c2"
   },
   "CIPP/frontend/src/pages/identity/administration/users/user/onedrive-shortcuts.jsx": {
-    "mtime": 1788888559.3353987,
-    "ast_hash": "ae7ba78f05af23a28a18cfa95962381c",
-    "semantic_hash": "ae7ba78f05af23a28a18cfa95962381c"
+    "mtime": 1789632956.918402,
+    "ast_hash": "b99f888de9420b2af22154ab435e16ce",
+    "semantic_hash": "b99f888de9420b2af22154ab435e16ce"
   },
   "CIPP/frontend/tests/pages/ReportBuilderPage.scheduleTemplate.test.jsx": {
     "mtime": 1788888559.3519452,
@@ -48345,9 +48335,9 @@
     "semantic_hash": "02a78af009d9b1d39522b4b638df890a"
   },
   "CIPP/docs/user-documentation/identity/administration/users/user/onedrive-shortcuts.md": {
-    "mtime": 1788987520.0969388,
-    "ast_hash": "e97d08cc5fada112f28d8cdd31981d6e",
-    "semantic_hash": "e97d08cc5fada112f28d8cdd31981d6e"
+    "mtime": 1789632956.876968,
+    "ast_hash": "b192282b53f4792c308bff8f5b84cef2",
+    "semantic_hash": "b192282b53f4792c308bff8f5b84cef2"
   },
   "CIPP/backend/Modules/CIPPCore/Private/Authentication/Find-CippBaseRole.ps1": {
     "mtime": 1789399889.029681,
@@ -48510,9 +48500,9 @@
     "semantic_hash": "6f369e2f4f7b8a1fd7f9c988bf61ec77"
   },
   "CIPP/frontend/src/pages/cipp/advanced/container-management/diagnostics.jsx": {
-    "mtime": 1789399889.251528,
-    "ast_hash": "2d77316fea55a6498f0028cba64e8afb",
-    "semantic_hash": "2d77316fea55a6498f0028cba64e8afb"
+    "mtime": 1789632956.91134,
+    "ast_hash": "b0079badede5b3f24124126571104736",
+    "semantic_hash": "b0079badede5b3f24124126571104736"
   },
   "CIPP/frontend/src/pages/identity/administration/roles/role/audit.jsx": {
     "mtime": 1789399889.2565272,
@@ -48540,9 +48530,9 @@
     "semantic_hash": "6814dc23ca0edb1194f0399b5222eca0"
   },
   "CIPP/frontend/src/utils/instance-diagnostics.js": {
-    "mtime": 1789399889.263363,
-    "ast_hash": "5500b77c64aceee37348c16ac6830780",
-    "semantic_hash": "5500b77c64aceee37348c16ac6830780"
+    "mtime": 1789632956.9245043,
+    "ast_hash": "107b18a91777b7ea807b6443e2373027",
+    "semantic_hash": "107b18a91777b7ea807b6443e2373027"
   },
   "CIPP/frontend/src/utils/role-detail-shared.js": {
     "mtime": 1789399889.263363,
@@ -48555,9 +48545,9 @@
     "semantic_hash": "97717b1737e36a495ab9541e9d5b9138"
   },
   "CIPP/frontend/tests/utils/instance-diagnostics.test.js": {
-    "mtime": 1789399889.2683628,
-    "ast_hash": "5109b405d5a88b9dbceb2178065ffe86",
-    "semantic_hash": "5109b405d5a88b9dbceb2178065ffe86"
+    "mtime": 1789632956.9275055,
+    "ast_hash": "c3c7cc762c4b2ddc34a563b94e2aee02",
+    "semantic_hash": "c3c7cc762c4b2ddc34a563b94e2aee02"
   },
   "CIPP/.github/workflows/update-openapi-spec.yml": {
     "mtime": 1789399888.9543698,
@@ -48583,5 +48573,130 @@
     "mtime": 1789399889.128164,
     "ast_hash": "d1dfe11af21b9dced4510e4d87a8f1cf",
     "semantic_hash": "d1dfe11af21b9dced4510e4d87a8f1cf"
+  },
+  "CIPP/backend/Config/BaselineStandards/Entra (AAD) Standards/UsageLocation.json": {
+    "mtime": 1789632956.7668269,
+    "ast_hash": "08d20ebd85f48c50d30fcea2b0921065",
+    "semantic_hash": "08d20ebd85f48c50d30fcea2b0921065"
+  },
+  "CIPP/backend/Config/BaselineStandards/SharePoint Standards/SPAnonymousLinkExpiration.json": {
+    "mtime": 1789632956.7678447,
+    "ast_hash": "1a4c8c69dcbf5da3f8454bebabd5c069",
+    "semantic_hash": "1a4c8c69dcbf5da3f8454bebabd5c069"
+  },
+  "CIPP/backend/Modules/CIPPCore/Public/Baselines/Get-CIPPBaselineUsageLocationState.ps1": {
+    "mtime": 1789632956.7879145,
+    "ast_hash": "ff3d8c9e4bacd4ff2a1639539ab83317",
+    "semantic_hash": "ff3d8c9e4bacd4ff2a1639539ab83317"
+  },
+  "CIPP/backend/Modules/CIPPCore/Public/Clear-CIPPOnPremisesAttributes.ps1": {
+    "mtime": 1789632956.7899153,
+    "ast_hash": "d7454b85bc522136ad91a95432de1edf",
+    "semantic_hash": "d7454b85bc522136ad91a95432de1edf"
+  },
+  "CIPP/backend/Modules/CIPPDB/Public/DBCache/Set-CIPPDBCacheSharePointUsageReport.ps1": {
+    "mtime": 1789632956.8064508,
+    "ast_hash": "9dee4384c25ce5abcde67f7d1f52ceee",
+    "semantic_hash": "9dee4384c25ce5abcde67f7d1f52ceee"
+  },
+  "CIPP/backend/Modules/CIPPHTTP/Public/Entrypoints/HTTP Functions/Identity/Administration/Users/Invoke-ExecClrOnPremAttributes.ps1": {
+    "mtime": 1789632956.820109,
+    "ast_hash": "c7ad0bd5b17157f90e9493d97489a7e9",
+    "semantic_hash": "c7ad0bd5b17157f90e9493d97489a7e9"
+  },
+  "CIPP/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardPlannerBlockTaskDelete.ps1": {
+    "mtime": 1789632956.8311222,
+    "ast_hash": "3faed37cdf9097403d1b8ea492034aa7",
+    "semantic_hash": "3faed37cdf9097403d1b8ea492034aa7"
+  },
+  "CIPP/backend/Modules/CIPPStandards/Public/Standards/Invoke-CIPPStandardUsageLocation.ps1": {
+    "mtime": 1789632956.8316264,
+    "ast_hash": "dd889cb2a9f61566d6c784d09e98c4a0",
+    "semantic_hash": "dd889cb2a9f61566d6c784d09e98c4a0"
+  },
+  "CIPP/backend/Tests/Alerts/Get-CIPPAlertExpiringLicenses.Tests.ps1": {
+    "mtime": 1789632956.8416457,
+    "ast_hash": "492b9de8ab99d3af4c5ef8a4867446f8",
+    "semantic_hash": "492b9de8ab99d3af4c5ef8a4867446f8"
+  },
+  "CIPP/backend/Tests/Baselines/BaselineSPAnonymousLinkExpiration.Tests.ps1": {
+    "mtime": 1789632956.8416457,
+    "ast_hash": "a1829592379860645bec043a48ee9a19",
+    "semantic_hash": "a1829592379860645bec043a48ee9a19"
+  },
+  "CIPP/backend/Tests/Baselines/BaselineUsageLocation.Tests.ps1": {
+    "mtime": 1789632956.8426468,
+    "ast_hash": "c40911de6bf61af7e3665d2ea2f2cca9",
+    "semantic_hash": "c40911de6bf61af7e3665d2ea2f2cca9"
+  },
+  "CIPP/backend/Tests/Endpoint/Invoke-ExecApiClient.Tests.ps1": {
+    "mtime": 1789632956.8436468,
+    "ast_hash": "4b65a6f7780f88f6be4ad9b8e18b5410",
+    "semantic_hash": "4b65a6f7780f88f6be4ad9b8e18b5410"
+  },
+  "CIPP/backend/Tests/Endpoint/Invoke-ExecClrOnPremAttributes.Tests.ps1": {
+    "mtime": 1789632956.8446481,
+    "ast_hash": "d16a381b220604c810124015ee4435fe",
+    "semantic_hash": "d16a381b220604c810124015ee4435fe"
+  },
+  "CIPP/backend/Tests/Endpoint/Invoke-ExecIRMConfiguration.Tests.ps1": {
+    "mtime": 1789632956.8456483,
+    "ast_hash": "04ebb46b2ded6ff58d2ba003d513141a",
+    "semantic_hash": "04ebb46b2ded6ff58d2ba003d513141a"
+  },
+  "CIPP/backend/Tests/Endpoint/Invoke-PublicMcpRegister.Tests.ps1": {
+    "mtime": 1789632956.8466477,
+    "ast_hash": "103d289798389fa46f707d601665e31b",
+    "semantic_hash": "103d289798389fa46f707d601665e31b"
+  },
+  "CIPP/backend/Tests/Private/Clear-CIPPImmutableId.Tests.ps1": {
+    "mtime": 1789632956.848151,
+    "ast_hash": "96a929de242ed287f23ba9c073e40ba8",
+    "semantic_hash": "96a929de242ed287f23ba9c073e40ba8"
+  },
+  "CIPP/backend/Tests/Private/Clear-CIPPOnPremisesAttributes.Tests.ps1": {
+    "mtime": 1789632956.8496811,
+    "ast_hash": "9b9b141990e831dcc70e01f97eb99629",
+    "semantic_hash": "9b9b141990e831dcc70e01f97eb99629"
+  },
+  "CIPP/backend/Tests/Private/New-CIPPIntuneAppDeployment.Assignments.Tests.ps1": {
+    "mtime": 1789632956.8496811,
+    "ast_hash": "dc8afb7149346be3638ab6d2bf795d02",
+    "semantic_hash": "dc8afb7149346be3638ab6d2bf795d02"
+  },
+  "CIPP/backend/Tests/Private/New-CIPPRestoreTask.Tests.ps1": {
+    "mtime": 1789632956.8496811,
+    "ast_hash": "e0d821f4dc13e20c3c368f2b217f86d4",
+    "semantic_hash": "e0d821f4dc13e20c3c368f2b217f86d4"
+  },
+  "CIPP/backend/Tests/Private/New-CIPPSharepointSite.Tests.ps1": {
+    "mtime": 1789632956.8511982,
+    "ast_hash": "77c29bed55ec4fe51eec2fb483baeb52",
+    "semantic_hash": "77c29bed55ec4fe51eec2fb483baeb52"
+  },
+  "CIPP/backend/Tests/Private/Set-CIPPAssignedApplication.Tests.ps1": {
+    "mtime": 1789632956.8511982,
+    "ast_hash": "54e40a62ef3babbabd98952bda7ec469",
+    "semantic_hash": "54e40a62ef3babbabd98952bda7ec469"
+  },
+  "CIPP/backend/Tests/Private/Set-CIPPIntunePolicy.Assignments.Tests.ps1": {
+    "mtime": 1789632956.8522017,
+    "ast_hash": "0e4a5745897fbc3e945c6d3c4bb4b061",
+    "semantic_hash": "0e4a5745897fbc3e945c6d3c4bb4b061"
+  },
+  "CIPP/backend/Tests/Standards/Invoke-CIPPStandardPlannerBlockTaskDelete.Tests.ps1": {
+    "mtime": 1789632956.8542016,
+    "ast_hash": "021e87dced945e7ac6f7a454ceb940be",
+    "semantic_hash": "021e87dced945e7ac6f7a454ceb940be"
+  },
+  "CIPP/frontend/tests/components/CippComponents/CippUserActions.tap.test.jsx": {
+    "mtime": 1789632956.925503,
+    "ast_hash": "6936bbb4150f37274e207376ce1006b7",
+    "semantic_hash": "6936bbb4150f37274e207376ce1006b7"
+  },
+  "CIPP/frontend/tests/pages/GroupsPage.removeMember.test.jsx": {
+    "mtime": 1789632956.925503,
+    "ast_hash": "31b08d18d160f7b59eed78fb524e6ba1",
+    "semantic_hash": "31b08d18d160f7b59eed78fb524e6ba1"
   }
 }
