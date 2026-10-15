@@ -22,7 +22,7 @@ vitest + storybook suite lives in the monorepo (`CIPP\frontend\tests`), run from
 - query it with `python graph-tools\query.py` (`find <text>` / `node <id|label>` / `path <from> <to>` / `trace <ApiEndpointName>`), don't hand-roll graph.json scripts. `trace` prints the frontend -> backend -> craft -> microsoft chain for an endpoint (macos: `.venv/bin/python graph-tools/query.py`)
 - graph builds run with `CIPP\` checked out on `dev` only, never a feature/preview branch (the committed graph tracks dev; check out dev, build, switch back)
 - after code changes: `graph-tools\update-graph.ps1` (~10s, no LLM). `--cluster` re-clusters + regenerates the report
-- full rebuild: `graph-tools\rebuild-graph.ps1` (needed when update refuses with the shrink-guard error, after `.graphifyignore` changes, or to drop deleted docs)
+- full rebuild: `graph-tools\rebuild-graph.ps1` (needed when update refuses with the shrink-guard error, after `.graphifyignore` changes, to drop deleted docs, or when update logs an ID collision against a deleted path: dir renames collide the new nodes with the old ones and the prune drops both)
 - doc changes are not picked up by these scripts: run a /graphify session (only changed docs re-extract, content-hash cache in `graphify-out\cache\semantic\`), then rebuild to merge
 - graph.json + sidecars + the semantic cache are committed here, commit the refreshed files after updating so other clones skip the LLM recompute
 
