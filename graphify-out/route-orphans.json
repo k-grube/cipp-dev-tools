@@ -650,17 +650,17 @@
     "missing": "backend node"
   },
   {
-    "file": "CIPP/frontend/src/pages/teams-share/storage-report/index.jsx",
-    "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
     "file": "CIPP/frontend/src/pages/teams-share/reports/permissions-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
     "file": "CIPP/frontend/src/pages/teams-share/reports/sharing-report/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/teams-share/reports/storage-report/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1950,6 +1950,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippSettings/CippSAMCredentials.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippSettings/CippSiemSettings.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -2077,11 +2082,6 @@
   {
     "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
     "route": "ApiCall",
-    "missing": "backend node"
-  },
-  {
-    "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
-    "route": "ExecSamSecretStatus",
     "missing": "backend node"
   },
   {
