@@ -875,6 +875,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/devices/device/remediations.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/endpoint/applications/templates/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
