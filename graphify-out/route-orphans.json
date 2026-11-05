@@ -140,6 +140,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/hooks/use-app-sign-in-activity.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/hooks/use-custom-variables.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -320,6 +325,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tools/report-builder/generated/index.jsx",
+    "route": "ExecGenerateReportBuilderReport",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tools/report-builder/view/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -386,6 +396,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/tenant/security-simulator/situations.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/tools/compare-ca-policies/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -515,6 +530,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/enterprise-apps.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/administration/audit-logs/coverage.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -575,12 +595,22 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/enterprise-app/exchange.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/tenant/administration/applications/enterprise-app/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
   {
     "file": "CIPP/frontend/src/pages/tenant/administration/applications/enterprise-app/permissions.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/administration/applications/enterprise-app/roles.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -750,6 +780,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/identity/administration/vacation-mode/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/identity/administration/users/user/conditional-access.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -855,6 +890,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/endpoint/MEM/non-compliant-devices/index.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/endpoint/MEM/reusable-settings/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -876,6 +916,11 @@
   },
   {
     "file": "CIPP/frontend/src/pages/endpoint/MEM/devices/device/remediations.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/endpoint/autopilot/enrollment-restriction-templates/edit.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1255,6 +1300,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippAddGroupDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippAddRoomDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1385,7 +1435,17 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippBecRemediationHistory.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippBitlockerKeySearch.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippBulkDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1435,6 +1495,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippDeployGroupTemplateDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippDevicePolicySettingStates.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1455,8 +1520,33 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEnrollmentRestrictionDeployDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEnrollmentRestrictionDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEnterpriseAppExchangeRbac.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippEnterpriseAppPermissions.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEnterpriseAppRoles.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippEnterpriseAppRoles.jsx",
+    "route": "ExecEnterpriseAppRole",
     "missing": "backend node"
   },
   {
@@ -1755,6 +1845,11 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/EnterpriseAppActions.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/ForcedSsoMigrationDialog.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1851,6 +1946,11 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippIntegrations/CippIntegrationFieldMapping.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippIntegrations/CippIntegrationOAuthConnect.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
