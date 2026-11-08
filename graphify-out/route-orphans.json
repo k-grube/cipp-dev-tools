@@ -170,6 +170,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/hooks/use-multi-partner.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/hooks/use-multi-partner.js",
+    "route": "ListPartnerTenants",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/hooks/use-permissions.js",
     "route": "ApiCall",
     "missing": "backend node"
@@ -186,6 +196,11 @@
   },
   {
     "file": "CIPP/frontend/src/hooks/use-securescore.js",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/hooks/use-tenant-label.js",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -352,6 +367,11 @@
   {
     "file": "CIPP/frontend/src/pages/tenant/gdap-management/offboarding.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/gdap-management/offboarding.jsx",
+    "route": "ListPartnerTenants",
     "missing": "backend node"
   },
   {
@@ -551,6 +571,16 @@
   },
   {
     "file": "CIPP/frontend/src/pages/tenant/administration/authentication-methods/registration-campaign.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/administration/nhi/case.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/tenant/administration/nhi/index.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -1115,8 +1145,23 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/pages/cipp/settings/permissions.jsx",
+    "route": "ListPartnerTenants",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/pages/cipp/settings/siem.jsx",
     "route": "storageservices",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/settings/tenants.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/settings/tenants.jsx",
+    "route": "ListPartnerTenants",
     "missing": "backend node"
   },
   {
@@ -1192,6 +1237,16 @@
   {
     "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/jit-admin-settings.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/partner-tenants.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/pages/cipp/advanced/super-admin/partner-tenants.jsx",
+    "route": "ListPartnerTenants",
     "missing": "backend node"
   },
   {
@@ -1585,6 +1640,16 @@
     "missing": "backend node"
   },
   {
+    "file": "CIPP/frontend/src/components/CippComponents/CippIntunePolicyFailureDetails.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippIntuneSyncDrawer.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
     "file": "CIPP/frontend/src/components/CippComponents/CippInviteGuestDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
@@ -1626,6 +1691,16 @@
   },
   {
     "file": "CIPP/frontend/src/components/CippComponents/CippMultiQueueTracker.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippNhiCaseReport.jsx",
+    "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippComponents/CippNhiContainmentDrawer.jsx",
     "route": "ApiCall",
     "missing": "backend node"
   },
@@ -2187,6 +2262,11 @@
   {
     "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
     "route": "ApiCall",
+    "missing": "backend node"
+  },
+  {
+    "file": "CIPP/frontend/src/components/CippWizard/CippTenantModeDeploy.jsx",
+    "route": "ListPartnerTenants",
     "missing": "backend node"
   },
   {
