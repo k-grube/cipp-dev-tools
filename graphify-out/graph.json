@@ -224112,127 +224112,6 @@
       "id": "test_sh__entry"
     },
     {
-      "label": "clear-azurite-reporting.py",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "clear-azurite-reporting.py",
-      "id": "tools_clear_azurite_reporting"
-    },
-    {
-      "label": "docker()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "docker()",
-      "id": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "label": "state()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "state()",
-      "id": "tools_clear_azurite_reporting_state"
-    },
-    {
-      "label": "db_size()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "db_size()",
-      "id": "tools_clear_azurite_reporting_db_size"
-    },
-    {
-      "label": "pull_db()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L53",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "pull_db()",
-      "id": "tools_clear_azurite_reporting_pull_db"
-    },
-    {
-      "label": "push_db()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L57",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "push_db()",
-      "id": "tools_clear_azurite_reporting_push_db"
-    },
-    {
-      "label": "load()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "load()",
-      "id": "tools_clear_azurite_reporting_load"
-    },
-    {
-      "label": "short_name()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L66",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "short_name()",
-      "id": "tools_clear_azurite_reporting_short_name"
-    },
-    {
-      "label": "empty_collection()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L71",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "empty_collection()",
-      "id": "tools_clear_azurite_reporting_empty_collection"
-    },
-    {
-      "label": "cmd_list()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L87",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "cmd_list()",
-      "id": "tools_clear_azurite_reporting_cmd_list"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L106",
-      "_origin": "ast",
-      "community": 399,
-      "community_name": "clear-azurite-reporting.py cluster",
-      "norm_label": "main()",
-      "id": "tools_clear_azurite_reporting_main"
-    },
-    {
       "label": "useSelector",
       "file_type": "code",
       "source_file": "CIPP/frontend/src/store/index.js",
@@ -244998,7 +244877,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "clear-frontend-cache.py",
       "id": "tools_clear_frontend_cache"
     },
@@ -245009,7 +244888,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "listening()",
       "id": "tools_clear_frontend_cache_listening"
     },
@@ -245020,9 +244899,163 @@
       "source_location": "L26",
       "_origin": "ast",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "main()",
       "id": "tools_clear_frontend_cache_main"
+    },
+    {
+      "label": "clear-azurite-reporting.py",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "clear-azurite-reporting.py",
+      "id": "tools_clear_azurite_reporting"
+    },
+    {
+      "label": "docker()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "docker()",
+      "id": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "label": "in_volume()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "in_volume()",
+      "id": "tools_clear_azurite_reporting_in_volume"
+    },
+    {
+      "label": "state()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "state()",
+      "id": "tools_clear_azurite_reporting_state"
+    },
+    {
+      "label": "db_size()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "db_size()",
+      "id": "tools_clear_azurite_reporting_db_size"
+    },
+    {
+      "label": "pull_db()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L50",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "pull_db()",
+      "id": "tools_clear_azurite_reporting_pull_db"
+    },
+    {
+      "label": "push_db()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "push_db()",
+      "id": "tools_clear_azurite_reporting_push_db"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "load()",
+      "id": "tools_clear_azurite_reporting_load"
+    },
+    {
+      "label": "short_name()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "short_name()",
+      "id": "tools_clear_azurite_reporting_short_name"
+    },
+    {
+      "label": "page_rows()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L68",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "page_rows()",
+      "id": "tools_clear_azurite_reporting_page_rows"
+    },
+    {
+      "label": "row_counts()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "row_counts()",
+      "id": "tools_clear_azurite_reporting_row_counts"
+    },
+    {
+      "label": "empty_collection()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "empty_collection()",
+      "id": "tools_clear_azurite_reporting_empty_collection"
+    },
+    {
+      "label": "cmd_list()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L103",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "cmd_list()",
+      "id": "tools_clear_azurite_reporting_cmd_list"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L126",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-azurite-reporting.py cluster",
+      "norm_label": "main()",
+      "id": "tools_clear_azurite_reporting_main"
     },
     {
       "label": "cippstg.table.core.windows.net",
@@ -245031,7 +245064,7 @@
       "file_type": "concept",
       "id": "external_cippstg_table_core_windows_net",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "cippstg.table.core.windows.net"
     },
     {
@@ -245041,7 +245074,7 @@
       "file_type": "concept",
       "id": "external_graph_microsoft_com",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "graph.microsoft.com"
     },
     {
@@ -245051,7 +245084,7 @@
       "file_type": "concept",
       "id": "external_login_microsoftonline_com",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "login.microsoftonline.com"
     },
     {
@@ -245061,7 +245094,7 @@
       "file_type": "concept",
       "id": "external_management_azure_com",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "management.azure.com"
     },
     {
@@ -245071,7 +245104,7 @@
       "file_type": "concept",
       "id": "external_vault_azure_net",
       "community": -1,
-      "community_name": "clear-frontend-cache.py cluster",
+      "community_name": "clear-azurite-reporting.py cluster",
       "norm_label": "vault.azure.net"
     }
   ],
@@ -781225,293 +781258,6 @@
       "target": "test_sh__entry"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L87",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_cmd_list"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_db_size"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_empty_collection"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_load"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L53",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_pull_db"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_push_db"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_short_name"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting",
-      "target": "tools_clear_azurite_reporting_state"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_state",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_db_size",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_pull_db",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L58",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_push_db",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_cmd_list",
-      "target": "tools_clear_azurite_reporting_db_size"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L97",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_cmd_list",
-      "target": "tools_clear_azurite_reporting_load"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_cmd_list",
-      "target": "tools_clear_azurite_reporting_pull_db"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_cmd_list",
-      "target": "tools_clear_azurite_reporting_short_name"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L126",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_cmd_list"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L184",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_db_size"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L120",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_docker"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L161",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_empty_collection"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_load"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L148",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_pull_db"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L169",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_push_db"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L159",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_short_name"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/clear-azurite-reporting.py",
-      "source_location": "L122",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tools_clear_azurite_reporting_main",
-      "target": "tools_clear_azurite_reporting_state"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -796218,6 +795964,389 @@
       "confidence_score": 1.0,
       "source": "tools_clear_frontend_cache_main",
       "target": "tools_clear_frontend_cache_listening"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_cmd_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_db_size"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_empty_collection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_in_volume"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_load"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_page_rows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_pull_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_push_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_row_counts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_short_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting",
+      "target": "tools_clear_azurite_reporting_state"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_in_volume",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_state",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_db_size",
+      "target": "tools_clear_azurite_reporting_in_volume"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_pull_db",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_push_db",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_page_rows",
+      "target": "tools_clear_azurite_reporting_in_volume"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_row_counts",
+      "target": "tools_clear_azurite_reporting_page_rows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_cmd_list",
+      "target": "tools_clear_azurite_reporting_db_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_cmd_list",
+      "target": "tools_clear_azurite_reporting_load"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_cmd_list",
+      "target": "tools_clear_azurite_reporting_pull_db"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_cmd_list",
+      "target": "tools_clear_azurite_reporting_row_counts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_cmd_list",
+      "target": "tools_clear_azurite_reporting_short_name"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_cmd_list"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_db_size"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_docker"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_empty_collection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_in_volume"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_load"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_pull_db"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L197",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_push_db"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_row_counts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_short_name"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-azurite-reporting.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_azurite_reporting_main",
+      "target": "tools_clear_azurite_reporting_state"
     }
   ],
   "hyperedges": [
@@ -797334,5 +797463,5 @@
       "source_file": "spec/graphify-internals.md"
     }
   ],
-  "built_at_commit": "4f339249b565ca9d13f5a4e8d2c9c6232a53ba13"
+  "built_at_commit": "417b298c6d59a140fc9916121333b8ec130daf68"
 }

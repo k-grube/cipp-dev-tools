@@ -1,19 +1,10 @@
 #!/usr/bin/env python3
-"""clear cipp reporting/test data out of the dev azurite table store.
+"""empty cipp reporting/test tables in the dev azurite table store, tenant config and secrets stay.
 
-the monorepo dev stack's CIS test engine snapshots full tenant graph state into
-CippReportingDB (+ CippTestResults). azurite keeps every table in one json file loaded
-as a single v8 string; past ~512MB azurite crash-loops on boot (v8 max string length is
-0x1fffffe8, hardcoded, so the compose --max-old-space-size bump can't help). with a
-realistic tenant set this bricks the dev stack in ~2 days.
-
-python has no 512MB string cap, so it can read+rewrite the file azurite itself can no
-longer load. this empties the heavy reporting tables in-place and leaves tenant config /
-secrets / settings intact. cipp recreates + refills the tables on the next collection run,
-so re-run this periodically (or trim the dev tenant set) to stay under the cap.
+works on the paged table db (shell + one file per page of rows) and the legacy single json file.
 
 usage:
-  python tools/clear-azurite-reporting.py --list            # show table row counts + file size
+  python tools/clear-azurite-reporting.py --list            # show table row counts + size on disk
   python tools/clear-azurite-reporting.py                   # empty the default reporting tables
   python tools/clear-azurite-reporting.py --tables CippReportingDB,CippLogs
   python tools/clear-azurite-reporting.py --nuke -y         # delete the whole table db (all tables)
@@ -21,7 +12,6 @@ usage:
 import argparse
 import json
 import os
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -29,13 +19,22 @@ import time
 
 CONTAINER = "cipp-azurite"
 VOLUME = "cipp-ng_azurite-data"
-TABLE_DB = "/workspace/__azurite_db_table__.json"  # azurite --location /workspace
+DB_NAME = "__azurite_db_table__.json"
+TABLE_DB = f"/workspace/{DB_NAME}"  # azurite --location /workspace
 DEFAULT_TABLES = ["CippReportingDB", "CippTestResults", "CippStandardsReports"]
-V8_STRING_CAP = 0x1fffffe8  # ~512MB, the size azurite dies at
+V8_STRING_CAP = 0x1fffffe8  # ~512MB, the size azurite dies at loading a legacy single-file db
+FIND_DB = f"find /w -maxdepth 1 -name '{DB_NAME}*'"  # shell (or legacy db) + page files
 
 
-def docker(*args, check=True):
-    return subprocess.run(["docker", *args], check=check, capture_output=True, text=True)
+def docker(*args, check=True, **kwargs):
+    kwargs.setdefault("capture_output", True)
+    return subprocess.run(["docker", *args], check=check, text=True, **kwargs)
+
+
+def in_volume(script, mode="ro", **kwargs):
+    # works whether azurite is up, stopped or bricked
+    stdin = ["-i"] if "input" in kwargs else []
+    return docker("run", "--rm", *stdin, "-v", f"{VOLUME}:/w:{mode}", "alpine", "sh", "-c", script, **kwargs)
 
 
 def state(name):
@@ -44,9 +43,7 @@ def state(name):
 
 
 def db_size():
-    # size on disk without loading, works whether azurite is up or bricked
-    r = docker("run", "--rm", "-v", f"{VOLUME}:/w:ro", "alpine",
-               "stat", "-c", "%s", TABLE_DB.replace("/workspace", "/w"), check=False)
+    r = in_volume(FIND_DB + " -exec stat -c %s {} + | awk '{s += $1} END {print s + 0}'", check=False)
     return int(r.stdout.strip()) if r.returncode == 0 and r.stdout.strip().isdigit() else None
 
 
@@ -68,6 +65,25 @@ def short_name(coll):
     return n.split("$", 1)[1] if "$" in n else n
 
 
+def page_rows():
+    # page file name -> row count, rows are newline-joined with no trailing newline
+    rows = {}
+    for line in in_volume(FIND_DB + " -exec wc -l {} +").stdout.splitlines():
+        count, path = line.split(None, 1)
+        if path != "total":
+            rows[os.path.basename(path)] = int(count) + 1
+    return rows
+
+
+def row_counts(db):
+    # the paged shell lists each collection's page files under "pages", a legacy db holds the rows inline
+    pages = db.get("pages")
+    if pages is None:
+        return {c["name"]: len(c.get("data", [])) for c in db.get("collections", [])}
+    rows = page_rows()
+    return {name: sum(rows.get(os.path.basename(f), 0) for f in files) for name, files in pages.items()}
+
+
 def empty_collection(coll):
     # reset a lokijs collection to empty without breaking azurite's load path
     coll["data"] = []
@@ -86,16 +102,20 @@ def empty_collection(coll):
 
 def cmd_list():
     sz = db_size()
-    if sz is None:
+    if not sz:
         sys.exit("could not stat the table db (is the stack up?)")
-    print(f"table db: {sz / 1e6:.1f} MB  (azurite dies at {V8_STRING_CAP / 1e6:.0f} MB)")
-    if sz > V8_STRING_CAP * 0.85:
-        print("  WARNING: approaching the 512MB cap, clear soon or azurite will crash-loop")
     with tempfile.TemporaryDirectory() as td:
         local = os.path.join(td, "t.json")
         pull_db(local)
         db = load(local)
-    rows = sorted(((short_name(c), len(c.get("data", []))) for c in db.get("collections", [])),
+    if "pages" in db:
+        print(f"table db: {sz / 1e6:.1f} MB  (paged)")
+    else:
+        print(f"table db: {sz / 1e6:.1f} MB  (single file, azurite dies at {V8_STRING_CAP / 1e6:.0f} MB)")
+        if sz > V8_STRING_CAP * 0.85:
+            print("  WARNING: approaching the 512MB cap, clear soon or azurite will crash-loop")
+    counts = row_counts(db)
+    rows = sorted(((short_name(c), counts.get(c["name"], 0)) for c in db.get("collections", [])),
                   key=lambda x: -x[1])
     print(f"{'table':40} rows")
     for name, n in rows:
@@ -106,14 +126,14 @@ def cmd_list():
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--list", action="store_true", help="show table row counts + file size, change nothing")
+    ap.add_argument("--list", action="store_true", help="show table row counts + size on disk, change nothing")
     ap.add_argument("--tables", default=",".join(DEFAULT_TABLES),
                     help=f"comma list to empty (default: {','.join(DEFAULT_TABLES)})")
     ap.add_argument("--nuke", action="store_true",
                     help="delete the whole table db (wipes ALL tables, not just reporting)")
     ap.add_argument("--no-restart", action="store_true", help="leave azurite stopped after")
     ap.add_argument("--keep-backup", action="store_true",
-                    help="save the pre-edit table db to ./azurite_table_db.bak.json")
+                    help="save the pre-edit table db to ./azurite_table_db.bak.tar")
     ap.add_argument("-y", "--yes", action="store_true", help="skip the confirmation prompt")
     args = ap.parse_args()
 
@@ -138,37 +158,48 @@ def main():
         print("stopping azurite (breaks the restart loop)...")
         docker("stop", CONTAINER)
 
+    if args.keep_backup:
+        bak = os.path.abspath("azurite_table_db.bak.tar")
+        with open(bak, "wb") as f:
+            subprocess.run(["docker", "run", "--rm", "-v", f"{VOLUME}:/w:ro", "alpine", "sh", "-c",
+                            f"cd /w && find . -maxdepth 1 -name '{DB_NAME}*' | tar -cf - -T -"],
+                           check=True, stdout=f)
+        print(f"backup: {bak}")
+
     if args.nuke:
-        docker("run", "--rm", "--volumes-from", CONTAINER, "alpine", "rm", "-f", TABLE_DB)
+        in_volume(FIND_DB + " -exec rm -f {} +", mode="rw")
         print("deleted table db")
     else:
         with tempfile.TemporaryDirectory() as td:
             local = os.path.join(td, "table.json")
+            before = db_size()
             print("copying table db out...")
             pull_db(local)
-            before = os.path.getsize(local)
-            if args.keep_backup:
-                bak = os.path.abspath("azurite_table_db.bak.json")
-                shutil.copy2(local, bak)
-                print(f"backup: {bak}")
-            print(f"loading {before / 1e6:.1f} MB json...")
             db = load(local)
+            counts = row_counts(db)
+            pages = db.get("pages")
             wanted = set(tables) | {f"devstoreaccount1${t}" for t in tables}
             emptied = []
+            stale = []
             for coll in db.get("collections", []):
                 if coll.get("name") in wanted or short_name(coll) in tables:
-                    emptied.append((short_name(coll), len(coll.get("data", []))))
+                    emptied.append((short_name(coll), counts.get(coll["name"], 0)))
                     empty_collection(coll)
+                    if pages is not None:
+                        stale += [os.path.basename(f) for f in pages.get(coll["name"], [])]
+                        pages[coll["name"]] = []
             if not emptied:
                 print(f"no matching tables found (have: {', '.join(sorted(short_name(c) for c in db.get('collections', [])))})")
             else:
                 with open(local, "w", encoding="utf-8") as f:
                     json.dump(db, f, separators=(",", ":"))
-                after = os.path.getsize(local)
                 print("copying table db back...")
                 push_db(local)
+                # shell goes back first, a manifest entry without its page file stops azurite loading
+                if stale:
+                    in_volume("cd /w && xargs rm -f", mode="rw", input="\n".join(stale))
                 print("emptied " + ", ".join(f"{t} ({n} rows)" for t, n in emptied))
-                print(f"size: {before / 1e6:.1f} MB -> {after / 1e6:.1f} MB")
+                print(f"size: {before / 1e6:.1f} MB -> {db_size() / 1e6:.1f} MB")
 
     if args.no_restart:
         print("left azurite stopped (--no-restart)")

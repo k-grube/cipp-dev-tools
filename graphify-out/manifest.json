@@ -16105,9 +16105,9 @@
     "semantic_hash": "75a9757a92bbd6fd19b2d0351dad710b"
   },
   "AGENTS.md": {
-    "mtime": 1795479945.910043,
-    "ast_hash": "84d58ca5551a468d39bf5bf1e77d646a",
-    "semantic_hash": "84d58ca5551a468d39bf5bf1e77d646a"
+    "mtime": 1795480830.6850293,
+    "ast_hash": "d952346046aac25516a4f139e213e0f4",
+    "semantic_hash": "d952346046aac25516a4f139e213e0f4"
   },
   "craft/.github/copilot-instructions.md": {
     "mtime": 1784915382.6063514,
@@ -16260,9 +16260,9 @@
     "semantic_hash": "92cc18ff7be8f9f8ac5e9053aa4cbbc2"
   },
   "tools/clear-azurite-reporting.py": {
-    "mtime": 1784922667.7594137,
-    "ast_hash": "277ed3cd431c03d9bd83b9550dba2c4e",
-    "semantic_hash": "277ed3cd431c03d9bd83b9550dba2c4e"
+    "mtime": 1795480674.2897656,
+    "ast_hash": "a4a3a0291c575fdf887a133327c3b583",
+    "semantic_hash": "a4a3a0291c575fdf887a133327c3b583"
   },
   "cipp/backend/Config/function-parameters.json": {
     "mtime": 1785052188.7609296,
@@ -19015,12 +19015,12 @@
     "semantic_hash": "7aed0dfb1a98fbdf355b3972551d1555"
   },
   "CIPP/backend/Config/function-parameters.json": {
-    "mtime": 1795479452.1598713,
+    "mtime": 1795480383.0196514,
     "ast_hash": "a31c6d129cd00ba81c130e316a8b37aa",
     "semantic_hash": "a31c6d129cd00ba81c130e316a8b37aa"
   },
   "CIPP/backend/Config/function-permissions.json": {
-    "mtime": 1795479535.8371003,
+    "mtime": 1795480445.3674202,
     "ast_hash": "8464c11f0639d8f19b59b7940d7d82d1",
     "semantic_hash": "8464c11f0639d8f19b59b7940d7d82d1"
   },
@@ -19030,7 +19030,7 @@
     "semantic_hash": "d5c44ad731348e2372ba5085d7585b17"
   },
   "CIPP/backend/Config/openapi.json": {
-    "mtime": 1795479507.883635,
+    "mtime": 1795480440.5574875,
     "ast_hash": "93d9030dadd13eaa1ed92b369788ef8d",
     "semantic_hash": "93d9030dadd13eaa1ed92b369788ef8d"
   },
