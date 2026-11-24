@@ -16105,9 +16105,9 @@
     "semantic_hash": "75a9757a92bbd6fd19b2d0351dad710b"
   },
   "AGENTS.md": {
-    "mtime": 1792092687.1209,
-    "ast_hash": "a89bf794741d5afa0d173bf0b3df4d81",
-    "semantic_hash": "a89bf794741d5afa0d173bf0b3df4d81"
+    "mtime": 1795479945.910043,
+    "ast_hash": "84d58ca5551a468d39bf5bf1e77d646a",
+    "semantic_hash": "84d58ca5551a468d39bf5bf1e77d646a"
   },
   "craft/.github/copilot-instructions.md": {
     "mtime": 1784915382.6063514,
@@ -19015,14 +19015,14 @@
     "semantic_hash": "7aed0dfb1a98fbdf355b3972551d1555"
   },
   "CIPP/backend/Config/function-parameters.json": {
-    "mtime": 1788987538.6791246,
-    "ast_hash": "9db287ba8b7906ea1dc157f918a07921",
-    "semantic_hash": "9db287ba8b7906ea1dc157f918a07921"
+    "mtime": 1795479452.1598713,
+    "ast_hash": "a31c6d129cd00ba81c130e316a8b37aa",
+    "semantic_hash": "a31c6d129cd00ba81c130e316a8b37aa"
   },
   "CIPP/backend/Config/function-permissions.json": {
-    "mtime": 1788987588.7205536,
-    "ast_hash": "71d89381e0200d335cf82fe0d996115e",
-    "semantic_hash": "71d89381e0200d335cf82fe0d996115e"
+    "mtime": 1795479535.8371003,
+    "ast_hash": "8464c11f0639d8f19b59b7940d7d82d1",
+    "semantic_hash": "8464c11f0639d8f19b59b7940d7d82d1"
   },
   "CIPP/backend/Config/intuneCollection.json": {
     "mtime": 1793839653.9577613,
@@ -19030,9 +19030,9 @@
     "semantic_hash": "d5c44ad731348e2372ba5085d7585b17"
   },
   "CIPP/backend/Config/openapi.json": {
-    "mtime": 1795460727.1687756,
-    "ast_hash": "d96373c6849d8ce86fc76296ae8eaa46",
-    "semantic_hash": "d96373c6849d8ce86fc76296ae8eaa46"
+    "mtime": 1795479507.883635,
+    "ast_hash": "93d9030dadd13eaa1ed92b369788ef8d",
+    "semantic_hash": "93d9030dadd13eaa1ed92b369788ef8d"
   },
   "CIPP/backend/Config/schemaDefinitions.json": {
     "mtime": 1784682019.2929647,
@@ -77408,5 +77408,15 @@
     "mtime": 1795460728.433713,
     "ast_hash": "6c58a0c911b9e0524094fbac135e77d8",
     "semantic_hash": "6c58a0c911b9e0524094fbac135e77d8"
+  },
+  "tools/clear-frontend-cache.py": {
+    "mtime": 1795479863.985577,
+    "ast_hash": "4e3da4511a1ade6eff4d1cf615ccec5e",
+    "semantic_hash": "4e3da4511a1ade6eff4d1cf615ccec5e"
+  },
+  "CIPP/frontend/AGENTS.md": {
+    "mtime": 1795479873.806058,
+    "ast_hash": "c98dbebb744eadc1acc4b9f58bfe0f42",
+    "semantic_hash": "c98dbebb744eadc1acc4b9f58bfe0f42"
   }
 }

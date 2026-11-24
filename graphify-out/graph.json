@@ -244992,13 +244992,46 @@
       "id": "spec_toolchain_notes_test_leak_diagnosis"
     },
     {
+      "label": "clear-frontend-cache.py",
+      "file_type": "code",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-frontend-cache.py cluster",
+      "norm_label": "clear-frontend-cache.py",
+      "id": "tools_clear_frontend_cache"
+    },
+    {
+      "label": "listening()",
+      "file_type": "code",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-frontend-cache.py cluster",
+      "norm_label": "listening()",
+      "id": "tools_clear_frontend_cache_listening"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": -1,
+      "community_name": "clear-frontend-cache.py cluster",
+      "norm_label": "main()",
+      "id": "tools_clear_frontend_cache_main"
+    },
+    {
       "label": "cippstg.table.core.windows.net",
       "type": "external_api",
       "source_file": "graph-tools/craft-links",
       "file_type": "concept",
       "id": "external_cippstg_table_core_windows_net",
       "community": -1,
-      "community_name": "graph.microsoft.com cluster",
+      "community_name": "clear-frontend-cache.py cluster",
       "norm_label": "cippstg.table.core.windows.net"
     },
     {
@@ -245008,7 +245041,7 @@
       "file_type": "concept",
       "id": "external_graph_microsoft_com",
       "community": -1,
-      "community_name": "graph.microsoft.com cluster",
+      "community_name": "clear-frontend-cache.py cluster",
       "norm_label": "graph.microsoft.com"
     },
     {
@@ -245018,7 +245051,7 @@
       "file_type": "concept",
       "id": "external_login_microsoftonline_com",
       "community": -1,
-      "community_name": "graph.microsoft.com cluster",
+      "community_name": "clear-frontend-cache.py cluster",
       "norm_label": "login.microsoftonline.com"
     },
     {
@@ -245028,7 +245061,7 @@
       "file_type": "concept",
       "id": "external_management_azure_com",
       "community": -1,
-      "community_name": "graph.microsoft.com cluster",
+      "community_name": "clear-frontend-cache.py cluster",
       "norm_label": "management.azure.com"
     },
     {
@@ -245038,7 +245071,7 @@
       "file_type": "concept",
       "id": "external_vault_azure_net",
       "community": -1,
-      "community_name": "graph.microsoft.com cluster",
+      "community_name": "clear-frontend-cache.py cluster",
       "norm_label": "vault.azure.net"
     }
   ],
@@ -796154,6 +796187,37 @@
       "weight": 1.0,
       "source": "spec_toolchain_notes_test_leak_diagnosis",
       "target": "cipp_frontend_tests_overview_shared_execution_contexts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_frontend_cache",
+      "target": "tools_clear_frontend_cache_listening"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_frontend_cache",
+      "target": "tools_clear_frontend_cache_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/clear-frontend-cache.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_clear_frontend_cache_main",
+      "target": "tools_clear_frontend_cache_listening"
     }
   ],
   "hyperedges": [
@@ -797270,5 +797334,5 @@
       "source_file": "spec/graphify-internals.md"
     }
   ],
-  "built_at_commit": "0514812f292266d913f83c6d7531c5cef169f6c0"
+  "built_at_commit": "4f339249b565ca9d13f5a4e8d2c9c6232a53ba13"
 }
