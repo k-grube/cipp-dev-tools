@@ -5,7 +5,7 @@ description: Multi-agent sweep that adds missing frontend tests pinning real fai
 
 # test-sweep
 
-multi-agent frontend test sweep. pipeline per run: scout -> write (fan-out) -> verify (default-deny) -> gate -> session-side state updates. run size: top 10-12 pending backlog entries. design rationale in `docs/superpowers/specs/2026-08-01-test-sweep-design.md` (local-only, this repo is public; the skill is self-contained without it).
+multi-agent frontend test sweep. pipeline per run: scout -> write (fan-out) -> verify (default-deny) -> gate -> session-side state updates. run size: top 10-12 pending backlog entries. design rationale in `docs/superpowers/specs/2026-08-01-test-sweep-design.md` (local-only, not in this public repo; the skill is self-contained without it, skip it when absent).
 
 ## value bar
 
@@ -22,8 +22,8 @@ state lives under `docs/` because this repo is public and both files describe un
 
 scout = 3 parallel agents, merge scores in-session, refresh backlog:
 
-1. coverage agent: run `.\test.ps1 --coverage` from the workspace root (macos: `./test.sh --coverage`), or read the last coverage output if fresh; list frontend source files with 0 or trivial coverage
-2. graph agent: `python graph-tools\query.py find <candidates>` fan-in ranking; high fan-in first (shared components, formatters, table utils)
+1. coverage agent: run `.\test.ps1 --coverage` from the workspace root (macos: `./test.sh --coverage`; runs both projects, chromium included). coverage prints to stdout only, nothing is persisted, so reuse is only possible from output captured earlier in this session; list frontend source files with 0 or trivial coverage
+2. graph agent: `python graph-tools\query.py node <id|file>` once per candidate and count its in-edges for the fan-in ranking (`find` only lists matching nodes, and ANDs several terms); high fan-in first (shared components, formatters, table utils)
 3. pattern/churn agent: grep frontend src for crash-prone patterns (unguarded `Object.keys(`, `.map(` on api-shaped props, `.label ??`-less member access in formatter branches) + `git -C CIPP log --since=90.days --name-only` churn counts + `docs/upstream-findings.md` mentions (local-only, skip that input if absent)
 
 score = fan-in x (has crash-pattern or findings mention) x churn, zero coverage required. every entry needs a concrete `failureMode` hypothesis; no hypothesis -> not a target.
@@ -38,9 +38,9 @@ score = fan-in x (has crash-pattern or findings mention) x churn, zero coverage 
 ## run pipeline
 
 1. scout per mode above, update `backlog.json`
-2. take top 10-12 `pending` (sync first, then score), build assignments: `{file, failureMode, evidence, testPath, project}` where `testPath` mirrors existing layout (`CIPP/frontend/tests/components/...` / `tests/pages/...`) and `project` is `unit` or `storybook` per the placement rule in `.claude/skills/component-tests/policy.md`
-3. read `writer-prompt.md`, `verifier-prompt.md`, `gate-prompt.md` from this skill dir; expand `{{POLICY}}` in writer-prompt.md with `.claude/skills/component-tests/policy.md`'s contents from the `## hard rules` heading onward (drop the title and preamble, those are maintainer-facing, not writer-facing) before passing it; launch Workflow with `scriptPath: .claude/skills/test-sweep/workflow.js` and `args: {assignments, writerPrompt, verifierPrompt, gatePrompt, priorRedPins}` where `priorRedPins` = `[{file, name}]` rebuilt from backlog entries with status red-pin
-4. session-side after the workflow returns: append findings entries for `red-pin` results to `docs/upstream-findings.md` (continue existing numbering; create the file if this is a cold start), update backlog statuses, advance `last-sync.txt` (sync mode, gate green), commit test files with a `test:` commit (backlog/findings/marker are local-only under docs\, never committed); any NEW test the gate flags as an unexpected failure is pulled and logged in the report, report per `routing` below
+2. take top 10-12 `pending` (sync first, then score), build assignments: `{file, failureMode, evidence, testPath, project}` where `testPath` is relative to `CIPP\frontend` (`tests/components/...`, `tests/pages/...`, the form vitest takes and reports) and mirrors the existing layout, and `project` is `unit` or `storybook` per the placement rule in `.claude/skills/component-tests/policy.md`. one assignment per `testPath`: writers run concurrently and append, so merge entries that land in the same test file into one assignment or defer the extras to the next run
+3. read `writer-prompt.md`, `verifier-prompt.md`, `gate-prompt.md` from this skill dir; expand `{{POLICY}}` in writer-prompt.md with `.claude/skills/component-tests/policy.md`'s contents from the `## hard rules` heading onward (drop the title and preamble, those are maintainer-facing, not writer-facing) before passing it; launch Workflow with `scriptPath: .claude/skills/test-sweep/workflow.js` and `args: {assignments, writerPrompt, verifierPrompt, gatePrompt, priorRedPins}` where `priorRedPins` = `[{file: <entry.testPath>, name}]` rebuilt from backlog entries with status red-pin (the test file, not the component source in the entry's `file`)
+4. session-side after the workflow returns: append findings entries for `red-pin` results to `docs/upstream-findings.md` (continue existing numbering; create the file if this is a cold start), update backlog statuses, advance `last-sync.txt` (sync mode, gate green), suggest a `test:` commit for the test files and stop, never commit in `CIPP\` yourself (backlog/findings/marker are local-only under docs\, never committed); a `red-pin` result counts only when `verify.redPinValid` is true, otherwise the verifier already deleted the test; any NEW test the gate flags as an unexpected failure is pulled and logged in the report, report per `routing` below
 
 ## routing / report
 
@@ -49,7 +49,7 @@ score = fan-in x (has crash-pattern or findings mention) x churn, zero coverage 
 - red but producer unreachable -> test deleted, findings note only
 - rejected by verifier -> deleted, reason in report
 - gate-flagged unexpected failure in a new test -> test pulled, logged in report
-- report: tests added grouped by failure mode, red pins with findings numbers, rejections with reasons, backlog burn-down, suite runtime delta vs the ~77s baseline. if the suite trends past ~2x, tighten the value bar, don't split the suite.
+- report: tests added grouped by failure mode, red pins with findings numbers, rejections with reasons, backlog burn-down, suite runtime (`runtimeSeconds` from the gate, stating whether it was the unit project only or both, the gate skips chromium unless an assignment targeted storybook) and its delta against the same suite vs the previous sweep's reported runtime, when the user or an earlier report in this session gives one; there is no fixed baseline, the unit project alone takes minutes. if a single sweep roughly doubles the runtime, tighten the value bar, don't split the suite.
 
 ## out of scope
 

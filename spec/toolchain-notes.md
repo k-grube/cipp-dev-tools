@@ -18,7 +18,7 @@ non-obvious findings worth knowing before touching the frontend test/build toolc
 - `yarn test:coverage` logs 4 PARSE_ERROR stacks from `@vitest/coverage-v8` remapping through rolldown parseAst (vite 8 artifact, present with isolation forced back on, report still completes and merges)
 - `@storybook/addon-vitest` (thru 10.5.3) still calls the deprecated `vitest.init()`, the "use vitest.standalone()" warning is upstream storybook's problem, ignore it
 - `yarn test:coverage` merges both projects into one report, browser coverage works via CDP in chromium. story-only components show real percentages (that's the proof it merges)
-- coverage instrumentation slows lazy chunks/fetches past testing-library's 1s default `waitFor`. global `asyncUtilTimeout: 10000` set in `frontend/vitest.setup.js` and `frontend/.storybook/vitest.setup.js`, never add per-call timeouts
+- coverage instrumentation slows lazy chunks/fetches past testing-library's 1s default `waitFor`. global `asyncUtilTimeout` is set in `frontend/vitest.setup.js` (10000) and `frontend/.storybook/vitest.setup.js` (30000), never add per-call timeouts
 
 ## test-writing gotchas
 
@@ -27,7 +27,7 @@ non-obvious findings worth knowing before touching the frontend test/build toolc
 - `next/dynamic` components never resolve in jsdom without the alias mock (`tests/mocks/next-dynamic.js`, React.lazy + Suspense), and their assertions must be async
 - react-hooks lint rejects `ref.current = x` in component bodies (test harnesses included), assign in a `useEffect`
 - vi.mock of `src/api/ApiCall` must export `ApiGetCall`, `ApiPostCall`, AND `ApiGetCallWithPagination`, deep component trees pull all three
-- CippDataTable can't be driven through row selection in jsdom, MRT's row + column virtualizers measure 0 so zero `th` and zero `tbody tr` render and the select-all checkbox is unreachable. render `CIPPTableToptoolbar` directly against a real `useMaterialReactTable` instance and call `table.toggleAllRowsSelected(true)` (same api the checkbox calls), after mount because the toolbar's effect on `[usedData]` clears selection on mount. the toolbar is `React.memo`, so at least one prop must change identity per render (pass `getRequestData` as an inline literal)
+- CippDataTable can't be driven through row selection in jsdom, MRT's row + column virtualizers measure 0 so zero `th` and zero `tbody tr` render and the select-all checkbox is unreachable. render `CIPPTableToptoolbar` directly against a real `useMaterialReactTable` instance and call `table.toggleAllRowsSelected(true)` (same api the checkbox calls), after mount because the toolbar's effect on `[usedData]` clears selection on mount. the toolbar is `React.memo`, so at least one prop must change identity per render (pass `getRequestData` as an inline literal). cell text never renders either: to prove rows arrived, wait for the `1-N of N` pagination label, then assert on the host component's own output (e.g. the submit payload). to feed csv rows stub only `src/components/CSVReader` with a button calling `onDrop(rows)`
 - `require.context` needs the `cipp-require-context` pre-plugin in `vitest.config.mjs` (unit project), not just `tests/mocks/require-context.js`, vitest's per-module cjs `require` shadows the globalThis patch
 
 ## picking what to test
