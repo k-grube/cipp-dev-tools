@@ -70,7 +70,11 @@ const results = await pipeline(
 const kept = results.filter(Boolean)
 const expectedRed = kept
   .filter((r) => r.write?.status === 'red-pin' && r.verify?.redPinValid)
-  .flatMap((r) => r.write.tests.filter((t) => t.red).map((t) => ({ file: r.write.testPath, name: t.name })))
+  .flatMap((r) => {
+    // a red test the verifier rejected was deleted, don't expect it
+    const rejected = new Set((r.verify.verdicts ?? []).filter((v) => !v.confirmed).map((v) => v.name))
+    return r.write.tests.filter((t) => t.red && !rejected.has(t.name)).map((t) => ({ file: r.write.testPath, name: t.name }))
+  })
 const anyStorybook = input.assignments.some((a) => a.project === 'storybook')
 
 const gate = await agent(

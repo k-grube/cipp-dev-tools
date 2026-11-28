@@ -8,7 +8,7 @@ you are adding tests to the CIPP frontend suite at `CIPP\frontend\tests` (paths 
 
 {{ASSIGNMENT_JSON}}
 
-`file` is the component under test (path relative to `CIPP\`), `failureMode` is the hypothesis your tests must pin, `testPath` is where the test file goes, `project` is unit (jsdom) or storybook.
+`file` is the component under test (path relative to `CIPP\`), `failureMode` is the hypothesis your tests must pin, `testPath` is where the test file goes, relative to `CIPP\frontend`, `project` is unit (jsdom) or storybook.
 
 ## procedure
 

@@ -11,7 +11,7 @@ tests for the one component you are working on, in-session, no agents. value bar
 
 ## 1. survey
 
-- path mirror: `frontend/src/**` -> `frontend/tests/**`, e.g. `frontend/src/components/X/Y.jsx` -> `frontend/tests/components/X/Y.test.jsx` and `Y.stories.jsx`. covers `components`, `hooks`, `layouts`, `pages`, `theme`, `utils`. for `pages` the mirror isn't literal: source is often kebab-case (`src/pages/api-offline.js`), but the test is named for the exported PascalCase component (`tests/pages/ApiOfflinePage.test.jsx`). grep both names
+- path mirror: `frontend/src/**` -> `frontend/tests/**`, e.g. `frontend/src/components/X/Y.jsx` -> `frontend/tests/components/X/Y.test.jsx` and `Y.stories.jsx`. covers `api`, `components`, `contexts`, `hooks`, `layouts`, `pages`, `theme`, `utils`. `pages` does not mirror: `tests/pages/` is flat, and tests carry hand-picked concept names, often several files per page (`src/pages/api-offline.jsx` -> `ApiOfflinePage.test.jsx`, `src/pages/tenant/baselines/template.jsx` -> `BaselineTemplateEditor.moveStandard.test.jsx` and siblings). find them by grepping `tests/pages` for the import path `src/pages/<route>`, not by name
 - also grep `CIPP/frontend/tests` for the component name, tests for it can live in a parent's file
 - read the `it()` names AND their assertions, not just the names. a name describing rendering rather than a failure mode usually asserts presence only, which pins nothing
 
