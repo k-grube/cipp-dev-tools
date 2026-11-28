@@ -8,6 +8,8 @@ bootstrap workspace for CIPP monorepo dev. `CIPP\` is the monorepo clone (origin
 - `stop.ps1` stops the stack (compose down with the same -f chain, module watcher, frontend on :3000, storybook on :6006; azurite volume kept)
 - azurite's table db is paged: shell `__azurite_db_table__.json` + one file per page of rows (`CIPP\build\tools\azurite-table-partition.js`). `python tools\clear-azurite-reporting.py -y` empties the reporting tables in place (config/secrets kept), `--list` shows per-table row counts, don't nuke the volume
 - azurite crash-looping with `Cannot create a string longer than 0x1fffffe8`: a legacy single-file table db over v8's ~512MB string cap, the same command clears it and azurite pages the db on its next save. the api never comes up meanwhile, so the frontend tab sits on `Compiling /`
+- any backend `.ps1` save makes the module watcher restart `cipp-api` (~20s warm-up, craft builds its route table at startup only), so a new `Invoke-*` answers `Endpoint 'X' not found` and curl can get HTTP 000 meanwhile: probe with `curl --retry 15 --retry-connrefused --retry-all-errors --retry-delay 4`. deleting an endpoint file doesn't recompile (touch a neighbouring ps1), and craft caches 2xx GETs for 600s (vary a query param when re-calling)
+- the module watcher regenerates `CIPP\backend\Config\openapi.json` as a background job after a recompile that touched CIPPHTTP (it lands a minute or so after the api is back up), from `$Request.Query.X` / `$Request.Body.X` accesses, the comment directly above one becomes that field's description. its diff is generated output of your endpoint edit: keep that comment short and user-facing, revert the file when the diff only holds a throwaway probe endpoint
 - `python tools\clear-frontend-cache.py` deletes the frontend's generated next output (`CIPP\frontend\out` + `.next`, dev and build), `--all` adds the storybook + vite caches under `node_modules`. refuses while the dev server is listening
 - personal tweaks: drop a gitignored `docker-compose.override.yml` at this root, dev.ps1 / dev.sh chain it (upstream's own launcher would ignore it, explicit -f disables auto-merge)
 - `setup.ps1` is idempotent, re-run to repair prereqs/remotes
@@ -27,6 +29,8 @@ vitest + storybook suite lives in the monorepo (`CIPP\frontend\tests`), run from
 - full rebuild: `graph-tools\rebuild-graph.ps1` (needed when update refuses with the shrink-guard error, after `.graphifyignore` changes, to drop deleted docs, or when update logs an ID collision against a deleted path: dir renames collide the new nodes with the old ones and the prune drops both)
 - doc changes are not picked up by these scripts: run a /graphify session (only changed docs re-extract, content-hash cache in `graphify-out\cache\semantic\`), then rebuild to merge
 - graph.json + sidecars + the semantic cache are committed here, commit the refreshed files after updating so other clones skip the LLM recompute
+- `GRAPH_REPORT.md` is written by `rebuild.py` before the link passes run and with a hardcoded 0 token cost, so its edge count leaves out every link-pass edge. for sizes read `graph.json` (node-link format: edges under `links`, the edge kind under `relation`, not `type`)
+- a graph-tools script dying with `OSError: [Errno 22]` on the `graph.json` write (windows, transient file lock): re-run it, every pass is idempotent
 
 ## rules
 
